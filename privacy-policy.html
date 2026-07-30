@@ -1,21 +1,20 @@
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy | Kinglee</title>
-  <meta name="description" content="Privacy Policy for this website, explaining how information is collected, used, protected, and your rights regarding personal data." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+
+  <meta name="description" content="Privacy Policy page for this website." />
   <meta name="theme-color" content="#0f3d2e" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Google AdSense Auto Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
-    crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
@@ -29,7 +28,6 @@
   <style>
     :root{
       --bg:#f7f4ea;
-      --bg-soft:#fffdf7;
       --paper:#fffefb;
       --ink:#18211d;
       --muted:#5a665f;
@@ -37,15 +35,11 @@
       --forest-2:#14543f;
       --leaf:#1f7a57;
       --gold:#c8a657;
-      --gold-soft:#efe2b3;
       --line:rgba(24,33,29,.12);
-      --line-strong:rgba(24,33,29,.2);
       --shadow:0 24px 70px rgba(15,34,28,.12);
       --shadow-soft:0 14px 36px rgba(15,34,28,.08);
       --radius:28px;
-      --radius-sm:18px;
-      --max:1240px;
-      --toc:290px;
+      --max:1100px;
       --header-h:84px;
     }
 
@@ -64,8 +58,6 @@
     }
 
     a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
-    button,input,textarea{font:inherit}
     ::selection{background:var(--forest);color:#fff}
 
     .container{
@@ -95,910 +87,205 @@
       align-items:center;
       gap:.9rem;
       font-weight:800;
-      letter-spacing:.02em;
     }
 
     .brand-mark{
       width:42px;
       aspect-ratio:1;
       border-radius:14px;
-      background:
-        linear-gradient(135deg, var(--forest) 0%, var(--leaf) 60%, #2ea574 100%);
-      box-shadow:inset 0 1px 0 rgba(255,255,255,.18), var(--shadow-soft);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .brand-mark::before,
-    .brand-mark::after{
-      content:"";
-      position:absolute;
-      border-radius:999px;
-      background:rgba(255,255,255,.18);
-      transform:rotate(-30deg);
-    }
-
-    .brand-mark::before{
-      width:28px;height:8px;left:8px;top:12px;
-    }
-
-    .brand-mark::after{
-      width:18px;height:6px;left:12px;top:22px;
-    }
-
-    .nav-links{
-      display:flex;
-      align-items:center;
-      gap:1rem;
-      color:var(--muted);
-      font-size:.95rem;
-    }
-
-    .nav-links a{
-      padding:.65rem .9rem;
-      border-radius:999px;
-      transition:all .25s ease;
-    }
-
-    .nav-links a:hover{
-      background:rgba(15,61,46,.08);
-      color:var(--forest);
-      transform:translateY(-1px);
+      background:linear-gradient(135deg, var(--forest) 0%, var(--leaf) 60%, #2ea574 100%);
+      box-shadow:var(--shadow-soft);
     }
 
     .hero{
-      position:relative;
-      padding:4rem 0 2.5rem;
-      overflow:hidden;
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:2rem;
-      align-items:end;
+      padding:3.2rem 0 2rem;
     }
 
     .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:.55rem;
-      padding:.5rem .9rem;
-      border:1px solid rgba(15,61,46,.12);
+      display:inline-block;
+      padding:.45rem .8rem;
       border-radius:999px;
+      background:rgba(15,61,46,.08);
       color:var(--forest);
-      background:rgba(255,255,255,.58);
-      box-shadow:var(--shadow-soft);
-      font-size:.85rem;
       font-weight:700;
+      font-size:.85rem;
       letter-spacing:.04em;
       text-transform:uppercase;
     }
 
-    .eyebrow::before{
-      content:"";
-      width:.55rem;height:.55rem;
-      border-radius:999px;
-      background:linear-gradient(135deg, var(--gold), #e8cf85);
-      box-shadow:0 0 0 5px rgba(200,166,87,.15);
-    }
-
-    .hero h1{
+    h1{
       margin:.9rem 0 1rem;
       font-family:'Cormorant Garamond', serif;
-      font-size:clamp(3rem, 7vw, 6.4rem);
+      font-size:clamp(3rem, 7vw, 5.2rem);
       line-height:.92;
-      letter-spacing:-.03em;
-      max-width:10ch;
       color:var(--forest);
     }
 
-    .hero p{
-      margin:0;
-      max-width:62ch;
+    .lead{
+      max-width:70ch;
       color:var(--muted);
-      font-size:1.06rem;
+      font-size:1.05rem;
     }
 
-    .hero-meta{
-      margin-top:1.4rem;
-      display:flex;
-      flex-wrap:wrap;
-      gap:.8rem;
+    .page{
+      padding:1.2rem 0 3rem;
     }
 
-    .pill{
-      padding:.8rem 1rem;
-      background:rgba(255,255,255,.7);
-      border:1px solid rgba(24,33,29,.1);
-      border-radius:999px;
-      color:var(--ink);
-      box-shadow:var(--shadow-soft);
-      font-size:.92rem;
-    }
-
-    .hero-visual{
-      position:relative;
-      min-height:380px;
-      border-radius:36px;
-      background:
-        radial-gradient(circle at 25% 20%, rgba(255,255,255,.65), transparent 22%),
-        radial-gradient(circle at 70% 30%, rgba(200,166,87,.32), transparent 26%),
-        linear-gradient(160deg, #123b2e 0%, #1b6147 65%, #307d5c 100%);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      isolation:isolate;
-      border:1px solid rgba(255,255,255,.22);
-    }
-
-    .hero-visual svg{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-      opacity:.95;
-    }
-
-    .hero-note{
-      position:absolute;
-      right:1rem;
-      bottom:1rem;
-      width:min(280px, calc(100% - 2rem));
-      padding:1rem 1.1rem;
-      background:rgba(255,255,255,.14);
-      backdrop-filter:blur(12px);
-      border:1px solid rgba(255,255,255,.24);
-      border-radius:20px;
-      color:#f9f7ef;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .hero-note strong{
-      display:block;
-      margin-bottom:.35rem;
-      font-size:.95rem;
-    }
-
-    .page-shell{
-      display:grid;
-      grid-template-columns:var(--toc) 1fr;
-      gap:1.4rem;
-      align-items:start;
-      padding-bottom:4rem;
-    }
-
-    .toc{
-      position:sticky;
-      top:calc(var(--header-h) + 1rem);
-      align-self:start;
-      padding:1.2rem;
-      background:rgba(255,255,255,.72);
-      backdrop-filter:blur(14px);
-      border:1px solid rgba(24,33,29,.09);
-      border-radius:24px;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .toc h2{
-      margin:.2rem 0 .95rem;
-      font-size:1rem;
-      text-transform:uppercase;
-      letter-spacing:.12em;
-      color:var(--forest);
-    }
-
-    .toc a{
-      display:block;
-      padding:.72rem .8rem;
-      border-radius:14px;
-      color:var(--muted);
-      font-size:.95rem;
-      transition:all .25s ease;
-    }
-
-    .toc a:hover,
-    .toc a.active{
-      color:var(--forest);
-      background:rgba(15,61,46,.08);
-      transform:translateX(3px);
-    }
-
-    .content-wrap{
-      min-width:0;
-    }
-
-    .intro-panel{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:1rem;
-      margin-bottom:1rem;
-    }
-
-    .panel,
-    .mini-panel{
-      background:var(--paper);
-      border:1px solid rgba(24,33,29,.09);
-      border-radius:28px;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .panel{
-      padding:1.4rem;
-    }
-
-    .mini-panel{
-      padding:1.2rem;
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      min-height:100%;
-    }
-
-    .mini-stat{
-      display:grid;
-      gap:.3rem;
-    }
-
-    .mini-stat strong{
-      font-family:'Cormorant Garamond', serif;
-      font-size:2rem;
-      color:var(--forest);
-      line-height:1;
-    }
-
-    .policy-article{
+    .card{
       background:var(--paper);
       border:1px solid rgba(24,33,29,.09);
       border-radius:32px;
       box-shadow:var(--shadow);
-      padding:clamp(1.2rem, 2vw, 2rem);
-      position:relative;
-      overflow:hidden;
+      padding:clamp(1.1rem, 2vw, 2rem);
     }
 
-    .policy-article::before{
-      content:"";
-      position:absolute;
-      inset:0 0 auto 0;
-      height:8px;
-      background:linear-gradient(90deg, var(--forest), var(--leaf), var(--gold));
-    }
-
-    .legal-image{
-      margin:1.2rem 0 1.6rem;
-      border-radius:26px;
-      overflow:hidden;
-      border:1px solid rgba(24,33,29,.09);
-      box-shadow:var(--shadow-soft);
-      background:#e9efe9;
-    }
-
-    .legal-image img{
-      width:100%;
-      height:auto;
-    }
-
-    .caption{
-      padding:.9rem 1rem;
-      font-size:.92rem;
-      color:var(--muted);
-      background:linear-gradient(180deg, rgba(255,255,255,.85), rgba(247,244,234,.9));
-      border-top:1px solid rgba(24,33,29,.08);
-    }
-
-    .policy-article h2{
-      scroll-margin-top:calc(var(--header-h) + 18px);
-      margin:2.2rem 0 .7rem;
+    h2{
+      margin:2rem 0 .8rem;
       font-family:'Cormorant Garamond', serif;
-      font-size:clamp(2rem, 3.3vw, 3rem);
-      line-height:1;
+      font-size:clamp(1.8rem, 3vw, 2.6rem);
       color:var(--forest);
-      letter-spacing:-.02em;
+      line-height:1;
     }
 
-    .policy-article h3{
-      margin:1.35rem 0 .45rem;
-      font-size:1.1rem;
+    h3{
+      margin:1.2rem 0 .4rem;
       color:var(--forest-2);
     }
 
-    .policy-article p{
-      margin:.78rem 0;
+    p, li{
       color:#25302a;
       font-size:1rem;
     }
 
-    .policy-article ul{
-      margin:.6rem 0 1rem 1.15rem;
-      padding:0;
-    }
-
-    .policy-article li{
-      margin:.45rem 0;
-      color:#25302a;
+    ul{
+      margin:.6rem 0 1rem 1.2rem;
     }
 
     .highlight{
-      margin:1.3rem 0;
+      margin:1.2rem 0;
       padding:1rem 1rem 1rem 1.1rem;
       border-left:4px solid var(--gold);
       background:linear-gradient(180deg, rgba(200,166,87,.08), rgba(15,61,46,.04));
       border-radius:18px;
     }
 
-    .signature{
+    .contact-box{
       margin-top:2rem;
-      padding:1.25rem;
+      padding:1.2rem;
       border-radius:22px;
-      background:
-        linear-gradient(135deg, rgba(15,61,46,.98), rgba(26,94,68,.96));
-      color:#f7f5ee;
-      box-shadow:var(--shadow);
+      background:linear-gradient(135deg, var(--forest), var(--leaf));
+      color:#fff;
     }
 
-    .signature h3{
-      color:#fff4d4;
-      margin-top:0;
-      font-size:1.3rem;
-    }
-
-    .signature a{
-      color:#fff6ca;
+    .contact-box a{
+      color:#fff4c7;
       font-weight:700;
       text-decoration:underline;
-      text-underline-offset:3px;
     }
 
     .site-footer{
       padding:2rem 0 3rem;
       color:var(--muted);
-    }
-
-    .footer-box{
-      background:rgba(255,255,255,.68);
-      border:1px solid rgba(24,33,29,.08);
-      border-radius:24px;
-      padding:1rem 1.1rem;
-      display:flex;
-      justify-content:space-between;
-      gap:1rem;
-      flex-wrap:wrap;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(18px);
-      transition:opacity .7s ease, transform .7s ease;
-    }
-
-    .reveal.visible{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    .hero .reveal:nth-child(1){transition-delay:.05s}
-    .hero .reveal:nth-child(2){transition-delay:.12s}
-    .hero .reveal:nth-child(3){transition-delay:.18s}
-    .hero .reveal:nth-child(4){transition-delay:.24s}
-
-    @media (max-width: 1080px){
-      .page-shell{grid-template-columns:1fr}
-      .toc{
-        position:relative;
-        top:auto;
-        order:-1;
-      }
-    }
-
-    @media (max-width: 860px){
-      .hero-grid,
-      .intro-panel{
-        grid-template-columns:1fr;
-      }
-
-      .nav{
-        min-height:72px;
-      }
-
-      .nav-links{
-        display:none;
-      }
-
-      .hero{
-        padding-top:2.5rem;
-      }
-
-      .hero-visual{
-        min-height:300px;
-      }
-    }
-
-    @media (max-width: 560px){
-      .container{
-        width:min(var(--max), calc(100% - 1rem));
-      }
-
-      .policy-article{
-        padding:1rem;
-        border-radius:24px;
-      }
-
-      .panel,
-      .mini-panel,
-      .toc{
-        border-radius:20px;
-      }
-
-      .hero-note{
-        position:relative;
-        right:auto;
-        bottom:auto;
-        margin:1rem;
-      }
+      text-align:center;
     }
   </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a href="#top" class="brand" aria-label="Go to top">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Kinglee Policy</span>
+      <a href="#top" class="brand">
+        <span class="brand-mark"></span>
+        <span>Privacy Policy</span>
       </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="#overview">Overview</a>
-        <a href="#information-we-collect">Information</a>
-        <a href="#how-we-use-information">Use</a>
-        <a href="#your-rights">Your Rights</a>
-        <a href="#contact-us">Contact</a>
-      </nav>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow reveal">Privacy & Transparency</span>
-          <h1 class="reveal">Privacy Policy</h1>
-          <p class="reveal">
-            This page explains, in clear and human language, how this website may collect, use, protect, store, and manage information when you visit, browse, interact with content, or contact us. It is designed to be readable, structured, and easy to navigate on both mobile and desktop devices.
-          </p>
-          <div class="hero-meta reveal">
-            <span class="pill">Last updated: January 2026</span>
-            <span class="pill">Covers analytics, ads, cookies, and contact data</span>
-            <span class="pill">Made for transparency and trust</span>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal" aria-hidden="true">
-          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" role="img">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="rgba(255,255,255,.85)"/>
-                <stop offset="100%" stop-color="rgba(255,255,255,.12)"/>
-              </linearGradient>
-            </defs>
-            <rect width="800" height="600" fill="transparent"/>
-            <circle cx="630" cy="115" r="78" fill="rgba(255,220,150,.25)"/>
-            <path d="M146 140c0-26 21-47 47-47h230c26 0 47 21 47 47v144c0 26-21 47-47 47H193c-26 0-47-21-47-47V140z" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.28)" stroke-width="2"/>
-            <path d="M218 204h180" stroke="rgba(255,255,255,.72)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M218 244h142" stroke="rgba(255,255,255,.52)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M218 284h110" stroke="rgba(255,255,255,.38)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M501 220c0-57 46-103 103-103s103 46 103 103-46 103-103 103-103-46-103-103z" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.28)" stroke-width="2"/>
-            <path d="M604 170c-30 0-54 24-54 54 0 37 54 83 54 83s54-46 54-83c0-30-24-54-54-54zm0 77a23 23 0 1 1 0-46 23 23 0 0 1 0 46z" fill="url(#g1)"/>
-            <path d="M144 405c0-20 16-36 36-36h466c20 0 36 16 36 36v60c0 20-16 36-36 36H180c-20 0-36-16-36-36v-60z" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.24)" stroke-width="2"/>
-            <path d="M199 435h146" stroke="rgba(255,255,255,.7)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M392 435h83" stroke="rgba(255,255,255,.5)" stroke-width="12" stroke-linecap="round"/>
-            <path d="M506 435h90" stroke="rgba(255,255,255,.3)" stroke-width="12" stroke-linecap="round"/>
-          </svg>
-          <div class="hero-note">
-            <strong>Why this matters</strong>
-            Privacy policies are not just legal documents. They are trust documents. A good policy tells people what happens to their information before they give it to you.
-          </div>
-        </div>
-      </div>
+    <section class="hero container">
+      <span class="eyebrow">Privacy & Transparency</span>
+      <h1>Privacy Policy</h1>
+      <p class="lead">
+        This page explains how information may be collected, used, stored, and protected on this website.
+        It is designed to be clear, professional, and easy to read on mobile and desktop devices.
+      </p>
     </section>
 
-    <section class="container page-shell">
-      <aside class="toc reveal" aria-label="Table of contents">
-        <h2>Contents</h2>
-        <a href="#overview" class="active">1. Overview</a>
-        <a href="#scope">2. Scope of this Policy</a>
-        <a href="#information-we-collect">3. Information We Collect</a>
-        <a href="#how-we-collect-information">4. How We Collect Information</a>
-        <a href="#how-we-use-information">5. How We Use Information</a>
-        <a href="#legal-basis">6. Legal Basis</a>
-        <a href="#cookies">7. Cookies & Similar Technologies</a>
-        <a href="#ads-analytics">8. Advertising & Analytics</a>
-        <a href="#sharing-information">9. Sharing Information</a>
-        <a href="#data-retention">10. Data Retention</a>
-        <a href="#data-security">11. Data Security</a>
-        <a href="#children-privacy">12. Children’s Privacy</a>
-        <a href="#your-rights">13. Your Rights</a>
-        <a href="#international-transfers">14. International Transfers</a>
-        <a href="#third-party-links">15. Third-Party Links</a>
-        <a href="#policy-changes">16. Changes to this Policy</a>
-        <a href="#contact-us">17. Contact Us</a>
-      </aside>
+    <section class="page container">
+      <article class="card">
+        <h2>1. Overview</h2>
+        <p>
+          Welcome to this Privacy Policy. This document explains what information may be collected when you
+          visit this website, why it may be collected, how it may be used, and what choices you may have.
+          We aim to keep this page simple, transparent, and useful.
+        </p>
 
-      <div class="content-wrap">
-        <div class="intro-panel reveal">
-          <div class="panel">
-            <h2 style="margin:.1rem 0 .4rem; font-family:'Cormorant Garamond', serif; font-size:2rem; color:var(--forest);">A policy written to be understood</h2>
-            <p style="margin:0; color:var(--muted);">
-              Many privacy pages are hard to read, overloaded with legal phrasing, and frustrating on small screens. This version is arranged for clarity, uses readable spacing, and balances legal structure with plain language. It covers standard website operations including contact forms, cookies, analytics, and advertising technologies such as Google AdSense and Google Analytics 4.
-            </p>
-          </div>
-          <div class="mini-panel">
-            <div class="mini-stat">
-              <strong>17</strong>
-              <span>organized sections for faster reading</span>
-            </div>
-            <div class="mini-stat">
-              <strong>100%</strong>
-              <span>responsive and accessible layout</span>
-            </div>
-            <div class="mini-stat">
-              <strong>1 email</strong>
-              <span>contact point at the end of the page</span>
-            </div>
-          </div>
+        <div class="highlight">
+          <p>
+            In simple words: if you browse the site, contact us, or interact with content, some information
+            may be processed to operate the site, improve the experience, and support analytics or advertising.
+          </p>
         </div>
 
-        <article class="policy-article reveal">
-          <div class="legal-image">
-            <img
-              src="data:image/svg+xml;utf8,
-              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 620'>
-                <defs>
-                  <linearGradient id='bg' x1='0' y1='0' x2='1' y2='1'>
-                    <stop offset='0%' stop-color='%230f3d2e'/>
-                    <stop offset='55%' stop-color='%231e6a4d'/>
-                    <stop offset='100%' stop-color='%23c8a657'/>
-                  </linearGradient>
-                  <linearGradient id='glass' x1='0' y1='0' x2='0' y2='1'>
-                    <stop offset='0%' stop-color='rgba(255,255,255,.35)'/>
-                    <stop offset='100%' stop-color='rgba(255,255,255,.12)'/>
-                  </linearGradient>
-                </defs>
-                <rect width='1200' height='620' fill='url(%23bg)'/>
-                <circle cx='1030' cy='110' r='100' fill='rgba(255,255,255,.12)'/>
-                <circle cx='180' cy='120' r='70' fill='rgba(255,230,170,.16)'/>
-                <rect x='88' y='105' rx='34' ry='34' width='560' height='410' fill='rgba(255,255,255,.12)' stroke='rgba(255,255,255,.26)'/>
-                <rect x='132' y='163' rx='18' width='280' height='28' fill='rgba(255,255,255,.78)'/>
-                <rect x='132' y='212' rx='12' width='380' height='18' fill='rgba(255,255,255,.46)'/>
-                <rect x='132' y='244' rx='12' width='330' height='18' fill='rgba(255,255,255,.36)'/>
-                <rect x='132' y='276' rx='12' width='250' height='18' fill='rgba(255,255,255,.28)'/>
-                <rect x='132' y='336' rx='18' width='180' height='42' fill='rgba(255,225,160,.82)'/>
-                <rect x='710' y='118' rx='42' ry='42' width='390' height='250' fill='rgba(255,255,255,.12)' stroke='rgba(255,255,255,.26)'/>
-                <path d='M905 166c-53 0-96 43-96 96 0 66 96 147 96 147s96-81 96-147c0-53-43-96-96-96zm0 137a41 41 0 1 1 0-82 41 41 0 0 1 0 82z' fill='rgba(255,255,255,.82)'/>
-                <rect x='710' y='400' rx='28' ry='28' width='390' height='110' fill='rgba(255,255,255,.12)' stroke='rgba(255,255,255,.26)'/>
-                <rect x='752' y='436' rx='10' width='160' height='16' fill='rgba(255,255,255,.7)'/>
-                <rect x='935' y='436' rx='10' width='106' height='16' fill='rgba(255,255,255,.42)'/>
-              </svg>"
-              alt="Illustration representing data privacy, policy documents, and digital protection" />
-            <div class="caption">
-              Visual header illustration representing privacy, digital records, and responsible data handling.
-            </div>
-          </div>
+        <h2>2. Information We Collect</h2>
+        <p>
+          We may collect information that you provide directly, such as your name, email address, phone number,
+          or message content if you contact us. We may also collect automatic technical information such as IP
+          address, browser type, device type, pages visited, and general usage data.
+        </p>
 
-          <section id="overview">
-            <h2>1. Overview</h2>
-            <p>
-              Welcome to this Privacy Policy. The purpose of this page is to explain what types of information may be collected through this website, why that information may be collected, how it may be used, when it may be shared, and what choices may be available to you as a visitor or user. We believe that a privacy policy should do more than satisfy a compliance requirement. It should provide clarity, reduce uncertainty, and help users make informed decisions.
-            </p>
-            <p>
-              When you visit a website, some information is often created automatically. For example, a server may receive technical details such as browser type, approximate location based on IP address, device type, and general usage patterns. If analytics tools are installed, those tools may also measure events such as page views, time on page, traffic sources, or interactions with buttons and forms. If ads are served, advertising technologies may use cookies or similar methods to help deliver and measure relevant advertising content.
-            </p>
-            <p>
-              This website may use services such as Google Analytics 4 and Google AdSense. Google Analytics helps website owners understand how people use pages so they can improve structure, performance, usability, and content quality. Google AdSense may help support the operation of the website by displaying ads. These tools can involve data collection and processing subject to their own policies and controls.
-            </p>
-            <div class="highlight">
-              <p style="margin:0;">
-                In simple terms: if you browse the site, contact us, or interact with content, some information may be processed to operate the website, improve user experience, measure performance, protect security, and support advertising where applicable.
-              </p>
-            </div>
-            <p>
-              We aim to handle information responsibly, limit collection to what is reasonably relevant, and present privacy information in a practical format. If any part of this page is unclear, you are encouraged to contact us using the email address listed at the end.
-            </p>
-          </section>
+        <h3>Automatically collected data</h3>
+        <ul>
+          <li>IP address or approximate location</li>
+          <li>Browser and device information</li>
+          <li>Pages visited and time spent on site</li>
+          <li>Referral source and navigation behavior</li>
+        </ul>
 
-          <section id="scope">
-            <h2>2. Scope of this Policy</h2>
-            <p>
-              This Privacy Policy applies to information collected through this website and related pages, tools, forms, and interactions that link to or reference this policy. It applies whether you visit from a phone, tablet, desktop, or other device. It also applies to information submitted directly by you, such as a message sent by email or through a contact form, as well as information collected automatically through scripts, cookies, server logs, or analytics technologies.
-            </p>
-            <p>
-              This policy does not necessarily apply to external websites, services, social media platforms, or third-party tools that may be linked from this site. If you click a link that takes you elsewhere, the privacy practices of that destination are governed by its own privacy policy and terms. We encourage you to review third-party privacy practices before sharing personal information with them.
-            </p>
-            <p>
-              Depending on the country or region where you live, privacy laws may grant you certain rights or impose specific obligations regarding the handling of personal data. This policy is intended to provide a general explanation and may be interpreted together with any rights available under applicable law.
-            </p>
-          </section>
+        <h2>3. How We Use Information</h2>
+        <p>
+          The information collected may be used to operate and maintain the website, respond to messages,
+          improve performance, detect abuse or fraud, and support analytics or advertising functions.
+        </p>
 
-          <section id="information-we-collect">
-            <h2>3. Information We Collect</h2>
-            <p>
-              The kinds of information that may be collected through this website generally fall into several categories. The first category is information you choose to provide directly. This may include your name, email address, phone number, or the content of a message you send. If the website offers a newsletter, comment section, account system, or support form, the data you submit through those features may also be collected.
-            </p>
-            <h3>Information you provide directly</h3>
-            <ul>
-              <li>Name or display name</li>
-              <li>Email address</li>
-              <li>Phone number, if you voluntarily provide it</li>
-              <li>Messages, support requests, feedback, or inquiries</li>
-              <li>Any other personal details you choose to include in your communication</li>
-            </ul>
-            <h3>Information collected automatically</h3>
-            <p>
-              When you use the website, technical information may be collected automatically through your browser, device, or network connection. This may include your IP address, browser type, operating system, screen size, language settings, referral source, date and time of access, pages visited, links clicked, session duration, and other interaction data. Some of this information may be collected directly by the website or hosting environment, while some may be collected by integrated third-party services such as analytics or ad networks.
-            </p>
-            <ul>
-              <li>IP address or general geolocation derived from IP</li>
-              <li>Browser type and version</li>
-              <li>Operating system and device type</li>
-              <li>Pages viewed and navigation flow</li>
-              <li>Time spent on pages and engagement patterns</li>
-              <li>Referring websites or search engines</li>
-              <li>Crash logs, diagnostic information, and error data</li>
-            </ul>
-            <h3>Cookie and identifier data</h3>
-            <p>
-              The website and its third-party providers may store cookies or similar technologies on your device to remember settings, support core functions, measure performance, and provide personalized or contextual advertising. These technologies may assign identifiers that help distinguish one browser or device from another over time.
-            </p>
-            <p>
-              If you contact us, the message itself may contain additional information depending on what you choose to write. For example, if you email us with a support request, we may receive details about your problem, your device, your preferences, and any other information you decide to include. We recommend that you do not send sensitive personal information unless it is necessary and appropriate.
-            </p>
-          </section>
+        <h2>4. Cookies and Analytics</h2>
+        <p>
+          This website may use cookies and similar technologies. These help remember preferences, understand
+          traffic patterns, and support tools such as Google Analytics 4 and Google AdSense.
+        </p>
 
-          <section id="how-we-collect-information">
-            <h2>4. How We Collect Information</h2>
-            <p>
-              Information may be collected in several different ways. Some information is collected when you actively provide it, such as when you send an email, fill out a form, request a service, or otherwise communicate with the site owner. Other information may be collected passively through automated technologies as you browse.
-            </p>
-            <p>
-              Automated collection can occur through server logs, browser storage, pixels, embedded scripts, analytics tags, and advertising tools. These technologies help with routine website functions such as security, diagnostics, remembering preferences, understanding content performance, and supporting monetization through advertising.
-            </p>
-            <p>
-              In some cases, third-party services integrated into the website may collect data independently according to their own systems and policies. For example, Google Analytics may collect aggregated usage signals, while Google AdSense may use advertising technologies to deliver and measure ads. These services may use cookies, identifiers, or similar methods consistent with their documentation and your available browser or consent settings.
-            </p>
-          </section>
+        <h2>5. Sharing Information</h2>
+        <p>
+          We may share limited information with service providers that help with hosting, analytics, security,
+          or advertising. We may also share information when required by law or to protect rights and safety.
+        </p>
 
-          <section id="how-we-use-information">
-            <h2>5. How We Use Information</h2>
-            <p>
-              Information collected through the website may be used for several legitimate and practical purposes. The first is to operate and maintain the website itself. Websites need technical data to load pages correctly, deliver content, detect abuse, analyze failures, and maintain stability. Usage information can help identify whether pages are slow, confusing, or not functioning properly on certain devices.
-            </p>
-            <p>
-              Information may also be used to respond to messages or requests. If you contact us, we may use the information you provide to answer questions, provide support, clarify issues, or continue a conversation you initiated. Without using your contact information, it would not be possible to reply effectively.
-            </p>
-            <p>
-              Another important use is improvement. Analytics data can help show which pages are most visited, where users stop reading, what sources of traffic are performing well, and what content or navigation changes may improve the experience. This information may be reviewed in aggregate to shape better page structure, faster design decisions, and more relevant content.
-            </p>
-            <p>
-              Information may also be used for security and fraud prevention. Logs and identifiers can help detect suspicious behavior such as automated attacks, spam submissions, repeated abuse, unauthorized access attempts, or technical misuse of the site. Monitoring and defensive filtering are important parts of responsible website operation.
-            </p>
-            <p>
-              If the website displays ads, data may also be used to support advertising functions, such as showing ads, limiting repetitive ad delivery, measuring ad performance, understanding general audience patterns, and helping publishers earn revenue to maintain the website. Depending on your region and browser settings, you may have choices related to ad personalization.
-            </p>
-            <ul>
-              <li>To provide, maintain, and improve the website</li>
-              <li>To respond to questions, feedback, and support requests</li>
-              <li>To analyze trends, traffic, and content performance</li>
-              <li>To detect abuse, fraud, spam, or technical threats</li>
-              <li>To comply with legal obligations where required</li>
-              <li>To support advertising and measurement functions</li>
-            </ul>
-          </section>
+        <h2>6. Your Rights</h2>
+        <p>
+          Depending on your location, you may have rights to access, correct, delete, or object to certain
+          processing of your data. You may also be able to manage cookies through your browser settings.
+        </p>
 
-          <section id="legal-basis">
-            <h2>6. Legal Basis for Processing</h2>
-            <p>
-              Where applicable law requires a legal basis for processing personal data, processing may rely on one or more recognized grounds. These may include consent, legitimate interests, performance of a contract or requested service, compliance with a legal obligation, or protection of rights and security.
-            </p>
-            <p>
-              Consent may apply when you voluntarily submit information, agree to cookies, subscribe to communications, or otherwise opt in to a feature that requires your permission. Legitimate interests may apply when information is processed in ways that are reasonably expected, proportionate, and necessary to operate, secure, improve, and support the website, provided those interests are not overridden by your rights.
-            </p>
-            <p>
-              If you are located in a jurisdiction that gives you the right to object to certain processing, request restriction, or withdraw consent, you may exercise those rights subject to applicable law. Withdrawal of consent does not usually affect processing already carried out before withdrawal.
-            </p>
-          </section>
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Any changes will be posted on this page with
+          a revised date if necessary.
+        </p>
 
-          <section id="cookies">
-            <h2>7. Cookies and Similar Technologies</h2>
-            <p>
-              Cookies are small text files that may be placed on your device when you visit a website. Similar technologies include local storage, pixels, tags, scripts, and identifiers that help a website recognize a browser, remember settings, analyze usage, or support ads and embedded features. Some cookies are essential for core functionality, while others support performance measurement or advertising.
-            </p>
-            <h3>Types of cookies that may be used</h3>
-            <ul>
-              <li><strong>Essential cookies:</strong> help the website function properly, keep sessions stable, or support basic security.</li>
-              <li><strong>Preference cookies:</strong> remember choices such as language, interface settings, or display preferences.</li>
-              <li><strong>Analytics cookies:</strong> help measure traffic, understand engagement, and improve site performance.</li>
-              <li><strong>Advertising cookies:</strong> support ad delivery, frequency management, reporting, and possibly personalization depending on settings and region.</li>
-            </ul>
-            <p>
-              Most browsers allow you to control cookies through their settings. You may be able to block all cookies, delete existing cookies, or choose how tracking technologies are handled. Please note that disabling certain cookies may affect site functionality or limit some features.
-            </p>
-            <p>
-              If this website implements consent tools, your choices may be stored to respect your preferences. If such a tool is not available on your version of the website, browser settings and provider controls may still offer meaningful options.
-            </p>
-          </section>
+        <h2>8. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, you may contact us below.</p>
 
-          <section id="ads-analytics">
-            <h2>8. Advertising and Analytics</h2>
-            <p>
-              This website may use Google Analytics 4 to understand traffic and usage patterns. Google Analytics helps website owners evaluate which pages are useful, which content performs best, how visitors navigate the site, and where improvements may be needed. Analytics information is commonly used in aggregate and may include events, engagement metrics, device information, approximate location, and referral data.
-            </p>
-            <p>
-              This website may also use Google AdSense to display ads. AdSense helps publishers generate revenue and may use cookies or similar technologies to serve and measure ads. Depending on applicable laws, browser settings, and consent frameworks, ads may be personalized or non-personalized. Personalized ads typically rely more heavily on prior activity and identifiers; non-personalized ads are generally based more on contextual information.
-            </p>
-            <p>
-              Google’s services operate under Google’s own privacy terms and product documentation. If you would like more information about how Google processes information in connection with Analytics or AdSense, you should review Google’s own privacy materials and user controls. Those controls may include ad settings, browser tools, and opt-out options where available.
-            </p>
-            <div class="highlight">
-              <p style="margin:0;">
-                Important note: when third-party services are embedded into a website, they may process data directly according to their own policies. This website can explain the integration, but the third party remains responsible for its own processing practices.
-              </p>
-            </div>
-          </section>
-
-          <section id="sharing-information">
-            <h2>9. Sharing Information</h2>
-            <p>
-              We do not describe personal information as something to be casually transferred or disclosed. However, certain limited forms of sharing may occur when necessary to operate the website, provide requested services, comply with law, or protect legitimate interests. Information may be made available to service providers who help with hosting, analytics, advertising, security, communication, maintenance, or other operational functions.
-            </p>
-            <p>
-              In some cases, disclosure may be required by law, legal process, court order, or regulatory request. Information may also be disclosed if necessary to investigate abuse, enforce terms, respond to security incidents, or protect rights, property, safety, users, or the public.
-            </p>
-            <p>
-              If the site owner is involved in a business transfer, such as a merger, asset sale, restructuring, or transfer of website operations, information related to the website may be transferred as part of that process, subject to reasonable confidentiality and lawful handling.
-            </p>
-            <ul>
-              <li>Hosting and infrastructure providers</li>
-              <li>Analytics and advertising partners</li>
-              <li>Email or communication service providers</li>
-              <li>Security, anti-spam, and performance tools</li>
-              <li>Authorities or legal bodies where required by law</li>
-            </ul>
-          </section>
-
-          <section id="data-retention">
-            <h2>10. Data Retention</h2>
-            <p>
-              Personal information is generally retained only for as long as reasonably necessary for the purpose for which it was collected, or for as long as required by law, dispute resolution, security, or legitimate operational needs. Retention periods may vary depending on the category of data involved.
-            </p>
-            <p>
-              For example, emails and messages may be retained for follow-up, support continuity, or recordkeeping. Server logs may be retained for a shorter period for security and diagnostics. Analytics data may be stored according to settings configured within the analytics provider. Advertising-related data may be retained according to provider-specific practices and applicable legal requirements.
-            </p>
-            <p>
-              When information is no longer reasonably needed, it may be deleted, anonymized, aggregated, or securely archived as appropriate.
-            </p>
-          </section>
-
-          <section id="data-security">
-            <h2>11. Data Security</h2>
-            <p>
-              Reasonable technical and organizational measures may be used to help protect information against unauthorized access, misuse, alteration, disclosure, or destruction. Such measures may include HTTPS encryption, account protection practices, restricted administrative access, provider-level infrastructure safeguards, security updates, monitoring, and anti-abuse controls.
-            </p>
-            <p>
-              However, no website, server, database, or method of electronic transmission can be guaranteed to be completely secure. Security is a process of layered risk reduction, not an absolute promise. For that reason, users should also exercise caution by using secure devices, keeping software updated, and avoiding sending sensitive information unless truly necessary.
-            </p>
-          </section>
-
-          <section id="children-privacy">
-            <h2>12. Children’s Privacy</h2>
-            <p>
-              This website is not intended to knowingly collect personal information from children unless clearly stated otherwise for a specific service. If you are a parent or guardian and believe that a child has provided personal information through the website, you may contact us to request review or deletion where appropriate.
-            </p>
-            <p>
-              If we become aware that information has been collected from a child in a manner inconsistent with applicable law, we will take reasonable steps to address the issue in accordance with legal and operational requirements.
-            </p>
-          </section>
-
-          <section id="your-rights">
-            <h2>13. Your Rights and Choices</h2>
-            <p>
-              Depending on where you live, you may have certain privacy rights regarding personal data. These may include the right to request access to your information, request correction of inaccurate information, request deletion, object to certain processing, withdraw consent, request portability, or file a complaint with a supervisory authority.
-            </p>
-            <p>
-              Rights are not always absolute and may depend on applicable law, the nature of the information, and whether legal or operational exceptions apply. For example, some information may need to be retained for security, legal compliance, or recordkeeping even if deletion is requested.
-            </p>
-            <h3>You may also have practical choices such as:</h3>
-            <ul>
-              <li>Choosing not to submit optional personal information</li>
-              <li>Adjusting browser settings to manage cookies</li>
-              <li>Using ad and privacy controls offered by third-party providers</li>
-              <li>Contacting us to request clarification or action on your data</li>
-            </ul>
-            <p>
-              If you wish to make a privacy-related request, the most direct option is to contact us using the email address listed below. To protect privacy and security, we may need enough information to verify the request before taking action.
-            </p>
-          </section>
-
-          <section id="international-transfers">
-            <h2>14. International Data Transfers</h2>
-            <p>
-              Because websites, hosting systems, analytics providers, content delivery systems, and advertising partners may operate in multiple countries, information may be processed or stored outside your home jurisdiction. This means your information may be transferred to and handled in locations where privacy rules differ from those in your country or region.
-            </p>
-            <p>
-              Where international transfers occur, reasonable steps may be taken to rely on lawful transfer mechanisms or provider safeguards as appropriate. The exact transfer arrangements may depend on the services used and the jurisdictions involved.
-            </p>
-          </section>
-
-          <section id="third-party-links">
-            <h2>15. Third-Party Links and Services</h2>
-            <p>
-              This website may contain links to third-party websites, social platforms, embedded content, tools, or services. Clicking on those links or engaging with those services may allow the third party to collect information about you according to its own privacy practices.
-            </p>
-            <p>
-              We are not responsible for the privacy or security practices of independent third-party websites or providers. You should review their policies separately before providing personal information or relying on their services.
-            </p>
-          </section>
-
-          <section id="policy-changes">
-            <h2>16. Changes to this Policy</h2>
-            <p>
-              Privacy practices, technologies, website functions, and legal requirements can change over time. For that reason, this Privacy Policy may be updated periodically. When changes are made, the updated version may be posted on this page with a revised effective or “last updated” date.
-            </p>
-            <p>
-              If any changes are material, additional notice may be provided where appropriate, depending on the nature of the update and the requirements that apply. Continued use of the website after changes become effective may indicate acceptance of the revised policy, except where law requires a different form of consent.
-            </p>
-          </section>
-
-          <section id="contact-us">
-            <h2>17. Contact Us</h2>
-            <p>
-              If you have questions about this Privacy Policy, want clarification about how information may be handled, need help understanding your options, or would like to send a privacy-related request, you are welcome to get in touch.
-            </p>
-            <div class="signature">
-              <h3>Contact for privacy matters</h3>
-              <p style="margin:.35rem 0 0;">
-                Email: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a>
-              </p>
-            </div>
-          </section>
-        </article>
-      </div>
+        <div class="contact-box">
+          <p style="margin:0;">Email: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></p>
+        </div>
+      </article>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-box">
-      <div>Privacy Policy page designed for clarity, readability, and trust.</div>
-      <div>&copy; 2026 Kinglee. All rights reserved.</div>
+    <div class="container">
+      &copy; 2026 Privacy Policy. All rights reserved.
     </div>
   </footer>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    const links = [...document.querySelectorAll('.toc a')];
-    const sections = links
-      .map(link => document.querySelector(link.getAttribute('href')))
-      .filter(Boolean);
-
-    const setActive = () => {
-      let current = sections[0];
-      const offset = window.scrollY + 130;
-      sections.forEach(section => {
-        if (section.offsetTop <= offset) current = section;
-      });
-      links.forEach(link => {
-        link.classList.toggle('active', link.getAttribute('href') === '#' + current.id);
-      });
-    };
-
-    window.addEventListener('scroll', setActive, { passive: true });
-    window.addEventListener('load', setActive);
-  </script>
 </body>
 </html>
- 
+
