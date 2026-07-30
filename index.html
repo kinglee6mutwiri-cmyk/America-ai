@@ -1,19 +1,873 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>America AI - Jobs & AI Ethics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>America AI | Jobs, AI Ethics, Privacy & Stories</title>
+ <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
+     crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N83FCJR897"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-N83FCJR897');
+  </script>
+
+  <meta name="description" content="America AI is a professional homepage for USA job seekers, AI ethics, and privacy policy resources with a premium design and strong homepage layout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#081120;
+      --surface:rgba(255,255,255,.08);
+      --surface-2:rgba(255,255,255,.12);
+      --text:#f8fbff;
+      --muted:#d4ddf0;
+      --line:rgba(255,255,255,.14);
+      --navy:#0f2747;
+      --blue:#2563eb;
+      --blue-2:#60a5fa;
+      --red:#d7263d;
+      --gold:#f59e0b;
+      --cyan:#67e8f9;
+      --shadow:0 24px 60px rgba(0,0,0,.35);
+      --shadow-soft:0 12px 28px rgba(0,0,0,.18);
+      --radius:26px;
+      --radius-sm:18px;
+      --max:1240px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:'Manrope', sans-serif;
+      background:#081120;
+      line-height:1.7;
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img,svg{display:block;max-width:100%}
+    ::selection{background:#fff;color:#0f2747}
+
+    .page-bg{
+      position:fixed;
+      inset:0;
+      z-index:-3;
+      background:
+        linear-gradient(rgba(7,17,32,.70), rgba(7,17,32,.82)),
+        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    }
+
+    .page-glow{
+      position:fixed;
+      inset:0;
+      z-index:-2;
+      pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(37,99,235,.22), transparent 24%),
+        radial-gradient(circle at 86% 14%, rgba(245,158,11,.15), transparent 18%),
+        radial-gradient(circle at 70% 72%, rgba(103,232,249,.12), transparent 20%);
+    }
+
+    .container{
+      width:min(var(--max), calc(100% - 2rem));
+      margin-inline:auto;
+    }
+
+    .header{
+      position:relative;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      padding:1rem 0;
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(12px);
+      background:linear-gradient(180deg, rgba(8,17,32,.65), rgba(8,17,32,.28));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.9rem;
+      font-family:'Space Grotesk', sans-serif;
+      font-weight:700;
+      letter-spacing:.03em;
+    }
+
+    .brand-mark{
+      width:52px;height:52px;
+      border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.05));
+      border:1px solid rgba(255,255,255,.16);
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(12px);
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:1rem 1.2rem;
+      flex-wrap:wrap;
+    }
+
+    .nav-links a{
+      color:rgba(248,251,255,.92);
+      font-weight:700;
+      font-size:.96rem;
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-4px;
+      width:0;height:2px;
+      background:#fff;
+      transition:width .3s ease;
+    }
+
+    .nav-links a:hover::after{width:100%}
+
+    .hero{
+      flex:1;
+      display:grid;
+      place-items:center;
+      padding:2rem 0 4rem;
+    }
+
+    .hero-panel{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:32px;
+      background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.06));
+      backdrop-filter:blur(16px);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:2rem;
+      padding:2rem;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.65rem;
+      padding:.55rem .95rem;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.14);
+      text-transform:uppercase;
+      letter-spacing:.13em;
+      font-size:.8rem;
+      font-weight:800;
+      color:#fff;
+    }
+
+    .eyebrow span{
+      width:9px;height:9px;border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 0 6px rgba(245,158,11,.18);
+    }
+
+    h1,h2,h3{
+      font-family:'Space Grotesk', sans-serif;
+      line-height:1.02;
+      letter-spacing:-.03em;
+      margin:0 0 1rem;
+    }
+
+    h1{
+      font-size:clamp(3rem, 6vw, 6rem);
+      max-width:11ch;
+      margin-top:1rem;
+    }
+
+    .lead{
+      font-size:clamp(1.04rem, 1.8vw, 1.18rem);
+      color:var(--muted);
+      max-width:62ch;
+      margin:0;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:1.8rem;
+    }
+
+    .btn{
+      min-height:54px;
+      padding:0 1.2rem;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      font-weight:800;
+      transition:transform .28s ease, box-shadow .28s ease, background .28s ease;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+      box-shadow:0 12px 30px rgba(0,0,0,.2);
+    }
+
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(0,0,0,.25)}
+
+    .btn-secondary{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{transform:translateY(-3px);background:rgba(255,255,255,.14)}
+
+    .hero-side{
+      display:grid;
+      gap:1rem;
+    }
+
+    .mini-card{
+      border:1px solid rgba(255,255,255,.13);
+      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+      border-radius:22px;
+      padding:1.2rem;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .mini-card strong{
+      display:block;
+      font-family:'Space Grotesk', sans-serif;
+      font-size:1.2rem;
+      margin-bottom:.25rem;
+    }
+
+    .mini-card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    main section{padding:5rem 0}
+
+    .section-head{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:2rem;
+      align-items:end;
+      margin-bottom:2rem;
+    }
+
+    .kicker{
+      display:block;
+      margin-bottom:.75rem;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:800;
+      font-size:.78rem;
+      color:var(--cyan);
+    }
+
+    .section-head h2{
+      font-size:clamp(2rem, 4vw, 4rem);
+      max-width:11ch;
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:1.04rem;
+      max-width:68ch;
+    }
+
+    .portal-grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:1rem;
+    }
+
+    .portal{
+      grid-column:span 4;
+      min-height:280px;
+      border-radius:28px;
+      overflow:hidden;
+      position:relative;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:var(--shadow);
+      isolation:isolate;
+      transition:transform .32s ease, box-shadow .32s ease, border-color .32s ease;
+    }
+
+    .portal:hover{
+      transform:translateY(-8px);
+      border-color:rgba(255,255,255,.22);
+      box-shadow:0 26px 60px rgba(0,0,0,.32);
+    }
+
+    .portal::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg, rgba(7,17,32,.08), rgba(7,17,32,.9));
+      z-index:0;
+    }
+
+    .portal.jobs{
+      background:
+        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
+
+    .portal.ethics{
+      background:
+        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
+
+    .portal.privacy{
+      background:
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
+
+    .portal-content{
+      position:absolute;
+      inset:auto 0 0 0;
+      z-index:1;
+      padding:1.4rem;
+    }
+
+    .portal-icon{
+      width:52px;height:52px;border-radius:18px;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.18);
+      backdrop-filter:blur(10px);
+      margin-bottom:1rem;
+    }
+
+    .portal h3{
+      font-size:1.5rem;
+      margin-bottom:.5rem;
+    }
+
+    .portal p{
+      margin:0 0 1rem;
+      color:#e5edf9;
+      max-width:30ch;
+    }
+
+    .portal-link{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      font-weight:800;
+      color:#fff;
+    }
+
+    .about-box{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:2rem;
+      align-items:start;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.05));
+      border-radius:32px;
+      padding:1.6rem;
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(14px);
+    }
+
+    .content-flow{
+      columns:2 300px;
+      column-gap:2rem;
+    }
+
+    .content-flow p{
+      color:var(--muted);
+      margin:0 0 1rem;
+      break-inside:avoid;
+    }
+
+    .quick-links{
+      display:grid;
+      gap:1rem;
+    }
+
+    .quick-link{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+      border-radius:22px;
+      padding:1rem 1.1rem;
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .quick-link:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .quick-icon{
+      width:50px;height:50px;border-radius:16px;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      color:#fff;
+      flex:0 0 auto;
+    }
+
+    .quick-link strong{
+      display:block;
+      font-size:1.02rem;
+    }
+
+    .quick-link span{
+      display:block;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .contact-box{
+      border:1px solid var(--line);
+      border-radius:30px;
+      background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.05));
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(14px);
+      padding:1.5rem;
+      display:grid;
+      grid-template-columns:1fr .9fr;
+      gap:1.4rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .contact-box::before{
+      content:"";
+      position:absolute;
+      width:240px;height:240px;border-radius:50%;
+      right:-70px;top:-80px;
+      background:radial-gradient(circle, rgba(37,99,235,.18), transparent 70%);
+      pointer-events:none;
+    }
+
+    .contact-items{
+      display:grid;
+      gap:1rem;
+      align-content:start;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 1.1rem;
+      border-radius:20px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.08);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .contact-icon{
+      width:54px;height:54px;border-radius:18px;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.16);
+      color:#fff;
+      flex:0 0 auto;
+    }
+
+    footer{
+      padding:2rem 0 3rem;
+      border-top:1px solid rgba(255,255,255,.08);
+      color:var(--muted);
+    }
+
+    .footer-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .78s ease, transform .78s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger > *{
+      opacity:0;
+      transform:translateY(18px);
+      animation:rise .85s ease forwards;
+    }
+
+    .stagger > *:nth-child(1){animation-delay:.08s}
+    .stagger > *:nth-child(2){animation-delay:.18s}
+    .stagger > *:nth-child(3){animation-delay:.28s}
+    .stagger > *:nth-child(4){animation-delay:.38s}
+    .stagger > *:nth-child(5){animation-delay:.48s}
+
+    @keyframes rise{
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media (max-width: 1020px){
+      .hero-grid,
+      .section-head,
+      .about-box,
+      .contact-box{
+        grid-template-columns:1fr;
+      }
+      .portal{grid-column:span 6}
+    }
+
+    @media (max-width: 720px){
+      .nav{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .portal-grid{
+        grid-template-columns:1fr;
+      }
+      .portal{grid-column:span 1}
+      .content-flow{columns:1}
+      .hero-panel{border-radius:24px}
+      .hero-grid{padding:1.2rem}
+      main section{padding:4rem 0}
+      h1{max-width:100%}
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to America AI</h1>
-  <p>Your hub for USA Jobs and AI Ethics</p>
-  
-  <ul>
-    <li><a href="job-seekers-usa.html">USA Job Seekers</a></li>
-    <li><a href="ai-ethics-kenya.html">AI Ethics Kenya</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-  </ul>
+  <div class="page-bg"></div>
+  <div class="page-glow"></div>
+
+  <header class="header" id="top">
+    <div class="container">
+      <nav class="nav">
+        <a href="#top" class="brand" aria-label="America AI homepage">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M9 10.2h6M9 13h6M9 15.8h3.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>AMERICA AI</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#hub">Explore</a>
+          <a href="#about">About</a>
+          <a href="job-seekers-usa.html">Jobs</a>
+          <a href="ai-ethics-kenya.html">AI Ethics</a>
+          <a href="privacy-policy.html">Privacy</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-panel">
+          <div class="hero-grid">
+            <div class="stagger">
+              <div class="eyebrow"><span></span> USA Jobs • AI Ethics • Privacy</div>
+              <h1>Your smart hub for America AI and career guidance.</h1>
+              <p class="lead">
+                Welcome to <strong>America AI</strong> — a polished homepage built to guide visitors through
+                job opportunities in the United States, AI ethics insights, and modern privacy policy resources.
+                This homepage is designed to feel professional, attractive, and easy to navigate.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#hub">Open the Hub</a>
+                <a class="btn btn-secondary" href="job-seekers-usa.html">Find Jobs in USA</a>
+              </div>
+            </div>
+
+            <div class="hero-side reveal">
+              <div class="mini-card">
+                <strong>USA Job Seekers</strong>
+                <p>Explore real job paths, hiring trends, and work opportunities available across America.</p>
+              </div>
+              <div class="mini-card">
+                <strong>AI Ethics Kenya</strong>
+                <p>Read a professional page on responsible AI, fairness, privacy, and human-centered governance.</p>
+              </div>
+              <div class="mini-card">
+                <strong>Privacy Policy</strong>
+                <p>Access a strong privacy-focused page on AI in America with structured, readable guidance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section id="hub">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">Main hub</span>
+            <h2>Explore the key pages in one modern home.</h2>
+          </div>
+          <p>
+            This homepage brings together the most important sections of your website into one clean and premium landing experience.
+            It is structured for easy reading, stronger visual appeal, and clear access to your main pages.
+          </p>
+        </div>
+
+        <div class="portal-grid">
+          <a href="job-seekers-usa.html" class="portal jobs reveal" aria-label="Open USA Job Seekers page">
+            <div class="portal-content">
+              <div class="portal-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M4 8.5h16a1.5 1.5 0 0 1 1.5 1.5v7A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17v-7A1.5 1.5 0 0 1 4 8.5z" stroke="white" stroke-width="1.8"/>
+                  <path d="M10 13h4" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>USA Job Seekers</h3>
+              <p>Professional guidance on finding real jobs, career directions, and work opportunities in the United States.</p>
+              <span class="portal-link">Open page →</span>
+            </div>
+          </a>
+
+          <a href="ai-ethics-kenya.html" class="portal ethics reveal" aria-label="Open AI Ethics Kenya page">
+            <div class="portal-content">
+              <div class="portal-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3>AI Ethics Kenya</h3>
+              <p>A focused page on fairness, transparency, privacy, inclusion, and accountability in artificial intelligence.</p>
+              <span class="portal-link">Open page →</span>
+            </div>
+          </a>
+
+          <a href="privacy-policy.html" class="portal privacy reveal" aria-label="Open Privacy Policy page">
+            <div class="portal-content">
+              <div class="portal-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 4v5c0 4.5-3.2 7.8-7 9-3.8-1.2-7-4.5-7-9V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9.4 12.1l1.7 1.7 3.5-4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3>Privacy Policy</h3>
+              <p>Read a polished privacy policy page focused on AI in America, data trust, and user protection.</p>
+              <span class="portal-link">Open page →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">About homepage</span>
+            <h2>A better welcome page with stronger words and better design.</h2>
+          </div>
+          <p>
+            This homepage replaces the simple plain list with a richer, more attractive landing page.
+            It uses real imagery, stronger message hierarchy, icons, call-to-action buttons, and visually polished sections.
+          </p>
+        </div>
+
+        <div class="about-box reveal">
+          <article class="content-flow">
+            <p>
+              A homepage should do more than just list links. It should introduce the purpose of the website, create trust, and guide visitors toward the most important sections.
+              In this version, the homepage becomes a professional entry point for your broader website ecosystem. Instead of saying only “Welcome to America AI,” it now presents
+              a stronger brand message, a better visual identity, and clearer direction for the visitor.
+            </p>
+            <p>
+              The title is now more intentional. It positions the site as a smart hub for America AI and career guidance. That wording makes the homepage feel more serious,
+              more useful, and more connected to the real content you already created. Visitors can quickly understand that this site is about job opportunities, AI ethics,
+              and privacy-focused information.
+            </p>
+            <p>
+              The background image behind the content gives the homepage a modern American feeling. Combined with the dark overlay and glowing accents, it creates depth and a premium look.
+              The glass-style content panel keeps text readable while preserving the strength of the image behind it. This approach makes the homepage feel more like a professional website
+              than a plain HTML starter page.
+            </p>
+            <p>
+              Each main section is now represented as a visual portal with its own image, icon, title, and supporting text. This helps users choose where to go based on meaning,
+              not just file names. It feels more natural, more modern, and more engaging. At the same time, the design remains clean and responsive for mobile screens.
+            </p>
+            <p>
+              The contact detail at the bottom ensures your email stays visible in a polished way. This gives the site a more complete and credible structure, especially if someone
+              wants to reach you for web design, edits, or content work. Overall, this homepage turns a simple nano-written list into a much stronger web front door.
+            </p>
+          </article>
+
+          <div class="quick-links">
+            <a class="quick-link" href="job-seekers-usa.html">
+              <div class="quick-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M4 8.5h16a1.5 1.5 0 0 1 1.5 1.5v7A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17v-7A1.5 1.5 0 0 1 4 8.5z" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Find Work in the USA</strong>
+                <span>Open the job seekers page and explore available roles.</span>
+              </div>
+            </a>
+
+            <a class="quick-link" href="ai-ethics-kenya.html">
+              <div class="quick-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M8.5 12h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Read on AI Ethics</strong>
+                <span>Visit the ethics page for fairness, privacy, and governance.</span>
+              </div>
+            </a>
+
+            <a class="quick-link" href="privacy-policy.html">
+              <div class="quick-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 4v5c0 4.5-3.2 7.8-7 9-3.8-1.2-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9.4 12.1l1.7 1.7 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Review Privacy Policy</strong>
+                <span>Access your AI privacy page with professional structure.</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker">Contact</span>
+            <h2>Professional contact at the bottom of the homepage.</h2>
+          </div>
+          <p>
+            This footer contact section makes the homepage feel complete, polished, and trustworthy.
+          </p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">Need page design or website help?</h3>
+            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
+              For web design, edits, custom pages, and professional frontend work, use the contact below.
+            </p>
+            <div class="hero-actions" style="margin-top:1.2rem;">
+              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Send Email</a>
+              <a class="btn btn-secondary" href="#top">Back to Top</a>
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Email contact">
+              <div class="contact-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>kinglee6mutwiri@gmail.com</span>
+              </div>
+            </a>
+
+            <div class="contact-item" aria-label="Website sections">
+              <div class="contact-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Main Pages</strong>
+                <span>USA Jobs · AI Ethics · Privacy Policy</span>
+              </div>
+            </div>
+
+            <div class="contact-item" aria-label="Homepage file">
+              <div class="contact-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Homepage file</strong>
+                <span>index.html</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 America AI. A better designed homepage for jobs, AI ethics, and privacy resources.</div>
+      <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
 </body>
 </html>
+ 
