@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucky Dube | Life Story, Legacy, Albums, Songs & Meanings</title>
-  <meta name="description" content="A beautifully designed tribute page about Lucky Dube, covering his life story from birth to death, his musical journey, major albums, songs, and the meanings behind his message-driven music." />
+  <title>Lucky Dube | Full Life Story, Music, Albums & Legacy</title>
+  <meta name="description" content="A richly designed Lucky Dube tribute page with his life story from birth to death, major albums, songs, meanings, legacy, and stronger real-image handling." />
 
   <!-- Google AdSense Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
@@ -60,7 +60,7 @@
     }
 
     a{text-decoration:none;color:inherit}
-    img,svg{display:block;max-width:100%}
+    img{display:block;max-width:100%}
     ::selection{background:var(--dark);color:#fff}
 
     .container{
@@ -73,7 +73,7 @@
       overflow:hidden;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(21,18,15,.78), rgba(91,61,31,.52)),
+        linear-gradient(135deg, rgba(21,18,15,.78), rgba(91,61,31,.55)),
         url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
       border-bottom:1px solid rgba(255,255,255,.14);
     }
@@ -87,6 +87,7 @@
       filter:blur(8px);
       pointer-events:none;
     }
+
     .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
     .site-header::after{width:390px;height:390px;right:-90px;bottom:-170px}
 
@@ -248,8 +249,8 @@
       border-radius:24px;
       overflow:hidden;
       box-shadow:0 18px 40px rgba(0,0,0,.18);
-      backdrop-filter:blur(12px);
-      background:#ffffff18;
+      background:rgba(255,255,255,.10);
+      position:relative;
     }
 
     .hero-photo{height:300px}
@@ -261,10 +262,24 @@
     .hero-mini{height:150px}
 
     .hero-photo img,
-    .hero-mini img{
+    .hero-mini img,
+    .card-photo img{
       width:100%;
       height:100%;
       object-fit:cover;
+      background:#e7dcc8;
+    }
+
+    .fallback-note{
+      position:absolute;
+      inset:auto 12px 12px 12px;
+      background:rgba(21,18,15,.58);
+      color:#fff;
+      padding:.45rem .65rem;
+      border-radius:10px;
+      font-size:.78rem;
+      backdrop-filter:blur(8px);
+      pointer-events:none;
     }
 
     main section{padding:5rem 0}
@@ -453,12 +468,7 @@
       overflow:hidden;
       border-bottom:1px solid var(--line);
       background:#f4ecdf;
-    }
-
-    .card-photo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
+      position:relative;
     }
 
     .card-body{padding:1.2rem}
@@ -512,6 +522,16 @@
     .album p{
       margin:0;
       color:var(--muted);
+    }
+
+    .note{
+      padding:1rem 1.15rem;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #fffaf4, #fff);
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+      margin-top:1rem;
     }
 
     .contact-box{
@@ -581,16 +601,6 @@
       flex-wrap:wrap;
     }
 
-    .note{
-      padding:1rem 1.15rem;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background:linear-gradient(180deg, #fffaf4, #fff);
-      color:var(--muted);
-      box-shadow:var(--shadow-soft);
-      margin-top:1rem;
-    }
-
     .reveal{
       opacity:0;
       transform:translateY(22px);
@@ -641,6 +651,7 @@
       .content-flow{columns:1}
       h1{max-width:100%}
       main section{padding:4rem 0}
+      .hero-mini-wrap{grid-template-columns:1fr 1fr}
     }
   </style>
 </head>
@@ -670,29 +681,41 @@
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <span class="small-heading">Reggae Legend of Africa</span>
-            <h1>Lucky Dube: the life, voice, message, and legacy.</h1>
+            <span class="small-heading">African Reggae Legend</span>
+            <h1>Lucky Dube: life, struggle, songs, and legacy.</h1>
             <p class="lead">
-              This page tells the life story of <strong>Lucky Dube</strong> from his birth to his death, and explores the meaning, themes,
-              and social messages carried through his music. It is designed as a richly decorated tribute page with strong typography,
-              earthy colors, and image-led storytelling.
+              This rebuilt page uses stronger image handling and fallback support while telling the story of <strong>Lucky Philip Dube</strong>
+              from his birth to his death, and exploring the meaning of his music, albums, message, and enduring influence.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#life">Read Life Story</a>
-              <a class="btn btn-secondary" href="#music">Explore His Music</a>
+              <a class="btn btn-primary" href="#life">Read Biography</a>
+              <a class="btn btn-secondary" href="#music">See Albums & Songs</a>
             </div>
           </div>
 
           <div class="hero-side reveal">
             <div class="hero-photo">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Lucky_Dube.jpg" alt="Lucky Dube performing" loading="lazy">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Lucky_Dube.jpg/800px-Lucky_Dube.jpg"
+                alt="Lucky Dube portrait"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1400&q=80';">
+              <div class="fallback-note">Image fallback enabled</div>
             </div>
             <div class="hero-mini-wrap">
               <div class="hero-mini">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Lucky_Dube_2.jpg" alt="Lucky Dube portrait" loading="lazy">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microphone_-_black.svg/512px-Microphone_-_black.svg.png"
+                  alt="Tribute music visual"
+                  loading="lazy"
+                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1000&q=80';">
               </div>
               <div class="hero-mini">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Lucky_Dube_live.jpg" alt="Lucky Dube live concert" loading="lazy">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_South_Africa.svg/800px-Flag_of_South_Africa.svg.png"
+                  alt="South Africa reference"
+                  loading="lazy"
+                  onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1000&q=80';">
               </div>
             </div>
           </div>
@@ -707,11 +730,10 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker gold">Life story</span>
-            <h2>From birth to death: the story of Lucky Dube.</h2>
+            <h2>From the day he was born to the day he died.</h2>
           </div>
           <p>
-            Lucky Dube’s life was a story of struggle, emergence, courage, conviction, and artistic purpose. He was not simply a musician.
-            He became a moral voice, a social witness, and one of the most recognized African reggae artists in the world.
+            Lucky Dube’s story is one of struggle, purpose, artistic courage, and a voice that turned pain into music with lasting social meaning.
           </p>
         </div>
 
@@ -719,75 +741,74 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Lucky Philip Dube was born on <strong>3 August 1964</strong> in Ermelo, in what was then the Eastern Transvaal of South Africa.
-                He was born into a country deeply marked by apartheid, racial division, state control, and injustice. His birth itself happened inside a hard reality:
-                his mother worked as a domestic worker and named him “Lucky” because his birth was considered fortunate under difficult conditions.
-                The name stayed with him, but over time it came to mean more than survival. It came to represent the unlikely rise of a voice that would eventually speak to millions.
+                Lucky Philip Dube was born on <strong>3 August 1964</strong> in Ermelo, South Africa, during one of the hardest periods in the country’s history.
+                He was born into a society shaped by apartheid, racial inequality, restricted opportunity, and deep political tension.
+                His mother named him “Lucky” because his birth was considered a blessing in difficult conditions.
+                That name would later come to feel symbolic, not only because he survived hardship, but because he rose from it with a voice powerful enough to reach the world.
               </p>
               <p>
-                His early life was not wealthy or secure. He grew up seeing struggle, uncertainty, and the emotional weight of social inequality.
-                These realities shaped his inner world long before they shaped his songwriting. Even as a child, the environment around him was full of lessons:
-                power was unequal, race controlled movement and opportunity, and ordinary people carried pain with dignity. These truths later found a home in his lyrics.
+                His early years were not easy. He grew up in poverty and saw the emotional and structural violence of injustice around him.
+                These realities shaped his understanding of human life long before fame entered the picture.
+                He saw what exclusion looked like, what ordinary suffering felt like, and how social systems could wound people quietly and publicly at the same time.
               </p>
               <p>
-                As he grew, Lucky Dube was exposed to music in ways that would define his path. He first became involved in music through Zulu mbaqanga,
-                which was more commercially accepted in South Africa at the time. He began performing while still young and showed that he had a natural ability not only to sing,
-                but to communicate emotion with force. He joined a group called <strong>The Love Brothers</strong>, which helped establish his early artistic journey.
+                Before Lucky Dube became famous for reggae, he first entered music through local South African styles, especially mbaqanga.
+                He was still young when he became serious about performance and started building himself artistically.
+                He later joined <strong>The Love Brothers</strong>, a move that helped introduce him to the recording and performance environment that would shape his future.
               </p>
               <p>
-                His first records were not reggae. In fact, Lucky Dube began in a more local style before gradually discovering that reggae gave him a deeper language for protest,
-                spirituality, identity, and conscience. The shift was critical. Reggae offered not only rhythm but worldview. It gave him a medium through which he could challenge apartheid,
-                question injustice, and speak to human dignity in a broader African and global context.
+                His early releases were not yet the reggae records that would make him internationally known. But even in those early stages, he was learning how to command attention,
+                how to sing with purpose, and how to communicate feeling through music. Over time, he discovered that reggae gave him a deeper and more honest language for the kind of message he wanted to carry.
               </p>
               <p>
-                By the mid-1980s, Lucky Dube had begun moving more decisively toward reggae. This was not only a musical shift but a moral one.
-                Reggae was already associated with struggle, liberation, memory, and resistance. Artists like Bob Marley had shown that music could be political without losing soul.
-                Lucky Dube brought that spirit into South African reality. He took the language of reggae and made it speak directly to local pain, African aspiration, and universal human concern.
+                Reggae changed everything for him. It offered not only a rhythm but a worldview. Through reggae, he found a medium strong enough for protest,
+                clear enough for social criticism, and spiritual enough for moral reflection. He was influenced by the global force of reggae as a liberation language,
+                but he made it speak with a distinctly African and South African voice.
               </p>
               <p>
-                As his career developed, he became increasingly bold. His songs did not hide from difficult themes. He sang about racism, hypocrisy, greed, poverty, division, crime,
-                false friendship, social injustice, faith, and the complicated emotional burdens of ordinary life. This gave his music unusual weight. Even people who did not live in South Africa
-                could feel that he was singing from a place of truth rather than performance alone.
+                By the late 1980s and onward, Lucky Dube had become one of the most important reggae voices in Africa.
+                He sang about racism, division, poverty, injustice, hypocrisy, crime, fake friendship, faith, betrayal, dignity, unity, and human pain.
+                He was not interested in decorative lyrics. His songs carried something weightier: witness. He sang like a man who had watched society closely and refused silence.
               </p>
               <p>
-                Lucky Dube’s success grew across Africa and beyond. He became one of the continent’s biggest reggae artists and built an international audience.
-                What made him unique was that he was not simply copying Jamaican reggae. He was translating its spirit through South African and African experience.
-                He performed with intensity, moved audiences deeply, and created songs that could be sung at once as protest, warning, prayer, memory, and moral conversation.
+                As apartheid weakened and South Africa changed politically, Lucky Dube remained relevant because his music was not limited to one political moment.
+                He sang about larger human realities that continued even after formal political transitions. Corruption, inequality, violence, and emotional suffering still remained,
+                and so his songs still had work to do.
               </p>
               <p>
-                Over the years he released numerous albums and became known for songs that were both catchy and layered with meaning.
-                He could sing simply, but what he said often stayed with people for years. He spoke to the poor, the wounded, the hopeful, and the betrayed.
-                He spoke to those who felt society was losing its conscience.
+                His reputation grew across Africa, Europe, and other parts of the world. He toured internationally, built a strong fan base,
+                and became one of the most recognized African reggae artists ever. Many admired not only his sound but the seriousness of his message.
+                He had the ability to make music that people could dance to and still think deeply about afterward.
               </p>
               <p>
-                His life, however, was not protected by fame. On <strong>18 October 2007</strong>, Lucky Dube was tragically killed in a hijacking in Rosettenville, Johannesburg.
-                His death shocked South Africa, Africa, and reggae listeners across the world. It felt especially painful because so much of his music had already spoken about crime,
-                moral collapse, fear, and the danger of a society drifting from humanity. In death, people heard his songs differently. Some lines sounded prophetic.
+                On <strong>18 October 2007</strong>, Lucky Dube was tragically killed in a hijacking in Rosettenville, Johannesburg.
+                The news shocked South Africa, Africa, and reggae audiences around the world. There was a painful irony in the way he died,
+                because much of his music had already confronted crime, social fear, and the moral erosion of society.
               </p>
               <p>
-                He died at the age of 43, leaving behind children, family, a vast audience, and a body of music that remains alive long after him.
-                His death ended his earthly journey, but not his influence. His voice still circulates in homes, taxis, playlists, radios, public memory, and African moral imagination.
-                He remains one of the most important African reggae artists ever to live.
+                He died at the age of 43. But the end of his life did not end his voice. His music remained, and remains.
+                It still travels across speakers, homes, public memory, and generations of listeners who continue to hear truth in what he sang.
+                Lucky Dube’s life was not only a biography. It was a message carried in human form and sound.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini gold">
-              <strong>Born</strong>
+              <strong>Birth</strong>
               <span>3 August 1964, Ermelo, South Africa.</span>
             </div>
             <div class="mini green">
-              <strong>Known For</strong>
-              <span>Message-driven reggae, anti-apartheid themes, justice, conscience, and African social commentary.</span>
+              <strong>Artistic Identity</strong>
+              <span>African reggae artist known for conscience, protest, unity, and moral seriousness.</span>
             </div>
             <div class="mini red">
-              <strong>Died</strong>
+              <strong>Death</strong>
               <span>18 October 2007, Johannesburg, South Africa, during a hijacking.</span>
             </div>
             <div class="mini brown">
-              <strong>Legacy</strong>
-              <span>One of Africa’s most celebrated reggae artists and one of South Africa’s strongest musical voices of truth.</span>
+              <strong>Enduring Power</strong>
+              <span>His songs remain relevant because the human problems he addressed have not disappeared.</span>
             </div>
           </aside>
         </div>
@@ -799,10 +820,10 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker green">Timeline</span>
-            <h2>The major stages of Lucky Dube’s journey.</h2>
+            <h2>Key stages of his life and rise.</h2>
           </div>
           <p>
-            His life can be understood through a timeline of struggle, growth, transformation, international recognition, and lasting legacy.
+            This timeline highlights the major moments in Lucky Dube’s biography and artistic path.
           </p>
         </div>
 
@@ -810,48 +831,43 @@
           <div class="step">
             <div class="dot">1</div>
             <article>
-              <h3>1964 - Birth</h3>
-              <p>Born Lucky Philip Dube in Ermelo, South Africa, during the apartheid era.</p>
+              <h3>1964 - Birth in Ermelo</h3>
+              <p>Born Lucky Philip Dube in apartheid South Africa, a context that later shaped the content of his songs.</p>
             </article>
           </div>
-
           <div class="step">
             <div class="dot">2</div>
             <article>
-              <h3>Early years - Poverty and social awareness</h3>
-              <p>Grew up in difficult conditions that later shaped the moral seriousness of his music.</p>
+              <h3>Childhood - Hard beginnings</h3>
+              <p>Grew up amid hardship, inequality, and social pressure, forming a deep awareness of injustice.</p>
             </article>
           </div>
-
           <div class="step">
             <div class="dot">3</div>
             <article>
-              <h3>Early music - Mbaqanga beginnings</h3>
-              <p>Started recording in local South African styles before moving toward reggae.</p>
+              <h3>Early music - Mbaqanga phase</h3>
+              <p>Started his music career in local South African musical forms before moving into reggae.</p>
             </article>
           </div>
-
           <div class="step">
             <div class="dot">4</div>
             <article>
-              <h3>1980s onward - Reggae identity</h3>
-              <p>Found his strongest artistic voice in reggae and began addressing oppression, race, and justice more directly.</p>
+              <h3>1980s - Reggae transformation</h3>
+              <p>Discovered reggae as the genre that best matched his social and spiritual message.</p>
             </article>
           </div>
-
           <div class="step">
             <div class="dot">5</div>
             <article>
-              <h3>International rise</h3>
-              <p>Became one of the best-known African reggae artists in the world, touring widely and gaining global respect.</p>
+              <h3>International recognition</h3>
+              <p>Became one of the most famous African reggae artists worldwide, known for message-driven songs.</p>
             </article>
           </div>
-
           <div class="step">
             <div class="dot">6</div>
             <article>
-              <h3>2007 - Tragic death</h3>
-              <p>Killed in a hijacking in Johannesburg, leaving behind a legacy that continues through his music.</p>
+              <h3>2007 - Tragic end</h3>
+              <p>Killed in Johannesburg, leaving behind one of the strongest musical legacies in African reggae history.</p>
             </article>
           </div>
         </div>
@@ -862,55 +878,69 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker red">Music and meanings</span>
-            <h2>His songs, albums, and the messages inside them.</h2>
+            <span class="kicker red">Music and message</span>
+            <h2>His music, his albums, and the meanings people hear in them.</h2>
           </div>
           <p>
-            Lucky Dube’s songs were not empty entertainment. They carried warnings, hope, criticism, pain, moral reflection, and social commentary.
-            Rather than claim secret meanings as facts, this page focuses on the widely understood themes and messages in his work.
+            Lucky Dube’s music carried themes of race, injustice, memory, suffering, spiritual concern, dignity, betrayal, social collapse, and unity.
+            Instead of inventing unsupported “hidden messages,” this page focuses on the message-driven meaning listeners widely recognize in his songs.
           </p>
         </div>
 
         <div class="cards">
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Lucky_Dube_-_Prisoner.jpg" alt="Prisoner album cover" loading="lazy">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/0/0a/Lucky_Dube_-_Prisoner.jpg"
+                alt="Lucky Dube Prisoner album cover"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=80';">
+              <div class="fallback-note">Album image fallback enabled</div>
             </div>
             <div class="card-body">
               <span class="tag gold">Prisoner</span>
-              <h3>Freedom, captivity, and society</h3>
-              <p>The title itself suggests a deep awareness of social, political, and personal captivity in an unjust world.</p>
+              <h3>Captivity and freedom</h3>
+              <p>The title and message reflect not only literal confinement, but social and emotional imprisonment under unjust conditions.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://upload.wikimedia.org/wikipedia/en/7/7d/Lucky_Dube_-_Victims.jpg" alt="Victims album cover" loading="lazy">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/7/7d/Lucky_Dube_-_Victims.jpg"
+                alt="Lucky Dube Victims album cover"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80';">
+              <div class="fallback-note">Album image fallback enabled</div>
             </div>
             <div class="card-body">
               <span class="tag green">Victims</span>
-              <h3>Suffering and social pain</h3>
-              <p>This era of his music strongly emphasized how ordinary people often suffer while larger systems remain unjust.</p>
+              <h3>Human suffering</h3>
+              <p>One of his strongest social themes: ordinary people often carry pain created by larger systems and failures around them.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://upload.wikimedia.org/wikipedia/en/5/57/Lucky_Dube_-_Slave.jpg" alt="Slave album cover" loading="lazy">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/5/57/Lucky_Dube_-_Slave.jpg"
+                alt="Lucky Dube Slave album cover"
+                loading="lazy"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80';">
+              <div class="fallback-note">Album image fallback enabled</div>
             </div>
             <div class="card-body">
               <span class="tag red">Slave</span>
-              <h3>Bondage, exploitation, and moral warning</h3>
-              <p>His use of imagery around slavery often reached beyond history and into modern social dependence and human control.</p>
+              <h3>Bondage in many forms</h3>
+              <p>This work is often heard as a warning about visible and invisible forms of control, dependence, and exploitation.</p>
             </div>
           </article>
         </div>
 
         <div class="note reveal">
-          <strong style="color:var(--brown);font-family:'Cinzel',serif;">About “hidden messages”:</strong>
-          Lucky Dube’s songs are best understood through their themes, social warnings, emotional depth, and political conscience.
-          Rather than invent unsupported hidden meanings, this page interprets the messages people commonly hear in his lyrics:
-          justice, human dignity, betrayal, racism, hypocrisy, spiritual struggle, and the need for social awakening.
+          <strong style="color:var(--brown);font-family:'Cinzel',serif;">Important note on song meanings:</strong>
+          Lucky Dube’s music is rich with symbolism and social warning, but responsible interpretation matters.
+          So this page explains the broad meanings listeners commonly hear in his songs rather than claiming secret messages as absolute fact.
         </div>
       </div>
     </section>
@@ -919,71 +949,29 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker brown">Albums and songs</span>
-            <h2>Important albums and what they represent.</h2>
+            <span class="kicker brown">Major albums</span>
+            <h2>Albums that shaped his legacy.</h2>
           </div>
           <p>
-            The list below includes major Lucky Dube albums and concise interpretations of their broad meaning in his artistic journey.
+            Below are major Lucky Dube albums with short explanations of the kind of message or artistic weight they carried.
           </p>
         </div>
 
         <div class="album-list">
-          <div class="album reveal">
-            <h3>Rastas Never Die (1984)</h3>
-            <p>An early reggae-era statement of identity, resilience, and spiritual-cultural survival.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Think About the Children (1985)</h3>
-            <p>A moral call to responsibility, reminding society that its failures are inherited by the next generation.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Slave (1987)</h3>
-            <p>A meditation on control, oppression, dependency, and the visible and invisible chains people carry.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Together as One (1988)</h3>
-            <p>A plea for unity in a divided society and a direct challenge to racial and social separation.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Prisoner (1989)</h3>
-            <p>One of his landmark works, often associated with confinement, injustice, and the desire for liberation.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Captured Live (1990)</h3>
-            <p>Showcased the force of his stage presence and the public power of his message-driven performances.</p>
-          </div>
-          <div class="album reveal">
-            <h3>House of Exile (1991)</h3>
-            <p>Explores alienation, displacement, and the feeling of being spiritually or socially out of place in one’s own world.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Victims (1993)</h3>
-            <p>A profound commentary on suffering, human loss, and the social structures that produce victims.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Trinity (1995)</h3>
-            <p>Suggests depth of reflection on faith, morality, and the complex relationship between spirit and society.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Taxman (1997)</h3>
-            <p>Deals with pressure, state systems, inequality, and the burdens placed on ordinary people.</p>
-          </div>
-          <div class="album reveal">
-            <h3>The Way It Is (1999)</h3>
-            <p>A realistic portrait of social truth, refusing sugar-coated explanations of life’s injustices.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Soul Taker (2001)</h3>
-            <p>Touches on loss, danger, and the forces that consume innocence, freedom, or peace.</p>
-          </div>
-          <div class="album reveal">
-            <h3>The Other Side (2003)</h3>
-            <p>Suggests reflection, contrast, and the need to look beyond what is visible on the surface of social life.</p>
-          </div>
-          <div class="album reveal">
-            <h3>Respect (2006)</h3>
-            <p>One of his later statements, centered on dignity, human value, and the deep need for mutual recognition.</p>
-          </div>
+          <div class="album reveal"><h3>Rastas Never Die (1984)</h3><p>An early declaration of resilience, identity, and spiritual-cultural persistence.</p></div>
+          <div class="album reveal"><h3>Think About the Children (1985)</h3><p>A warning to adults and society that the next generation inherits the consequences of present failures.</p></div>
+          <div class="album reveal"><h3>Slave (1987)</h3><p>A broader reflection on oppression, control, weakness, and bondage in historical and modern forms.</p></div>
+          <div class="album reveal"><h3>Together as One (1988)</h3><p>A call for unity across race and separation, especially meaningful in divided South Africa.</p></div>
+          <div class="album reveal"><h3>Prisoner (1989)</h3><p>One of his defining works, strongly associated with captivity, injustice, and the longing for freedom.</p></div>
+          <div class="album reveal"><h3>Captured Live (1990)</h3><p>A record of his live force and how his message connected with crowds in real performance space.</p></div>
+          <div class="album reveal"><h3>House of Exile (1991)</h3><p>Suggests alienation, displacement, and the emotional cost of living inside unjust realities.</p></div>
+          <div class="album reveal"><h3>Victims (1993)</h3><p>A socially powerful meditation on suffering, vulnerability, and the pain carried by ordinary people.</p></div>
+          <div class="album reveal"><h3>Trinity (1995)</h3><p>A more reflective period touching on moral and spiritual layers of life and society.</p></div>
+          <div class="album reveal"><h3>Taxman (1997)</h3><p>A sharp look at burdens, systems, and the pressure imposed on working people.</p></div>
+          <div class="album reveal"><h3>The Way It Is (1999)</h3><p>An unsentimental look at reality, refusing false comfort in the face of social truth.</p></div>
+          <div class="album reveal"><h3>Soul Taker (2001)</h3><p>A darker emotional register dealing with danger, damage, and the forces that consume peace or innocence.</p></div>
+          <div class="album reveal"><h3>The Other Side (2003)</h3><p>Invites listeners to see deeper than appearances and question the visible surface of life.</p></div>
+          <div class="album reveal"><h3>Respect (2006)</h3><p>A later-career affirmation of dignity, worth, human value, and moral recognition.</p></div>
         </div>
       </div>
     </section>
@@ -992,48 +980,47 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">Famous songs and themes</span>
-            <h2>Selected songs and how listeners understand their messages.</h2>
+            <span class="kicker gold">Song meanings</span>
+            <h2>Selected songs and their message.</h2>
           </div>
           <p>
-            These summaries focus on recurring public interpretations of Lucky Dube’s songs: not secret claims, but the social, emotional, and moral meanings many people hear in them.
+            These short interpretations summarize the themes many listeners recognize in some of Lucky Dube’s most important songs.
           </p>
         </div>
 
         <div class="content-layout">
           <article class="paper reveal">
             <div class="content-flow">
-              <p><strong>Prisoner</strong> often feels like a song about more than literal prison. It can be heard as a meditation on being trapped by systems, fear, power, or social injustice.</p>
-              <p><strong>Slave</strong> is widely understood as a warning against bondage in many forms: political, psychological, economic, and moral.</p>
-              <p><strong>Together as One</strong> speaks strongly against division and appeals for human unity in a society split by race and prejudice.</p>
-              <p><strong>Different Colours / One People</strong> is one of his most recognizable messages about shared humanity beyond race.</p>
-              <p><strong>Victims</strong> is deeply moving because it focuses on the suffering produced by larger systems and failures beyond the control of ordinary people.</p>
-              <p><strong>House of Exile</strong> expresses alienation and the painful feeling of not truly belonging within a hostile social environment.</p>
-              <p><strong>Remember Me</strong> carries emotional depth around memory, mortality, and the desire not to disappear without meaning.</p>
-              <p><strong>It’s Not Easy</strong> is often heard as an honest reflection on life’s hardship, emotional strain, and social difficulty.</p>
-              <p><strong>Taxman</strong> critiques systems of pressure and the burdens placed on the working person.</p>
-              <p><strong>Respect</strong> emphasizes dignity and the basic human need to be treated with value.</p>
-              <p><strong>Truth in the World</strong> reflects on moral confusion and the difficulty of finding honesty in a broken society.</p>
-              <p><strong>Crime and Corruption</strong> directly addresses social decay and public wrongdoing.</p>
-              <p><strong>War and Crime</strong> carries warning, social critique, and grief over violence and insecurity.</p>
-              <p><strong>Reggae Strong</strong> affirms identity, musical conviction, and the strength of reggae as a moral voice.</p>
-              <p><strong>Think About the Children</strong> reminds listeners that adult choices shape the future inherited by younger generations.</p>
-              <p><strong>The Other Side</strong> can be heard as an invitation to look deeper, beyond appearances, into harder truths.</p>
+              <p><strong>Prisoner</strong> speaks to the experience of being trapped — politically, socially, or emotionally — inside conditions not freely chosen.</p>
+              <p><strong>Slave</strong> is often heard as a critique of systems and behaviors that reduce human beings to controlled or dependent lives.</p>
+              <p><strong>Together as One</strong> rejects division and pleads for a humanity stronger than racial separation.</p>
+              <p><strong>Different Colours / One People</strong> insists on shared human identity beyond the categories society uses to divide people.</p>
+              <p><strong>Victims</strong> mourns suffering and points toward the tragic reality that innocent people often pay for the crimes of larger systems.</p>
+              <p><strong>House of Exile</strong> evokes emotional homelessness, spiritual displacement, and alienation in an unjust world.</p>
+              <p><strong>Remember Me</strong> touches on mortality, memory, and the deep human wish not to disappear without meaning.</p>
+              <p><strong>It’s Not Easy</strong> tells the truth about hardship and emotional strain without pretending life is simple.</p>
+              <p><strong>Taxman</strong> is a social critique of how institutions and burdens weigh down ordinary people.</p>
+              <p><strong>Respect</strong> centers the basic need for dignity and recognition among human beings.</p>
+              <p><strong>Truth in the World</strong> reflects on dishonesty, confusion, and moral uncertainty in public life.</p>
+              <p><strong>Crime and Corruption</strong> directly confronts decay in social and political systems.</p>
+              <p><strong>War and Crime</strong> carries warning and grief about violence, insecurity, and moral breakdown.</p>
+              <p><strong>Think About the Children</strong> reminds society that its selfishness and failures are inherited by the young.</p>
+              <p><strong>Reggae Strong</strong> affirms the power of reggae as a voice of truth and resistance.</p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini green">
               <strong>Main themes</strong>
-              <span>Justice, race, freedom, suffering, memory, unity, moral collapse, dignity, and hope.</span>
+              <span>Freedom, unity, injustice, racism, betrayal, suffering, memory, conscience, and dignity.</span>
             </div>
             <div class="mini gold">
-              <strong>Why the songs endure</strong>
-              <span>They remain relevant because the problems he sang about did not disappear when he died.</span>
+              <strong>Why people still listen</strong>
+              <span>Because the human and social truths he sang about are still recognizable today.</span>
             </div>
             <div class="mini red">
-              <strong>Emotional force</strong>
-              <span>His music combined warning and compassion, criticism and humanity, protest and spiritual seriousness.</span>
+              <strong>Moral power</strong>
+              <span>His songs worked as both music and warning, both rhythm and reflection.</span>
             </div>
           </aside>
         </div>
@@ -1045,10 +1032,10 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker red">Legacy</span>
-            <h2>Why Lucky Dube still matters today.</h2>
+            <h2>Why Lucky Dube remains unforgettable.</h2>
           </div>
           <p>
-            Some artists remain popular. Others become necessary. Lucky Dube belongs to the second group because his music continues to speak wherever injustice, fear, or longing for dignity remains.
+            Lucky Dube remains one of Africa’s greatest reggae voices because his music did not depend on fashion. It depended on truth.
           </p>
         </div>
 
@@ -1056,54 +1043,56 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Lucky Dube’s legacy lives because he was more than a singer with a strong voice. He was a witness. He listened to his society and then gave it back to itself in song.
-                He turned pain into clarity and rhythm into conscience. That is one reason his work still feels alive.
+                Lucky Dube’s legacy survives because he spoke to realities that remain unresolved. His music did not become irrelevant when one political era ended.
+                He addressed deeper human questions: What is justice? What is dignity? Why do people suffer? Why do societies betray their own values?
+                Why do power, race, greed, and fear continue to shape ordinary lives?
               </p>
               <p>
-                Across Africa, he remains an artist of memory and warning. Younger generations who did not live through the hardest years of apartheid still find truth in his music.
-                His songs remain relevant in conversations about race, corruption, poverty, crime, social inequality, and the search for human respect.
+                He helped establish African reggae as a voice with world-level seriousness. He showed that African musicians could carry global moral conversations
+                without abandoning local reality. His songs remain part protest, part prayer, part witness, and part warning.
               </p>
               <p>
-                In death, he became a symbol as well as an artist. His tragic killing intensified the emotional power of his message because he had already spent years naming the dangers of moral collapse.
-                Yet his legacy is not only tragic. It is also triumphant. His music survived him. His voice continues to move people, educate listeners, and preserve a moral seriousness often missing in public culture.
+                Even his death intensified his legacy. It felt tragic, but it also caused people to revisit his songs with fresh pain and recognition.
+                In many of his lyrics, listeners heard the same society that later took his life. That made the music feel even more piercing.
               </p>
               <p>
-                Lucky Dube remains one of the greatest African reggae artists of all time. His life was not long enough, but it was large enough to matter.
+                Today, Lucky Dube remains a symbol of artistic courage. He sang what mattered, and he sang it clearly.
+                That is why he is still remembered, still played, and still needed.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini brown">
-              <strong>African icon</strong>
-              <span>He helped show that Africa could produce world-class reggae with its own political and moral depth.</span>
+              <strong>African greatness</strong>
+              <span>He remains one of the strongest and most respected African reggae artists in music history.</span>
             </div>
-            <div class="mini green">
-              <strong>Enduring relevance</strong>
-              <span>His music still speaks to inequality, conscience, and the human need for justice and dignity.</span>
+            <div class="mini gold">
+              <strong>Lasting relevance</strong>
+              <span>His work continues to speak to inequality, social fear, conscience, and human dignity.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="closing">
       <div class="container">
         <div class="section-head reveal">
           <div>
             <span class="kicker gold">Closing tribute</span>
-            <h2>A voice that still sings through memory.</h2>
+            <h2>A voice that still speaks through song.</h2>
           </div>
           <p>
-            This page honors Lucky Dube through biography, context, and musical interpretation in a respectful and visually rich format.
+            This page honors Lucky Dube with biography, message, context, and musical interpretation in a more reliable image-ready format.
           </p>
         </div>
 
         <div class="contact-box reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">Lucky Dube still speaks.</h3>
+            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">Lucky Dube still lives in memory and message.</h3>
             <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              Even after his death, his songs continue to challenge injustice, comfort listeners, and remind the world that music can carry truth with power.
+              His songs remain a place where rhythm meets conscience, and where art still demands that society look at itself honestly.
             </p>
             <div class="hero-actions" style="margin-top:1.2rem;">
               <a class="btn btn-primary" href="index.html">Back Home</a>
@@ -1134,8 +1123,8 @@
                 </svg>
               </div>
               <div>
-                <strong>Page purpose</strong>
-                <span>A long-form tribute biography and music legacy page.</span>
+                <strong>Page focus</strong>
+                <span>Life story, albums, messages, and cultural legacy.</span>
               </div>
             </div>
 
@@ -1148,10 +1137,19 @@
               </div>
               <div>
                 <strong>Navigation</strong>
-                <span>Use the menu above to revisit life story, timeline, albums, and legacy.</span>
+                <span>Use the top menu to revisit biography, timeline, music, and legacy.</span>
               </div>
             </div>
           </div>
+        </div>
+
+        <div class="note reveal">
+          If you want, the strongest way to make the images work perfectly is this:
+          save 3 Lucky Dube images inside your folder, for example:
+          <strong>lucky1.jpg</strong>, <strong>lucky2.jpg</strong>, <strong>lucky3.jpg</strong>.
+          Then I can rebuild this same page again using local images like:
+          <code>src="lucky1.jpg"</code>, <code>src="lucky2.jpg"</code>, <code>src="lucky3.jpg"</code>.
+          That will open more reliably than depending on external links.
         </div>
       </div>
     </section>
@@ -1160,7 +1158,7 @@
   <footer>
     <div class="container footer-row">
       <div>© 2026 America AI. Tribute page honoring Lucky Dube’s life, message, and musical legacy.</div>
-      <div>Designed as a respectful long-form biography and music interpretation page.</div>
+      <div>Built with improved image fallback support.</div>
     </div>
   </footer>
 
