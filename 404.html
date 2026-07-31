@@ -1,0 +1,922 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | Page Not Found - America AI</title>
+  <meta name="description" content="The page you are looking for could not be found. Return to the America AI homepage or search the site." />
+
+  <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0DVD5VSFYW');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f7fbff;
+      --paper:#ffffff;
+      --paper-soft:#eef5ff;
+      --text:#12233f;
+      --muted:#596980;
+      --line:#d8e3f2;
+      --navy:#0f2747;
+      --blue:#2457ff;
+      --sky:#3b82f6;
+      --gold:#d79a1e;
+      --gold-soft:#fff2cf;
+      --green:#15803d;
+      --green-soft:#e8fff0;
+      --pink:#db2777;
+      --red:#d62839;
+      --shadow:0 24px 60px rgba(15,39,71,.12);
+      --shadow-soft:0 10px 28px rgba(18,35,63,.08);
+      --radius:28px;
+      --max:1240px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope', sans-serif;
+      color:var(--text);
+      line-height:1.8;
+      background:
+        radial-gradient(circle at top left, rgba(36,87,255,.10), transparent 24%),
+        radial-gradient(circle at top right, rgba(214,40,57,.08), transparent 20%),
+        linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img,svg{display:block;max-width:100%}
+    ::selection{background:var(--navy);color:#fff}
+
+    .container{
+      width:min(var(--max), calc(100% - 2rem));
+      margin-inline:auto;
+    }
+
+    .site-header{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      min-height:100vh;
+      display:flex;
+      align-items:stretch;
+      background:
+        linear-gradient(135deg, rgba(15,39,71,.84), rgba(36,87,255,.46)),
+        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .site-header::before,
+    .site-header::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
+      pointer-events:none;
+      filter:blur(8px);
+    }
+    .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
+    .site-header::after{width:380px;height:380px;right:-90px;bottom:-170px}
+
+    .shell{
+      width:100%;
+      display:flex;
+      flex-direction:column;
+      position:relative;
+      z-index:2;
+    }
+
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 0;
+      backdrop-filter:blur(12px);
+      background:linear-gradient(180deg, rgba(15,39,71,.42), rgba(15,39,71,.10));
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.9rem;
+      font-family:'Sora', sans-serif;
+      font-weight:800;
+      letter-spacing:.02em;
+    }
+
+    .brand-mark{
+      width:52px;height:52px;border-radius:18px;
+      display:grid;place-items:center;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.20);
+      box-shadow:0 12px 30px rgba(0,0,0,.16);
+      backdrop-filter:blur(12px);
+    }
+
+    .nav-links{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:1rem 1.1rem;
+    }
+
+    .nav-links a{
+      color:rgba(255,255,255,.94);
+      font-weight:700;
+      font-size:.95rem;
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-4px;
+      width:0;height:2px;background:#fff;
+      transition:width .3s ease;
+    }
+
+    .nav-links a:hover::after{width:100%}
+
+    .hero{
+      flex:1;
+      display:grid;
+      align-items:center;
+      padding:3rem 0 4rem;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.02fr .98fr;
+      gap:2rem;
+      align-items:center;
+    }
+
+    .small-heading{
+      display:inline-block;
+      background:linear-gradient(90deg, rgba(255,209,102,.18), rgba(255,255,255,.10));
+      color:#ffd166;
+      border:1px solid rgba(255,209,102,.25);
+      padding:.5rem .9rem;
+      border-radius:999px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.74rem;
+      margin-bottom:1rem;
+    }
+
+    h1,h2,h3{
+      font-family:'Sora', sans-serif;
+      line-height:1.02;
+      letter-spacing:-.03em;
+      margin:0 0 1rem;
+    }
+
+    .error-number{
+      font-size:clamp(5rem, 14vw, 10rem);
+      color:#fff;
+      opacity:.92;
+      margin-bottom:.5rem;
+      text-shadow:0 12px 40px rgba(0,0,0,.18);
+    }
+
+    h1{
+      font-size:clamp(2.6rem, 5vw, 5rem);
+      max-width:10ch;
+    }
+
+    .lead{
+      margin:0;
+      max-width:62ch;
+      color:rgba(255,255,255,.93);
+      font-size:clamp(1.02rem, 1.8vw, 1.16rem);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:1.8rem;
+    }
+
+    .btn{
+      min-height:54px;
+      padding:0 1.2rem;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      font-weight:800;
+      transition:transform .28s ease, box-shadow .28s ease, background .28s ease;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 38px rgba(0,0,0,.22);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.22);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,.18);
+    }
+
+    .search-card{
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:28px;
+      overflow:hidden;
+      background:linear-gradient(180deg, rgba(255,255,255,.14), rgba(255,255,255,.08));
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      backdrop-filter:blur(14px);
+      padding:1.25rem;
+    }
+
+    .search-card h3{
+      color:#fff;
+      font-size:1.4rem;
+      margin-bottom:.5rem;
+    }
+
+    .search-card p{
+      margin:0 0 1rem;
+      color:rgba(255,255,255,.88);
+    }
+
+    .search-box{
+      display:flex;
+      gap:.8rem;
+      flex-wrap:wrap;
+    }
+
+    .search-box input{
+      flex:1 1 280px;
+      min-height:56px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.96);
+      color:var(--text);
+      padding:0 1rem;
+      outline:none;
+      font:inherit;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.4);
+    }
+
+    .search-box button{
+      min-height:56px;
+      padding:0 1.1rem;
+      border:none;
+      border-radius:16px;
+      background:linear-gradient(135deg, #ffd166, #ffbf47);
+      color:#4a3200;
+      font:inherit;
+      font-weight:800;
+      cursor:pointer;
+      transition:transform .28s ease, box-shadow .28s ease;
+      box-shadow:0 10px 24px rgba(255,191,71,.22);
+    }
+
+    .search-box button:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(255,191,71,.28);
+    }
+
+    .quick-links{
+      margin-top:1rem;
+      display:flex;
+      flex-wrap:wrap;
+      gap:.8rem;
+    }
+
+    .quick-links a{
+      display:inline-flex;
+      padding:.7rem .95rem;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.18);
+      color:#fff;
+      font-weight:700;
+      font-size:.92rem;
+      transition:transform .28s ease, background .28s ease;
+    }
+
+    .quick-links a:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,.18);
+    }
+
+    section{padding:5rem 0}
+
+    .section-head{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:2rem;
+      align-items:end;
+      margin-bottom:2rem;
+    }
+
+    .kicker{
+      display:block;
+      margin-bottom:.75rem;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:800;
+      font-size:.78rem;
+    }
+
+    .kicker.blue{color:var(--blue)}
+    .kicker.green{color:var(--green)}
+    .kicker.gold{color:var(--gold)}
+    .kicker.red{color:var(--red)}
+
+    .section-head h2{
+      font-size:clamp(2rem, 4vw, 4rem);
+      max-width:12ch;
+      color:var(--text);
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:1.04rem;
+      max-width:68ch;
+    }
+
+    .content-layout{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:2rem;
+      align-items:start;
+    }
+
+    .paper{
+      background:linear-gradient(180deg, #ffffff, #fafbff);
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow-soft);
+      padding:1.6rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .paper::before{
+      content:"";
+      position:absolute;
+      width:220px;height:220px;border-radius:50%;
+      right:-70px;top:-70px;
+      background:radial-gradient(circle, rgba(36,87,255,.08), transparent 70%);
+      pointer-events:none;
+    }
+
+    .content-flow{
+      columns:2 320px;
+      column-gap:2rem;
+    }
+
+    .content-flow p{
+      margin:0 0 1.15rem;
+      color:var(--muted);
+      break-inside:avoid;
+    }
+
+    .sidebar{
+      display:grid;
+      gap:1rem;
+    }
+
+    .mini{
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:1.15rem 1.2rem;
+      box-shadow:var(--shadow-soft);
+      background:#fff;
+    }
+
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
+    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
+
+    .mini strong{
+      display:block;
+      font-family:'Sora', sans-serif;
+      font-size:1.2rem;
+      margin-bottom:.3rem;
+    }
+
+    .mini.blue strong{color:var(--blue)}
+    .mini.green strong{color:var(--green)}
+    .mini.gold strong{color:#a56b00}
+    .mini span{color:var(--muted)}
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:1rem;
+    }
+
+    .card{
+      grid-column:span 4;
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+      transition:transform .3s ease, box-shadow .3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:var(--shadow);
+    }
+
+    .card-photo{
+      height:220px;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+      background:#eaf2ff;
+    }
+
+    .card-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .card-body{padding:1.2rem}
+
+    .tag{
+      display:inline-flex;
+      margin-bottom:.8rem;
+      padding:.35rem .72rem;
+      border-radius:999px;
+      font-size:.78rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      background:var(--gold-soft);
+      color:#8a5b00;
+    }
+
+    .card h3{
+      font-size:1.2rem;
+      margin-bottom:.5rem;
+      color:var(--text);
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .contact-box{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #ffffff, #f8fbff);
+      border-radius:30px;
+      padding:1.5rem;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr .95fr;
+      gap:1.4rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .contact-box::before{
+      content:"";
+      position:absolute;
+      width:240px;height:240px;border-radius:50%;
+      right:-60px;top:-70px;
+      background:radial-gradient(circle, rgba(36,87,255,.12), transparent 70%);
+    }
+
+    .contact-items{
+      display:grid;
+      gap:1rem;
+      align-content:start;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 1.1rem;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .contact-item:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
+    }
+
+    .contact-icon{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, #e6efff, #fff);
+      color:var(--blue);
+      flex:0 0 auto;
+    }
+
+    footer{
+      padding:2rem 0 3rem;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .78s ease, transform .78s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger > *{
+      opacity:0;
+      transform:translateY(18px);
+      animation:rise .85s ease forwards;
+    }
+
+    .stagger > *:nth-child(1){animation-delay:.08s}
+    .stagger > *:nth-child(2){animation-delay:.18s}
+    .stagger > *:nth-child(3){animation-delay:.28s}
+    .stagger > *:nth-child(4){animation-delay:.38s}
+    .stagger > *:nth-child(5){animation-delay:.48s}
+
+    @keyframes rise{
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media (max-width: 1020px){
+      .hero-grid,
+      .section-head,
+      .content-layout,
+      .contact-box{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 6}
+    }
+
+    @media (max-width: 720px){
+      .nav{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .cards{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 1}
+      .content-flow{columns:1}
+      .hero-mini-wrap{grid-template-columns:1fr 1fr}
+      h1{max-width:100%}
+      section{padding:4rem 0}
+      .search-box{flex-direction:column}
+      .search-box button{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <div class="container">
+        <nav class="nav">
+          <a class="brand" href="index.html" aria-label="America AI home">
+            <span class="brand-mark" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>AMERICA AI</span>
+          </a>
+
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="job-seekers-usa.html">Jobs</a>
+            <a href="ai-ethics-kenya.html">AI Ethics</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="stagger">
+              <span class="small-heading">Error Page</span>
+              <div class="error-number">404</div>
+              <h1>Page not found, but you are not lost.</h1>
+              <p class="lead">
+                The page you were looking for could not be found. It may have been moved, renamed, deleted, or the link may have been typed incorrectly.
+                The good news is that you can still return home, search the site, or jump directly to important pages.
+              </p>
+
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="index.html">Back to Home</a>
+                <a class="btn btn-secondary" href="contact.html">Contact Support</a>
+              </div>
+
+              <div class="quick-links" aria-label="Quick links">
+                <a href="about.html">About</a>
+                <a href="job-seekers-usa.html">Job Seekers</a>
+                <a href="ai-ethics-kenya.html">AI Ethics Kenya</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </div>
+            </div>
+
+            <aside class="search-card reveal" aria-labelledby="search-title">
+              <h3 id="search-title">Search the site</h3>
+              <p>If you remember a page name or topic, use the search box below to filter the quick links on this page.</p>
+
+              <div class="search-box">
+                <input type="text" id="siteSearch" placeholder="Search for jobs, privacy, about, contact..." aria-label="Search site topics">
+                <button type="button" id="searchBtn">Search</button>
+              </div>
+
+              <div class="quick-links" id="searchResults" style="margin-top:1rem;">
+                <a href="index.html" data-keywords="home homepage america ai">Home Page</a>
+                <a href="about.html" data-keywords="about mission vision america ai">About Page</a>
+                <a href="job-seekers-usa.html" data-keywords="jobs kenya usa job seekers work remote side hustle">Job Seekers</a>
+                <a href="ai-ethics-kenya.html" data-keywords="ai ethics kenya jobs technology future">AI Ethics Kenya</a>
+                <a href="privacy-policy.html" data-keywords="privacy data cookies analytics">Privacy Policy</a>
+                <a href="terms.html" data-keywords="terms conditions legal rules">Terms</a>
+                <a href="contact.html" data-keywords="contact whatsapp email support">Contact</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker red">Friendly message</span>
+            <h2>This page could not be found.</h2>
+          </div>
+          <p>
+            A 404 page should feel helpful, not frustrating. Instead of leaving visitors in a dead end, it should guide them back into the website clearly and confidently.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                When a user lands on a 404 page, it usually means something interrupted the expected path. Maybe a link was typed incorrectly. Maybe a page was renamed.
+                Maybe a bookmark points to an old file. Maybe a page was removed while the rest of the website continued to grow. Whatever the reason,
+                a well-designed “Page Not Found” screen should reduce confusion and help the visitor recover quickly.
+              </p>
+              <p>
+                That is why this page uses a friendly tone instead of a cold error message. Visitors should not feel punished for encountering a missing link.
+                They should feel guided. Good 404 pages protect trust because they prove that even mistakes have been designed with care.
+              </p>
+              <p>
+                America AI uses this space to do more than show an error number. It gives a clear explanation, offers a button back to the homepage,
+                includes a search box, and provides quick links to key pages like About, Job Seekers, AI Ethics Kenya, Privacy Policy, Terms, and Contact.
+                This makes the error page useful rather than empty.
+              </p>
+              <p>
+                A strong 404 page is also part of professional presentation. It shows that the website is complete enough to think about the visitor experience even when something goes wrong.
+                That extra level of attention often makes a platform feel more trustworthy and more polished overall.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini red">
+              <strong>What happened?</strong>
+              <span>The requested page may have moved, been renamed, been deleted, or the URL may have been entered incorrectly.</span>
+            </div>
+            <div class="mini blue">
+              <strong>What should you do?</strong>
+              <span>Use the search box, go back home, or open one of the quick links to continue browsing the site.</span>
+            </div>
+            <div class="mini green">
+              <strong>Why this helps</strong>
+              <span>A well-made 404 page turns a dead end into a guided path back into the site experience.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker gold">Suggested pages</span>
+            <h2>Continue with one of the main America AI pages.</h2>
+          </div>
+          <p>
+            These pages are often the most useful next step after landing on a missing URL.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="Professional workspace and office environment" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">About</span>
+              <h3>Learn what America AI is about</h3>
+              <p>Read the mission, creative direction, and broader purpose behind the platform.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Professional teamwork and discussion" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">Jobs</span>
+              <h3>Return to the job seekers guide</h3>
+              <p>Explore work opportunities, side hustles, and Kenya-USA career direction.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="AI network and digital technology background" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag">AI Ethics</span>
+              <h3>Open the Kenya AI ethics page</h3>
+              <p>Read about AI ethics, Kenya now, digital opportunity, and responsible future thinking.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker blue">Need help?</span>
+            <h2>If the problem continues, contact America AI.</h2>
+          </div>
+          <p>
+            If you expected a page to exist and still cannot find what you need, you can contact the site for clarification.
+          </p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Even error pages can feel polished.</h3>
+            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
+              This 404 page was designed to feel helpful, attractive, and calm rather than empty or frustrating.
+              Use it as a path back into the site.
+            </p>
+            <div class="hero-actions" style="margin-top:1.2rem;">
+              <a class="btn btn-primary" href="index.html">Back to Home</a>
+              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Email contact">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email Contact</strong>
+                <span>kinglee6mutwiri@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="WhatsApp contact">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>0736280522</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="index.html" aria-label="Back home">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Back to Home</strong>
+                <span>Return to the main homepage</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 America AI. Friendly 404 page with search, navigation help, and attractive visual structure.</div>
+      <div>
+        Contact:
+        <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    const searchInput = document.getElementById('siteSearch');
+    const searchBtn = document.getElementById('searchBtn');
+    const links = Array.from(document.querySelectorAll('#searchResults a'));
+
+    function runSearch(){
+      const q = searchInput.value.trim().toLowerCase();
+      links.forEach(link=>{
+        const text = link.textContent.toLowerCase();
+        const keywords = (link.dataset.keywords || '').toLowerCase();
+        const match = q === '' || text.includes(q) || keywords.includes(q);
+        link.style.display = match ? 'inline-flex' : 'none';
+      });
+    }
+
+    searchBtn.addEventListener('click', runSearch);
+    searchInput.addEventListener('input', runSearch);
+    searchInput.addEventListener('keydown', (e)=>{
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        runSearch();
+      }
+    });
+  </script>
+</body>
+</html>
+ 
