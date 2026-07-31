@@ -1,101 +1,75 @@
- <!DOCTYPE html>
+ 
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About America AI | Opportunity, Innovation, Ethical AI & Stories</title>
+  <meta name="description" content="About America AI — a polished and attractive about page connecting USA jobs, African innovation, ethical AI, stories, and digital opportunity." />
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
 
-<title>About America AI | Jobs, Technology, AI Ethics, Privacy & Global Opportunities</title>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0DVD5VSFYW');
+  </script>
 
-<meta name="description" content="Learn about America AI, a trusted platform covering artificial intelligence, USA jobs, technology trends, privacy, AI ethics, education, career opportunities, and practical guides for readers worldwide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<meta name="keywords" content="America AI, Artificial Intelligence, USA Jobs, AI News, Technology, AI Ethics, Privacy Policy, Career Advice, Education, Digital Skills">
+  <style>
+    :root{
+      --bg:#f6f9ff;
+      --paper:#ffffff;
+      --paper-soft:#eef5ff;
+      --text:#12233f;
+      --muted:#5a6982;
+      --line:#d7e3f2;
+      --navy:#0f2747;
+      --blue:#2457ff;
+      --sky:#3b82f6;
+      --cyan:#dff5ff;
+      --gold:#d79a1e;
+      --gold-soft:#fff2cf;
+      --green:#15803d;
+      --green-soft:#e8fff0;
+      --red:#c62828;
+      --pink:#db2777;
+      --violet:#6d28d9;
+      --shadow:0 24px 60px rgba(15,39,71,.12);
+      --shadow-soft:0 10px 28px rgba(18,35,63,.08);
+      --radius:28px;
+      --radius-sm:18px;
+      --max:1240px;
+    }
 
-<meta name="author" content="Kinglee Mutwiri">
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope', sans-serif;
+      color:var(--text);
+      line-height:1.8;
+      background:
+        radial-gradient(circle at top left, rgba(36,87,255,.10), transparent 24%),
+        radial-gradient(circle at top right, rgba(219,39,119,.08), transparent 22%),
+        linear-gradient(180deg, #f6f9ff 0%, #ffffff 100%);
+      overflow-x:hidden;
+    }
 
-<meta name="robots" content="index, follow">
+    a{text-decoration:none;color:inherit}
+    img,svg{display:block;max-width:100%}
+    ::selection{background:var(--navy);color:#fff}
 
-<meta property="og:title" content="America AI">
-<meta property="og:description" content="Discover AI guides, USA job opportunities, technology news, privacy tips, and educational resources.">
-<meta property="og:type" content="website">
-
-<link rel="icon" href="favicon.ico">
-
-
-<!-- Google AdSense Auto Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
-     crossorigin="anonymous"></script>
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0DVD5VSFYW');
-</script>
-
-    --line:#d6e2f1;
-    --navy:#0f2747;
-    --blue:#1d4ed8;
-    --blue-2:#2563eb;
-    --sky:#cde6ff;
-    --red:#c62828;
-    --gold:#d79a1e;
-    --gold-soft:#fff0c7;
-    --green:#166534;
-    --shadow:0 22px 60px rgba(15,39,71,.12);
-    --shadow-soft:0 10px 28px rgba(18,35,61,.08);
-    --radius:28px;
-    --radius-sm:18px;
-    --max:1280px;
-}
-
-*{
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    margin:0;
-    font-family:'Manrope',sans-serif;
-    color:var(--text);
-    line-height:1.8;
-    background:
-        radial-gradient(circle at top left, rgba(29,78,216,.10), transparent 25%),
-        radial-gradient(circle at top right, rgba(215,154,30,.08), transparent 22%),
-        linear-gradient(180deg,#f7faff 0%,#ffffff 100%);
-    overflow-x:hidden;
-}
-
-a{
-    text-decoration:none;
-    color:inherit;
-}
-
-img,svg{
-    display:block;
-    max-width:100%;
-}
-
-button{
-    font:inherit;
-}
-
-::selection{
-    background:var(--navy);
-    color:#fff;
-}
-
-.container{
-    width:min(var(--max),calc(100% - 2rem));
-    margin-inline:auto;
-}
-
-      line-height:1.25;
+    .container{
+      width:min(var(--max), calc(100% - 2rem));
+      margin-inline:auto;
     }
 
     .site-header{
@@ -103,7 +77,7 @@ button{
       overflow:hidden;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(15,39,71,.72), rgba(29,78,216,.58)),
+        linear-gradient(135deg, rgba(15,39,71,.82), rgba(36,87,255,.54)),
         url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       border-bottom:1px solid rgba(255,255,255,.14);
     }
@@ -113,10 +87,11 @@ button{
       content:"";
       position:absolute;
       border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.18), transparent 68%);
-      filter:blur(8px);
+      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
       pointer-events:none;
+      filter:blur(8px);
     }
+
     .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
     .site-header::after{width:380px;height:380px;right:-90px;bottom:-170px}
 
@@ -128,9 +103,9 @@ button{
       padding:1rem 0;
       position:sticky;
       top:0;
-      z-index:20;
+      z-index:30;
       backdrop-filter:blur(12px);
-      background:linear-gradient(180deg, rgba(15,39,71,.40), rgba(15,39,71,.10));
+      background:linear-gradient(180deg, rgba(15,39,71,.42), rgba(15,39,71,.10));
       border-bottom:1px solid rgba(255,255,255,.06);
     }
 
@@ -138,7 +113,7 @@ button{
       display:flex;
       align-items:center;
       gap:.9rem;
-      font-family:'Outfit', sans-serif;
+      font-family:'Sora', sans-serif;
       font-weight:800;
       letter-spacing:.02em;
     }
@@ -147,16 +122,16 @@ button{
       width:52px;height:52px;border-radius:18px;
       display:grid;place-items:center;
       background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.2);
+      border:1px solid rgba(255,255,255,.20);
       box-shadow:0 12px 30px rgba(0,0,0,.16);
       backdrop-filter:blur(12px);
     }
 
     .nav-links{
       display:flex;
-      align-items:center;
-      gap:1rem 1.2rem;
       flex-wrap:wrap;
+      align-items:center;
+      gap:1rem 1.1rem;
     }
 
     .nav-links a{
@@ -177,14 +152,14 @@ button{
     .nav-links a:hover::after{width:100%}
 
     .hero{
-      padding:3.5rem 0 4.8rem;
+      padding:3.6rem 0 4.8rem;
       position:relative;
       z-index:2;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.05fr .95fr;
+      grid-template-columns:1.08fr .92fr;
       gap:2rem;
       align-items:end;
     }
@@ -193,14 +168,14 @@ button{
       display:inline-flex;
       align-items:center;
       gap:.65rem;
-      padding:.55rem .95rem;
+      padding:.58rem .96rem;
       border-radius:999px;
       background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.24);
+      border:1px solid rgba(255,255,255,.22);
       backdrop-filter:blur(10px);
-      font-size:.82rem;
       text-transform:uppercase;
       letter-spacing:.13em;
+      font-size:.8rem;
       font-weight:800;
     }
 
@@ -211,22 +186,22 @@ button{
     }
 
     h1,h2,h3,h4{
-      font-family:'Outfit', sans-serif;
+      font-family:'Sora', sans-serif;
       line-height:1.02;
       letter-spacing:-.03em;
       margin:0 0 1rem;
     }
 
     h1{
-      font-size:clamp(3rem, 6vw, 6rem);
-      max-width:11ch;
+      font-size:clamp(3rem, 6vw, 5.7rem);
+      max-width:9.5ch;
       margin-top:1rem;
     }
 
     .lead{
       margin:0;
-      max-width:64ch;
-      color:rgba(255,255,255,.92);
+      max-width:62ch;
+      color:rgba(255,255,255,.93);
       font-size:clamp(1.04rem, 1.8vw, 1.18rem);
     }
 
@@ -274,37 +249,48 @@ button{
       background:rgba(255,255,255,.18);
     }
 
-    .hero-media{
+    .hero-side{
       display:grid;
       gap:1rem;
     }
 
-    .photo-large,
-    .photo-small{
-      border-radius:28px;
-      overflow:hidden;
+    .hero-photo,
+    .hero-card{
       border:1px solid rgba(255,255,255,.18);
-      box-shadow:0 20px 50px rgba(0,0,0,.18);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      backdrop-filter:blur(12px);
+    }
+
+    .hero-photo{
+      height:260px;
       background:#ffffff18;
-      backdrop-filter:blur(8px);
     }
 
-    .photo-large{height:360px}
-    .photo-row{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:1rem;
-    }
-    .photo-small{height:180px}
-
-    .photo-large img,
-    .photo-small img{
+    .hero-photo img{
       width:100%;
       height:100%;
       object-fit:cover;
     }
 
-    main section{padding:5.3rem 0}
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
+      padding:1.15rem;
+    }
+
+    .hero-card strong{
+      display:block;
+      font-size:1.18rem;
+      margin-bottom:.3rem;
+    }
+
+    .hero-card p{
+      margin:0;
+      color:rgba(255,255,255,.88);
+    }
+
+    main section{padding:5rem 0}
 
     .section-head{
       display:grid;
@@ -321,22 +307,27 @@ button{
       letter-spacing:.14em;
       font-weight:800;
       font-size:.78rem;
-      color:var(--red);
     }
 
+    .kicker.blue{color:var(--blue)}
+    .kicker.green{color:var(--green)}
+    .kicker.pink{color:var(--pink)}
+    .kicker.gold{color:var(--gold)}
+    .kicker.violet{color:var(--violet)}
+
     .section-head h2{
-      font-size:clamp(2rem, 4vw, 4.2rem);
+      font-size:clamp(2rem, 4vw, 4rem);
       max-width:12ch;
     }
 
     .section-head p{
       margin:0;
       color:var(--muted);
-      font-size:1.06rem;
+      font-size:1.04rem;
       max-width:68ch;
     }
 
-    .overview{
+    .content-layout{
       display:grid;
       grid-template-columns:1.08fr .92fr;
       gap:2rem;
@@ -358,41 +349,52 @@ button{
       position:absolute;
       width:220px;height:220px;border-radius:50%;
       right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(29,78,216,.08), transparent 70%);
+      background:radial-gradient(circle, rgba(36,87,255,.08), transparent 70%);
       pointer-events:none;
     }
 
     .content-flow{
-      columns:2 320px;
+      columns:2 300px;
       column-gap:2rem;
     }
 
     .content-flow p{
-      margin:0 0 1.15rem;
+      margin:0 0 1.1rem;
       color:var(--muted);
       break-inside:avoid;
     }
 
-    .side-notes{
+    .sidebar{
       display:grid;
       gap:1rem;
     }
 
-    .note{
+    .mini{
       border:1px solid var(--line);
       border-radius:22px;
-      background:linear-gradient(180deg, #f8fbff, #eef5ff);
       padding:1.15rem 1.2rem;
       box-shadow:var(--shadow-soft);
+      background:#fff;
     }
 
-    .note strong{
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
+    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
+    .mini.pink{background:linear-gradient(180deg, #fff8fc, #fff0f7)}
+
+    .mini strong{
       display:block;
-      font-family:'Outfit', sans-serif;
-      color:var(--navy);
-      font-size:1.35rem;
-      margin-bottom:.25rem;
+      font-family:'Sora', sans-serif;
+      font-size:1.22rem;
+      margin-bottom:.3rem;
     }
+
+    .mini.blue strong{color:var(--blue)}
+    .mini.green strong{color:var(--green)}
+    .mini.gold strong{color:#a56b00}
+    .mini.pink strong{color:var(--pink)}
+
+    .mini span{color:var(--muted)}
 
     .showcase{
       background:linear-gradient(180deg, #f5f9ff 0%, #ffffff 100%);
@@ -400,13 +402,13 @@ button{
       border-bottom:1px solid var(--line);
     }
 
-    .card-grid{
+    .cards{
       display:grid;
       grid-template-columns:repeat(12,1fr);
       gap:1rem;
     }
 
-    .info-card{
+    .card{
       grid-column:span 4;
       border:1px solid var(--line);
       border-radius:24px;
@@ -416,7 +418,7 @@ button{
       transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
     }
 
-    .info-card:hover{
+    .card:hover{
       transform:translateY(-8px);
       box-shadow:var(--shadow);
       border-color:#bfd4f7;
@@ -435,111 +437,31 @@ button{
       object-fit:cover;
     }
 
-    .card-body{
-      padding:1.2rem;
-    }
+    .card-body{padding:1.2rem}
 
     .tag{
       display:inline-flex;
       margin-bottom:.8rem;
       padding:.35rem .72rem;
       border-radius:999px;
-      background:var(--gold-soft);
-      color:#8a5b00;
       font-size:.78rem;
       font-weight:800;
       text-transform:uppercase;
       letter-spacing:.08em;
     }
 
-    .info-card h3{
-      font-size:1.3rem;
+    .tag.blue{background:#e7f0ff;color:#1747c6}
+    .tag.green{background:#e9fff0;color:#126a34}
+    .tag.gold{background:#fff1cc;color:#8a5b00}
+
+    .card h3{
+      font-size:1.24rem;
       margin-bottom:.5rem;
     }
 
-    .info-card p{
+    .card p{
       margin:0;
       color:var(--muted);
-    }
-
-    .deep-section{
-      display:grid;
-      grid-template-columns:.95fr 1.05fr;
-      gap:2rem;
-      align-items:start;
-    }
-
-    .timeline{
-      display:grid;
-      gap:1rem;
-      position:relative;
-    }
-
-    .timeline::before{
-      content:"";
-      position:absolute;
-      left:18px;top:8px;bottom:8px;width:2px;
-      background:linear-gradient(#dbeafe, #2563eb, #dbeafe);
-    }
-
-    .step{
-      display:grid;
-      grid-template-columns:50px 1fr;
-      gap:1rem;
-      align-items:start;
-    }
-
-    .dot{
-      width:38px;height:38px;border-radius:50%;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--blue), var(--red));
-      color:#fff;font-weight:800;
-      box-shadow:0 10px 22px rgba(29,78,216,.22);
-      z-index:1;
-      margin-top:.1rem;
-    }
-
-    .step article{
-      border:1px solid var(--line);
-      border-radius:20px;
-      padding:1.1rem 1.15rem;
-      background:#fff;
-      box-shadow:var(--shadow-soft);
-    }
-
-    .step h3{
-      font-size:1.16rem;
-      margin-bottom:.35rem;
-    }
-
-    .step p{
-      margin:0;
-      color:var(--muted);
-    }
-
-    .feature-quote{
-      margin-top:1.5rem;
-      padding:1.4rem 1.5rem;
-      border-radius:24px;
-      background:linear-gradient(135deg, var(--navy), var(--blue-2));
-      color:#fff;
-      box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .feature-quote::after{
-      content:"";
-      position:absolute;
-      right:-40px;top:-20px;
-      width:180px;height:180px;border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
-    }
-
-    .feature-quote p{
-      margin:0;
-      max-width:62ch;
-      font-size:1.08rem;
     }
 
     .contact{
@@ -554,7 +476,7 @@ button{
       padding:1.5rem;
       box-shadow:var(--shadow);
       display:grid;
-      grid-template-columns:1fr .9fr;
+      grid-template-columns:1fr .95fr;
       gap:1.4rem;
       position:relative;
       overflow:hidden;
@@ -565,7 +487,7 @@ button{
       position:absolute;
       width:240px;height:240px;border-radius:50%;
       right:-60px;top:-70px;
-      background:radial-gradient(circle, rgba(29,78,216,.12), transparent 70%);
+      background:radial-gradient(circle, rgba(36,87,255,.12), transparent 70%);
     }
 
     .contact-items{
@@ -614,6 +536,12 @@ button{
       flex-wrap:wrap;
     }
 
+    .accent-blue{color:var(--blue)}
+    .accent-green{color:var(--green)}
+    .accent-gold{color:#a56b00}
+    .accent-pink{color:var(--pink)}
+    .accent-violet{color:var(--violet)}
+
     .reveal{
       opacity:0;
       transform:translateY(22px);
@@ -641,32 +569,14 @@ button{
       to{opacity:1;transform:translateY(0)}
     }
 
-    @media (max-width: 1180px){
-      .float-links{
-        right:12px;
-        top:auto;
-        bottom:12px;
-        transform:none;
-        flex-direction:row;
-        width:calc(100% - 24px);
-        overflow:auto;
-        padding-bottom:2px;
-      }
-      .float-link{
-        min-width:240px;
-        flex:0 0 auto;
-      }
-    }
-
     @media (max-width: 1020px){
       .hero-grid,
       .section-head,
-      .overview,
-      .deep-section,
+      .content-layout,
       .contact-box{
         grid-template-columns:1fr;
       }
-      .info-card{grid-column:span 6}
+      .card{grid-column:span 6}
     }
 
     @media (max-width: 720px){
@@ -674,98 +584,63 @@ button{
         flex-direction:column;
         align-items:flex-start;
       }
-      .card-grid{
+      .cards{
         grid-template-columns:1fr;
       }
-      .info-card{grid-column:span 1}
+      .card{grid-column:span 1}
       .content-flow{columns:1}
-      .hero{padding:3rem 0 4rem}
-      .photo-large{height:260px}
-      .photo-small{height:150px}
-      main section{padding:4.2rem 0}
       h1{max-width:100%}
-      .float-link{min-width:220px}
+      main section{padding:4rem 0}
     }
   </style>
 </head>
 <body>
-  <aside class="float-links" aria-label="Quick page links">
-    <a class="float-link" href="index.html">
-      <span class="icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </span>
-      <span>
-        <strong>Back Home</strong>
-        <span>Return to homepage</span>
-      </span>
-    </a>
-
-    <a class="float-link" href="job-seekers-usa.html">
-      <span class="icon" aria-hidden="true">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M4 8.5h16a1.5 1.5 0 0 1 1.5 1.5v7A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17v-7A1.5 1.5 0 0 1 4 8.5z" stroke="currentColor" stroke-width="1.8"/>
-        </svg>
-      </span>
-      <span>
-        <strong>USA Jobs</strong>
-        <span>Open job seekers page</span>
-      </span>
-    </a>
-  </aside>
-
   <header class="site-header" id="top">
     <div class="container">
       <nav class="nav">
-        <a class="brand" href="#top" aria-label="About America AI home">
+        <a class="brand" href="index.html" aria-label="America AI home">
           <span class="brand-mark" aria-hidden="true">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
-          <span>ABOUT AMERICA AI</span>
+          <span>AMERICA AI</span>
         </a>
 
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="#mission">Mission</a>
-          <a href="#what-we-do">What We Do</a>
-          <a href="#vision">Vision</a>
-          <a href="#contact">Contact</a>
+          <a href="#focus">Focus</a>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
 
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <div class="eyebrow"><span></span> Opportunity • stories • ethics • future</div>
-            <h1>Bridging global opportunity, digital trust, and African ambition.</h1>
+            <div class="eyebrow"><span></span> About America AI</div>
+            <h1>Opportunity, ethics, stories, and digital vision in one place.</h1>
             <p class="lead">
-              America AI is more than a simple website. It is a growing digital hub built around opportunity,
-              professional guidance, ethical technology, privacy awareness, stories, and the belief that African
-              talent deserves clear access to the global future.
+              <strong>America AI</strong> is a modern digital platform built to connect <span class="accent-gold">opportunity</span>,
+              <span class="accent-green">ethical AI awareness</span>, <span class="accent-pink">creative storytelling</span>,
+              and <span class="accent-blue">professional presentation</span> for readers who want a clearer path into the future.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#mission">Read About Us</a>
               <a class="btn btn-secondary" href="index.html">Back Home</a>
+              <a class="btn btn-secondary" href="privacy-policy.html">Privacy Policy</a>
             </div>
           </div>
 
-          <div class="hero-media reveal" aria-label="Professional imagery for America AI">
-            <div class="photo-large">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Diverse professionals working together in a modern environment" loading="lazy">
+          <div class="hero-side reveal">
+            <div class="hero-photo">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80" alt="Team collaboration in a modern work environment" loading="lazy">
             </div>
-            <div class="photo-row">
-              <div class="photo-small">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Digital privacy and technology workspace" loading="lazy">
-              </div>
-              <div class="photo-small">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80" alt="Professional meeting and planning session" loading="lazy">
-              </div>
+            <div class="hero-card">
+              <strong>Professional, Attractive, Purposeful</strong>
+              <p>This page is designed to feel polished and welcoming, with premium colors, real images, clear arrangement, and a strong brand tone.</p>
             </div>
           </div>
         </div>
@@ -778,171 +653,119 @@ button{
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Our mission</span>
-            <h2>Why America AI exists and what it stands for.</h2>
+            <span class="kicker blue">Our Mission</span>
+            <h2>Why America AI was created.</h2>
           </div>
           <p>
-            America AI was built with a wide and purposeful vision: to create a digital space that connects work,
-            stories, technology, ethics, and practical opportunity. It is designed for people who want more than noise.
-            It is for readers, dreamers, job seekers, learners, and builders who want useful information presented clearly and professionally.
+            America AI was created to build a bridge between <strong class="accent-blue">global opportunity</strong>,
+            <strong class="accent-green">ethical technology</strong>, <strong class="accent-pink">creative voice</strong>,
+            and <strong class="accent-gold">practical guidance</strong>. It is more than a website. It is a growing idea designed to help people move forward.
           </p>
         </div>
 
-        <div class="overview">
+        <div class="content-layout">
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                America AI began from a simple but powerful idea: information becomes more valuable when it is organized with purpose.
-                There are many people across Africa, especially in Kenya and other fast-growing environments, who are looking for two things
-                at the same time. First, they want access to real opportunity — jobs, remote work, digital careers, professional guidance,
-                and pathways toward financial growth. Second, they want understanding — they want to know how technology, especially artificial
-                intelligence, is changing society, shaping decisions, and creating both new possibilities and new responsibilities.
+                America AI began from a simple but powerful vision: information becomes more valuable when it is presented with purpose, clarity, and beauty.
+                In many parts of the world, especially in Africa, there are talented people with strong dreams, deep creativity, and real potential.
+                Yet many of them face a major challenge: access. Access to better information. Access to professional presentation. Access to guidance that feels modern,
+                serious, and relevant. America AI was built to speak to that gap.
               </p>
               <p>
-                This platform exists at the meeting point of those two needs. It is not only about jobs, and it is not only about technology.
-                It is about helping people think forward. It is about giving structure to ambition. It is about creating a digital home where
-                practical work opportunities, ethical reflection, privacy awareness, and creative expression can live together without confusion.
+                The platform stands at the intersection of several important ideas. The first is <span class="accent-blue">opportunity</span>.
+                Many readers are interested in USA jobs, digital work, global learning, and future-focused careers.
+                They do not just want random information. They want direction. They want content that feels arranged, polished, and credible.
+                America AI answers that need by building pages that are structured, readable, and attractive.
               </p>
               <p>
-                The name America AI carries layered meaning. It points toward opportunity, especially opportunity connected to the United States
-                job market, digital work culture, professional standards, and global reach. At the same time, it also points toward the age of AI,
-                where artificial intelligence is no longer a distant subject discussed only by engineers and corporations. It is now part of education,
-                recruitment, creativity, communication, business operations, and public life. That means ordinary people need a place to understand it
-                in practical language.
+                The second key idea is <span class="accent-green">ethical AI</span>. Artificial intelligence is changing how people work, learn, write, communicate, and make decisions.
+                But technology alone is not enough. It must be guided by fairness, privacy, accountability, and human dignity.
+                America AI believes the future should not only be smart — it should also be responsible. That is why ethical AI is not treated as a side issue here.
+                It is part of the identity of the platform.
               </p>
               <p>
-                America AI is therefore not built as a narrow corporate page. It is built as a meaningful digital hub. It is a place where job seekers
-                can find guidance. It is a place where readers can explore thoughtful content. It is a place where technology is discussed with responsibility,
-                not hype. It is a place where privacy is taken seriously. And it is also a place where storytelling still matters, because stories remain one of
-                the strongest ways to communicate identity, imagination, struggle, and hope.
+                The third part of the mission is <span class="accent-pink">creative expression</span>. A strong platform does not have to choose between professional information and storytelling.
+                In fact, both belong together. Stories give meaning to ambition. They make ideas human. They carry memory, imagination, struggle, and hope.
+                America AI creates room for both polished informational content and thoughtful written expression.
               </p>
               <p>
-                The mission of the platform can be described in four parts. The first is access. Too many talented people remain disconnected from the information,
-                formatting, and professional presentation standards that open doors in global markets. America AI seeks to reduce that gap by providing structured,
-                readable, attractive pages that help guide users toward stronger opportunities.
+                The fourth part is <span class="accent-gold">professional identity</span>. The internet is full of rushed pages and plain layouts that do not create trust.
+                America AI aims to do better by using thoughtful design, stronger wording, clean structure, and modern visual presentation.
+                A website should feel like it was built with care. It should represent seriousness from the first glance.
               </p>
               <p>
-                The second part is clarity. The internet is full of scattered advice, shallow claims, and misleading content. A serious platform must do better.
-                It should explain things in a way that respects the user. Whether the topic is AI ethics, privacy, jobs in the USA, side hustles, or about-page identity,
-                the message should be clear, useful, and professionally delivered.
-              </p>
-              <p>
-                The third part is dignity. People are more than traffic numbers. Users deserve honest writing, thoughtful design, and pages that feel built with intention.
-                Dignity also means treating African talent seriously. It means understanding that intelligence, creativity, and ambition are not limited by geography.
-                A platform like this can help reinforce that truth by presenting information in a way that feels premium rather than disposable.
-              </p>
-              <p>
-                The fourth part is future-readiness. America AI is built with the understanding that the future will not be shaped only by degrees or physical location.
-                It will also be shaped by digital literacy, ethical awareness, personal branding, remote communication, adaptability, and the ability to learn fast.
-                The platform therefore tries to speak to the future while staying useful in the present.
-              </p>
-              <p>
-                This mission also includes storytelling because stories remain essential to identity. A person who writes stories is not disconnected from a person who builds
-                professional pages. In reality, both activities come from the same source: the desire to communicate well. America AI embraces that creative dimension. It recognizes
-                that a serious platform can speak about jobs and policies while still making room for human narrative, reflection, and expression.
-              </p>
-              <p>
-                In the long run, the mission is to become more than a static site. It is to become a recognizable digital presence associated with smart guidance,
-                clean design, ethical thought, and useful content. That is the deeper purpose behind the work.
+                Altogether, America AI is a platform shaped by ambition, responsibility, and vision. It is for readers who want more than a simple list of links.
+                It is for people who believe that digital platforms should inform, inspire, and look excellent while doing it.
               </p>
             </div>
           </article>
 
-          <aside class="side-notes reveal">
-            <div class="note">
-              <strong>Access</strong>
-              <span>Helping readers and job seekers reach clearer information, better presentation, and stronger opportunities.</span>
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Opportunity</strong>
+              <span>Clear paths toward jobs, digital growth, and better global access.</span>
             </div>
-            <div class="note">
-              <strong>Clarity</strong>
-              <span>Turning scattered topics like jobs, AI, privacy, and writing into readable, structured, professional pages.</span>
+            <div class="mini green">
+              <strong>Ethical AI</strong>
+              <span>Technology should support people with fairness, privacy, and responsibility.</span>
             </div>
-            <div class="note">
-              <strong>Future Readiness</strong>
-              <span>Encouraging digital literacy, ethical awareness, professionalism, and global confidence.</span>
+            <div class="mini pink">
+              <strong>Stories</strong>
+              <span>Creative writing and storytelling remain powerful tools of identity and imagination.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Presentation</strong>
+              <span>Professional design helps build trust, clarity, and stronger communication.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="what-we-do">
+    <section class="showcase" id="focus">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">What we do</span>
-            <h2>How America AI serves readers, job seekers, and future builders.</h2>
+            <span class="kicker green">What We Focus On</span>
+            <h2>The pillars that shape America AI.</h2>
           </div>
           <p>
-            America AI is designed as a multi-purpose professional platform. It does not focus on one narrow track only.
-            Instead, it combines practical guidance with thoughtful content so that the site feels useful, intelligent, and alive.
+            The platform is not built around one narrow subject only. Instead, it combines several powerful themes into one professional digital identity.
           </p>
         </div>
 
-        <div class="card-grid">
-          <article class="info-card reveal">
+        <div class="cards">
+          <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Professional work environment for job resources" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Professional work environment and career growth" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">Jobs</span>
-              <h3>Guiding job seekers toward real opportunities</h3>
-              <p>The platform creates polished guidance around finding work in the USA, understanding sectors, and preparing professionally for applications.</p>
+              <span class="tag blue">USA Jobs</span>
+              <h3>Career guidance and opportunity</h3>
+              <p>America AI helps present job-related pages and guidance in a way that feels structured, useful, and future-focused.</p>
             </div>
           </article>
 
-          <article class="info-card reveal">
+          <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Technology network symbolizing AI ethics" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="AI network and ethical technology concept" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">AI Ethics</span>
-              <h3>Explaining responsible artificial intelligence</h3>
-              <p>America AI explores fairness, transparency, accountability, inclusion, and privacy in the age of automated systems.</p>
+              <span class="tag green">AI Ethics</span>
+              <h3>Responsible technology</h3>
+              <p>The platform supports content that explains fairness, privacy, accountability, and human-centered digital innovation.</p>
             </div>
           </article>
 
-          <article class="info-card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Privacy and digital data protection concept" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag">Privacy</span>
-              <h3>Making privacy policy readable and relevant</h3>
-              <p>Rather than treating privacy as legal decoration, the site presents it as a human-centered issue tied to trust and digital dignity.</p>
-            </div>
-          </article>
-
-          <article class="info-card reveal">
+          <article class="card reveal">
             <div class="card-photo">
               <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Creative collaboration and storytelling" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">Stories</span>
-              <h3>Keeping room for creative writing and narrative</h3>
-              <p>Because stories matter, America AI also leaves space for written imagination, identity, and the deeper human side of communication.</p>
-            </div>
-          </article>
-
-          <article class="info-card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Team planning and strategy meeting" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag">Guidance</span>
-              <h3>Turning complex topics into useful direction</h3>
-              <p>The platform organizes information so readers can act on it, not just read it passively.</p>
-            </div>
-          </article>
-
-          <article class="info-card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=80" alt="Professional discussion on opportunity and growth" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag">Identity</span>
-              <h3>Presenting African ambition professionally</h3>
-              <p>America AI reflects a voice that is creative, serious, internationally aware, and committed to quality presentation.</p>
+              <span class="tag gold">Stories & Identity</span>
+              <h3>Human voice and expression</h3>
+              <p>America AI values creative writing, narrative, and the emotional side of communication alongside professional guidance.</p>
             </div>
           </article>
         </div>
@@ -953,162 +776,78 @@ button{
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Long-form vision</span>
-            <h2>Where America AI is going and what it wants to become.</h2>
+            <span class="kicker pink">Vision</span>
+            <h2>Built in Africa, speaking to the world.</h2>
           </div>
           <p>
-            A strong about page does more than explain the present. It also communicates direction.
-            America AI is built with growth in mind — not just growth in traffic, but growth in meaning, trust, quality, and reach.
+            America AI represents a local voice with a global outlook. It carries the energy of African ambition while looking confidently toward international opportunity.
           </p>
         </div>
 
-        <div class="deep-section">
-          <div class="timeline reveal">
-            <div class="step">
-              <div class="dot">1</div>
-              <article>
-                <h3>Build a trusted digital brand</h3>
-                <p>The long-term goal is to become recognizable for smart guidance, polished design, and useful, ethically aware content.</p>
-              </article>
-            </div>
-
-            <div class="step">
-              <div class="dot">2</div>
-              <article>
-                <h3>Serve both local and global readers</h3>
-                <p>The platform can speak from an African base while still reaching users interested in U.S. jobs, global technology, and cross-border opportunity.</p>
-              </article>
-            </div>
-
-            <div class="step">
-              <div class="dot">3</div>
-              <article>
-                <h3>Expand beyond static pages</h3>
-                <p>It can grow into a richer content ecosystem with stories, insights, practical guides, and possibly tools or curated resources.</p>
-              </article>
-            </div>
-
-            <div class="step">
-              <div class="dot">4</div>
-              <article>
-                <h3>Promote ethical thinking</h3>
-                <p>Technology should be discussed with responsibility, not empty hype. That principle can remain central as the platform grows.</p>
-              </article>
-            </div>
-
-            <div class="step">
-              <div class="dot">5</div>
-              <article>
-                <h3>Represent quality from the beginning</h3>
-                <p>Even simple pages should look and read like they were built with care. That standard creates trust and identity over time.</p>
-              </article>
-            </div>
-
-            <div class="feature-quote">
-              <p>
-                “America AI is built on the belief that information should open doors, design should create trust, and thoughtful writing should guide people toward a better future.”
-              </p>
-            </div>
-          </div>
-
+        <div class="content-layout">
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                The future of America AI is not limited to being an about page, a jobs page, or a privacy page. The real vision is broader. It is to build a digital presence
-                that feels coherent across multiple themes while still staying professional. That is a valuable challenge because most websites become weak when they try to speak
-                about many things at once. America AI aims to avoid that weakness by organizing its subjects around one central idea: future-ready guidance.
+                One of the most important ideas behind America AI is that local roots and global ambition do not compete. They strengthen each other.
+                A platform can be shaped by Kenya, Africa, and local realities while still speaking to the wider world. In fact, that combination can become a special strength.
+                It allows the platform to remain grounded in real experience while still aiming for international quality and relevance.
               </p>
               <p>
-                Whether the reader comes for work information, AI ethics, privacy awareness, or creative writing, the underlying promise is the same. They should leave the site feeling
-                more informed, more oriented, and more confident than they were before. That kind of effect is what separates a meaningful platform from a decorative one.
+                This is why America AI is not simply trying to look global. It is trying to be meaningful. It recognizes that readers today want content that is useful,
+                beautiful, and connected to real aspirations. They want digital spaces that respect them. They want pages that feel like they were built intentionally,
+                not copied mechanically. America AI responds to that expectation with cleaner presentation, stronger wording, and thoughtful design.
               </p>
               <p>
-                One long-term opportunity is to become a bridge between talent and presentation. Many skilled people lose opportunities not because they lack ability, but because they do not
-                package themselves clearly. Their CVs are weak, their profiles are incomplete, their writing does not communicate their value, or their digital presence feels scattered. A platform
-                like America AI can eventually offer content and guidance that helps solve that gap. It can teach clarity, not only ambition.
+                The vision is to keep growing into a recognizable digital brand associated with <span class="accent-blue">quality</span>, <span class="accent-green">ethics</span>,
+                <span class="accent-pink">creativity</span>, and <span class="accent-gold">opportunity</span>. It is a vision that includes jobs, stories, digital guidance,
+                and wider public thought about technology and the future. It is calm, professional, and ambitious at the same time.
               </p>
               <p>
-                Another long-term direction is educational. As artificial intelligence becomes part of everyday life, there will be rising need for accessible public explanations.
-                People want to know what AI means for work, privacy, fairness, learning, content creation, and social trust. A platform that can explain these issues in clean,
-                human language will remain useful. That is why ethical AI discussion is not a side topic here. It is part of the broader future-readiness mission.
-              </p>
-              <p>
-                The storytelling dimension also has room to grow. Stories can deepen the emotional identity of the platform. They can reflect aspiration, migration, work struggle,
-                digital transformation, cultural memory, hope, or imagination. A site that combines structured professional pages with thoughtful storytelling can feel richer and more human
-                than one that only publishes technical information. This blend can become a signature strength if developed carefully.
-              </p>
-              <p>
-                Design quality is also part of the vision. Pages should not look rushed or generic. They should feel intentional, attractive, and readable on both mobile and desktop screens.
-                Good design is not vanity. It is a form of respect for the visitor. When a site looks polished, it tells the reader that the content inside has been taken seriously.
-                That is one reason America AI benefits from visual refinement — it turns simple topics into a stronger experience.
-              </p>
-              <p>
-                There is also a branding vision here. America AI can become associated with a particular tone: calm, professional, globally aware, ethically conscious, and creatively alive.
-                That tone matters because strong brands are not only visual. They are tonal. They sound like themselves. They speak with consistency. If this platform continues to grow across pages,
-                its tone can become one of its greatest assets.
-              </p>
-              <p>
-                In practical terms, the future could include more content categories such as remote work preparation, side hustle guides, story collections, digital skill roadmaps,
-                personal branding advice, ethical AI explainers, or even curated opportunity boards. The exact path can evolve, but the core identity should remain stable:
-                high-quality guidance for people who want to move forward.
-              </p>
-              <p>
-                America AI also represents something symbolic. It shows that a platform built from ambition and creativity can speak across geographies.
-                It can connect African thought with American opportunity, local reality with global systems, and technical themes with human stories.
-                That cross-connection is part of its uniqueness.
-              </p>
-              <p>
-                Ultimately, the vision is not just to publish pages. It is to build a platform that people return to because it feels useful, credible, and well made.
-                That is the deeper destination behind the project.
+                In this way, America AI becomes more than a folder of HTML files. It becomes a statement of direction. It shows what kind of platform is being built
+                and what kind of standards guide that work.
               </p>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker">Professional conclusion</span>
-            <h2>A platform with purpose, style, and direction.</h2>
-          </div>
-          <p>
-            A strong About page should leave no confusion about identity. America AI is a future-focused digital hub
-            built around opportunity, stories, professional guidance, AI ethics, and privacy awareness.
-          </p>
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Clear Words</strong>
+              <span>Better wording creates stronger trust and makes the platform feel more professional.</span>
+            </div>
+            <div class="mini green">
+              <strong>Strong Values</strong>
+              <span>Ethics, respect, and thoughtful design shape how the platform speaks to people.</span>
+            </div>
+            <div class="mini pink">
+              <strong>Creative Energy</strong>
+              <span>Stories and ideas bring emotional depth to the digital experience.</span>
+            </div>
+          </aside>
         </div>
-
-        <article class="paper reveal">
-          <div class="content-flow">
-            <p>
-              It exists to organize useful information in a clearer and more attractive form. It exists to support ambition with structure.
-              It exists to present readers, job seekers, and learners with content that feels polished rather than rushed. And it exists to prove
-              that a website can be practical and thoughtful at the same time.
-            </p>
-            <p>
-              If the homepage is the front door, this About page is the statement of identity. It explains not only what America AI contains,
-              but why it matters. It shows that the platform is designed with intention. It connects digital opportunity to ethical reflection.
-              It honors professionalism without losing the human element. That is what gives the project its real strength.
-            </p>
-          </div>
-        </article>
       </div>
     </section>
 
     <section class="contact" id="contact">
       <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker violet">Contact</span>
+            <h2>Let the page end with clarity and connection.</h2>
+          </div>
+          <p>
+            If you want to ask about America AI, request page design, or connect professionally, use the options below.
+          </p>
+        </div>
+
         <div class="contact-box reveal">
           <div>
-            <span class="kicker">Contact</span>
-            <h2 style="font-size:clamp(2rem,4vw,3.6rem);max-width:10ch;">Need a professional page like this?</h2>
-            <p style="color:var(--muted);max-width:60ch;">
-              For page design, web work, editing, and professional frontend requests, use the contact below.
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">A better digital future begins with good presentation.</h3>
+            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
+              This About page is designed to feel attractive, clear, and memorable. It uses modern colors, premium spacing, real imagery, and stronger words to reflect a more professional brand identity.
             </p>
             <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Now</a>
-              <a class="btn btn-secondary" href="index.html">Back Home</a>
+              <a class="btn btn-primary" href="index.html">Back Home</a>
+              <a class="btn btn-secondary" href="privacy-policy.html">Privacy Policy</a>
             </div>
           </div>
 
@@ -1126,6 +865,19 @@ button{
               </div>
             </a>
 
+            <a class="contact-item" href="privacy-policy.html">
+              <div class="contact-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 4v5c0 4.5-3.2 7.8-7 9-3.8-1.2-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9.4 12.1l1.7 1.7 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Privacy Policy</strong>
+                <span>Open the privacy page directly</span>
+              </div>
+            </a>
+
             <a class="contact-item" href="index.html">
               <div class="contact-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
@@ -1135,23 +887,9 @@ button{
               </div>
               <div>
                 <strong>Homepage</strong>
-                <span>Return to America AI main page</span>
+                <span>Return to the America AI homepage</span>
               </div>
             </a>
-
-            <div class="contact-item" aria-label="Suggested file name">
-              <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Suggested file name</strong>
-                <span>about.html</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1160,7 +898,7 @@ button{
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. About page designed as a professional bridge between jobs, stories, ethics, privacy, and future opportunity.</div>
+      <div>© 2026 America AI. A polished About page with stronger words, better colors, and professional visual structure.</div>
       <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
     </div>
   </footer>
