@@ -4,93 +4,163 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>America AI | Jobs, AI Ethics, Privacy & Stories</title>
-<!-- Google AdSense Auto Ads -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
-     crossorigin="anonymous"></script>
+  <title>America AI | Jobs, AI Tools, Ethics, Privacy, Stories & Global Opportunity</title>
+  <meta name="description" content="America AI homepage — a premium digital hub connecting Kenya and USA job guidance, AI ethics, privacy, stories, contact access, and global opportunity." />
 
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-0DVD5VSFYW');
-</script>
-      --text:#f8fbff;
-      --muted:#d4ddf0;
-      --line:rgba(255,255,255,.14);
+  <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0DVD5VSFYW');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f7fbff;
+      --paper:#ffffff;
+      --paper-soft:#eef5ff;
+      --text:#12233f;
+      --muted:#596980;
+      --line:#d8e3f2;
       --navy:#0f2747;
-      --blue:#2563eb;
-      --blue-2:#60a5fa;
-      --red:#d7263d;
-      --gold:#f59e0b;
-      --cyan:#67e8f9;
-      --shadow:0 24px 60px rgba(0,0,0,.35);
-      --shadow-soft:0 12px 28px rgba(0,0,0,.18);
-      --radius:26px;
+      --navy-2:#122b52;
+      --blue:#2457ff;
+      --sky:#3b82f6;
+      --cyan:#def4ff;
+      --gold:#d79a1e;
+      --gold-soft:#fff2cf;
+      --green:#15803d;
+      --green-soft:#e8fff0;
+      --pink:#db2777;
+      --violet:#6d28d9;
+      --shadow:0 24px 60px rgba(15,39,71,.12);
+      --shadow-soft:0 10px 28px rgba(18,35,63,.08);
+      --radius:28px;
       --radius-sm:18px;
-      --max:1240px;
+      --max:1280px;
     }
 
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      color:var(--text);
       font-family:'Manrope', sans-serif;
-      background:#081120;
-      line-height:1.7;
+      color:var(--text);
+      line-height:1.8;
+      background:
+        radial-gradient(circle at top left, rgba(36,87,255,.09), transparent 24%),
+        radial-gradient(circle at top right, rgba(219,39,119,.07), transparent 20%),
+        linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
       overflow-x:hidden;
     }
 
     a{text-decoration:none;color:inherit}
     img,svg{display:block;max-width:100%}
-    ::selection{background:#fff;color:#0f2747}
-
-    .page-bg{
-      position:fixed;
-      inset:0;
-      z-index:-3;
-      background:
-        linear-gradient(rgba(7,17,32,.70), rgba(7,17,32,.82)),
-        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-    }
-
-    .page-glow{
-      position:fixed;
-      inset:0;
-      z-index:-2;
-      pointer-events:none;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(37,99,235,.22), transparent 24%),
-        radial-gradient(circle at 86% 14%, rgba(245,158,11,.15), transparent 18%),
-        radial-gradient(circle at 70% 72%, rgba(103,232,249,.12), transparent 20%);
-    }
+    ::selection{background:var(--navy);color:#fff}
 
     .container{
       width:min(var(--max), calc(100% - 2rem));
       margin-inline:auto;
     }
 
-    .header{
-      position:relative;
-      min-height:100vh;
+    .float-actions{
+      position:fixed;
+      right:16px;
+      bottom:16px;
+      z-index:60;
       display:flex;
       flex-direction:column;
+      gap:.85rem;
     }
+
+    .float-btn{
+      display:flex;
+      align-items:center;
+      gap:.8rem;
+      min-width:220px;
+      padding:.92rem 1rem;
+      border-radius:18px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(216,227,242,.98);
+      box-shadow:var(--shadow-soft);
+      backdrop-filter:blur(14px);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .float-btn:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
+    }
+
+    .float-btn .icon{
+      width:46px;height:46px;border-radius:14px;
+      display:grid;place-items:center;
+      flex:0 0 auto;
+      background:linear-gradient(135deg, #e8f0ff, #ffffff);
+      color:var(--blue);
+    }
+
+    .float-btn.whatsapp .icon{
+      background:linear-gradient(135deg, #e8fff0, #ffffff);
+      color:var(--green);
+    }
+
+    .float-btn strong{
+      display:block;
+      font-size:.95rem;
+      line-height:1.15;
+    }
+
+    .float-btn span{
+      display:block;
+      color:var(--muted);
+      font-size:.82rem;
+      line-height:1.25;
+    }
+
+    .site-header{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      background:
+        linear-gradient(135deg, rgba(15,39,71,.82), rgba(36,87,255,.50)),
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .site-header::before,
+    .site-header::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
+      filter:blur(8px);
+      pointer-events:none;
+    }
+
+    .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
+    .site-header::after{width:380px;height:380px;right:-90px;bottom:-170px}
 
     .nav{
       display:flex;
-      align-items:center;
       justify-content:space-between;
+      align-items:center;
       gap:1rem;
       padding:1rem 0;
       position:sticky;
       top:0;
-      z-index:20;
+      z-index:30;
       backdrop-filter:blur(12px);
-      background:linear-gradient(180deg, rgba(8,17,32,.65), rgba(8,17,32,.28));
+      background:linear-gradient(180deg, rgba(15,39,71,.42), rgba(15,39,71,.10));
       border-bottom:1px solid rgba(255,255,255,.06);
     }
 
@@ -98,32 +168,31 @@
       display:flex;
       align-items:center;
       gap:.9rem;
-      font-family:'Space Grotesk', sans-serif;
-      font-weight:700;
-      letter-spacing:.03em;
+      font-family:'Sora', sans-serif;
+      font-weight:800;
+      letter-spacing:.02em;
     }
 
     .brand-mark{
-      width:52px;height:52px;
-      border-radius:18px;
+      width:52px;height:52px;border-radius:18px;
       display:grid;place-items:center;
-      background:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.05));
-      border:1px solid rgba(255,255,255,.16);
-      box-shadow:var(--shadow-soft);
+      background:rgba(255,255,255,.12);
+      border:1px solid rgba(255,255,255,.20);
+      box-shadow:0 12px 30px rgba(0,0,0,.16);
       backdrop-filter:blur(12px);
     }
 
     .nav-links{
       display:flex;
-      align-items:center;
-      gap:1rem 1.2rem;
       flex-wrap:wrap;
+      align-items:center;
+      gap:1rem 1.1rem;
     }
 
     .nav-links a{
-      color:rgba(248,251,255,.92);
+      color:rgba(255,255,255,.94);
       font-weight:700;
-      font-size:.96rem;
+      font-size:.95rem;
       position:relative;
     }
 
@@ -131,77 +200,53 @@
       content:"";
       position:absolute;
       left:0;bottom:-4px;
-      width:0;height:2px;
-      background:#fff;
+      width:0;height:2px;background:#fff;
       transition:width .3s ease;
     }
 
     .nav-links a:hover::after{width:100%}
 
     .hero{
-      flex:1;
-      display:grid;
-      place-items:center;
-      padding:2rem 0 4rem;
-    }
-
-    .hero-panel{
-      width:100%;
-      border:1px solid var(--line);
-      border-radius:32px;
-      background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.06));
-      backdrop-filter:blur(16px);
-      box-shadow:var(--shadow);
-      overflow:hidden;
+      padding:3.8rem 0 5rem;
+      position:relative;
+      z-index:2;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.1fr .9fr;
+      grid-template-columns:1.05fr .95fr;
       gap:2rem;
-      padding:2rem;
-      align-items:center;
+      align-items:end;
     }
 
-    .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:.65rem;
-      padding:.55rem .95rem;
-      border-radius:999px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.14);
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      font-size:.8rem;
+    .small-heading{
+      display:inline-block;
+      color:#ffd166;
       font-weight:800;
-      color:#fff;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.76rem;
+      margin-bottom:1rem;
     }
 
-    .eyebrow span{
-      width:9px;height:9px;border-radius:50%;
-      background:var(--gold);
-      box-shadow:0 0 0 6px rgba(245,158,11,.18);
-    }
-
-    h1,h2,h3{
-      font-family:'Space Grotesk', sans-serif;
+    h1,h2,h3,h4{
+      font-family:'Sora', sans-serif;
       line-height:1.02;
       letter-spacing:-.03em;
       margin:0 0 1rem;
     }
 
     h1{
-      font-size:clamp(3rem, 6vw, 6rem);
-      max-width:11ch;
-      margin-top:1rem;
+      font-size:clamp(3.1rem, 6vw, 6rem);
+      max-width:10ch;
+      margin-top:.3rem;
     }
 
     .lead{
-      font-size:clamp(1.04rem, 1.8vw, 1.18rem);
-      color:var(--muted);
-      max-width:62ch;
       margin:0;
+      max-width:64ch;
+      color:rgba(255,255,255,.93);
+      font-size:clamp(1.05rem, 1.8vw, 1.2rem);
     }
 
     .hero-actions{
@@ -228,43 +273,65 @@
     .btn-primary{
       background:#fff;
       color:var(--navy);
-      box-shadow:0 12px 30px rgba(0,0,0,.2);
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
     }
 
-    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(0,0,0,.25)}
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 38px rgba(0,0,0,.22);
+    }
 
     .btn-secondary{
-      background:rgba(255,255,255,.08);
+      background:rgba(255,255,255,.12);
       color:#fff;
-      border:1px solid rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.22);
       backdrop-filter:blur(10px);
     }
 
-    .btn-secondary:hover{transform:translateY(-3px);background:rgba(255,255,255,.14)}
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,.18);
+    }
 
     .hero-side{
       display:grid;
       gap:1rem;
     }
 
-    .mini-card{
-      border:1px solid rgba(255,255,255,.13);
-      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
-      border-radius:22px;
-      padding:1.2rem;
-      box-shadow:var(--shadow-soft);
+    .hero-photo,
+    .hero-card{
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      backdrop-filter:blur(12px);
     }
 
-    .mini-card strong{
+    .hero-photo{
+      height:270px;
+      background:#ffffff18;
+    }
+
+    .hero-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
+      padding:1.15rem;
+    }
+
+    .hero-card strong{
       display:block;
-      font-family:'Space Grotesk', sans-serif;
-      font-size:1.2rem;
-      margin-bottom:.25rem;
+      font-size:1.18rem;
+      margin-bottom:.3rem;
     }
 
-    .mini-card p{
+    .hero-card p{
       margin:0;
-      color:var(--muted);
+      color:rgba(255,255,255,.88);
     }
 
     main section{padding:5rem 0}
@@ -284,12 +351,17 @@
       letter-spacing:.14em;
       font-weight:800;
       font-size:.78rem;
-      color:var(--cyan);
     }
+
+    .kicker.blue{color:var(--blue)}
+    .kicker.green{color:var(--green)}
+    .kicker.gold{color:var(--gold)}
+    .kicker.pink{color:var(--pink)}
+    .kicker.violet{color:var(--violet)}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
-      max-width:11ch;
+      max-width:12ch;
     }
 
     .section-head p{
@@ -299,162 +371,191 @@
       max-width:68ch;
     }
 
-    .portal-grid{
+    .content-layout{
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:2rem;
+      align-items:start;
+    }
+
+    .paper{
+      background:linear-gradient(180deg, #ffffff, #f9fbff);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-soft);
+      padding:1.6rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .paper::before{
+      content:"";
+      position:absolute;
+      width:220px;height:220px;border-radius:50%;
+      right:-70px;top:-70px;
+      background:radial-gradient(circle, rgba(36,87,255,.08), transparent 70%);
+      pointer-events:none;
+    }
+
+    .content-flow{
+      columns:2 320px;
+      column-gap:2rem;
+    }
+
+    .content-flow p{
+      margin:0 0 1.15rem;
+      color:var(--muted);
+      break-inside:avoid;
+    }
+
+    .sidebar{
+      display:grid;
+      gap:1rem;
+    }
+
+    .mini{
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:1.15rem 1.2rem;
+      box-shadow:var(--shadow-soft);
+      background:#fff;
+    }
+
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
+    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
+    .mini.pink{background:linear-gradient(180deg, #fff8fc, #fff0f7)}
+
+    .mini strong{
+      display:block;
+      font-family:'Sora', sans-serif;
+      font-size:1.22rem;
+      margin-bottom:.3rem;
+    }
+
+    .mini.blue strong{color:var(--blue)}
+    .mini.green strong{color:var(--green)}
+    .mini.gold strong{color:#a56b00}
+    .mini.pink strong{color:var(--pink)}
+
+    .mini span{color:var(--muted)}
+
+    .showcase{
+      background:linear-gradient(180deg, #f5f9ff 0%, #ffffff 100%);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .cards{
       display:grid;
       grid-template-columns:repeat(12,1fr);
       gap:1rem;
     }
 
-    .portal{
+    .card{
       grid-column:span 4;
-      min-height:280px;
-      border-radius:28px;
+      border:1px solid var(--line);
+      border-radius:24px;
       overflow:hidden;
-      position:relative;
-      border:1px solid rgba(255,255,255,.12);
-      box-shadow:var(--shadow);
-      isolation:isolate;
-      transition:transform .32s ease, box-shadow .32s ease, border-color .32s ease;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
     }
 
-    .portal:hover{
+    .card:hover{
       transform:translateY(-8px);
-      border-color:rgba(255,255,255,.22);
-      box-shadow:0 26px 60px rgba(0,0,0,.32);
+      box-shadow:var(--shadow);
+      border-color:#bfd4f7;
     }
 
-    .portal::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(180deg, rgba(7,17,32,.08), rgba(7,17,32,.9));
-      z-index:0;
+    .card-photo{
+      height:220px;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+      background:#eaf2ff;
     }
 
-    .portal.jobs{
-      background:
-        url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    .card-photo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
-    .portal.ethics{
-      background:
-        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    .card-body{padding:1.2rem}
+
+    .tag{
+      display:inline-flex;
+      margin-bottom:.8rem;
+      padding:.35rem .72rem;
+      border-radius:999px;
+      font-size:.78rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
     }
 
-    .portal.privacy{
-      background:
-        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-    }
+    .tag.blue{background:#e7f0ff;color:#1747c6}
+    .tag.green{background:#e9fff0;color:#126a34}
+    .tag.gold{background:#fff1cc;color:#8a5b00}
+    .tag.pink{background:#ffe5f1;color:#b21d67}
 
-    .portal-content{
-      position:absolute;
-      inset:auto 0 0 0;
-      z-index:1;
-      padding:1.4rem;
-    }
-
-    .portal-icon{
-      width:52px;height:52px;border-radius:18px;
-      display:grid;place-items:center;
-      background:rgba(255,255,255,.14);
-      border:1px solid rgba(255,255,255,.18);
-      backdrop-filter:blur(10px);
-      margin-bottom:1rem;
-    }
-
-    .portal h3{
-      font-size:1.5rem;
+    .card h3{
+      font-size:1.24rem;
       margin-bottom:.5rem;
     }
 
-    .portal p{
-      margin:0 0 1rem;
-      color:#e5edf9;
-      max-width:30ch;
-    }
-
-    .portal-link{
-      display:inline-flex;
-      align-items:center;
-      gap:.55rem;
-      font-weight:800;
-      color:#fff;
-    }
-
-    .about-box{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:2rem;
-      align-items:start;
-      border:1px solid var(--line);
-      background:linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.05));
-      border-radius:32px;
-      padding:1.6rem;
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(14px);
-    }
-
-    .content-flow{
-      columns:2 300px;
-      column-gap:2rem;
-    }
-
-    .content-flow p{
+    .card p{
+      margin:0;
       color:var(--muted);
-      margin:0 0 1rem;
-      break-inside:avoid;
     }
 
-    .quick-links{
+    .files-grid{
       display:grid;
+      grid-template-columns:repeat(12,1fr);
       gap:1rem;
     }
 
-    .quick-link{
-      display:flex;
-      align-items:center;
-      gap:1rem;
-      border:1px solid rgba(255,255,255,.12);
-      background:linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05));
+    .file-link{
+      grid-column:span 3;
+      border:1px solid var(--line);
       border-radius:22px;
-      padding:1rem 1.1rem;
-      transition:transform .28s ease, box-shadow .28s ease;
-    }
-
-    .quick-link:hover{
-      transform:translateY(-4px);
+      padding:1.1rem;
+      background:#fff;
       box-shadow:var(--shadow-soft);
+      transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
     }
 
-    .quick-icon{
-      width:50px;height:50px;border-radius:16px;
-      display:grid;place-items:center;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.16);
-      color:#fff;
-      flex:0 0 auto;
+    .file-link:hover{
+      transform:translateY(-6px);
+      box-shadow:var(--shadow);
+      border-color:#bfd4f7;
     }
 
-    .quick-link strong{
+    .file-link strong{
       display:block;
-      font-size:1.02rem;
+      font-family:'Sora', sans-serif;
+      margin-bottom:.35rem;
+      color:var(--navy);
     }
 
-    .quick-link span{
-      display:block;
+    .file-link span{
       color:var(--muted);
       font-size:.95rem;
     }
 
+    .contact{
+      background:linear-gradient(180deg, #f4f8ff, #ffffff);
+      border-top:1px solid var(--line);
+    }
+
     .contact-box{
       border:1px solid var(--line);
+      background:linear-gradient(180deg, #ffffff, #f8fbff);
       border-radius:30px;
-      background:linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.05));
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(14px);
       padding:1.5rem;
+      box-shadow:var(--shadow);
       display:grid;
-      grid-template-columns:1fr .9fr;
+      grid-template-columns:1fr .95fr;
       gap:1.4rem;
       position:relative;
       overflow:hidden;
@@ -464,9 +565,8 @@
       content:"";
       position:absolute;
       width:240px;height:240px;border-radius:50%;
-      right:-70px;top:-80px;
-      background:radial-gradient(circle, rgba(37,99,235,.18), transparent 70%);
-      pointer-events:none;
+      right:-60px;top:-70px;
+      background:radial-gradient(circle, rgba(36,87,255,.12), transparent 70%);
     }
 
     .contact-items{
@@ -481,30 +581,41 @@
       gap:1rem;
       padding:1rem 1.1rem;
       border-radius:20px;
-      border:1px solid rgba(255,255,255,.12);
-      background:rgba(255,255,255,.08);
+      background:#fff;
+      border:1px solid var(--line);
       box-shadow:var(--shadow-soft);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .contact-item:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
     }
 
     .contact-icon{
       width:54px;height:54px;border-radius:18px;
       display:grid;place-items:center;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.16);
-      color:#fff;
+      background:linear-gradient(135deg, #e6efff, #fff);
+      color:var(--blue);
       flex:0 0 auto;
+    }
+
+    .contact-icon.whatsapp{
+      background:linear-gradient(135deg, #e8fff0, #fff);
+      color:var(--green);
     }
 
     footer{
       padding:2rem 0 3rem;
-      border-top:1px solid rgba(255,255,255,.08);
       color:var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
     }
 
     .footer-row{
       display:flex;
-      align-items:center;
       justify-content:space-between;
+      align-items:center;
       gap:1rem;
       flex-wrap:wrap;
     }
@@ -536,14 +647,18 @@
       to{opacity:1;transform:translateY(0)}
     }
 
+    @media (max-width: 1100px){
+      .file-link{grid-column:span 6}
+    }
+
     @media (max-width: 1020px){
       .hero-grid,
       .section-head,
-      .about-box,
+      .content-layout,
       .contact-box{
         grid-template-columns:1fr;
       }
-      .portal{grid-column:span 6}
+      .card{grid-column:span 6}
     }
 
     @media (max-width: 720px){
@@ -551,74 +666,89 @@
         flex-direction:column;
         align-items:flex-start;
       }
-      .portal-grid{
+      .cards,
+      .files-grid{
         grid-template-columns:1fr;
       }
-      .portal{grid-column:span 1}
+      .card,.file-link{grid-column:span 1}
       .content-flow{columns:1}
-      .hero-panel{border-radius:24px}
-      .hero-grid{padding:1.2rem}
-      main section{padding:4rem 0}
       h1{max-width:100%}
+      main section{padding:4rem 0}
+      .float-actions{
+        right:12px;
+        left:12px;
+        bottom:12px;
+      }
+      .float-btn{
+        min-width:unset;
+        width:100%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="page-bg"></div>
-  <div class="page-glow"></div>
+  <div class="float-actions" aria-label="Quick contact actions">
+    <a class="float-btn whatsapp" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <span class="icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span>
+        <strong>WhatsApp</strong>
+        <span>0736280522</span>
+      </span>
+    </a>
+  </div>
 
-  <header class="header" id="top">
+  <header class="site-header" id="top">
     <div class="container">
       <nav class="nav">
-        <a href="#top" class="brand" aria-label="America AI homepage">
+        <a class="brand" href="index.html" aria-label="America AI homepage">
           <span class="brand-mark" aria-hidden="true">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-              <path d="M9 10.2h6M9 13h6M9 15.8h3.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
           <span>AMERICA AI</span>
         </a>
 
         <div class="nav-links">
-          <a href="#hub">Explore</a>
-          <a href="#about">About</a>
-          <a href="job-seekers-usa.html">Jobs</a>
-          <a href="ai-ethics-kenya.html">AI Ethics</a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="job-seekers-usa.html">USA Jobs</a>
+          <a href="ai-ethics-kenya.html">AI Ethics Kenya</a>
           <a href="privacy-policy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="contact.html">Contact</a>
         </div>
       </nav>
 
       <section class="hero">
-        <div class="hero-panel">
-          <div class="hero-grid">
-            <div class="stagger">
-              <div class="eyebrow"><span></span> USA Jobs • AI Ethics • Privacy</div>
-              <h1>Your smart hub for America AI and career guidance.</h1>
-              <p class="lead">
-                Welcome to <strong>America AI</strong> — a polished homepage built to guide visitors through
-                job opportunities in the United States, AI ethics insights, and modern privacy policy resources.
-                This homepage is designed to feel professional, attractive, and easy to navigate.
-              </p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="#hub">Open the Hub</a>
-                <a class="btn btn-secondary" href="job-seekers-usa.html">Find Jobs in USA</a>
-              </div>
+        <div class="hero-grid">
+          <div class="stagger">
+            <span class="small-heading">Premium Digital Hub</span>
+            <h1>Jobs, AI, ethics, stories, privacy, and opportunity — in one place.</h1>
+            <p class="lead">
+              <strong>America AI</strong> is a polished platform built to connect <strong>Kenya and USA opportunity</strong>,
+              <strong>AI ethics</strong>, <strong>job seekers resources</strong>, <strong>privacy awareness</strong>,
+              <strong>professional content pages</strong>, and clear digital direction for people who want something more useful than ordinary websites.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#explore">Explore the Platform</a>
+              <a class="btn btn-secondary" href="contact.html">Contact Us</a>
             </div>
+          </div>
 
-            <div class="hero-side reveal">
-              <div class="mini-card">
-                <strong>USA Job Seekers</strong>
-                <p>Explore real job paths, hiring trends, and work opportunities available across America.</p>
-              </div>
-              <div class="mini-card">
-                <strong>AI Ethics Kenya</strong>
-                <p>Read a professional page on responsible AI, fairness, privacy, and human-centered governance.</p>
-              </div>
-              <div class="mini-card">
-                <strong>Privacy Policy</strong>
-                <p>Access a strong privacy-focused page on AI in America with structured, readable guidance.</p>
-              </div>
+          <div class="hero-side reveal">
+            <div class="hero-photo">
+              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80" alt="Modern workspace and digital future environment" loading="lazy">
+            </div>
+            <div class="hero-card">
+              <strong>Built to look professional</strong>
+              <p>This homepage is designed to feel complete, elegant, and future-focused with strong colors, real imagery, long content, and clear page paths.</p>
             </div>
           </div>
         </div>
@@ -627,176 +757,292 @@
   </header>
 
   <main>
-    <section id="hub">
+    <section id="explore">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Main hub</span>
-            <h2>Explore the key pages in one modern home.</h2>
+            <span class="kicker blue">Homepage overview</span>
+            <h2>A platform that touches every corner of modern digital ambition.</h2>
           </div>
           <p>
-            This homepage brings together the most important sections of your website into one clean and premium landing experience.
-            It is structured for easy reading, stronger visual appeal, and clear access to your main pages.
+            America AI is not just a homepage with links. It is a central starting point that explains the platform,
+            introduces the major files in your folder, and gives visitors a strong first impression of quality, clarity, and purpose.
           </p>
         </div>
 
-        <div class="portal-grid">
-          <a href="job-seekers-usa.html" class="portal jobs reveal" aria-label="Open USA Job Seekers page">
-            <div class="portal-content">
-              <div class="portal-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M4 8.5h16a1.5 1.5 0 0 1 1.5 1.5v7A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17v-7A1.5 1.5 0 0 1 4 8.5z" stroke="white" stroke-width="1.8"/>
-                  <path d="M10 13h4" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>USA Job Seekers</h3>
-              <p>Professional guidance on finding real jobs, career directions, and work opportunities in the United States.</p>
-              <span class="portal-link">Open page →</span>
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                A homepage should do more than greet visitors. It should tell them what kind of platform they are entering, why it exists, and what they can expect to find.
+                America AI is built as a digital home for opportunity, responsible technology, strong presentation, and practical public-facing content.
+                It connects multiple themes that matter in today’s world: jobs, digital work, global ambition, privacy, ethics, contact access, storytelling, and professional identity.
+              </p>
+              <p>
+                For many people, the internet is noisy. It is full of rushed pages, weak structure, and information that feels random.
+                America AI is designed to move in the opposite direction. It aims for order, attractive presentation, and content that feels intentional.
+                That matters because design changes how people trust information. When a page looks carefully made, the content inside it is easier to respect.
+              </p>
+              <p>
+                This homepage also acts like a map for your project folder. It connects the full range of pages you already have or are building:
+                the About page, the Job Seekers page, the Kenya AI Ethics page, the Privacy Policy page, the Terms page, and the Contact page.
+                Instead of making the site feel scattered, this homepage brings everything together with one strong visual language.
+              </p>
+              <p>
+                Another reason this homepage matters is because it frames the identity of America AI. It tells visitors that this is a platform with more than one function.
+                It can guide a job seeker, inform a reader, present ethical discussion, explain privacy, and still remain visually polished.
+                That multi-purpose identity becomes stronger when the homepage is detailed, attractive, and complete.
+              </p>
+              <p>
+                The platform also speaks across geographies. It touches both Kenya and the USA. Kenya matters because it represents energy, ambition, and a growing digital future.
+                The USA matters because it represents global opportunity, professional standards, and international aspiration for many readers.
+                America AI stands between those two conversations and builds a useful bridge.
+              </p>
+              <p>
+                In simple terms, this homepage is here to welcome, orient, and impress. It should make visitors want to keep reading.
+                It should also make them confident that the rest of the site will be worth their time.
+              </p>
             </div>
-          </a>
-
-          <a href="ai-ethics-kenya.html" class="portal ethics reveal" aria-label="Open AI Ethics Kenya page">
-            <div class="portal-content">
-              <div class="portal-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>AI Ethics Kenya</h3>
-              <p>A focused page on fairness, transparency, privacy, inclusion, and accountability in artificial intelligence.</p>
-              <span class="portal-link">Open page →</span>
-            </div>
-          </a>
-
-          <a href="privacy-policy.html" class="portal privacy reveal" aria-label="Open Privacy Policy page">
-            <div class="portal-content">
-              <div class="portal-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l7 4v5c0 4.5-3.2 7.8-7 9-3.8-1.2-7-4.5-7-9V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9.4 12.1l1.7 1.7 3.5-4" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Privacy Policy</h3>
-              <p>Read a polished privacy policy page focused on AI in America, data trust, and user protection.</p>
-              <span class="portal-link">Open page →</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker">About homepage</span>
-            <h2>A better welcome page with stronger words and better design.</h2>
-          </div>
-          <p>
-            This homepage replaces the simple plain list with a richer, more attractive landing page.
-            It uses real imagery, stronger message hierarchy, icons, call-to-action buttons, and visually polished sections.
-          </p>
-        </div>
-
-        <div class="about-box reveal">
-          <article class="content-flow">
-            <p>
-              A homepage should do more than just list links. It should introduce the purpose of the website, create trust, and guide visitors toward the most important sections.
-              In this version, the homepage becomes a professional entry point for your broader website ecosystem. Instead of saying only “Welcome to America AI,” it now presents
-              a stronger brand message, a better visual identity, and clearer direction for the visitor.
-            </p>
-            <p>
-              The title is now more intentional. It positions the site as a smart hub for America AI and career guidance. That wording makes the homepage feel more serious,
-              more useful, and more connected to the real content you already created. Visitors can quickly understand that this site is about job opportunities, AI ethics,
-              and privacy-focused information.
-            </p>
-            <p>
-              The background image behind the content gives the homepage a modern American feeling. Combined with the dark overlay and glowing accents, it creates depth and a premium look.
-              The glass-style content panel keeps text readable while preserving the strength of the image behind it. This approach makes the homepage feel more like a professional website
-              than a plain HTML starter page.
-            </p>
-            <p>
-              Each main section is now represented as a visual portal with its own image, icon, title, and supporting text. This helps users choose where to go based on meaning,
-              not just file names. It feels more natural, more modern, and more engaging. At the same time, the design remains clean and responsive for mobile screens.
-            </p>
-            <p>
-              The contact detail at the bottom ensures your email stays visible in a polished way. This gives the site a more complete and credible structure, especially if someone
-              wants to reach you for web design, edits, or content work. Overall, this homepage turns a simple nano-written list into a much stronger web front door.
-            </p>
           </article>
 
-          <div class="quick-links">
-            <a class="quick-link" href="job-seekers-usa.html">
-              <div class="quick-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M8 7V5.8A1.8 1.8 0 0 1 9.8 4h4.4A1.8 1.8 0 0 1 16 5.8V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                  <path d="M4 8.5h16a1.5 1.5 0 0 1 1.5 1.5v7A2.5 2.5 0 0 1 19 19.5H5A2.5 2.5 0 0 1 2.5 17v-7A1.5 1.5 0 0 1 4 8.5z" stroke="currentColor" stroke-width="1.8"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Find Work in the USA</strong>
-                <span>Open the job seekers page and explore available roles.</span>
-              </div>
-            </a>
-
-            <a class="quick-link" href="ai-ethics-kenya.html">
-              <div class="quick-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M8.5 12h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Read on AI Ethics</strong>
-                <span>Visit the ethics page for fairness, privacy, and governance.</span>
-              </div>
-            </a>
-
-            <a class="quick-link" href="privacy-policy.html">
-              <div class="quick-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l7 4v5c0 4.5-3.2 7.8-7 9-3.8-1.2-7-4.5-7-9V7l7-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9.4 12.1l1.7 1.7 3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Review Privacy Policy</strong>
-                <span>Access your AI privacy page with professional structure.</span>
-              </div>
-            </a>
-          </div>
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Professional structure</strong>
+              <span>Clean layout, real images, strong typography, and clear page sections create trust.</span>
+            </div>
+            <div class="mini green">
+              <strong>Kenya + USA focus</strong>
+              <span>The platform speaks to local African ambition and wider global opportunity at the same time.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Useful navigation</strong>
+              <span>Each major page in the folder is connected from here so visitors can move easily across the site.</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section class="showcase" id="files">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Contact</span>
-            <h2>Professional contact at the bottom of the homepage.</h2>
+            <span class="kicker gold">All website files</span>
+            <h2>Every major page in your America AI folder.</h2>
           </div>
           <p>
-            This footer contact section makes the homepage feel complete, polished, and trustworthy.
+            These links make the homepage useful as a full navigation center. They connect the entire project clearly and professionally.
+          </p>
+        </div>
+
+        <div class="files-grid">
+          <a class="file-link reveal" href="about.html">
+            <strong>about.html</strong>
+            <span>Learn what America AI stands for, its mission, and its creative, ethical, and professional direction.</span>
+          </a>
+
+          <a class="file-link reveal" href="job-seekers-usa.html">
+            <strong>job-seekers-usa.html</strong>
+            <span>Explore long-form guidance for job seekers in Kenya, USA-linked opportunities, side hustles, and global pathways.</span>
+          </a>
+
+          <a class="file-link reveal" href="ai-ethics-kenya.html">
+            <strong>ai-ethics-kenya.html</strong>
+            <span>Read about Kenya now, AI ethics, jobs in Kenya, best hustles, and how to apply for work outside Kenya.</span>
+          </a>
+
+          <a class="file-link reveal" href="privacy-policy.html">
+            <strong>privacy-policy.html</strong>
+            <span>Understand cookies, analytics, Google services, data use, privacy expectations, and user rights.</span>
+          </a>
+
+          <a class="file-link reveal" href="terms.html">
+            <strong>terms.html</strong>
+            <span>Review the platform’s professional terms and conditions, usage rules, and content boundaries.</span>
+          </a>
+
+          <a class="file-link reveal" href="contact.html">
+            <strong>contact.html</strong>
+            <span>Use direct communication channels, email, and WhatsApp for inquiries, web work, and contact requests.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-it-matters">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Why this site matters</span>
+            <h2>More than a website — a useful digital identity.</h2>
+          </div>
+          <p>
+            America AI is designed to be readable, memorable, and practical. It supports users who want real guidance, clear design, and better page quality.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Creative team collaboration and innovation" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag blue">Identity</span>
+              <h3>A stronger online presence</h3>
+              <p>This platform presents itself with intention, helping visitors immediately understand the quality and seriousness behind the work.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="AI and technology network concept" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag green">Ethics</span>
+              <h3>Responsible AI awareness</h3>
+              <p>It gives space to ethical questions around AI, privacy, fairness, and the future of technology in African and global settings.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Career and professional opportunity workspace" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag gold">Opportunity</span>
+              <h3>Jobs, side hustles, and guidance</h3>
+              <p>Visitors can move from inspiration to action by exploring work opportunities, side hustles, and practical job-seeking advice.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="kenya-usa">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker pink">Kenya and USA</span>
+            <h2>A homepage that connects local ambition with global possibility.</h2>
+          </div>
+          <p>
+            America AI is rooted in African creativity and awareness while still looking confidently toward international opportunity, especially in the USA and digital work spaces.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                One of the platform’s biggest strengths is that it does not pretend geography no longer matters. Instead, it respects geography while building bridges across it.
+                Kenya represents energy, youth, entrepreneurship, and the fast adaptation needed in a changing economy. The USA represents professional systems, international opportunity,
+                and a major destination of interest for many job seekers and digital workers. America AI sits between those two realities and tries to make the path more understandable.
+              </p>
+              <p>
+                For Kenyan readers, the platform shows that local reality matters. It talks about jobs in Kenya, side hustles, AI ethics in local context, and practical concerns like affordability,
+                skills, and digital growth. For readers interested in the USA, it opens the conversation about professional applications, remote work, lawful international opportunities,
+                and what stronger presentation can do for a person’s career chances.
+              </p>
+              <p>
+                This is not only useful. It is also symbolic. It shows that a locally built platform can still speak to global opportunity with confidence and quality.
+                That is one reason the homepage should feel polished. It is representing a bigger idea than one single page.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini pink">
+              <strong>Local intelligence</strong>
+              <span>Kenya is not only a background in this project. It is part of the platform’s insight and character.</span>
+            </div>
+            <div class="mini blue">
+              <strong>Global access</strong>
+              <span>The site also opens paths toward remote work, USA-linked resources, and wider digital participation.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="content-needed">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker violet">What belongs on the homepage</span>
+            <h2>Big, useful content that introduces the whole platform properly.</h2>
+          </div>
+          <p>
+            A strong homepage should not be empty. It should contain enough meaningful text to explain value, guide users, and show seriousness.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                This homepage is designed to touch every corner of the America AI project. That means it should introduce the platform, connect the pages, explain the themes,
+                and make the visitor feel that the site is active, thoughtful, and complete. It should also make the folder structure useful by linking directly to each important HTML page.
+                In your case, that includes About, Job Seekers, AI Ethics Kenya, Privacy Policy, Terms, and Contact.
+              </p>
+              <p>
+                It is also helpful for the homepage to contain thematic content. That means some writing about work, some about AI, some about Kenya, some about privacy,
+                and some about the site’s wider purpose. This kind of layered writing creates depth. It makes the homepage more than a doorway — it becomes an overview page that already provides value.
+              </p>
+              <p>
+                Good homepage content should also respect reading flow. Visitors should be able to skim sections quickly, notice the main focus areas, and still find enough detail if they want to read more deeply.
+                That is why sections, headings, cards, callout boxes, and image-supported content work well here.
+              </p>
+              <p>
+                In visual terms, the homepage should feel premium but not overloaded. The chosen colors — deep navy, strong blue, gold accents, green touches, and controlled pink highlights —
+                give the site a memorable identity without looking random. Real images also help because they make the page feel more human and credible.
+              </p>
+              <p>
+                Altogether, the homepage should leave no confusion. It should answer: What is America AI? What can I do here? Which pages are available? Why should I stay?
+                This design is built to answer those questions well.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini gold">
+              <strong>Essential pages</strong>
+              <span>About, Jobs, AI Ethics, Privacy, Terms, and Contact all deserve clear access from the homepage.</span>
+            </div>
+            <div class="mini green">
+              <strong>Stronger first impression</strong>
+              <span>Longer and richer homepage content makes the whole project feel more complete and professional.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Contact</span>
+            <h2>Ready to reach out or build more pages?</h2>
+          </div>
+          <p>
+            For professional page design, content work, edits, or questions about the site, use the details below.
           </p>
         </div>
 
         <div class="contact-box reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">Need page design or website help?</h3>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">A homepage should feel like a real digital headquarters.</h3>
             <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              For web design, edits, custom pages, and professional frontend work, use the contact below.
+              This one is designed to look strong, long, attractive, and complete — with clear paths to every file in your America AI folder and direct WhatsApp access.
             </p>
             <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Send Email</a>
-              <a class="btn btn-secondary" href="#top">Back to Top</a>
+              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Now</a>
+              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
             </div>
           </div>
 
           <div class="contact-items">
-            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Email contact">
+            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Send email">
               <div class="contact-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                   <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
@@ -804,35 +1050,36 @@
                 </svg>
               </div>
               <div>
-                <strong>Email</strong>
+                <strong>Email Contact</strong>
                 <span>kinglee6mutwiri@gmail.com</span>
               </div>
             </a>
 
-            <div class="contact-item" aria-label="Website sections">
-              <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+              <div class="contact-icon whatsapp">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                  <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
                 </svg>
               </div>
               <div>
-                <strong>Main Pages</strong>
-                <span>USA Jobs · AI Ethics · Privacy Policy</span>
+                <strong>WhatsApp</strong>
+                <span>0736280522</span>
               </div>
-            </div>
+            </a>
 
-            <div class="contact-item" aria-label="Homepage file">
+            <a class="contact-item" href="index.html">
               <div class="contact-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>Homepage file</strong>
+                <strong>Homepage File</strong>
                 <span>index.html</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -841,8 +1088,13 @@
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. A better designed homepage for jobs, AI ethics, and privacy resources.</div>
-      <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
+      <div>© 2026 America AI. Homepage connecting jobs, ethics, privacy, stories, contact, and digital opportunity.</div>
+      <div>
+        Contact:
+        <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a>
+        ·
+        <a href="https://wa.me/254736280522" target="_blank" rel="noopener">0736280522</a>
+      </div>
     </div>
   </footer>
 
