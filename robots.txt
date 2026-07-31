@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kinglee6mutwiri-cmyk.github.io/America-ai/sitemap.xml
