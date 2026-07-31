@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lucky Dube | Rasta Tribute, Life Story, Music, Message & Legacy</title>
-  <meta name="description" content="A colorful Rastafarian tribute page for Lucky Dube with vivid design, real local images, his life story, music themes, albums, message, and legacy." />
+  <title>Lucky Dube | South Africa, Jamaica, Life Story, Music & Legacy</title>
+  <meta name="description" content="A colorful Lucky Dube tribute page inspired by South Africa and Jamaica, with vivid styling, local real images, life story, music themes, albums, and legacy." />
 
   <!-- Google AdSense Auto Ads -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
@@ -28,7 +28,7 @@
       --red:#c8342e;
       --gold:#e0ad2f;
       --green:#258c46;
-      --dark:#14110f;
+      --black:#14110f;
       --cream:#fff8ef;
       --paper:#ffffff;
       --ink:#1d1815;
@@ -56,11 +56,16 @@
 
     a{text-decoration:none;color:inherit}
     img{display:block;max-width:100%}
-    ::selection{background:var(--dark);color:#fff}
+    ::selection{background:var(--black);color:#fff}
 
     .container{
       width:min(var(--max), calc(100% - 2rem));
       margin-inline:auto;
+    }
+
+    .top-bar{
+      height:8px;
+      background:linear-gradient(90deg, var(--red) 0 33.33%, var(--gold) 33.33% 66.66%, var(--green) 66.66% 100%);
     }
 
     .site-header{
@@ -69,8 +74,8 @@
       color:#fff;
       min-height:100vh;
       background:
-        linear-gradient(135deg, rgba(20,17,15,.70), rgba(200,52,46,.18)),
-        url('rasta-lucky.jpg') center/cover no-repeat;
+        linear-gradient(135deg, rgba(20,17,15,.68), rgba(20,17,15,.24)),
+        url('jamaica-bg.jpg') center/cover no-repeat;
       border-bottom:1px solid rgba(255,255,255,.14);
     }
 
@@ -93,11 +98,6 @@
       background:radial-gradient(circle, rgba(37,140,70,.20), transparent 70%);
     }
 
-    .color-stripe{
-      height:8px;
-      background:linear-gradient(90deg, var(--red) 0 33.33%, var(--gold) 33.33% 66.66%, var(--green) 66.66% 100%);
-    }
-
     .nav{
       display:flex;
       justify-content:space-between;
@@ -108,7 +108,7 @@
       top:0;
       z-index:50;
       backdrop-filter:blur(14px);
-      background:linear-gradient(180deg, rgba(20,17,15,.44), rgba(20,17,15,.12));
+      background:linear-gradient(180deg, rgba(20,17,15,.46), rgba(20,17,15,.12));
       border-bottom:1px solid rgba(255,255,255,.08);
     }
 
@@ -124,8 +124,7 @@
     .brand-mark{
       width:54px;height:54px;border-radius:18px;
       display:grid;place-items:center;
-      background:
-        linear-gradient(135deg, rgba(200,52,46,.8), rgba(224,173,47,.85), rgba(37,140,70,.9));
+      background:linear-gradient(135deg, var(--red), var(--gold), var(--green));
       border:1px solid rgba(255,255,255,.24);
       box-shadow:0 12px 30px rgba(0,0,0,.18);
     }
@@ -229,7 +228,7 @@
 
     .btn-primary{
       background:linear-gradient(90deg, #fff 0%, #fff6d7 100%);
-      color:var(--dark);
+      color:var(--black);
       box-shadow:0 12px 30px rgba(0,0,0,.18);
     }
 
@@ -265,10 +264,7 @@
       backdrop-filter:blur(10px);
     }
 
-    .hero-main-card{
-      padding:1rem;
-    }
-
+    .hero-main-card{padding:1rem}
     .hero-main-card img{
       width:100%;
       height:520px;
@@ -323,7 +319,7 @@
     .kicker.gold{color:var(--gold)}
     .kicker.green{color:var(--green)}
     .kicker.red{color:var(--red)}
-    .kicker.brown{color:var(--brown)}
+    .kicker.brown{color:#7a4f17}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
@@ -345,8 +341,7 @@
     }
 
     .paper{
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,251,242,.98));
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,251,242,.98));
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow-soft);
@@ -411,7 +406,7 @@
     .mini.gold::before{background:var(--gold)}
     .mini.green::before{background:var(--green)}
     .mini.red::before{background:var(--red)}
-    .mini.brown::before{background:var(--brown)}
+    .mini.brown::before{background:#7a4f17}
 
     .mini strong{
       display:block;
@@ -423,12 +418,11 @@
     .mini.gold strong{color:#9d6a00}
     .mini.green strong{color:var(--green)}
     .mini.red strong{color:var(--red)}
-    .mini.brown strong{color:var(--brown)}
+    .mini.brown strong{color:#7a4f17}
     .mini span{color:var(--muted)}
 
     .showcase{
-      background:
-        linear-gradient(180deg, #fff5e9 0%, #fff 100%);
+      background:linear-gradient(180deg, #fff5e9 0%, #fff 100%);
       border-top:1px solid var(--line);
       border-bottom:1px solid var(--line);
       position:relative;
@@ -603,8 +597,7 @@
       border:1px solid var(--line);
       border-radius:22px;
       padding:1.1rem;
-      background:
-        linear-gradient(180deg, #ffffff, #fffaf2);
+      background:linear-gradient(180deg, #ffffff, #fffaf2);
       box-shadow:var(--shadow-soft);
       position:relative;
       overflow:hidden;
@@ -631,8 +624,7 @@
       padding:1rem 1.15rem;
       border-radius:18px;
       border:1px solid var(--line);
-      background:
-        linear-gradient(135deg, rgba(200,52,46,.08), rgba(224,173,47,.08), rgba(37,140,70,.08));
+      background:linear-gradient(135deg, rgba(200,52,46,.08), rgba(224,173,47,.08), rgba(37,140,70,.08));
       color:var(--muted);
       box-shadow:var(--shadow-soft);
       margin-top:1rem;
@@ -640,8 +632,7 @@
 
     .footer-panel{
       border:1px solid var(--line);
-      background:
-        linear-gradient(180deg, #ffffff, #fffbf5);
+      background:linear-gradient(180deg, #ffffff, #fffbf5);
       border-radius:30px;
       padding:1.5rem;
       box-shadow:var(--shadow);
@@ -761,7 +752,7 @@
   </style>
 </head>
 <body>
-  <div class="color-stripe"></div>
+  <div class="top-bar"></div>
 
   <header class="site-header" id="top">
     <div class="container">
@@ -773,7 +764,7 @@
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
-          <span>LUCKY DUBE RASTA TRIBUTE</span>
+          <span>LUCKY DUBE TRIBUTE</span>
         </a>
 
         <div class="nav-links">
@@ -788,34 +779,34 @@
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <span class="small-heading">Colorful Rasta Tribute</span>
-            <h1>Lucky Dube, reggae truth wrapped in red, gold, and green.</h1>
+            <span class="small-heading">South Africa × Jamaica Tribute</span>
+            <h1>Lucky Dube, the African reggae voice between South Africa and Jamaica.</h1>
             <p class="lead">
-              This version recreates the page with <strong>Rastafarian colors everywhere</strong>, bold warm styling, and your
-              <strong>real local images</strong> placed throughout the design. It tells the life of Lucky Dube from the day he was born to the day he died,
-              and explains the message and legacy of his music in a stronger, brighter tribute format.
+              This page is rebuilt to avoid refused image links by using <strong>your own local real images</strong>.
+              Use a <strong>Jamaica image as the full background</strong>, then place your <strong>South Africa image</strong> and
+              <strong>Rasta tribute image</strong> inside the sections below. This gives the page a stronger cultural identity and opens more reliably in Termux.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#life">Read His Life</a>
-              <a class="btn btn-secondary" href="#music">See His Music</a>
+              <a class="btn btn-primary" href="#life">Read His Story</a>
+              <a class="btn btn-secondary" href="#music">Explore His Music</a>
             </div>
           </div>
 
           <div class="hero-side reveal">
             <div class="hero-main-card">
-              <img src="rasta-lucky.jpg" alt="Colorful Rastafarian inspired portrait used for Lucky Dube tribute">
+              <img src="south-africa.jpg" alt="South Africa real image used for Lucky Dube tribute">
               <div class="hero-caption">
-                <strong>Red for struggle, gold for light, green for life.</strong>
-                <span>The page atmosphere is intentionally built around Rasta color emotion and reggae spirit.</span>
+                <strong>South Africa is the ground of his story.</strong>
+                <span>Use your real South Africa image here because Lucky Dube’s life and message rose from this land.</span>
               </div>
             </div>
 
             <div class="mini-grid">
               <div class="mini-shot">
-                <img src="rasta-lucky.jpg" alt="Rasta visual close-up for tribute design">
+                <img src="rasta-lucky.jpg" alt="Rasta tribute image">
               </div>
               <div class="mini-shot">
-                <img src="code-shot.jpg" alt="Reference website screenshot from the project">
+                <img src="code-shot.jpg" alt="Reference code screenshot">
               </div>
             </div>
           </div>
@@ -830,10 +821,10 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker gold">Life story</span>
-            <h2>The journey of Lucky Dube from birth to death.</h2>
+            <h2>Lucky Dube from birth to death.</h2>
           </div>
           <p>
-            Lucky Dube’s life was shaped by hardship, awareness, music, conviction, and a deep commitment to speaking through song about the conditions of his society.
+            Lucky Philip Dube was born into South Africa’s difficult racial order and grew into one of Africa’s strongest reggae voices.
           </p>
         </div>
 
@@ -841,75 +832,58 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Lucky Philip Dube was born on <strong>3 August 1964</strong> in Ermelo, South Africa, at a time when apartheid still defined the structure of life.
-                He entered a divided nation where race controlled opportunity, dignity, movement, and social value. His mother named him “Lucky”
-                because his birth was seen as a blessing despite difficult circumstances. In later years, that name would seem prophetic.
+                Lucky Philip Dube was born on <strong>3 August 1964</strong> in Ermelo, South Africa. He was born during apartheid,
+                in a society already deeply shaped by division, exclusion, and unequal human value. His mother named him “Lucky”
+                because his birth was considered a blessing in difficult conditions.
               </p>
               <p>
-                His early life was not one of comfort. He grew up in hardship and witnessed the emotional and social burden carried by ordinary people.
-                These realities did not leave him. They became part of the moral and emotional foundation of his music.
-                He saw poverty, social exclusion, and the pain of systems that treated people unequally. Long before he wrote lyrics about injustice,
-                he had already lived near it.
+                His childhood was marked by hardship, and that reality later shaped the emotional and moral seriousness of his music.
+                He first entered music through South African local forms before eventually discovering that reggae gave him a deeper and more truthful language for the message he wanted to carry.
               </p>
               <p>
-                Lucky Dube began his musical path in South African local styles before moving into reggae. At first, he worked through mbaqanga and related forms,
-                learning the discipline of performance and recording. That early phase mattered because it gave him his voice, stage control, and an artistic foundation.
-                But reggae was the form that truly matched his deeper purpose.
+                Through reggae, Lucky Dube found a powerful way to speak about race, justice, human dignity, suffering, unity, crime, betrayal, and moral decay.
+                His music did not merely entertain. It observed society and answered it.
               </p>
               <p>
-                When he embraced reggae, he found a language capable of carrying protest, reflection, spirituality, and social criticism at once.
-                Reggae gave him a musical home in which he could speak honestly about apartheid, human suffering, racial division, social hypocrisy, crime, false friendship,
-                dignity, freedom, and unity. From that point onward, Lucky Dube was no longer simply singing songs. He was documenting a moral world.
+                He became internationally respected and helped establish African reggae as a force with its own depth and authority.
+                Though influenced by the global spirit of reggae, he made it speak through South African truth.
               </p>
               <p>
-                His reputation spread across South Africa, across Africa, and across the world. People respected the seriousness of his message.
-                His music was memorable, but it was also weighty. He was one of the rare artists whose songs could move the body while also confronting the conscience.
-              </p>
-              <p>
-                Even after South Africa’s political transformation, his music remained relevant because he was not singing only about one political system.
-                He was singing about human problems that survive political transitions: greed, violence, betrayal, fear, corruption, inequality, and the longing for respect.
-              </p>
-              <p>
-                On <strong>18 October 2007</strong>, Lucky Dube was tragically killed in a hijacking in Rosettenville, Johannesburg.
-                His death sent shock waves through the world of music and through the hearts of countless listeners. Many felt a painful irony,
-                because he had spent years singing about the moral failures of society, and then he became a victim of one of those same realities.
-              </p>
-              <p>
-                He died at the age of 43, leaving behind a body of work that still carries force. His life ended, but his voice did not.
-                It remains in public memory, in music collections, in African cultural consciousness, and in the minds of listeners who still find truth in his songs.
+                On <strong>18 October 2007</strong>, Lucky Dube was tragically killed in a hijacking in Johannesburg.
+                His death shocked listeners across the world, but his music survived him — and continues to do so.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini gold">
-              <strong>Birth</strong>
-              <span>3 August 1964 in Ermelo, South Africa.</span>
+              <strong>Born</strong>
+              <span>3 August 1964, Ermelo, South Africa.</span>
             </div>
             <div class="mini green">
-              <strong>Calling</strong>
-              <span>He became one of Africa’s most powerful reggae voices through message, not only melody.</span>
+              <strong>Genre</strong>
+              <span>Reggae rooted in African experience, social truth, and human dignity.</span>
             </div>
             <div class="mini red">
-              <strong>Death</strong>
-              <span>18 October 2007 in Johannesburg, South Africa.</span>
+              <strong>Died</strong>
+              <span>18 October 2007, Johannesburg, South Africa.</span>
             </div>
             <div class="mini brown">
-              <strong>Enduring power</strong>
-              <span>His music remains relevant because the truths he sang about still exist.</span>
+              <strong>Legacy</strong>
+              <span>His songs continue to matter because the social truths in them have not disappeared.</span>
             </div>
           </aside>
         </div>
 
         <div class="image-band reveal">
           <div class="image-panel">
-            <img src="rasta-lucky.jpg" alt="Rastafarian tribute image">
+            <img src="south-africa.jpg" alt="South Africa landscape or city image">
           </div>
           <div class="image-panel">
-            <img src="code-shot.jpg" alt="Project code screenshot">
+            <img src="rasta-lucky.jpg" alt="Rasta image used for tribute styling">
           </div>
           <div class="image-panel">
-            <img src="rasta-lucky.jpg" alt="Lucky Dube tribute visual repeat">
+            <img src="jamaica-bg.jpg" alt="Jamaica image used in the project">
           </div>
         </div>
       </div>
@@ -920,10 +894,10 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker green">Timeline</span>
-            <h2>The rise, growth, and end of his earthly journey.</h2>
+            <h2>The key phases of his life and music.</h2>
           </div>
           <p>
-            This timeline gives a clear path through Lucky Dube’s life and artistic development.
+            His life moved from hardship to purpose, from local performance to global recognition.
           </p>
         </div>
 
@@ -932,42 +906,42 @@
             <div class="dot">1</div>
             <article>
               <h3>1964 - Birth</h3>
-              <p>Born in Ermelo, South Africa, inside a deeply unequal apartheid system.</p>
+              <p>Born in Ermelo, South Africa, during apartheid.</p>
             </article>
           </div>
           <div class="step">
             <div class="dot">2</div>
             <article>
-              <h3>Childhood and hardship</h3>
-              <p>Raised in difficult social and economic circumstances that later shaped his worldview.</p>
+              <h3>Hard early life</h3>
+              <p>Grew up in social and economic difficulty that later shaped his message.</p>
             </article>
           </div>
           <div class="step">
             <div class="dot">3</div>
             <article>
-              <h3>Early music path</h3>
-              <p>Began in South African local music before discovering the deeper expressive power of reggae.</p>
+              <h3>Music beginnings</h3>
+              <p>Started in local South African styles before finding reggae as his deepest form.</p>
             </article>
           </div>
           <div class="step">
             <div class="dot">4</div>
             <article>
               <h3>Reggae identity</h3>
-              <p>Found his strongest message form in reggae, using it to speak on race, justice, and dignity.</p>
+              <p>Developed into one of Africa’s strongest message-driven reggae artists.</p>
             </article>
           </div>
           <div class="step">
             <div class="dot">5</div>
             <article>
-              <h3>International recognition</h3>
-              <p>Became one of the most recognized African reggae artists in the world.</p>
+              <h3>Global respect</h3>
+              <p>Built an international following and became a symbol of African reggae seriousness.</p>
             </article>
           </div>
           <div class="step">
             <div class="dot">6</div>
             <article>
               <h3>2007 - Death</h3>
-              <p>His life ended in Johannesburg, but his message entered a deeper kind of memory.</p>
+              <p>Killed in Johannesburg, but remembered through the enduring force of his songs.</p>
             </article>
           </div>
         </div>
@@ -978,53 +952,52 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker red">Music and meaning</span>
-            <h2>His songs carried social warning and human truth.</h2>
+            <span class="kicker red">Music and themes</span>
+            <h2>His songs carried justice, warning, and humanity.</h2>
           </div>
           <p>
-            Lucky Dube’s music confronted race, suffering, unity, betrayal, corruption, injustice, memory, and the dignity of ordinary people.
+            Lucky Dube used music to speak on race, unity, injustice, respect, crime, suffering, and the moral direction of society.
           </p>
         </div>
 
         <div class="cards">
           <article class="card reveal">
             <div class="card-photo">
-              <img src="rasta-lucky.jpg" alt="Rasta music visual for message section">
+              <img src="south-africa.jpg" alt="South Africa visual in message section">
             </div>
             <div class="card-body">
-              <span class="tag red">Struggle</span>
-              <h3>Freedom and captivity</h3>
-              <p>Many songs reflect lives trapped by systems, fear, and inequality, while still reaching toward freedom.</p>
+              <span class="tag red">South Africa</span>
+              <h3>The ground of his message</h3>
+              <p>His songs grew from real South African conditions of race, exclusion, pain, and the demand for dignity.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="rasta-lucky.jpg" alt="Warm colorful reggae portrait">
+              <img src="jamaica-bg.jpg" alt="Jamaica visual representing reggae roots">
             </div>
             <div class="card-body">
-              <span class="tag gold">Light</span>
-              <h3>Unity and shared humanity</h3>
-              <p>He repeatedly challenged racial division and insisted that people belong to one human family.</p>
+              <span class="tag gold">Jamaica</span>
+              <h3>The wider reggae spirit</h3>
+              <p>Jamaica represents the global roots of reggae, the tradition within which Lucky Dube found his most powerful voice.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="rasta-lucky.jpg" alt="Rastafarian color panel with drums and peace symbol">
+              <img src="rasta-lucky.jpg" alt="Rasta image representing spiritual color and reggae energy">
             </div>
             <div class="card-body">
-              <span class="tag green">Life</span>
-              <h3>Dignity and warning</h3>
-              <p>His songs spoke against crime, corruption, betrayal, and the moral collapse of communities.</p>
+              <span class="tag green">Rasta Energy</span>
+              <h3>Color, conscience, and spirit</h3>
+              <p>The red, gold, and green atmosphere reflects the symbolic energy often associated with reggae identity and spiritual struggle.</p>
             </div>
           </article>
         </div>
 
         <div class="note reveal">
-          <strong style="color:var(--red);font-family:'Cinzel',serif;">About the meaning of his music:</strong>
-          The power of Lucky Dube’s songs lies in their clear social and moral themes. Rather than inventing hidden codes,
-          it is more truthful to say that his songs carried layered messages about justice, race, memory, suffering, and human dignity.
+          <strong style="color:var(--red);font-family:'Cinzel',serif;">No refused external image links:</strong>
+          This version removes risky outside image sources and uses only local image files that you save in the same folder.
         </div>
       </div>
     </section>
@@ -1034,91 +1007,41 @@
         <div class="section-head reveal">
           <div>
             <span class="kicker brown">Albums</span>
-            <h2>Important albums and what they represent.</h2>
+            <h2>Major albums and their importance.</h2>
           </div>
           <p>
-            These albums show the development of Lucky Dube’s voice and the themes he returned to again and again.
+            These albums show how Lucky Dube used reggae to carry African social truth into global music space.
           </p>
         </div>
 
         <div class="album-list">
-          <div class="album reveal"><h3>Rastas Never Die (1984)</h3><p>An early statement of resilience, identity, and spiritual-cultural endurance.</p></div>
-          <div class="album reveal"><h3>Think About the Children (1985)</h3><p>A warning to society that the young will inherit the damage adults create.</p></div>
-          <div class="album reveal"><h3>Slave (1987)</h3><p>A powerful reflection on control, dependence, and human bondage.</p></div>
-          <div class="album reveal"><h3>Together as One (1988)</h3><p>A plea for racial and human unity in a divided society.</p></div>
-          <div class="album reveal"><h3>Prisoner (1989)</h3><p>One of his landmark works, strongly associated with injustice and confinement.</p></div>
-          <div class="album reveal"><h3>Captured Live (1990)</h3><p>Revealed the force of his stage message and live performance power.</p></div>
-          <div class="album reveal"><h3>House of Exile (1991)</h3><p>Explores alienation, social distance, and emotional displacement.</p></div>
-          <div class="album reveal"><h3>Victims (1993)</h3><p>A heavy and compassionate meditation on suffering.</p></div>
-          <div class="album reveal"><h3>Trinity (1995)</h3><p>Reflective and spiritually aware in tone and message.</p></div>
-          <div class="album reveal"><h3>Taxman (1997)</h3><p>A critique of burden, power, and the systems that weigh on common people.</p></div>
-          <div class="album reveal"><h3>The Way It Is (1999)</h3><p>A realistic and unsentimental look at society as it stands.</p></div>
-          <div class="album reveal"><h3>Soul Taker (2001)</h3><p>Touches darker emotional territory, including danger and loss.</p></div>
-          <div class="album reveal"><h3>The Other Side (2003)</h3><p>Invites deeper thought beyond appearances.</p></div>
-          <div class="album reveal"><h3>Respect (2006)</h3><p>A mature statement about dignity, value, and mutual human recognition.</p></div>
+          <div class="album reveal"><h3>Rastas Never Die (1984)</h3><p>An early statement of endurance, spiritual identity, and resilience.</p></div>
+          <div class="album reveal"><h3>Think About the Children (1985)</h3><p>A warning that adult failure damages the future of the young.</p></div>
+          <div class="album reveal"><h3>Slave (1987)</h3><p>Explores bondage, control, and the many visible and invisible forms of human captivity.</p></div>
+          <div class="album reveal"><h3>Together as One (1988)</h3><p>A direct appeal for unity beyond racial division.</p></div>
+          <div class="album reveal"><h3>Prisoner (1989)</h3><p>One of his best-known statements about confinement and injustice.</p></div>
+          <div class="album reveal"><h3>Captured Live (1990)</h3><p>Shows the power of his live performances and public message.</p></div>
+          <div class="album reveal"><h3>House of Exile (1991)</h3><p>A reflection on alienation and the experience of emotional displacement.</p></div>
+          <div class="album reveal"><h3>Victims (1993)</h3><p>A mournful and serious work about suffering and social pain.</p></div>
+          <div class="album reveal"><h3>Trinity (1995)</h3><p>Touches on reflection, faith, and moral depth.</p></div>
+          <div class="album reveal"><h3>Taxman (1997)</h3><p>Critiques burden and the pressure systems impose on ordinary lives.</p></div>
+          <div class="album reveal"><h3>The Way It Is (1999)</h3><p>A realistic and unsweetened portrait of social reality.</p></div>
+          <div class="album reveal"><h3>Soul Taker (2001)</h3><p>Moves into darker emotional territory, including danger and loss.</p></div>
+          <div class="album reveal"><h3>The Other Side (2003)</h3><p>Encourages deeper seeing beyond surface appearances.</p></div>
+          <div class="album reveal"><h3>Respect (2006)</h3><p>A later affirmation of dignity, recognition, and basic human worth.</p></div>
         </div>
       </div>
     </section>
 
-    <section id="songs">
+    <section id="legacy">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">Songs and themes</span>
-            <h2>Selected songs and what people hear in them.</h2>
+            <span class="kicker gold">Legacy</span>
+            <h2>Why Lucky Dube still matters across continents.</h2>
           </div>
           <p>
-            These short notes explain the commonly recognized meanings in some of Lucky Dube’s best-known songs.
-          </p>
-        </div>
-
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p><strong>Prisoner</strong> is often heard as a reflection on social and personal captivity.</p>
-              <p><strong>Slave</strong> suggests bondage in historical, emotional, and structural forms.</p>
-              <p><strong>Together as One</strong> rejects separation and insists on unity.</p>
-              <p><strong>Different Colours / One People</strong> speaks directly to shared humanity beyond race.</p>
-              <p><strong>Victims</strong> mourns the suffering of ordinary people trapped inside larger failures.</p>
-              <p><strong>House of Exile</strong> expresses alienation and emotional homelessness.</p>
-              <p><strong>Remember Me</strong> carries themes of mortality, memory, and what remains after death.</p>
-              <p><strong>It’s Not Easy</strong> speaks honestly about hardship and emotional burden.</p>
-              <p><strong>Taxman</strong> criticizes the pressure systems place on everyday people.</p>
-              <p><strong>Respect</strong> centers the need for dignity and basic human recognition.</p>
-              <p><strong>Truth in the World</strong> questions honesty and moral confusion.</p>
-              <p><strong>Crime and Corruption</strong> directly confronts social decay and wrongdoing.</p>
-              <p><strong>Think About the Children</strong> reminds society that its failures damage the future.</p>
-              <p><strong>Reggae Strong</strong> affirms reggae as a carrier of courage and truth.</p>
-            </div>
-          </article>
-
-          <aside class="sidebar reveal">
-            <div class="mini green">
-              <strong>Main themes</strong>
-              <span>Freedom, justice, race, suffering, memory, dignity, conscience, and warning.</span>
-            </div>
-            <div class="mini gold">
-              <strong>Why his songs endure</strong>
-              <span>Because they address truths that continue to shape real life.</span>
-            </div>
-            <div class="mini red">
-              <strong>Why listeners return</strong>
-              <span>He made songs that were musical, emotional, social, and moral all at once.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase" id="legacy">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker red">Legacy</span>
-            <h2>Why Lucky Dube is still remembered with force.</h2>
-          </div>
-          <p>
-            Lucky Dube remains one of Africa’s greatest reggae artists because his songs still speak wherever injustice and longing for dignity remain.
+            Lucky Dube stands between South African reality and the wider reggae world, linking African struggle with a global language of truth.
           </p>
         </div>
 
@@ -1126,28 +1049,28 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                His legacy survives because he sang from truth rather than from fashion. He paid attention to society and gave its pain back in music.
-                He warned, comforted, criticized, and reflected. He helped establish African reggae as a voice of authority, not imitation.
+                Lucky Dube remains one of Africa’s greatest reggae figures because he transformed music into testimony.
+                He sang with conviction about injustice, race, betrayal, crime, suffering, and the need for respect.
               </p>
               <p>
-                His music still matters because so many of the issues he addressed are not finished. Race, inequality, betrayal, violence, crime, and the need for human respect
-                continue to appear in public life. That is why new generations still find him relevant.
+                His music still resonates because the conditions he described are not gone. People still recognize the human truths inside his songs.
+                That makes him more than a historical musician. It makes him a continuing moral voice.
               </p>
               <p>
-                Lucky Dube was taken too early, but what he left behind was large enough to outlive him.
-                His life ended, but his message did not.
+                In this page design, South Africa represents his lived ground, Jamaica represents the global home of reggae,
+                and the red-gold-green palette ties those meanings together in a stronger tribute atmosphere.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini brown">
-              <strong>African reggae icon</strong>
-              <span>He remains one of the strongest and most respected reggae voices ever produced by Africa.</span>
+              <strong>South African truth</strong>
+              <span>He sang from real social conditions and carried those truths into music history.</span>
             </div>
             <div class="mini gold">
-              <strong>Living influence</strong>
-              <span>His songs continue to educate, challenge, and comfort listeners across generations.</span>
+              <strong>Jamaican connection</strong>
+              <span>He helped show how reggae could speak far beyond Jamaica while honoring its spiritual and musical roots.</span>
             </div>
           </aside>
         </div>
@@ -1158,19 +1081,19 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">Closing tribute</span>
-            <h2>Built with colorful Rasta energy from top to bottom.</h2>
+            <span class="kicker green">Final setup</span>
+            <h2>How to make this open perfectly in Termux.</h2>
           </div>
           <p>
-            This version uses red, gold, and green across the whole page and places your real images everywhere they fit best.
+            Save the images below in the same folder as this HTML file so the page opens without refused links.
           </p>
         </div>
 
         <div class="footer-panel reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Lucky Dube still lives through song, memory, and message.</h3>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Use local images, not external blocked ones.</h3>
             <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              The whole page is now designed to feel more alive, more colorful, and more rooted in Rastafarian visual energy.
+              This is the safest and most reliable way to make the tribute page work in Termux and mobile browsers.
             </p>
             <div class="hero-actions" style="margin-top:1.2rem;">
               <a class="btn btn-primary" href="index.html">Back Home</a>
@@ -1188,7 +1111,35 @@
                 </svg>
               </div>
               <div>
-                <strong>Main image file</strong>
+                <strong>Jamaica background image</strong>
+                <span>jamaica-bg.jpg</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>South Africa image</strong>
+                <span>south-africa.jpg</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Rasta tribute image</strong>
                 <span>rasta-lucky.jpg</span>
               </div>
             </div>
@@ -1202,31 +1153,21 @@
                 </svg>
               </div>
               <div>
-                <strong>Second image file</strong>
+                <strong>Optional screenshot image</strong>
                 <span>code-shot.jpg</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Suggested file name</strong>
-                <span>lucky-dube.html</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="note reveal">
-          <strong style="color:var(--green);">For Termux:</strong>
-          keep this HTML file in the same folder with:
-          <strong>rasta-lucky.jpg</strong> and <strong>code-shot.jpg</strong>.
-          Then open it with:
+          <strong style="color:var(--green);">Termux instruction:</strong>
+          put this HTML file together with:
+          <strong>jamaica-bg.jpg</strong>,
+          <strong>south-africa.jpg</strong>,
+          <strong>rasta-lucky.jpg</strong>,
+          and optionally <strong>code-shot.jpg</strong>.
+          Then open with
           <code style="background:#fff3d6;padding:.12rem .4rem;border-radius:8px;">termux-open lucky-dube.html</code>
         </div>
       </div>
@@ -1235,8 +1176,8 @@
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. Lucky Dube tribute page recreated with colorful Rasta styling and local real images.</div>
-      <div>Red • Gold • Green throughout the design.</div>
+      <div>© 2026 America AI. Lucky Dube tribute page built with local South Africa and Jamaica image support.</div>
+      <div>Reliable for Termux and local file opening.</div>
     </div>
   </footer>
 
