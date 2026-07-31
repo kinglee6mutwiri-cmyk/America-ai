@@ -1,0 +1,1222 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip Luck Dube Story Book</title>
+  <meta name="description" content="A colorful story-book style tribute page for Philip Luck Dube with strong fallback visuals, local image support, biography, music, and legacy." />
+
+  <!-- Google AdSense Auto Ads -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0DVD5VSFYW');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --red:#c93a31;
+      --gold:#e4ae32;
+      --green:#23904a;
+      --dark:#14110f;
+      --ink:#1f1a16;
+      --muted:#675f56;
+      --paper:#ffffff;
+      --line:#ead8bc;
+      --shadow:0 24px 60px rgba(20,17,15,.14);
+      --shadow-soft:0 10px 28px rgba(31,26,22,.08);
+      --radius:28px;
+      --max:1280px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope', sans-serif;
+      color:var(--ink);
+      line-height:1.82;
+      background:
+        radial-gradient(circle at top left, rgba(228,174,50,.16), transparent 22%),
+        radial-gradient(circle at top right, rgba(35,144,74,.12), transparent 22%),
+        linear-gradient(180deg, #fff7ed 0%, #fffdf8 100%);
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    ::selection{background:var(--dark);color:#fff}
+
+    .container{
+      width:min(var(--max), calc(100% - 2rem));
+      margin-inline:auto;
+    }
+
+    .top-bar{
+      height:8px;
+      background:linear-gradient(90deg, var(--red) 0 33.33%, var(--gold) 33.33% 66.66%, var(--green) 66.66% 100%);
+    }
+
+    .site-header{
+      position:relative;
+      overflow:hidden;
+      color:#fff;
+      min-height:100vh;
+      background:
+        linear-gradient(135deg, rgba(20,17,15,.72), rgba(20,17,15,.34)),
+        radial-gradient(circle at 20% 20%, rgba(228,174,50,.28), transparent 28%),
+        radial-gradient(circle at 82% 16%, rgba(201,58,49,.22), transparent 22%),
+        radial-gradient(circle at 80% 80%, rgba(35,144,74,.22), transparent 24%),
+        linear-gradient(135deg, #1f160d 0%, #7d250f 24%, #c78d18 50%, #1b5c23 100%);
+      border-bottom:1px solid rgba(255,255,255,.14);
+    }
+
+    .site-header::before,
+    .site-header::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      filter:blur(12px);
+      pointer-events:none;
+    }
+
+    .site-header::before{
+      width:480px;height:480px;left:-140px;top:-160px;
+      background:radial-gradient(circle, rgba(228,174,50,.24), transparent 70%);
+    }
+
+    .site-header::after{
+      width:360px;height:360px;right:-80px;bottom:-100px;
+      background:radial-gradient(circle, rgba(35,144,74,.25), transparent 70%);
+    }
+
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 0;
+      position:sticky;
+      top:0;
+      z-index:60;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(180deg, rgba(20,17,15,.52), rgba(20,17,15,.12));
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.9rem;
+      font-family:'Cinzel', serif;
+      font-weight:800;
+      letter-spacing:.03em;
+    }
+
+    .brand-mark{
+      width:54px;height:54px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--red), var(--gold), var(--green));
+      border:1px solid rgba(255,255,255,.24);
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .nav-links{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:1rem 1.1rem;
+    }
+
+    .nav-links a{
+      color:rgba(255,255,255,.96);
+      font-weight:700;
+      font-size:.95rem;
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-4px;
+      width:0;height:2px;background:#fff;
+      transition:width .3s ease;
+    }
+
+    .nav-links a:hover::after{width:100%}
+
+    .hero{
+      padding:3rem 0 5rem;
+      min-height:calc(100vh - 80px);
+      display:grid;
+      align-items:end;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.03fr .97fr;
+      gap:2rem;
+      align-items:end;
+    }
+
+    h1,h2,h3,h4{
+      font-family:'Cinzel', serif;
+      line-height:1.06;
+      letter-spacing:-.02em;
+      margin:0 0 1rem;
+    }
+
+    h1{
+      font-size:clamp(3.1rem, 7vw, 6.4rem);
+      max-width:11ch;
+      text-shadow:0 10px 30px rgba(0,0,0,.28);
+    }
+
+    .lead{
+      margin:0;
+      max-width:66ch;
+      color:rgba(255,255,255,.95);
+      font-size:clamp(1.02rem, 1.8vw, 1.18rem);
+      text-shadow:0 6px 18px rgba(0,0,0,.24);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:1.8rem;
+    }
+
+    .btn{
+      min-height:54px;
+      padding:0 1.2rem;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      font-weight:800;
+      transition:transform .28s ease, box-shadow .28s ease, background .28s ease;
+    }
+
+    .btn-primary{
+      background:linear-gradient(90deg, #fff 0%, #fff6d7 100%);
+      color:var(--dark);
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 38px rgba(0,0,0,.22);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.24);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,.18);
+    }
+
+    .hero-side{
+      display:grid;
+      gap:1rem;
+    }
+
+    .image-shell,
+    .mini-shot{
+      border-radius:28px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      position:relative;
+    }
+
+    .image-shell{padding:1rem}
+    .image-shell .smart-image{height:520px;border-radius:22px}
+    .mini-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+    }
+    .mini-shot .smart-image{height:180px}
+
+    .hero-caption{
+      padding:.95rem .2rem .1rem;
+      color:rgba(255,255,255,.9);
+    }
+
+    .hero-caption strong{
+      display:block;
+      margin-bottom:.25rem;
+      font-size:1.08rem;
+    }
+
+    .smart-image{
+      position:relative;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(circle at top left, rgba(228,174,50,.24), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(35,144,74,.20), transparent 25%),
+        linear-gradient(135deg, #29170f 0%, #7b2216 25%, #cc9322 58%, #20592b 100%);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      isolation:isolate;
+    }
+
+    .smart-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      position:relative;
+      z-index:2;
+    }
+
+    .smart-image .fallback-art{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      background:
+        radial-gradient(circle at 50% 18%, rgba(255,248,210,.85), rgba(255,210,90,.18) 16%, transparent 28%),
+        radial-gradient(circle at 18% 72%, rgba(201,58,49,.16), transparent 20%),
+        radial-gradient(circle at 82% 75%, rgba(35,144,74,.16), transparent 22%),
+        linear-gradient(135deg, rgba(20,17,15,.4), rgba(20,17,15,.12));
+    }
+
+    .smart-image .fallback-badge{
+      position:absolute;
+      left:14px;
+      bottom:14px;
+      z-index:3;
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.55rem .8rem;
+      border-radius:999px;
+      color:#fff;
+      background:rgba(20,17,15,.52);
+      border:1px solid rgba(255,255,255,.16);
+      backdrop-filter:blur(10px);
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+
+    .smart-image .fallback-badge::before{
+      content:"";
+      width:10px;height:10px;border-radius:50%;
+      background:linear-gradient(135deg, var(--red), var(--gold), var(--green));
+      box-shadow:0 0 0 3px rgba(255,255,255,.12);
+    }
+
+    .smart-image.is-loaded .fallback-badge{
+      background:rgba(20,17,15,.34);
+    }
+
+    .smart-image.is-loaded .fallback-badge span::after{
+      content:"Image loaded";
+    }
+
+    .smart-image:not(.is-loaded) .fallback-badge span::after{
+      content:"Fallback visual";
+    }
+
+    main section{padding:5rem 0}
+
+    .section-head{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:2rem;
+      align-items:end;
+      margin-bottom:2rem;
+    }
+
+    .kicker{
+      display:block;
+      margin-bottom:.75rem;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:800;
+      font-size:.78rem;
+      font-family:'Manrope', sans-serif;
+    }
+
+    .kicker.gold{color:var(--gold)}
+    .kicker.green{color:var(--green)}
+    .kicker.red{color:var(--red)}
+    .kicker.brown{color:#7a4f17}
+
+    .section-head h2{
+      font-size:clamp(2rem, 4vw, 4rem);
+      max-width:13ch;
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:1.04rem;
+      max-width:68ch;
+    }
+
+    .content-layout{
+      display:grid;
+      grid-template-columns:1.06fr .94fr;
+      gap:2rem;
+      align-items:start;
+    }
+
+    .paper{
+      background:linear-gradient(180deg, rgba(255,255,255,.98), rgba(255,251,242,.98));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-soft);
+      padding:1.6rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .paper::before{
+      content:"";
+      position:absolute;
+      width:240px;height:240px;border-radius:50%;
+      right:-70px;top:-70px;
+      background:radial-gradient(circle, rgba(228,174,50,.10), transparent 70%);
+      pointer-events:none;
+    }
+
+    .paper::after{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:7px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+    }
+
+    .content-flow{
+      columns:2 320px;
+      column-gap:2rem;
+    }
+
+    .content-flow p{
+      margin:0 0 1.15rem;
+      color:var(--muted);
+      break-inside:avoid;
+    }
+
+    .sidebar{
+      display:grid;
+      gap:1rem;
+    }
+
+    .mini{
+      border-radius:22px;
+      padding:1.15rem 1.2rem;
+      box-shadow:var(--shadow-soft);
+      background:#fff;
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .mini::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+    }
+
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
+    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
+    .mini.red{background:linear-gradient(180deg, #fff8f8, #fff0f0)}
+    .mini.brown{background:linear-gradient(180deg, #fffaf5, #f7efe6)}
+
+    .mini.gold::before{background:var(--gold)}
+    .mini.green::before{background:var(--green)}
+    .mini.red::before{background:var(--red)}
+    .mini.brown::before{background:#7a4f17}
+
+    .mini strong{
+      display:block;
+      font-family:'Cinzel', serif;
+      font-size:1.18rem;
+      margin-bottom:.3rem;
+    }
+
+    .mini.gold strong{color:#9d6a00}
+    .mini.green strong{color:var(--green)}
+    .mini.red strong{color:var(--red)}
+    .mini.brown strong{color:#7a4f17}
+    .mini span{color:var(--muted)}
+
+    .showcase{
+      background:linear-gradient(180deg, #fff5e9 0%, #fff 100%);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      position:relative;
+    }
+
+    .showcase::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:8px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+    }
+
+    .timeline{
+      display:grid;
+      gap:1rem;
+      position:relative;
+    }
+
+    .timeline::before{
+      content:"";
+      position:absolute;
+      left:18px;top:8px;bottom:8px;width:3px;
+      background:linear-gradient(var(--red), var(--gold), var(--green));
+      border-radius:999px;
+    }
+
+    .step{
+      display:grid;
+      grid-template-columns:50px 1fr;
+      gap:1rem;
+      align-items:start;
+    }
+
+    .dot{
+      width:38px;height:38px;border-radius:50%;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--red), var(--gold), var(--green));
+      color:#fff;font-weight:800;
+      box-shadow:0 10px 22px rgba(228,174,50,.22);
+      z-index:1;
+      margin-top:.1rem;
+    }
+
+    .step article{
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:1.1rem 1.15rem;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .step h3{
+      font-size:1.08rem;
+      margin-bottom:.35rem;
+    }
+
+    .step p{
+      margin:0;
+      color:var(--muted);
+      font-family:'Manrope', sans-serif;
+    }
+
+    .image-band{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:1rem;
+      margin-top:1.5rem;
+    }
+
+    .image-panel{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
+      background:#f3ebdf;
+      min-height:260px;
+      position:relative;
+    }
+
+    .image-panel::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;height:7px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+      z-index:5;
+    }
+
+    .image-panel .smart-image{
+      min-height:260px;
+      border:none;
+      border-radius:0;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:1rem;
+    }
+
+    .card{
+      grid-column:span 4;
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+      transition:transform .3s ease, box-shadow .3s ease;
+      position:relative;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:6px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+      z-index:2;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:var(--shadow);
+    }
+
+    .card-photo{
+      height:250px;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+      background:#f4ecdf;
+      position:relative;
+    }
+
+    .card-photo .smart-image{
+      height:250px;
+      border:none;
+      border-radius:0;
+    }
+
+    .card-body{padding:1.2rem}
+
+    .tag{
+      display:inline-flex;
+      margin-bottom:.8rem;
+      padding:.35rem .72rem;
+      border-radius:999px;
+      font-size:.78rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      font-family:'Manrope', sans-serif;
+      color:#fff;
+    }
+
+    .tag.gold{background:var(--gold)}
+    .tag.green{background:var(--green)}
+    .tag.red{background:var(--red)}
+
+    .card h3{
+      font-size:1.18rem;
+      margin-bottom:.5rem;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .album-list{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:1rem;
+    }
+
+    .album{
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:1.1rem;
+      background:linear-gradient(180deg, #ffffff, #fffaf2);
+      box-shadow:var(--shadow-soft);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .album::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:6px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+    }
+
+    .album h3{
+      font-size:1.08rem;
+      margin-bottom:.45rem;
+    }
+
+    .album p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .note{
+      padding:1rem 1.15rem;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(201,58,49,.08), rgba(228,174,50,.08), rgba(35,144,74,.08));
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+      margin-top:1rem;
+    }
+
+    .footer-panel{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #ffffff, #fffbf5);
+      border-radius:30px;
+      padding:1.5rem;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr .95fr;
+      gap:1.4rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .footer-panel::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;height:8px;
+      background:linear-gradient(90deg, var(--red), var(--gold), var(--green));
+    }
+
+    .contact-items{
+      display:grid;
+      gap:1rem;
+      align-content:start;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 1.1rem;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .contact-icon{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--red), var(--gold), var(--green));
+      color:#fff;
+      flex:0 0 auto;
+    }
+
+    footer{
+      padding:2rem 0 3rem;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .78s ease, transform .78s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger > *{
+      opacity:0;
+      transform:translateY(18px);
+      animation:rise .85s ease forwards;
+    }
+
+    .stagger > *:nth-child(1){animation-delay:.08s}
+    .stagger > *:nth-child(2){animation-delay:.18s}
+    .stagger > *:nth-child(3){animation-delay:.28s}
+    .stagger > *:nth-child(4){animation-delay:.38s}
+    .stagger > *:nth-child(5){animation-delay:.48s}
+
+    @keyframes rise{
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media (max-width: 1100px){
+      .image-band{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width: 1020px){
+      .hero-grid,
+      .section-head,
+      .content-layout,
+      .footer-panel{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 6}
+      .album-list{grid-template-columns:1fr}
+      .image-shell .smart-image{height:420px}
+    }
+
+    @media (max-width: 720px){
+      .nav{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .cards,
+      .image-band{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 1}
+      .content-flow{columns:1}
+      h1{max-width:100%}
+      main section{padding:4rem 0}
+      .image-shell .smart-image{height:320px}
+      .mini-grid{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="Back home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>PHILIP LUCK DUBE STORY BOOK</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="#life">Life Story</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#music">Music</a>
+          <a href="#legacy">Legacy</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="stagger">
+            <h1>Philip Luck Dube Story Book</h1>
+            <p class="lead">
+              A colorful story-book tribute page designed with warm Rasta tones, strong local image support, and fallback visuals that still look rich when images do not load.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#life">Read Story</a>
+              <a class="btn btn-secondary" href="#music">View Music</a>
+            </div>
+          </div>
+
+          <div class="hero-side reveal">
+            <div class="image-shell">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="rasta-lucky.jpg" alt="Main tribute image for Philip Luck Dube" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+              <div class="hero-caption">
+                <strong>Main story image</strong>
+                <span>If the local image is missing, the page keeps a strong visual panel automatically.</span>
+              </div>
+            </div>
+
+            <div class="mini-grid">
+              <div class="mini-shot">
+                <div class="smart-image" data-role="image">
+                  <div class="fallback-art"></div>
+                  <img src="south-africa.jpg" alt="South Africa image" loading="lazy">
+                  <div class="fallback-badge"><span></span></div>
+                </div>
+              </div>
+              <div class="mini-shot">
+                <div class="smart-image" data-role="image">
+                  <div class="fallback-art"></div>
+                  <img src="jamaica-bg.jpg" alt="Jamaica image" loading="lazy">
+                  <div class="fallback-badge"><span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section id="life">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker gold">Life story</span>
+            <h2>From birth to death.</h2>
+          </div>
+          <p>
+            Philip Luck Dube rose from difficult conditions in South Africa to become one of the most powerful and respected reggae voices from the African continent.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                Philip Luck Dube was born on <strong>3 August 1964</strong> in Ermelo, South Africa, during the apartheid era.
+                He was born into a divided country where race and inequality shaped ordinary life in harsh ways.
+              </p>
+              <p>
+                His early life was marked by struggle, and that experience helped form the seriousness of his later music.
+                He first grew through local South African sounds before reggae became the voice of his deepest message.
+              </p>
+              <p>
+                Through reggae, he sang about race, dignity, injustice, betrayal, unity, crime, suffering, and human worth.
+                He became more than a singer. He became a witness through music.
+              </p>
+              <p>
+                His career grew beyond South Africa, and his songs reached international audiences who recognized the honesty and gravity in his lyrics.
+              </p>
+              <p>
+                On <strong>18 October 2007</strong>, he was tragically killed in Johannesburg.
+                His death ended his life, but not the force of his message.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini gold">
+              <strong>Birth</strong>
+              <span>3 August 1964, Ermelo, South Africa.</span>
+            </div>
+            <div class="mini green">
+              <strong>Voice</strong>
+              <span>Reggae with African truth, conscience, and social depth.</span>
+            </div>
+            <div class="mini red">
+              <strong>Death</strong>
+              <span>18 October 2007, Johannesburg, South Africa.</span>
+            </div>
+            <div class="mini brown">
+              <strong>Memory</strong>
+              <span>His music still speaks because its truths remain visible in the world.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="timeline">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Timeline</span>
+            <h2>The major steps of his journey.</h2>
+          </div>
+          <p>
+            His life moved from hardship to purpose, and from local sound to lasting international legacy.
+          </p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="step">
+            <div class="dot">1</div>
+            <article>
+              <h3>1964 - Birth</h3>
+              <p>Born in Ermelo, South Africa, during apartheid.</p>
+            </article>
+          </div>
+          <div class="step">
+            <div class="dot">2</div>
+            <article>
+              <h3>Early hardship</h3>
+              <p>Raised near social struggle and inequality, which later shaped his lyrics.</p>
+            </article>
+          </div>
+          <div class="step">
+            <div class="dot">3</div>
+            <article>
+              <h3>Musical beginnings</h3>
+              <p>Started in South African styles before reggae became his strongest form.</p>
+            </article>
+          </div>
+          <div class="step">
+            <div class="dot">4</div>
+            <article>
+              <h3>Reggae voice</h3>
+              <p>Became known for songs about justice, suffering, unity, and dignity.</p>
+            </article>
+          </div>
+          <div class="step">
+            <div class="dot">5</div>
+            <article>
+              <h3>Global recognition</h3>
+              <p>Built a worldwide audience and became a symbol of African reggae power.</p>
+            </article>
+          </div>
+          <div class="step">
+            <div class="dot">6</div>
+            <article>
+              <h3>2007 - Death</h3>
+              <p>His life ended, but his songs continued into public memory and legacy.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker red">Music</span>
+            <h2>Music, message, and meaning.</h2>
+          </div>
+          <p>
+            His songs were not just sound. They were moral reflection, social warning, and human witness.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="south-africa.jpg" alt="South Africa visual" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag red">Source</span>
+              <h3>South African truth</h3>
+              <p>His music grew from the realities of inequality, survival, race, and dignity.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="jamaica-bg.jpg" alt="Jamaica reggae visual" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag gold">Spirit</span>
+              <h3>Reggae connection</h3>
+              <p>Reggae gave him the language to speak beyond borders while staying rooted in African experience.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="rasta-lucky.jpg" alt="Rasta tribute image" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag green">Meaning</span>
+              <h3>Color and conscience</h3>
+              <p>His music carried protest, memory, pain, dignity, warning, and hope in one voice.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="note reveal">
+          Popular themes in his songs include freedom, justice, race, suffering, memory, crime, unity, and human respect.
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="legacy">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker gold">Legacy</span>
+            <h2>Why he is still remembered.</h2>
+          </div>
+          <p>
+            He remains unforgettable because he sang from truth, and truth stays alive even after the singer is gone.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                Philip Luck Dube remains one of the strongest reggae figures from Africa because his songs still speak to the realities people face.
+              </p>
+              <p>
+                He turned music into witness. He showed that African reggae could stand with authority, depth, and global emotional reach.
+              </p>
+              <p>
+                His life ended too early, but his message stayed. That is why his legacy continues.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini brown">
+              <strong>African icon</strong>
+              <span>He remains one of the continent’s most respected reggae voices.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Still relevant</strong>
+              <span>His songs remain powerful because the truths in them are still recognizable today.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="closing">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Final note</span>
+            <h2>A cleaner title, a stronger page.</h2>
+          </div>
+          <p>
+            The hero heading has now been simplified to one big title: <strong>Philip Luck Dube Story Book</strong>.
+          </p>
+        </div>
+
+        <div class="footer-panel reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Built to stay beautiful with or without images.</h3>
+            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
+              If you place local images in the same folder, the page uses them. If not, the fallback visuals still keep everything polished.
+            </p>
+            <div class="hero-actions" style="margin-top:1.2rem;">
+              <a class="btn btn-primary" href="#top">Back to Top</a>
+              <a class="btn btn-secondary" href="#life">Read Again</a>
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Main image</strong>
+                <span>rasta-lucky.jpg</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>South Africa image</strong>
+                <span>south-africa.jpg</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Jamaica image</strong>
+                <span>jamaica-bg.jpg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 Philip Luck Dube Story Book.</div>
+      <div>Clean title update completed.</div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    document.querySelectorAll('.smart-image').forEach(wrapper => {
+      const img = wrapper.querySelector('img');
+      if (!img) return;
+
+      function markLoaded(){
+        wrapper.classList.add('is-loaded');
+        img.style.opacity = '1';
+      }
+
+      function markFailed(){
+        wrapper.classList.remove('is-loaded');
+        img.style.opacity = '0';
+      }
+
+      if (img.complete && img.naturalWidth > 0) {
+        markLoaded();
+      } else if (img.complete && img.naturalWidth === 0) {
+        markFailed();
+      }
+
+      img.addEventListener('load', () => {
+        if (img.naturalWidth > 0) markLoaded();
+        else markFailed();
+      });
+
+      img.addEventListener('error', markFailed);
+    });
+  </script>
+</body>
+</html>
+ 
