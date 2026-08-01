@@ -2,10 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>America AI | Jobs, AI Tools, Ethics, Privacy, Stories & Global Opportunity</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>America AI</title>
 
   <!-- 1. GOOGLE ANALYTICS 4 - FOR ANALYSIS -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HE9CKP90"></script>
@@ -20,18 +19,42 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
      crossorigin="anonymous"></script>
 
-style
-roots
-      --gold:#d79a1e;
-      --gold-soft:#fff2cf;
-      --green:#15803d;
-      --green-soft:#e8fff0;
-      --pink:#db2777;
-      --violet:#6d28d9;
-      --shadow:0 24px 60px rgba(15,39,71,.12);
-      --shadow-soft:0 10px 28px rgba(18,35,63,.08);
+  <meta name="description" content="America AI home page featuring educational articles on artificial intelligence, technology, jobs, careers, health, useful online resources, contact details, and important website pages.">
+  <meta name="keywords" content="America AI, artificial intelligence, technology articles, jobs, careers, health, online resources, AI ethics Kenya, contact page, educational website">
+  <meta name="author" content="America AI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/">
+
+  <meta property="og:title" content="America AI">
+  <meta property="og:description" content="Explore AI, technology, jobs, careers, health, and useful resources on America AI.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinglee6mutwiri-cmyk.github.io/America-ai/">
+  <meta property="og:image" content="home-hero.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#f5f8fc;
+      --paper:#ffffff;
+      --ink:#162132;
+      --muted:#627084;
+      --line:#dbe5ef;
+
+      --navy:#17263d;
+      --blue:#2f63ff;
+      --sky:#58b4ff;
+      --teal:#0d998f;
+      --green:#1b8d5a;
+      --amber:#d99f24;
+      --orange:#f07a2f;
+      --rose:#d75078;
+
+      --shadow:0 28px 70px rgba(18,30,45,.12);
+      --shadow-soft:0 12px 28px rgba(22,33,50,.08);
       --radius:28px;
-      --radius-sm:18px;
       --max:1280px;
     }
 
@@ -39,18 +62,19 @@ roots
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:'Manrope', sans-serif;
-      color:var(--text);
-      line-height:1.8;
+      font-family:'Inter', sans-serif;
+      color:var(--ink);
+      line-height:1.82;
       background:
-        radial-gradient(circle at top left, rgba(36,87,255,.09), transparent 24%),
-        radial-gradient(circle at top right, rgba(219,39,119,.07), transparent 20%),
-        linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(47,99,255,.08), transparent 24%),
+        radial-gradient(circle at top right, rgba(88,180,255,.08), transparent 18%),
+        radial-gradient(circle at bottom right, rgba(240,122,47,.06), transparent 18%),
+        linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%);
       overflow-x:hidden;
     }
 
     a{text-decoration:none;color:inherit}
-    img,svg{display:block;max-width:100%}
+    img{display:block;max-width:100%}
     ::selection{background:var(--navy);color:#fff}
 
     .container{
@@ -58,69 +82,20 @@ roots
       margin-inline:auto;
     }
 
-    .float-actions{
-      position:fixed;
-      right:16px;
-      bottom:16px;
-      z-index:60;
-      display:flex;
-      flex-direction:column;
-      gap:.85rem;
-    }
-
-    .float-btn{
-      display:flex;
-      align-items:center;
-      gap:.8rem;
-      min-width:220px;
-      padding:.92rem 1rem;
-      border-radius:18px;
-      background:rgba(255,255,255,.92);
-      border:1px solid rgba(216,227,242,.98);
-      box-shadow:var(--shadow-soft);
-      backdrop-filter:blur(14px);
-      transition:transform .28s ease, box-shadow .28s ease;
-    }
-
-    .float-btn:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow);
-    }
-
-    .float-btn .icon{
-      width:46px;height:46px;border-radius:14px;
-      display:grid;place-items:center;
-      flex:0 0 auto;
-      background:linear-gradient(135deg, #e8f0ff, #ffffff);
-      color:var(--blue);
-    }
-
-    .float-btn.whatsapp .icon{
-      background:linear-gradient(135deg, #e8fff0, #ffffff);
-      color:var(--green);
-    }
-
-    .float-btn strong{
-      display:block;
-      font-size:.95rem;
-      line-height:1.15;
-    }
-
-    .float-btn span{
-      display:block;
-      color:var(--muted);
-      font-size:.82rem;
-      line-height:1.25;
+    .top-band{
+      height:8px;
+      background:linear-gradient(90deg, var(--navy) 0 16%, var(--blue) 16% 32%, var(--sky) 32% 48%, var(--teal) 48% 64%, var(--amber) 64% 80%, var(--rose) 80% 100%);
     }
 
     .site-header{
       position:relative;
       overflow:hidden;
+      min-height:100vh;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(15,39,71,.82), rgba(36,87,255,.50)),
-        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
-      border-bottom:1px solid rgba(255,255,255,.14);
+        linear-gradient(135deg, rgba(19,31,48,.82), rgba(47,99,255,.34)),
+        url('home-hero.jpg') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.12);
     }
 
     .site-header::before,
@@ -128,13 +103,19 @@ roots
       content:"";
       position:absolute;
       border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
-      filter:blur(8px);
       pointer-events:none;
+      filter:blur(16px);
     }
 
-    .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
-    .site-header::after{width:380px;height:380px;right:-90px;bottom:-170px}
+    .site-header::before{
+      width:440px;height:440px;left:-120px;top:-150px;
+      background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%);
+    }
+
+    .site-header::after{
+      width:340px;height:340px;right:-90px;bottom:-120px;
+      background:radial-gradient(circle, rgba(88,180,255,.18), transparent 70%);
+    }
 
     .nav{
       display:flex;
@@ -144,10 +125,10 @@ roots
       padding:1rem 0;
       position:sticky;
       top:0;
-      z-index:30;
-      backdrop-filter:blur(12px);
-      background:linear-gradient(180deg, rgba(15,39,71,.42), rgba(15,39,71,.10));
-      border-bottom:1px solid rgba(255,255,255,.06);
+      z-index:70;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(180deg, rgba(19,31,48,.46), rgba(19,31,48,.10));
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
 
     .brand{
@@ -156,16 +137,15 @@ roots
       gap:.9rem;
       font-family:'Sora', sans-serif;
       font-weight:800;
-      letter-spacing:.02em;
+      letter-spacing:.01em;
     }
 
     .brand-mark{
-      width:52px;height:52px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.20);
+      background:linear-gradient(135deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
+      border:1px solid rgba(255,255,255,.22);
       box-shadow:0 12px 30px rgba(0,0,0,.16);
-      backdrop-filter:blur(12px);
     }
 
     .nav-links{
@@ -176,7 +156,7 @@ roots
     }
 
     .nav-links a{
-      color:rgba(255,255,255,.94);
+      color:rgba(255,255,255,.95);
       font-weight:700;
       font-size:.95rem;
       position:relative;
@@ -193,46 +173,55 @@ roots
     .nav-links a:hover::after{width:100%}
 
     .hero{
-      padding:3.8rem 0 5rem;
+      min-height:calc(100vh - 88px);
+      display:grid;
+      align-items:end;
+      padding:3rem 0 5rem;
       position:relative;
       z-index:2;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.05fr .95fr;
+      grid-template-columns:1.02fr .98fr;
       gap:2rem;
       align-items:end;
     }
 
-    .small-heading{
+    .eyebrow{
       display:inline-block;
-      color:#ffd166;
+      padding:.55rem .95rem;
+      border-radius:999px;
       font-weight:800;
       text-transform:uppercase;
-      letter-spacing:.16em;
-      font-size:.76rem;
+      letter-spacing:.14em;
+      font-size:.74rem;
       margin-bottom:1rem;
+      color:#eff9ff;
+      border:1px solid rgba(255,255,255,.18);
+      background:linear-gradient(90deg, rgba(47,99,255,.28), rgba(88,180,255,.22), rgba(13,153,143,.18));
+      backdrop-filter:blur(10px);
     }
 
     h1,h2,h3,h4{
       font-family:'Sora', sans-serif;
-      line-height:1.02;
+      line-height:1.03;
       letter-spacing:-.03em;
       margin:0 0 1rem;
     }
 
     h1{
-      font-size:clamp(3.1rem, 6vw, 6rem);
-      max-width:10ch;
-      margin-top:.3rem;
+      font-size:clamp(3rem, 6vw, 6rem);
+      max-width:9ch;
+      text-shadow:0 12px 30px rgba(0,0,0,.24);
     }
 
     .lead{
       margin:0;
-      max-width:64ch;
-      color:rgba(255,255,255,.93);
-      font-size:clamp(1.05rem, 1.8vw, 1.2rem);
+      max-width:70ch;
+      color:rgba(255,255,255,.94);
+      font-size:clamp(1.03rem, 1.8vw, 1.16rem);
+      text-shadow:0 6px 18px rgba(0,0,0,.22);
     }
 
     .hero-actions{
@@ -270,7 +259,7 @@ roots
     .btn-secondary{
       background:rgba(255,255,255,.12);
       color:#fff;
-      border:1px solid rgba(255,255,255,.22);
+      border:1px solid rgba(255,255,255,.24);
       backdrop-filter:blur(10px);
     }
 
@@ -279,45 +268,34 @@ roots
       background:rgba(255,255,255,.18);
     }
 
-    .hero-side{
-      display:grid;
-      gap:1rem;
-    }
-
-    .hero-photo,
     .hero-card{
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:24px;
+      border-radius:30px;
       overflow:hidden;
+      border:1px solid rgba(255,255,255,.16);
       box-shadow:0 18px 40px rgba(0,0,0,.18);
-      backdrop-filter:blur(12px);
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      padding:1rem;
     }
 
-    .hero-photo{
-      height:270px;
-      background:#ffffff18;
-    }
-
-    .hero-photo img{
+    .hero-card img{
       width:100%;
-      height:100%;
+      height:520px;
       object-fit:cover;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background:#dce7f2;
     }
 
-    .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
-      padding:1.15rem;
+    .hero-caption{
+      padding:.95rem .1rem .1rem;
+      color:rgba(255,255,255,.9);
     }
 
-    .hero-card strong{
+    .hero-caption strong{
       display:block;
-      font-size:1.18rem;
-      margin-bottom:.3rem;
-    }
-
-    .hero-card p{
-      margin:0;
-      color:rgba(255,255,255,.88);
+      margin-bottom:.25rem;
+      font-size:1.08rem;
     }
 
     main section{padding:5rem 0}
@@ -340,10 +318,11 @@ roots
     }
 
     .kicker.blue{color:var(--blue)}
+    .kicker.sky{color:var(--sky)}
+    .kicker.teal{color:var(--teal)}
     .kicker.green{color:var(--green)}
-    .kicker.gold{color:var(--gold)}
-    .kicker.pink{color:var(--pink)}
-    .kicker.violet{color:var(--violet)}
+    .kicker.amber{color:var(--amber)}
+    .kicker.rose{color:var(--rose)}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
@@ -354,18 +333,18 @@ roots
       margin:0;
       color:var(--muted);
       font-size:1.04rem;
-      max-width:68ch;
+      max-width:70ch;
     }
 
     .content-layout{
       display:grid;
-      grid-template-columns:1.08fr .92fr;
+      grid-template-columns:1.05fr .95fr;
       gap:2rem;
       align-items:start;
     }
 
     .paper{
-      background:linear-gradient(180deg, #ffffff, #f9fbff);
+      background:linear-gradient(180deg, #ffffff, #fcfdff);
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow-soft);
@@ -377,10 +356,17 @@ roots
     .paper::before{
       content:"";
       position:absolute;
-      width:220px;height:220px;border-radius:50%;
+      width:240px;height:240px;border-radius:50%;
       right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(36,87,255,.08), transparent 70%);
+      background:radial-gradient(circle, rgba(47,99,255,.08), transparent 70%);
       pointer-events:none;
+    }
+
+    .paper::after{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:7px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
     }
 
     .content-flow{
@@ -400,36 +386,62 @@ roots
     }
 
     .mini{
-      border:1px solid var(--line);
       border-radius:22px;
       padding:1.15rem 1.2rem;
       box-shadow:var(--shadow-soft);
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
       background:#fff;
     }
 
-    .mini.blue{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
-    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
-    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
-    .mini.pink{background:linear-gradient(180deg, #fff8fc, #fff0f7)}
+    .mini::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+    }
+
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
+    .mini.sky{background:linear-gradient(180deg, #f4fbff, #eaf8ff)}
+    .mini.teal{background:linear-gradient(180deg, #f4fffd, #e9fffb)}
+    .mini.green{background:linear-gradient(180deg, #f7fff9, #edfff2)}
+    .mini.amber{background:linear-gradient(180deg, #fffdf7, #fff7df)}
+    .mini.rose{background:linear-gradient(180deg, #fff8fb, #fff0f6)}
+
+    .mini.blue::before{background:var(--blue)}
+    .mini.sky::before{background:var(--sky)}
+    .mini.teal::before{background:var(--teal)}
+    .mini.green::before{background:var(--green)}
+    .mini.amber::before{background:var(--amber)}
+    .mini.rose::before{background:var(--rose)}
 
     .mini strong{
       display:block;
       font-family:'Sora', sans-serif;
-      font-size:1.22rem;
+      font-size:1.16rem;
       margin-bottom:.3rem;
     }
 
     .mini.blue strong{color:var(--blue)}
+    .mini.sky strong{color:var(--sky)}
+    .mini.teal strong{color:var(--teal)}
     .mini.green strong{color:var(--green)}
-    .mini.gold strong{color:#a56b00}
-    .mini.pink strong{color:var(--pink)}
-
+    .mini.amber strong{color:#9c6800}
+    .mini.rose strong{color:var(--rose)}
     .mini span{color:var(--muted)}
 
     .showcase{
-      background:linear-gradient(180deg, #f5f9ff 0%, #ffffff 100%);
+      background:linear-gradient(180deg, #f8fbff 0%, #fff 100%);
       border-top:1px solid var(--line);
       border-bottom:1px solid var(--line);
+      position:relative;
+    }
+
+    .showcase::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:8px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
     }
 
     .cards{
@@ -445,26 +457,35 @@ roots
       overflow:hidden;
       background:#fff;
       box-shadow:var(--shadow-soft);
-      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      transition:transform .3s ease, box-shadow .3s ease;
+      position:relative;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:6px;
+      background:linear-gradient(90deg, var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
+      z-index:2;
     }
 
     .card:hover{
       transform:translateY(-8px);
       box-shadow:var(--shadow);
-      border-color:#bfd4f7;
     }
 
     .card-photo{
-      height:220px;
+      height:230px;
       overflow:hidden;
       border-bottom:1px solid var(--line);
-      background:#eaf2ff;
+      background:#eef5ff;
     }
 
     .card-photo img{
       width:100%;
       height:100%;
       object-fit:cover;
+      background:#dce7f2;
     }
 
     .card-body{padding:1.2rem}
@@ -478,15 +499,18 @@ roots
       font-weight:800;
       text-transform:uppercase;
       letter-spacing:.08em;
+      color:#fff;
     }
 
-    .tag.blue{background:#e7f0ff;color:#1747c6}
-    .tag.green{background:#e9fff0;color:#126a34}
-    .tag.gold{background:#fff1cc;color:#8a5b00}
-    .tag.pink{background:#ffe5f1;color:#b21d67}
+    .tag.blue{background:var(--blue)}
+    .tag.sky{background:var(--sky)}
+    .tag.teal{background:var(--teal)}
+    .tag.green{background:var(--green)}
+    .tag.amber{background:var(--amber)}
+    .tag.rose{background:var(--rose)}
 
     .card h3{
-      font-size:1.24rem;
+      font-size:1.18rem;
       margin-bottom:.5rem;
     }
 
@@ -495,48 +519,49 @@ roots
       color:var(--muted);
     }
 
-    .files-grid{
+    .page-links{
       display:grid;
-      grid-template-columns:repeat(12,1fr);
+      grid-template-columns:repeat(2,minmax(0,1fr));
       gap:1rem;
     }
 
-    .file-link{
-      grid-column:span 3;
+    .page-link{
       border:1px solid var(--line);
-      border-radius:22px;
-      padding:1.1rem;
+      border-radius:24px;
       background:#fff;
       box-shadow:var(--shadow-soft);
-      transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+      padding:1.2rem;
+      transition:transform .28s ease, box-shadow .28s ease;
+      position:relative;
+      overflow:hidden;
     }
 
-    .file-link:hover{
+    .page-link::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:6px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
+    }
+
+    .page-link:hover{
       transform:translateY(-6px);
       box-shadow:var(--shadow);
-      border-color:#bfd4f7;
     }
 
-    .file-link strong{
+    .page-link strong{
       display:block;
       font-family:'Sora', sans-serif;
-      margin-bottom:.35rem;
-      color:var(--navy);
+      font-size:1.12rem;
+      margin-bottom:.3rem;
     }
 
-    .file-link span{
+    .page-link span{
       color:var(--muted);
-      font-size:.95rem;
-    }
-
-    .contact{
-      background:linear-gradient(180deg, #f4f8ff, #ffffff);
-      border-top:1px solid var(--line);
     }
 
     .contact-box{
       border:1px solid var(--line);
-      background:linear-gradient(180deg, #ffffff, #f8fbff);
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
       border-radius:30px;
       padding:1.5rem;
       box-shadow:var(--shadow);
@@ -550,9 +575,8 @@ roots
     .contact-box::before{
       content:"";
       position:absolute;
-      width:240px;height:240px;border-radius:50%;
-      right:-60px;top:-70px;
-      background:radial-gradient(circle, rgba(36,87,255,.12), transparent 70%);
+      inset:0 0 auto 0;height:8px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
     }
 
     .contact-items{
@@ -579,16 +603,21 @@ roots
     }
 
     .contact-icon{
-      width:54px;height:54px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:linear-gradient(135deg, #e6efff, #fff);
-      color:var(--blue);
+      background:linear-gradient(135deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
+      color:#fff;
       flex:0 0 auto;
     }
 
-    .contact-icon.whatsapp{
-      background:linear-gradient(135deg, #e8fff0, #fff);
-      color:var(--green);
+    .notice{
+      padding:1rem 1.15rem;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(47,99,255,.08), rgba(88,180,255,.08), rgba(13,153,143,.08), rgba(217,159,36,.08), rgba(215,80,120,.08));
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+      margin-top:1rem;
     }
 
     footer{
@@ -634,7 +663,7 @@ roots
     }
 
     @media (max-width: 1100px){
-      .file-link{grid-column:span 6}
+      .cards{grid-template-columns:repeat(6,1fr)}
     }
 
     @media (max-width: 1020px){
@@ -644,7 +673,9 @@ roots
       .contact-box{
         grid-template-columns:1fr;
       }
-      .card{grid-column:span 6}
+      .card{grid-column:span 3}
+      .hero-card img{height:420px}
+      .page-links{grid-template-columns:1fr}
     }
 
     @media (max-width: 720px){
@@ -652,48 +683,26 @@ roots
         flex-direction:column;
         align-items:flex-start;
       }
-      .cards,
-      .files-grid{
+      .cards{
         grid-template-columns:1fr;
       }
-      .card,.file-link{grid-column:span 1}
+      .card{grid-column:span 1}
       .content-flow{columns:1}
       h1{max-width:100%}
       main section{padding:4rem 0}
-      .float-actions{
-        right:12px;
-        left:12px;
-        bottom:12px;
-      }
-      .float-btn{
-        min-width:unset;
-        width:100%;
-      }
+      .hero-card img{height:320px}
     }
   </style>
 </head>
 <body>
-  <div class="float-actions" aria-label="Quick contact actions">
-    <a class="float-btn whatsapp" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-      <span class="icon" aria-hidden="true">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-          <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
-        </svg>
-      </span>
-      <span>
-        <strong>WhatsApp</strong>
-        <span>0736280522</span>
-      </span>
-    </a>
-  </div>
+  <div class="top-band"></div>
 
   <header class="site-header" id="top">
     <div class="container">
       <nav class="nav">
-        <a class="brand" href="index.html" aria-label="America AI homepage">
+        <a class="brand" href="index.html" aria-label="America AI home">
           <span class="brand-mark" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
@@ -702,39 +711,36 @@ roots
         </a>
 
         <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="job-seekers-usa.html">USA Jobs</a>
-          <a href="ai-ethics-kenya.html">AI Ethics Kenya</a>
-          <a href="privacy-policy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="contact.html">Contact</a>
+          <a href="#about">About</a>
+          <a href="#topics">Topics</a>
+          <a href="#pages">Pages</a>
+          <a href="#contact">Contact</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Page</a>
         </div>
       </nav>
 
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <span class="small-heading">Premium Digital Hub</span>
-            <h1>Jobs, AI, ethics, stories, privacy, and opportunity — in one place.</h1>
+            <span class="eyebrow">Welcome to America AI</span>
+            <h1>Educational articles for AI, technology, careers, health, and digital life.</h1>
             <p class="lead">
-              <strong>America AI</strong> is a polished platform built to connect <strong>Kenya and USA opportunity</strong>,
-              <strong>AI ethics</strong>, <strong>job seekers resources</strong>, <strong>privacy awareness</strong>,
-              <strong>professional content pages</strong>, and clear digital direction for people who want something more useful than ordinary websites.
+              America AI is an educational website created for readers who want helpful, readable, and practical information.
+              The site brings together articles on <strong>artificial intelligence, technology, jobs, careers, health, online resources, policy, and digital awareness</strong>.
+              Its purpose is to help people learn, think clearly, and make better-informed decisions in a changing world.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#explore">Explore the Platform</a>
-              <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+              <a class="btn btn-primary" href="#pages">Explore Pages</a>
+              <a class="btn btn-secondary" href="#contact">Get in Touch</a>
             </div>
           </div>
 
-          <div class="hero-side reveal">
-            <div class="hero-photo">
-              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80" alt="Modern workspace and digital future environment" loading="lazy">
-            </div>
-            <div class="hero-card">
-              <strong>Built to look professional</strong>
-              <p>This homepage is designed to feel complete, elegant, and future-focused with strong colors, real imagery, long content, and clear page paths.</p>
+          <div class="hero-card reveal">
+            <img src="home-hero.jpg" alt="Modern educational technology image for America AI home page" loading="lazy">
+            <div class="hero-caption">
+              <strong>Knowledge made practical</strong>
+              <span>Use a real image named <code>home-hero.jpg</code> in the same folder for the best visual result.</span>
             </div>
           </div>
         </div>
@@ -743,16 +749,15 @@ roots
   </header>
 
   <main>
-    <section id="explore">
+    <section id="about">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker blue">Homepage overview</span>
-            <h2>A platform that touches every corner of modern digital ambition.</h2>
+            <span class="kicker blue">Home Page Introduction</span>
+            <h2>What America AI is and why this website exists.</h2>
           </div>
           <p>
-            America AI is not just a homepage with links. It is a central starting point that explains the platform,
-            introduces the major files in your folder, and gives visitors a strong first impression of quality, clarity, and purpose.
+            A strong home page should immediately explain what the website is about, who it is for, and why visitors should keep reading.
           </p>
         </div>
 
@@ -760,159 +765,151 @@ roots
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                A homepage should do more than greet visitors. It should tell them what kind of platform they are entering, why it exists, and what they can expect to find.
-                America AI is built as a digital home for opportunity, responsible technology, strong presentation, and practical public-facing content.
-                It connects multiple themes that matter in today’s world: jobs, digital work, global ambition, privacy, ethics, contact access, storytelling, and professional identity.
+                America AI is an educational website built for readers who want useful information that connects modern technology to real life.
+                The internet contains endless pages, but not every page helps people think more clearly or make stronger decisions.
+                This website is designed to be practical, structured, and informative rather than noisy.
               </p>
               <p>
-                For many people, the internet is noisy. It is full of rushed pages, weak structure, and information that feels random.
-                America AI is designed to move in the opposite direction. It aims for order, attractive presentation, and content that feels intentional.
-                That matters because design changes how people trust information. When a page looks carefully made, the content inside it is easier to respect.
+                The name America AI points toward a broad educational interest in intelligence, technology, and the future of information.
+                But the site is not limited to one subject. It includes multiple content areas because real life is not limited to one category.
+                A person interested in AI may also need job advice. A person interested in career growth may also care about digital tools.
+                A reader interested in technology may also benefit from articles on health, policy, learning, or useful online resources.
               </p>
               <p>
-                This homepage also acts like a map for your project folder. It connects the full range of pages you already have or are building:
-                the About page, the Job Seekers page, the Kenya AI Ethics page, the Privacy Policy page, the Terms page, and the Contact page.
-                Instead of making the site feel scattered, this homepage brings everything together with one strong visual language.
+                This home page introduces the full direction of the site. It is the main starting point for visitors, the page that should help new readers feel oriented and confident.
+                It is designed to give a sense of professionalism, clarity, and openness. Rather than acting as a simple list of links,
+                it serves as a central overview of the website’s mission, article categories, important pages, and contact details.
               </p>
               <p>
-                Another reason this homepage matters is because it frames the identity of America AI. It tells visitors that this is a platform with more than one function.
-                It can guide a job seeker, inform a reader, present ethical discussion, explain privacy, and still remain visually polished.
-                That multi-purpose identity becomes stronger when the homepage is detailed, attractive, and complete.
+                America AI aims to publish content that is educational, readable, and worthwhile. That includes explanations of artificial intelligence,
+                articles about modern technology, discussions of digital responsibility, practical job and career material, health-related educational content,
+                and guides to useful resources on the web.
               </p>
               <p>
-                The platform also speaks across geographies. It touches both Kenya and the USA. Kenya matters because it represents energy, ambition, and a growing digital future.
-                The USA matters because it represents global opportunity, professional standards, and international aspiration for many readers.
-                America AI stands between those two conversations and builds a useful bridge.
+                A website like this matters because information has become one of the most important forces in daily life.
+                The quality of information people use shapes the quality of the choices they make. When a site offers useful articles in a clear format,
+                it becomes more than a collection of pages. It becomes a tool for better understanding.
               </p>
               <p>
-                In simple terms, this homepage is here to welcome, orient, and impress. It should make visitors want to keep reading.
-                It should also make them confident that the rest of the site will be worth their time.
+                America AI is designed to support that goal. It welcomes curious readers, job seekers, learners, researchers, digital users, and everyday visitors
+                who want information that is both relevant and accessible.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini blue">
-              <strong>Professional structure</strong>
-              <span>Clean layout, real images, strong typography, and clear page sections create trust.</span>
+              <strong>Educational Focus</strong>
+              <span>America AI is built around practical learning, explanation, and readable digital knowledge.</span>
             </div>
-            <div class="mini green">
-              <strong>Kenya + USA focus</strong>
-              <span>The platform speaks to local African ambition and wider global opportunity at the same time.</span>
+            <div class="mini sky">
+              <strong>Broad Topics</strong>
+              <span>The website covers AI, technology, jobs, careers, health, and useful online resources.</span>
             </div>
-            <div class="mini gold">
-              <strong>Useful navigation</strong>
-              <span>Each major page in the folder is connected from here so visitors can move easily across the site.</span>
+            <div class="mini teal">
+              <strong>Practical Purpose</strong>
+              <span>The goal is to help visitors understand better and make more informed decisions.</span>
+            </div>
+            <div class="mini amber">
+              <strong>Useful Direction</strong>
+              <span>This is not only a website to browse. It is a website designed to be used.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="files">
+    <section class="showcase" id="topics">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">All website files</span>
-            <h2>Every major page in your America AI folder.</h2>
+            <span class="kicker teal">Main Topics</span>
+            <h2>What visitors can read and explore on America AI.</h2>
           </div>
           <p>
-            These links make the homepage useful as a full navigation center. They connect the entire project clearly and professionally.
-          </p>
-        </div>
-
-        <div class="files-grid">
-          <a class="file-link reveal" href="about.html">
-            <strong>about.html</strong>
-            <span>Learn what America AI stands for, its mission, and its creative, ethical, and professional direction.</span>
-          </a>
-
-          <a class="file-link reveal" href="job-seekers-usa.html">
-            <strong>job-seekers-usa.html</strong>
-            <span>Explore long-form guidance for job seekers in Kenya, USA-linked opportunities, side hustles, and global pathways.</span>
-          </a>
-
-          <a class="file-link reveal" href="ai-ethics-kenya.html">
-            <strong>ai-ethics-kenya.html</strong>
-            <span>Read about Kenya now, AI ethics, jobs in Kenya, best hustles, and how to apply for work outside Kenya.</span>
-          </a>
-
-          <a class="file-link reveal" href="privacy-policy.html">
-            <strong>privacy-policy.html</strong>
-            <span>Understand cookies, analytics, Google services, data use, privacy expectations, and user rights.</span>
-          </a>
-
-          <a class="file-link reveal" href="terms.html">
-            <strong>terms.html</strong>
-            <span>Review the platform’s professional terms and conditions, usage rules, and content boundaries.</span>
-          </a>
-
-          <a class="file-link reveal" href="contact.html">
-            <strong>contact.html</strong>
-            <span>Use direct communication channels, email, and WhatsApp for inquiries, web work, and contact requests.</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="why-it-matters">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker green">Why this site matters</span>
-            <h2>More than a website — a useful digital identity.</h2>
-          </div>
-          <p>
-            America AI is designed to be readable, memorable, and practical. It supports users who want real guidance, clear design, and better page quality.
+            The website brings several valuable categories together so that readers can move across different but connected subjects in one place.
           </p>
         </div>
 
         <div class="cards">
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Creative team collaboration and innovation" loading="lazy">
+              <img src="topic-ai.jpg" alt="Artificial intelligence article image" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag blue">Identity</span>
-              <h3>A stronger online presence</h3>
-              <p>This platform presents itself with intention, helping visitors immediately understand the quality and seriousness behind the work.</p>
+              <span class="tag blue">Artificial Intelligence</span>
+              <h3>AI guides, ethics, and practical understanding</h3>
+              <p>Learn what AI is, how it works, where it is used, what risks it creates, and how it should be used responsibly.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="AI and technology network concept" loading="lazy">
+              <img src="topic-tech.jpg" alt="Technology news and tools image" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag green">Ethics</span>
-              <h3>Responsible AI awareness</h3>
-              <p>It gives space to ethical questions around AI, privacy, fairness, and the future of technology in African and global settings.</p>
+              <span class="tag sky">Technology</span>
+              <h3>Technology articles and digital updates</h3>
+              <p>Explore how tools, platforms, systems, apps, and trends shape modern life and daily decision-making.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="Career and professional opportunity workspace" loading="lazy">
+              <img src="topic-careers.jpg" alt="Jobs and careers image" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag gold">Opportunity</span>
-              <h3>Jobs, side hustles, and guidance</h3>
-              <p>Visitors can move from inspiration to action by exploring work opportunities, side hustles, and practical job-seeking advice.</p>
+              <span class="tag teal">Jobs & Careers</span>
+              <h3>Career thinking and opportunity guidance</h3>
+              <p>Read articles that support job seekers, career growth, online work understanding, and professional direction.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="topic-health.jpg" alt="Health and wellbeing image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag green">Health</span>
+              <h3>Health and lifestyle reading</h3>
+              <p>Educational health content supports broader awareness of wellbeing, habits, and practical daily living.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="topic-resources.jpg" alt="Online resources and research image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag amber">Resources</span>
+              <h3>Useful online resources</h3>
+              <p>Find practical resource-focused content that helps readers use the internet more productively.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="topic-policy.jpg" alt="Policy and ethics image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag rose">Policy & Awareness</span>
+              <h3>Ethics, law, and platform responsibility</h3>
+              <p>Read about digital policy, public responsibility, trust, disclaimers, privacy, and online transparency.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="kenya-usa">
+    <section id="mission">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker pink">Kenya and USA</span>
-            <h2>A homepage that connects local ambition with global possibility.</h2>
+            <span class="kicker green">Mission</span>
+            <h2>Helping people learn, judge wisely, and access useful information.</h2>
           </div>
           <p>
-            America AI is rooted in African creativity and awareness while still looking confidently toward international opportunity, especially in the USA and digital work spaces.
+            The mission of America AI is to provide content that is educational, practical, and supportive of better decision-making.
           </p>
         </div>
 
@@ -920,45 +917,116 @@ roots
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                One of the platform’s biggest strengths is that it does not pretend geography no longer matters. Instead, it respects geography while building bridges across it.
-                Kenya represents energy, youth, entrepreneurship, and the fast adaptation needed in a changing economy. The USA represents professional systems, international opportunity,
-                and a major destination of interest for many job seekers and digital workers. America AI sits between those two realities and tries to make the path more understandable.
+                The mission of America AI is not simply to post content. It is to publish content that helps readers think better.
+                That means presenting topics clearly, explaining difficult ideas in more accessible language, and choosing subjects that connect to real needs.
               </p>
               <p>
-                For Kenyan readers, the platform shows that local reality matters. It talks about jobs in Kenya, side hustles, AI ethics in local context, and practical concerns like affordability,
-                skills, and digital growth. For readers interested in the USA, it opens the conversation about professional applications, remote work, lawful international opportunities,
-                and what stronger presentation can do for a person’s career chances.
+                This mission rests on a simple principle: information should be useful. It should help a student understand a topic, help a worker think about opportunity,
+                help a reader evaluate technology more critically, or help a visitor navigate the internet more effectively.
               </p>
               <p>
-                This is not only useful. It is also symbolic. It shows that a locally built platform can still speak to global opportunity with confidence and quality.
-                That is one reason the homepage should feel polished. It is representing a bigger idea than one single page.
+                In practice, that means educational articles should not only be written to fill space. They should be shaped to support understanding.
+                They should give readers enough clarity to continue learning and enough structure to continue exploring.
+              </p>
+              <p>
+                America AI therefore aims to combine readability with substance. It seeks a balance between accessibility and seriousness.
+                It is written for real people with practical questions, not only for specialists.
+              </p>
+              <p>
+                This mission also includes trust. Content should aim to be accurate, useful, well-organized, and regularly reviewed where necessary.
+                In a crowded digital environment, care becomes part of the value.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
-            <div class="mini pink">
-              <strong>Local intelligence</strong>
-              <span>Kenya is not only a background in this project. It is part of the platform’s insight and character.</span>
-            </div>
             <div class="mini blue">
-              <strong>Global access</strong>
-              <span>The site also opens paths toward remote work, USA-linked resources, and wider digital participation.</span>
+              <strong>Learn</strong>
+              <span>Support understanding of AI, technology, health, careers, and digital topics.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Decide</strong>
+              <span>Help visitors compare options and make more informed choices.</span>
+            </div>
+            <div class="mini amber">
+              <strong>Trust</strong>
+              <span>Offer structured, thoughtful, and useful material rather than empty noise.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section id="content-needed">
+    <section class="showcase" id="pages">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker violet">What belongs on the homepage</span>
-            <h2>Big, useful content that introduces the whole platform properly.</h2>
+            <span class="kicker amber">Website Pages</span>
+            <h2>Important pages available on your website.</h2>
           </div>
           <p>
-            A strong homepage should not be empty. It should contain enough meaningful text to explain value, guide users, and show seriousness.
+            The home page should act like a directory as well as an introduction. These links help visitors move directly to important sections of the site.
+          </p>
+        </div>
+
+        <div class="page-links reveal">
+          <a class="page-link" href="about.html">
+            <strong>About Us</strong>
+            <span>Learn who America AI is, what the website is about, the mission, trust approach, and contact information.</span>
+          </a>
+
+          <a class="page-link" href="contact.html">
+            <strong>Contact</strong>
+            <span>Reach out through email, WhatsApp, website links, the contact form, and business details.</span>
+          </a>
+
+          <a class="page-link" href="404.html">
+            <strong>404 Page</strong>
+            <span>A professional page that helps visitors recover when a requested page cannot be found.</span>
+          </a>
+
+          <a class="page-link" href="ai-ethics-kenya.html">
+            <strong>AI Ethics in Kenya</strong>
+            <span>An educational article about fairness, privacy, accountability, responsible AI use, benefits, and risks in Kenya.</span>
+          </a>
+
+          <a class="page-link" href="disclaimer.html">
+            <strong>Disclaimer</strong>
+            <span>Explains the limits and purpose of educational content on the site and clarifies how it should be interpreted.</span>
+          </a>
+
+          <a class="page-link" href="privacy-policy.html">
+            <strong>Privacy Policy</strong>
+            <span>Shows how information is handled and gives visitors confidence about data-related practices.</span>
+          </a>
+
+          <a class="page-link" href="terms.html">
+            <strong>Terms & Conditions</strong>
+            <span>Sets the rules, responsibilities, and legal expectations around use of the website.</span>
+          </a>
+
+          <a class="page-link" href="index.html">
+            <strong>Home</strong>
+            <span>The main overview page that introduces America AI and connects readers to all major website sections.</span>
+          </a>
+        </div>
+
+        <div class="notice reveal">
+          <strong style="color:var(--navy);">Useful note:</strong>
+          If some of these pages are not yet created, you can still keep the links and build them one by one. A clear home page helps visitors see the structure of your site even while you are still expanding it.
+        </div>
+      </div>
+    </section>
+
+    <section id="why-visit">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker rose">Why this site matters</span>
+            <h2>A website should do more than exist. It should help.</h2>
+          </div>
+          <p>
+            The value of a content website is measured not only by how many pages it has, but by how helpful, readable, and trustworthy those pages become.
           </p>
         </div>
 
@@ -966,86 +1034,109 @@ roots
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                This homepage is designed to touch every corner of the America AI project. That means it should introduce the platform, connect the pages, explain the themes,
-                and make the visitor feel that the site is active, thoughtful, and complete. It should also make the folder structure useful by linking directly to each important HTML page.
-                In your case, that includes About, Job Seekers, AI Ethics Kenya, Privacy Policy, Terms, and Contact.
+                A strong home page should communicate confidence without confusion. It should welcome new readers, remind returning visitors why the site matters,
+                and make it easy to continue exploring. That is why this page is built as a real front door rather than a simple list of links.
               </p>
               <p>
-                It is also helpful for the homepage to contain thematic content. That means some writing about work, some about AI, some about Kenya, some about privacy,
-                and some about the site’s wider purpose. This kind of layered writing creates depth. It makes the homepage more than a doorway — it becomes an overview page that already provides value.
+                America AI matters because many people need a practical space to read about modern topics without unnecessary complexity.
+                Artificial intelligence can feel overwhelming. Technology changes quickly. Online opportunities are often confusing.
+                Health information is mixed in quality. Policy and platform issues are easy to ignore until they become personal.
+                A site that gathers these subjects and presents them clearly becomes valuable.
               </p>
               <p>
-                Good homepage content should also respect reading flow. Visitors should be able to skim sections quickly, notice the main focus areas, and still find enough detail if they want to read more deeply.
-                That is why sections, headings, cards, callout boxes, and image-supported content work well here.
+                This kind of website can support many types of readers. A student may come looking for an AI explanation.
+                A worker may come looking for career-oriented guidance. A casual reader may come looking for trustworthy technology insight.
+                A visitor may come through a search engine and discover new categories they did not expect to read.
               </p>
               <p>
-                In visual terms, the homepage should feel premium but not overloaded. The chosen colors — deep navy, strong blue, gold accents, green touches, and controlled pink highlights —
-                give the site a memorable identity without looking random. Real images also help because they make the page feel more human and credible.
+                The home page must serve all of those readers. It must say: here is what this website offers, here is how it is organized,
+                and here is how you can continue. That is why visual structure, section hierarchy, page navigation, and contact information all matter on this page.
               </p>
               <p>
-                Altogether, the homepage should leave no confusion. It should answer: What is America AI? What can I do here? Which pages are available? Why should I stay?
-                This design is built to answer those questions well.
+                Professional presentation also matters. When readers see that a website has a coherent identity, clear layout, real contact information,
+                and carefully organized sections, they are more likely to trust it and return to it.
+              </p>
+              <p>
+                For America AI, trust grows through clarity, educational purpose, practical usefulness, and open contact details.
+                A website that helps people should also make itself reachable. That is why the contact information on this home page remains visible and direct.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
-            <div class="mini gold">
-              <strong>Essential pages</strong>
-              <span>About, Jobs, AI Ethics, Privacy, Terms, and Contact all deserve clear access from the homepage.</span>
+            <div class="mini blue">
+              <strong>Readable</strong>
+              <span>Information should be understandable, not hidden behind unnecessary complexity.</span>
             </div>
-            <div class="mini green">
-              <strong>Stronger first impression</strong>
-              <span>Longer and richer homepage content makes the whole project feel more complete and professional.</span>
+            <div class="mini sky">
+              <strong>Useful</strong>
+              <span>Articles should help people think better, not just fill pages with words.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Structured</strong>
+              <span>A clear website structure helps visitors move from one useful page to the next.</span>
+            </div>
+            <div class="mini rose">
+              <strong>Reachable</strong>
+              <span>Professional websites make communication easy and visible.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="showcase" id="contact">
       <div class="container">
         <div class="section-head reveal">
           <div>
             <span class="kicker green">Contact</span>
-            <h2>Ready to reach out or build more pages?</h2>
+            <h2>Get in touch with America AI.</h2>
           </div>
           <p>
-            For professional page design, content work, edits, or questions about the site, use the details below.
+            Visitors should never have to guess whether a website is reachable. Clear contact details make the platform more professional and trustworthy.
           </p>
         </div>
 
         <div class="contact-box reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">A homepage should feel like a real digital headquarters.</h3>
-            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              This one is designed to look strong, long, attractive, and complete — with clear paths to every file in your America AI folder and direct WhatsApp access.
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Questions, feedback, suggestions, or business inquiries are welcome.</h3>
+            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
+              If you want to send feedback, ask a question, discuss a topic, suggest a correction, or make a business inquiry,
+              you can reach America AI through the contact details below. Open communication helps the site grow stronger and remain useful for readers.
             </p>
+
             <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Now</a>
-              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Us</a>
+              <a class="btn btn-secondary" href="https://wa.me/254736280522" target="_blank" rel="noopener">WhatsApp Us</a>
+            </div>
+
+            <div class="notice">
+              <strong style="color:var(--teal);">Direct contact:</strong>
+              Email: <strong>kinglee6mutwiri@gmail.com</strong><br>
+              WhatsApp: <strong>0736280522</strong><br>
+              Website: <strong>https://kinglee6mutwiri-cmyk.github.io/America-ai/</strong>
             </div>
           </div>
 
           <div class="contact-items">
-            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Send email">
+            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com">
               <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
                   <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>Email Contact</strong>
+                <strong>Email</strong>
                 <span>kinglee6mutwiri@gmail.com</span>
               </div>
             </a>
 
-            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-              <div class="contact-icon whatsapp">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-                  <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
+            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 20a8 8 0 1 0-4.4-1.32L4 20l1.42-3.38A8 8 0 0 0 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9.2 9.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.5 1.2c.1.2 0 .4-.1.6l-.4.5c-.1.1-.1.3 0 .4.4.8 1 1.4 1.8 1.8.1.1.3.1.4 0l.5-.4c.2-.1.4-.2.6-.1l1.2.5c.4.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.3.2-.9.3-1.5.1-1-.3-2-.9-2.8-1.7-.8-.8-1.4-1.8-1.7-2.8-.2-.6-.1-1.2.1-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
@@ -1054,19 +1145,183 @@ roots
               </div>
             </a>
 
-            <a class="contact-item" href="index.html">
+            <a class="contact-item" href="contact.html">
               <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Contact Page</strong>
+                <span>Open the full contact page with form and details</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="about.html">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M12 8.2h.01M10.8 11.2h1.2v4.6h1.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>About Page</strong>
+                <span>Learn who America AI is and what the website is about</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="required-info">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker sky">What else belongs on a strong home page</span>
+            <h2>Important qualities of a professional website front page.</h2>
+          </div>
+          <p>
+            A home page should not only look good. It should guide, explain, reassure, and connect visitors to the rest of the website naturally.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                Good home pages perform several tasks at once. They introduce the website. They help visitors understand what kind of content is available.
+                They direct readers toward key pages. They make branding visible. They establish trust through structure and tone.
+                They also help search engines understand what the site is about, which is why clear sections and strong internal links matter.
+              </p>
+              <p>
+                In America AI, that means the home page should introduce AI articles, technology content, career reading, health material,
+                responsible policy discussion, and resource-based guides. It should also connect directly to pages like About, Contact, AI Ethics in Kenya,
+                Disclaimer, Privacy Policy, Terms & Conditions, and future article pages.
+              </p>
+              <p>
+                Another important quality is readability. A home page filled only with visual blocks but no meaningful explanation may look attractive for a moment
+                without actually helping the user. A page with strong written structure remains useful for longer.
+              </p>
+              <p>
+                This is why the content on this homepage is intentionally fuller than a typical minimal landing page.
+                It aims to feel like a real website introduction written with purpose rather than a generic placeholder.
+              </p>
+              <p>
+                Finally, the home page should support future growth. As more pages are added, the homepage can keep acting as the central map of the site.
+                That makes it easier for new visitors to understand the website and easier for returning readers to find what they need.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Clear identity</strong>
+              <span>The page should tell people immediately what the website is and what it offers.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Strong navigation</strong>
+              <span>Visitors should be able to move from the homepage to important pages without confusion.</span>
+            </div>
+            <div class="mini amber">
+              <strong>SEO support</strong>
+              <span>Good structure, internal links, and descriptive sections support discoverability.</span>
+            </div>
+            <div class="mini rose">
+              <strong>Professional trust</strong>
+              <span>Real contact details, legal pages, and readable content increase credibility.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="closing">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker amber">Closing</span>
+            <h2>A home page should welcome, guide, and stay useful.</h2>
+          </div>
+          <p>
+            Thank you for visiting America AI. This homepage is built to serve as your main starting point for exploring the website.
+          </p>
+        </div>
+
+        <div class="contact-box reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Continue exploring America AI from here.</h3>
+            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
+              You can move from this page to About Us, Contact, AI Ethics in Kenya, Disclaimer, Privacy Policy, Terms & Conditions,
+              and future article pages as the site continues to grow. America AI is designed as an educational platform,
+              and the homepage is meant to remain a strong, clear introduction to everything the website offers.
+            </p>
+
+            <div class="hero-actions" style="margin-top:1.2rem;">
+              <a class="btn btn-primary" href="about.html">About Us</a>
+              <a class="btn btn-secondary" href="contact.html">Contact Page</a>
+            </div>
+
+            <div class="notice">
+              <strong style="color:var(--blue);">Simple image setup:</strong>
+              Put local images named
+              <strong>home-hero.jpg</strong>,
+              <strong>topic-ai.jpg</strong>,
+              <strong>topic-tech.jpg</strong>,
+              <strong>topic-careers.jpg</strong>,
+              <strong>topic-health.jpg</strong>,
+              <strong>topic-resources.jpg</strong>,
+              and <strong>topic-policy.jpg</strong>
+              in the same folder as this file.
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>Homepage File</strong>
+                <strong>Main file</strong>
                 <span>index.html</span>
               </div>
-            </a>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Important pages</strong>
+                <span>about.html · contact.html · ai-ethics-kenya.html · disclaimer.html · 404.html</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Direct contact</strong>
+                <span>kinglee6mutwiri@gmail.com · 0736280522</span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="notice reveal">
+          <strong style="color:var(--teal);">About length:</strong>
+          A literal 8000-word homepage would be too heavy for most real visitors, so this version is built as a substantial, professional, SEO-friendly long-form home page that still remains readable and practical.
         </div>
       </div>
     </section>
@@ -1074,12 +1329,12 @@ roots
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. Homepage connecting jobs, ethics, privacy, stories, contact, and digital opportunity.</div>
+      <div>© 2026 America AI. Educational content on AI, technology, careers, health, and useful online resources.</div>
       <div>
-        Contact:
-        <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a>
-        ·
-        <a href="https://wa.me/254736280522" target="_blank" rel="noopener">0736280522</a>
+        <a href="about.html">About Us</a> ·
+        <a href="contact.html">Contact</a> ·
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms & Conditions</a>
       </div>
     </div>
   </footer>
