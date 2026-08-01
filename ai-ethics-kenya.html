@@ -2,22 +2,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Ethics Kenya | Jobs, Side Hustles, Global Opportunities & What’s Happening Now</title>
-  <meta name="description" content="A premium Kenya-focused America AI page about AI ethics, what is happening in Kenya now, jobs available in Kenya, side hustles, and how to apply for work outside Kenya." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>America AI</title>
 
-  <!-- Google AdSense Auto Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-15333721372" crossorigin="anonymous"></script>
-
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <!-- 1. GOOGLE ANALYTICS 4 - FOR ANALYSIS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HE9CKP90"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-0DVD5VSFYW');
+    gtag('config', 'G-X3HE9CKP90');
   </script>
+
+  <!-- 2. GOOGLE ADSENSE - FOR ADS -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
+     crossorigin="anonymous"></script>
+
+  <meta name="description" content="AI ethics in Kenya explained clearly: what artificial intelligence is, why ethics matters, benefits, risks, sectors using AI, responsible use, Kenya's future, and FAQ.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,21 +27,26 @@
 
   <style>
     :root{
-      --bg:#f7fbf7;
+      --black:#101215;
+      --ink:#172230;
+      --muted:#5f6f82;
       --paper:#ffffff;
-      --paper-2:#f0f8f1;
-      --text:#14261b;
-      --muted:#5b6e61;
-      --line:#d8e8da;
-      --green:#136f3a;
-      --green-2:#1f8f4d;
-      --green-soft:#e6f9ec;
-      --gold:#c98f1a;
-      --gold-soft:#fff1c9;
-      --red:#c62828;
-      --navy:#10253f;
-      --shadow:0 24px 60px rgba(20,38,27,.10);
-      --shadow-soft:0 10px 28px rgba(20,38,27,.08);
+      --line:#dbe5ef;
+
+      --kenya-red:#be2f3b;
+      --kenya-green:#148652;
+      --kenya-gold:#d6a121;
+      --kenya-dark:#161616;
+
+      --blue:#2363eb;
+      --teal:#0d9d95;
+      --purple:#6a50ef;
+      --orange:#ef7a2d;
+
+      --soft:#f8fbff;
+      --soft-2:#eef5ff;
+      --shadow:0 28px 70px rgba(16,18,21,.12);
+      --shadow-soft:0 12px 28px rgba(23,34,48,.08);
       --radius:28px;
       --max:1280px;
     }
@@ -49,32 +56,39 @@
     body{
       margin:0;
       font-family:'Manrope', sans-serif;
-      color:var(--text);
-      line-height:1.82;
+      color:var(--ink);
+      line-height:1.85;
       background:
-        radial-gradient(circle at top left, rgba(31,143,77,.08), transparent 24%),
-        radial-gradient(circle at top right, rgba(201,143,26,.08), transparent 22%),
-        linear-gradient(180deg, #f7fbf7 0%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(20,134,82,.10), transparent 24%),
+        radial-gradient(circle at top right, rgba(214,161,33,.10), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(35,99,235,.08), transparent 18%),
+        linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
       overflow-x:hidden;
     }
 
     a{text-decoration:none;color:inherit}
-    img,svg{display:block;max-width:100%}
-    ::selection{background:var(--green);color:#fff}
+    img{display:block;max-width:100%}
+    ::selection{background:var(--black);color:#fff}
 
     .container{
       width:min(var(--max), calc(100% - 2rem));
       margin-inline:auto;
     }
 
+    .top-band{
+      height:8px;
+      background:linear-gradient(90deg, var(--kenya-dark) 0 20%, var(--kenya-red) 20% 40%, var(--kenya-green) 40% 60%, var(--kenya-gold) 60% 80%, var(--kenya-dark) 80% 100%);
+    }
+
     .site-header{
       position:relative;
       overflow:hidden;
+      min-height:100vh;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(16,37,63,.76), rgba(19,111,58,.66)),
-        url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      border-bottom:1px solid rgba(255,255,255,.14);
+        linear-gradient(135deg, rgba(16,18,21,.76), rgba(20,134,82,.28)),
+        url('kenya-ai-hero.jpg') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.12);
     }
 
     .site-header::before,
@@ -82,12 +96,19 @@
       content:"";
       position:absolute;
       border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
-      filter:blur(8px);
+      filter:blur(14px);
       pointer-events:none;
     }
-    .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
-    .site-header::after{width:380px;height:380px;right:-90px;bottom:-170px}
+
+    .site-header::before{
+      width:420px;height:420px;left:-140px;top:-150px;
+      background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%);
+    }
+
+    .site-header::after{
+      width:340px;height:340px;right:-90px;bottom:-110px;
+      background:radial-gradient(circle, rgba(20,134,82,.18), transparent 70%);
+    }
 
     .nav{
       display:flex;
@@ -97,10 +118,10 @@
       padding:1rem 0;
       position:sticky;
       top:0;
-      z-index:20;
-      backdrop-filter:blur(12px);
-      background:linear-gradient(180deg, rgba(16,37,63,.40), rgba(16,37,63,.10));
-      border-bottom:1px solid rgba(255,255,255,.06);
+      z-index:60;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(180deg, rgba(16,18,21,.48), rgba(16,18,21,.10));
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
 
     .brand{
@@ -113,12 +134,11 @@
     }
 
     .brand-mark{
-      width:52px;height:52px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.20);
+      background:linear-gradient(135deg, var(--kenya-dark), var(--kenya-red), var(--kenya-green), var(--kenya-gold));
+      border:1px solid rgba(255,255,255,.22);
       box-shadow:0 12px 30px rgba(0,0,0,.16);
-      backdrop-filter:blur(12px);
     }
 
     .nav-links{
@@ -129,7 +149,7 @@
     }
 
     .nav-links a{
-      color:rgba(255,255,255,.94);
+      color:rgba(255,255,255,.95);
       font-weight:700;
       font-size:.95rem;
       position:relative;
@@ -142,60 +162,59 @@
       width:0;height:2px;background:#fff;
       transition:width .3s ease;
     }
+
     .nav-links a:hover::after{width:100%}
 
     .hero{
-      padding:3.6rem 0 4.8rem;
+      min-height:calc(100vh - 88px);
+      display:grid;
+      align-items:end;
+      padding:3rem 0 5rem;
       position:relative;
       z-index:2;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.08fr .92fr;
+      grid-template-columns:1.05fr .95fr;
       gap:2rem;
       align-items:end;
     }
 
     .eyebrow{
-      display:inline-flex;
-      align-items:center;
-      gap:.65rem;
-      padding:.58rem .96rem;
+      display:inline-block;
+      padding:.55rem .95rem;
       border-radius:999px;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.22);
-      backdrop-filter:blur(10px);
-      text-transform:uppercase;
-      letter-spacing:.13em;
-      font-size:.8rem;
       font-weight:800;
-    }
-
-    .eyebrow span{
-      width:9px;height:9px;border-radius:50%;
-      background:#ffd166;
-      box-shadow:0 0 0 6px rgba(255,209,102,.16);
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.74rem;
+      margin-bottom:1rem;
+      color:#fff8d8;
+      border:1px solid rgba(255,255,255,.20);
+      background:linear-gradient(90deg, rgba(20,134,82,.32), rgba(214,161,33,.28), rgba(190,47,59,.24));
+      backdrop-filter:blur(10px);
     }
 
     h1,h2,h3,h4{
       font-family:'Sora', sans-serif;
-      line-height:1.02;
+      line-height:1.04;
       letter-spacing:-.03em;
       margin:0 0 1rem;
     }
 
     h1{
-      font-size:clamp(3rem, 6vw, 5.6rem);
+      font-size:clamp(3rem, 6vw, 5.8rem);
       max-width:10ch;
-      margin-top:1rem;
+      text-shadow:0 10px 30px rgba(0,0,0,.24);
     }
 
     .lead{
       margin:0;
-      max-width:64ch;
-      color:rgba(255,255,255,.93);
-      font-size:clamp(1.04rem, 1.8vw, 1.18rem);
+      max-width:68ch;
+      color:rgba(255,255,255,.94);
+      font-size:clamp(1.03rem, 1.8vw, 1.17rem);
+      text-shadow:0 6px 18px rgba(0,0,0,.22);
     }
 
     .hero-actions{
@@ -221,7 +240,7 @@
 
     .btn-primary{
       background:#fff;
-      color:var(--green);
+      color:var(--black);
       box-shadow:0 12px 30px rgba(0,0,0,.18);
     }
 
@@ -233,7 +252,7 @@
     .btn-secondary{
       background:rgba(255,255,255,.12);
       color:#fff;
-      border:1px solid rgba(255,255,255,.22);
+      border:1px solid rgba(255,255,255,.24);
       backdrop-filter:blur(10px);
     }
 
@@ -242,52 +261,40 @@
       background:rgba(255,255,255,.18);
     }
 
-    .hero-side{
-      display:grid;
-      gap:1rem;
-    }
-
-    .hero-photo,
     .hero-card{
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:24px;
+      border-radius:30px;
       overflow:hidden;
+      border:1px solid rgba(255,255,255,.16);
       box-shadow:0 18px 40px rgba(0,0,0,.18);
-      backdrop-filter:blur(12px);
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      padding:1rem;
     }
 
-    .hero-photo{
-      height:260px;
-      background:#ffffff18;
-    }
-
-    .hero-photo img{
+    .hero-card img{
       width:100%;
-      height:100%;
+      height:520px;
       object-fit:cover;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
     }
 
-    .hero-card{
-      background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06));
-      padding:1.15rem;
+    .hero-caption{
+      padding:.95rem .1rem .1rem;
+      color:rgba(255,255,255,.9);
     }
 
-    .hero-card strong{
+    .hero-caption strong{
       display:block;
-      font-size:1.18rem;
-      margin-bottom:.3rem;
-    }
-
-    .hero-card p{
-      margin:0;
-      color:rgba(255,255,255,.88);
+      margin-bottom:.25rem;
+      font-size:1.08rem;
     }
 
     main section{padding:5rem 0}
 
     .section-head{
       display:grid;
-      grid-template-columns:.92fr 1.08fr;
+      grid-template-columns:.88fr 1.12fr;
       gap:2rem;
       align-items:end;
       margin-bottom:2rem;
@@ -300,8 +307,14 @@
       letter-spacing:.14em;
       font-weight:800;
       font-size:.78rem;
-      color:var(--green-2);
     }
+
+    .kicker.green{color:var(--kenya-green)}
+    .kicker.red{color:var(--kenya-red)}
+    .kicker.gold{color:var(--kenya-gold)}
+    .kicker.blue{color:var(--blue)}
+    .kicker.purple{color:var(--purple)}
+    .kicker.orange{color:var(--orange)}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
@@ -317,17 +330,17 @@
 
     .content-layout{
       display:grid;
-      grid-template-columns:1.08fr .92fr;
+      grid-template-columns:1.06fr .94fr;
       gap:2rem;
       align-items:start;
     }
 
     .paper{
-      background:linear-gradient(180deg, #ffffff, #f9fcf9);
+      background:linear-gradient(180deg, #ffffff, #fcfdff);
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow-soft);
-      padding:1.55rem;
+      padding:1.6rem;
       position:relative;
       overflow:hidden;
     }
@@ -335,19 +348,26 @@
     .paper::before{
       content:"";
       position:absolute;
-      width:220px;height:220px;border-radius:50%;
+      width:240px;height:240px;border-radius:50%;
       right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(31,143,77,.08), transparent 70%);
+      background:radial-gradient(circle, rgba(20,134,82,.08), transparent 70%);
       pointer-events:none;
     }
 
+    .paper::after{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:7px;
+      background:linear-gradient(90deg, var(--kenya-dark), var(--kenya-red), var(--kenya-green), var(--kenya-gold), var(--blue));
+    }
+
     .content-flow{
-      columns:2 300px;
+      columns:2 320px;
       column-gap:2rem;
     }
 
     .content-flow p{
-      margin:0 0 1.1rem;
+      margin:0 0 1.15rem;
       color:var(--muted);
       break-inside:avoid;
     }
@@ -358,34 +378,62 @@
     }
 
     .mini{
-      border:1px solid var(--line);
       border-radius:22px;
       padding:1.15rem 1.2rem;
       box-shadow:var(--shadow-soft);
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
       background:#fff;
     }
 
-    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
-    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
-    .mini.navy{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
+    .mini::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+    }
+
+    .mini.green{background:linear-gradient(180deg, #f7fff9, #edfff2)}
+    .mini.red{background:linear-gradient(180deg, #fff8f8, #fff0f0)}
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff7df)}
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
+    .mini.purple{background:linear-gradient(180deg, #faf8ff, #f1edff)}
+    .mini.orange{background:linear-gradient(180deg, #fff8f4, #fff0e8)}
+
+    .mini.green::before{background:var(--kenya-green)}
+    .mini.red::before{background:var(--kenya-red)}
+    .mini.gold::before{background:var(--kenya-gold)}
+    .mini.blue::before{background:var(--blue)}
+    .mini.purple::before{background:var(--purple)}
+    .mini.orange::before{background:var(--orange)}
 
     .mini strong{
       display:block;
       font-family:'Sora', sans-serif;
-      font-size:1.22rem;
+      font-size:1.16rem;
       margin-bottom:.3rem;
     }
 
-    .mini.green strong{color:var(--green)}
-    .mini.gold strong{color:#a56b00}
-    .mini.navy strong{color:var(--navy)}
-
+    .mini.green strong{color:var(--kenya-green)}
+    .mini.red strong{color:var(--kenya-red)}
+    .mini.gold strong{color:#9c6800}
+    .mini.blue strong{color:var(--blue)}
+    .mini.purple strong{color:var(--purple)}
+    .mini.orange strong{color:var(--orange)}
     .mini span{color:var(--muted)}
 
     .showcase{
-      background:linear-gradient(180deg, #f5faf5 0%, #ffffff 100%);
+      background:linear-gradient(180deg, #f8fbff 0%, #fff 100%);
       border-top:1px solid var(--line);
       border-bottom:1px solid var(--line);
+      position:relative;
+    }
+
+    .showcase::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:8px;
+      background:linear-gradient(90deg, var(--kenya-dark), var(--kenya-red), var(--kenya-green), var(--kenya-gold), var(--blue));
     }
 
     .cards{
@@ -401,20 +449,28 @@
       overflow:hidden;
       background:#fff;
       box-shadow:var(--shadow-soft);
-      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+      transition:transform .3s ease, box-shadow .3s ease;
+      position:relative;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:6px;
+      background:linear-gradient(90deg, var(--kenya-red), var(--kenya-green), var(--kenya-gold), var(--blue));
+      z-index:2;
     }
 
     .card:hover{
       transform:translateY(-8px);
       box-shadow:var(--shadow);
-      border-color:#bdd8c2;
     }
 
     .card-photo{
-      height:210px;
+      height:240px;
       overflow:hidden;
       border-bottom:1px solid var(--line);
-      background:#eaf5ec;
+      background:#eef5ff;
     }
 
     .card-photo img{
@@ -434,12 +490,18 @@
       font-weight:800;
       text-transform:uppercase;
       letter-spacing:.08em;
-      background:var(--gold-soft);
-      color:#8a5b00;
+      color:#fff;
     }
 
+    .tag.green{background:var(--kenya-green)}
+    .tag.red{background:var(--kenya-red)}
+    .tag.gold{background:var(--kenya-gold)}
+    .tag.blue{background:var(--blue)}
+    .tag.purple{background:var(--purple)}
+    .tag.orange{background:var(--orange)}
+
     .card h3{
-      font-size:1.24rem;
+      font-size:1.18rem;
       margin-bottom:.5rem;
     }
 
@@ -448,14 +510,57 @@
       color:var(--muted);
     }
 
-    .contact{
-      background:linear-gradient(180deg, #f4faf5, #ffffff);
-      border-top:1px solid var(--line);
+    .faq-list{
+      display:grid;
+      gap:1rem;
+    }
+
+    .faq{
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .faq button{
+      width:100%;
+      text-align:left;
+      background:#fff;
+      color:var(--ink);
+      border:none;
+      padding:1.1rem 1.2rem;
+      font:inherit;
+      font-weight:800;
+      cursor:pointer;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+    }
+
+    .faq button span:last-child{
+      color:var(--kenya-green);
+      font-size:1.2rem;
+      flex:0 0 auto;
+    }
+
+    .faq .answer{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .35s ease;
+      padding:0 1.2rem;
+      color:var(--muted);
+    }
+
+    .faq.active .answer{
+      max-height:260px;
+      padding:0 1.2rem 1.1rem;
     }
 
     .contact-box{
       border:1px solid var(--line);
-      background:linear-gradient(180deg, #ffffff, #f8fcf8);
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
       border-radius:30px;
       padding:1.5rem;
       box-shadow:var(--shadow);
@@ -469,9 +574,8 @@
     .contact-box::before{
       content:"";
       position:absolute;
-      width:240px;height:240px;border-radius:50%;
-      right:-60px;top:-70px;
-      background:radial-gradient(circle, rgba(31,143,77,.12), transparent 70%);
+      inset:0 0 auto 0;height:8px;
+      background:linear-gradient(90deg, var(--kenya-dark), var(--kenya-red), var(--kenya-green), var(--kenya-gold), var(--blue));
     }
 
     .contact-items{
@@ -498,11 +602,21 @@
     }
 
     .contact-icon{
-      width:54px;height:54px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:linear-gradient(135deg, #e6f6eb, #fff);
-      color:var(--green);
+      background:linear-gradient(135deg, var(--kenya-red), var(--kenya-green), var(--kenya-gold), var(--blue));
+      color:#fff;
       flex:0 0 auto;
+    }
+
+    .note{
+      padding:1rem 1.15rem;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(20,134,82,.08), rgba(214,161,33,.08), rgba(35,99,235,.08), rgba(190,47,59,.08));
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+      margin-top:1rem;
     }
 
     footer{
@@ -547,6 +661,10 @@
       to{opacity:1;transform:translateY(0)}
     }
 
+    @media (max-width: 1100px){
+      .cards{grid-template-columns:repeat(6,1fr)}
+    }
+
     @media (max-width: 1020px){
       .hero-grid,
       .section-head,
@@ -554,7 +672,8 @@
       .contact-box{
         grid-template-columns:1fr;
       }
-      .card{grid-column:span 6}
+      .card{grid-column:span 3}
+      .hero-card img{height:420px}
     }
 
     @media (max-width: 720px){
@@ -569,55 +688,57 @@
       .content-flow{columns:1}
       h1{max-width:100%}
       main section{padding:4rem 0}
+      .hero-card img{height:320px}
     }
   </style>
 </head>
 <body>
+  <div class="top-band"></div>
+
   <header class="site-header" id="top">
     <div class="container">
       <nav class="nav">
         <a class="brand" href="index.html" aria-label="America AI home">
           <span class="brand-mark" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
-          <span>AMERICA AI ETHICS</span>
+          <span>AMERICA AI</span>
         </a>
 
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#kenya-now">Kenya Now</a>
-          <a href="#jobs">Jobs</a>
-          <a href="#outside">Outside Kenya</a>
-          <a href="#contact">Contact</a>
+          <a href="#intro">Introduction</a>
+          <a href="#ethics">AI Ethics</a>
+          <a href="#uses">Uses in Kenya</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#faq">FAQ</a>
         </div>
       </nav>
 
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <div class="eyebrow"><span></span> Kenya • AI ethics • work • future</div>
-            <h1>Kenya, ethical AI, jobs, and the future of opportunity.</h1>
+            <span class="eyebrow">Responsible AI in Kenya</span>
+            <h1>AI ethics in Kenya and the future of responsible innovation.</h1>
             <p class="lead">
-              This America AI page explores <strong>what is happening in Kenya now</strong>, why <strong>AI ethics matters</strong>,
-              what <strong>jobs are available in Kenya right now</strong>, which <strong>side hustles make sense</strong>, and how Kenyans can
-              <strong>apply for work outside Kenya</strong> in a lawful, professional, and confident way.
+              Artificial intelligence is becoming more important in Kenya across education, healthcare, agriculture, business,
+              government services, finance, and daily digital life. This page explains what AI is, why AI ethics matters in Kenya,
+              how AI is being used, what benefits it can bring, what challenges it creates, and how Kenya can build a responsible AI future.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#kenya-now">Read the Guide</a>
-              <a class="btn btn-secondary" href="index.html">Back Home</a>
+              <a class="btn btn-primary" href="#intro">Start Reading</a>
+              <a class="btn btn-secondary" href="#faq">Read FAQ</a>
             </div>
           </div>
 
-          <div class="hero-side reveal">
-            <div class="hero-photo">
-              <img src="https://images.unsplash.com/photo-1523805009345-7448845a9e53?auto=format&fit=crop&w=1400&q=80" alt="Nairobi skyline and modern Kenya city development" loading="lazy">
-            </div>
-            <div class="hero-card">
-              <strong>Practical, Peaceful, Professional</strong>
-              <p>This page is written to inform and guide without violence, threats, or harmful messaging. It focuses on progress, ethics, and real opportunity.</p>
+          <div class="hero-card reveal">
+            <img src="kenya-ai-city.jpg" alt="Kenya city technology image for AI ethics article" loading="lazy">
+            <div class="hero-caption">
+              <strong>Kenya, technology, and ethics</strong>
+              <span>Innovation becomes more valuable when it is aligned with fairness, privacy, accountability, and human dignity.</span>
             </div>
           </div>
         </div>
@@ -626,15 +747,15 @@
   </header>
 
   <main>
-    <section id="kenya-now">
+    <section id="intro">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Kenya now</span>
-            <h2>What is going on in Kenya now and why it matters.</h2>
+            <span class="kicker green">Introduction</span>
+            <h2>What artificial intelligence is and why AI ethics matters in Kenya.</h2>
           </div>
           <p>
-            Kenya is moving through a period shaped by economic pressure, youth ambition, digital growth, entrepreneurship, and increasing public interest in fairness, opportunity, and accountability.
+            AI is not only a global topic. It is also becoming a practical Kenyan topic, affecting how people learn, work, access services, manage businesses, and make decisions.
           </p>
         </div>
 
@@ -642,154 +763,149 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Kenya today is a country full of movement. It is energetic, ambitious, and highly aware of the future, even while facing serious economic and social pressures.
-                Across cities, towns, and counties, many people are trying to adapt to a fast-changing world. They are searching for jobs, starting businesses, building side hustles,
-                learning digital skills, and trying to position themselves in a market that is both difficult and full of possibility. That mixture of challenge and momentum is one of the most important things happening in Kenya now.
+                Artificial intelligence, usually called AI, refers to computer systems or software tools that can perform tasks that normally require human intelligence.
+                These tasks can include recognizing patterns, translating text, generating content, analyzing large amounts of data, detecting fraud,
+                answering questions, making predictions, and supporting decision-making.
               </p>
               <p>
-                The cost of living continues to shape everyday life. Many households are trying to manage expenses more carefully, and young people especially are feeling the weight of limited formal employment.
-                At the same time, Kenya remains one of the most creative and adaptive countries in the region. People do not simply wait. They look for alternatives. They mix formal jobs with hustles, digital gigs,
-                community support, and entrepreneurship. This is one reason the idea of the “hustle” is so central in Kenya. It is not just a trend. It is part of survival, growth, and identity.
+                AI is often misunderstood because many people imagine it only as robots or futuristic machines.
+                In reality, much of AI appears through ordinary digital tools: recommendation systems, virtual assistants, chatbots, fraud detection tools,
+                medical support systems, automated translation tools, content generation tools, and data analysis platforms.
+                AI is often invisible while still shaping experiences in very real ways.
               </p>
               <p>
-                Another major reality in Kenya now is the role of technology. Mobile money changed the way people transact and trust digital systems.
-                Social media changed how people market themselves, tell stories, promote businesses, and discover opportunity. Remote work, online learning, and freelancing have all become more visible.
-                Artificial intelligence is now entering this conversation too. AI is starting to influence business tools, content production, education support, customer service, and digital platforms.
+                In Kenya, AI ethics is important because new technologies affect real social conditions. Kenya is a country with strong innovation energy,
+                rapid mobile and digital growth, a major youth population, expanding digital entrepreneurship, and increasing public interest in technology.
+                At the same time, Kenya also faces real concerns around inequality, digital access, privacy, employment, governance, and public trust.
+                That makes ethical AI especially important.
               </p>
               <p>
-                This is exactly why <strong>AI ethics</strong> matters for Kenya. AI should not be adopted blindly. As automated systems become more common, questions become more urgent.
-                Are the systems fair? Do they understand local context? Do they protect privacy? Do they work well for African users, local languages, and local realities?
-                Can mistakes be corrected? Are people being judged or filtered by technologies they do not understand? These are not abstract questions.
-                They matter in hiring, lending, education, public systems, media moderation, and digital identity.
+                If AI is used without fairness, some people may be treated unjustly. If it is used without transparency,
+                people may not understand how important decisions are being made. If it is used without accountability,
+                responsibility becomes unclear when harm happens. If it is used without privacy protections,
+                citizens’ personal data can be misused. If it is used without safety standards,
+                mistakes can spread more quickly and at larger scale.
               </p>
               <p>
-                Kenya is also in a phase where public awareness is rising. People are increasingly interested in policy, fairness, digital rights, and accountability.
-                Even when the economy is hard, the population remains alert and expressive. Young people especially are paying attention to how systems affect their lives.
-                This creates a powerful context for conversations about ethical AI, privacy, work, and opportunity.
+                Kenya therefore has an opportunity to do more than adopt AI tools. It can help shape what responsible AI should look like in an African context.
+                That means asking not only whether a system is powerful, but whether it is fair, understandable, lawful, secure, and socially beneficial.
               </p>
               <p>
-                In short, what is going on in Kenya now is a complex mix of pressure and promise. The country has real challenges, but it also has energy, talent, invention, and movement.
-                That is why a guide like this should not only describe problems. It should point toward intelligent, peaceful, and practical ways forward.
+                This article is designed to explain AI ethics in a simple but serious way. It introduces the principles of ethical AI,
+                shows where AI is already relevant in Kenya, explores the benefits and risks, and offers guidance on responsible use.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini green">
-              <strong>Economic Reality</strong>
-              <span>Many people are balancing job search, rising costs, and the need for extra income streams.</span>
+              <strong>What is AI?</strong>
+              <span>AI refers to digital systems that perform tasks such as analysis, prediction, automation, and decision support.</span>
+            </div>
+            <div class="mini red">
+              <strong>Why ethics matters</strong>
+              <span>Because AI affects people’s privacy, rights, opportunities, and treatment.</span>
             </div>
             <div class="mini gold">
-              <strong>Digital Growth</strong>
-              <span>Kenya continues to expand in mobile finance, online work, social media business, and digital services.</span>
-            </div>
-            <div class="mini navy">
-              <strong>Ethical Need</strong>
-              <span>As AI grows, fairness, transparency, privacy, and accountability become more important than ever.</span>
+              <strong>Why Kenya matters</strong>
+              <span>Kenya’s fast digital growth makes responsible AI especially important for the future.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="jobs">
+    <section class="showcase" id="ethics">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Jobs in Kenya</span>
-            <h2>Jobs available in Kenya right now and where opportunity still exists.</h2>
+            <span class="kicker red">What Is AI Ethics?</span>
+            <h2>The principles that guide AI toward responsible use.</h2>
           </div>
           <p>
-            Kenya’s job market is competitive, but opportunity still exists in sectors that need practical skills, strong communication, digital readiness, and consistency.
+            AI ethics is the effort to make sure artificial intelligence is developed and used in ways that respect people, protect rights, and support society fairly.
           </p>
         </div>
 
         <div class="cards">
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1200&q=80" alt="Professional office interview and employment conversation" loading="lazy">
+              <img src="fairness-kenya.jpg" alt="Fairness and inclusion image in Kenya context" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">Customer Service</span>
-              <h3>Retail, support, and front-facing work</h3>
-              <p>Shops, telecom support, supermarkets, reception roles, and service businesses regularly need reliable people.</p>
+              <span class="tag green">Fairness</span>
+              <h3>Fairness</h3>
+              <p>AI should not discriminate unfairly on the basis of gender, ethnicity, location, language, disability, or social background.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80" alt="Restaurant and hospitality work environment" loading="lazy">
+              <img src="transparency-tech.jpg" alt="Transparent technology image" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">Hospitality</span>
-              <h3>Hotels, food service, and tourism</h3>
-              <p>Hospitality still creates jobs through hotels, cafés, restaurants, travel support, and customer care services.</p>
+              <span class="tag gold">Transparency</span>
+              <h3>Transparency</h3>
+              <p>People should know when AI is involved in important decisions and should understand its role as clearly as possible.</p>
             </div>
           </article>
 
           <article class="card reveal">
             <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="Digital teamwork and online work collaboration" loading="lazy">
+              <img src="accountability-office.jpg" alt="Governance and accountability image" loading="lazy">
             </div>
             <div class="card-body">
-              <span class="tag">Digital Work</span>
-              <h3>Remote tasks and online services</h3>
-              <p>Writing, design, virtual support, tutoring, data tasks, and digital marketing are growing paths for skilled workers.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="content-layout" style="margin-top:2rem;">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                Jobs in Kenya right now can be found in both formal and informal sectors, though the competition is strong. For many job seekers, one of the most important lessons is that opportunity rarely comes from only one direction.
-                It often comes from a mix of strategy, skill, timing, and presentation. Customer service jobs remain common in supermarkets, shops, service centers, and companies that need salespeople, attendants, receptionists, and support staff.
-                These roles may not always seem glamorous, but they are practical starting points for many people.
-              </p>
-              <p>
-                Hospitality continues to matter as well. Hotels, restaurants, guest houses, event venues, and travel-connected businesses still need workers in food service, housekeeping, front desk work, and customer support.
-                People who are polite, punctual, and able to communicate well often do better in these spaces.
-              </p>
-              <p>
-                Skilled trade work remains important too. Electricians, plumbers, welders, technicians, mechanics, and builders still provide essential labor that society depends on.
-                Practical skills can sometimes create more reliable income than overcrowded office queues. That is why technical skills should never be underrated.
-              </p>
-              <p>
-                Digital jobs are another major area. Kenyans with good English, internet access, and discipline can explore online writing, social media management, virtual assistance,
-                graphic design, video editing, online tutoring, bookkeeping support, and customer support for remote businesses. These jobs require consistency and skill development,
-                but they can create meaningful pathways.
-              </p>
-              <p>
-                The strongest advice for job seekers in Kenya is simple: improve presentation. A clean CV, a short professional email, a LinkedIn profile, and a clear record of skills can make a huge difference.
-                Talent alone is not enough if it is not visible.
-              </p>
+              <span class="tag red">Accountability</span>
+              <h3>Accountability</h3>
+              <p>Humans and institutions must remain responsible for the outcomes of AI systems, especially when harm occurs.</p>
             </div>
           </article>
 
-          <aside class="sidebar reveal">
-            <div class="mini green">
-              <strong>Strong sectors</strong>
-              <span>Customer service, hospitality, skilled trade work, logistics, sales, and digital freelance services.</span>
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="privacy-data.jpg" alt="Privacy and data security image" loading="lazy">
             </div>
-            <div class="mini gold">
-              <strong>Best strategy</strong>
-              <span>Do not rely on one path only. Combine job search, skill-building, and practical income ideas.</span>
+            <div class="card-body">
+              <span class="tag blue">Privacy</span>
+              <h3>Privacy</h3>
+              <p>AI often relies on data, so personal information must be collected, stored, and used in lawful and respectful ways.</p>
             </div>
-          </aside>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="safety-ai.jpg" alt="AI safety and security image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag purple">Safety</span>
+              <h3>Safety</h3>
+              <p>AI systems should be reliable, secure, tested, and monitored so they do not create avoidable harm.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="ethics-discussion.jpg" alt="Ethics discussion group image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag orange">Human Values</span>
+              <h3>Human-centered design</h3>
+              <p>Ethical AI keeps people at the center and treats technology as a tool, not as an excuse to ignore responsibility.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="hustles">
+    <section id="uses">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Side hustles</span>
-            <h2>Best side hustles in Kenya that make sense now.</h2>
+            <span class="kicker blue">How AI Is Used in Kenya</span>
+            <h2>Important sectors where AI is becoming relevant.</h2>
           </div>
           <p>
-            The best side hustles are the ones that solve real needs, fit local demand, and can be managed with discipline.
+            AI is already influencing or supporting several parts of Kenyan life through software, analytics, automated systems, and digital decision tools.
           </p>
         </div>
 
@@ -797,51 +913,146 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                In Kenya, side hustles are not a small extra. For many people, they are the foundation of survival and growth.
-                The best side hustle is not necessarily the most fashionable one online. It is the one that matches your skills, location, starting capital, and market.
+                <strong>Education.</strong> AI can be used to personalize learning, support digital tutoring, provide language help,
+                identify learning gaps, and assist teachers with educational analysis. In Kenya, where learning conditions differ widely,
+                AI may help reduce some barriers if it is used carefully and fairly.
               </p>
               <p>
-                Food vending remains practical where there is strong foot traffic. Small snack sales, lunch delivery, tea business, and packaged food can work when hygiene and consistency are strong.
-                Beauty services such as barbering, braiding, salon work, nail care, and makeup also remain powerful because they connect directly to repeat clients and visible results.
+                <strong>Healthcare.</strong> AI can assist with diagnostics, patient record analysis, telemedicine support,
+                medical imaging assistance, and health service efficiency. In Kenya, healthcare AI may help improve access and speed,
+                but it must be used under strong ethical and professional oversight.
               </p>
               <p>
-                Online selling through WhatsApp, Facebook, Instagram, and marketplaces is another realistic path. Thrift clothes, accessories, cosmetics, shoes, digital products, and small electronics can all work if sourcing and trust are good.
-                Tutoring is also valuable, especially for students and educated young people. Mathematics, English, sciences, exam coaching, and digital skills tutoring can all become income streams.
+                <strong>Agriculture.</strong> AI can support weather forecasting, pest detection, crop monitoring, market analysis,
+                soil recommendations, and farming advice. Because agriculture is so important in Kenya, AI can be especially valuable when it is affordable and practical.
               </p>
               <p>
-                Small agribusiness still matters too. Poultry, vegetables, fruit distribution, kitchen gardening, and value-added produce can become business when done with market awareness.
-                Printing services, design work, photography, event support, and small delivery services are also useful in the right area.
+                <strong>Banking and mobile money.</strong> AI is highly relevant in fraud detection, risk analysis,
+                customer support, monitoring suspicious transactions, and making services more efficient. Kenya’s digital finance ecosystem makes this area especially significant.
               </p>
               <p>
-                A key rule for side hustles is this: track your numbers. Know what you spend, what you earn, what your profit is, and who your real customers are.
-                Discipline turns a hustle into something sustainable.
+                <strong>Government services.</strong> AI may be used in planning support, public administration,
+                service delivery analysis, and data-driven systems that help manage complex public tasks.
+                This requires high levels of transparency because public systems affect rights and trust.
+              </p>
+              <p>
+                <strong>Business.</strong> Businesses can use AI for logistics, customer service, market insights,
+                marketing support, inventory planning, workflow improvement, and data-based forecasting.
+                For Kenyan startups and enterprises, AI can increase efficiency if used responsibly.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini green">
-              <strong>Good hustles</strong>
-              <span>Food sales, beauty work, online selling, tutoring, printing, event photography, and small agribusiness.</span>
+              <strong>Education</strong>
+              <span>Learning support, tutoring tools, and personalized educational systems.</span>
             </div>
-            <div class="mini navy">
-              <strong>Growth tip</strong>
-              <span>Use WhatsApp Business, simple branding, clean photos, and good customer communication.</span>
+            <div class="mini red">
+              <strong>Healthcare</strong>
+              <span>Medical support tools, records analysis, and telemedicine-related assistance.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Agriculture</strong>
+              <span>Weather insights, pest detection, crop analysis, and smarter farming support.</span>
+            </div>
+            <div class="mini blue">
+              <strong>Banking & Mobile Money</strong>
+              <span>Fraud detection, transaction analysis, and automated support systems.</span>
+            </div>
+            <div class="mini purple">
+              <strong>Government</strong>
+              <span>Planning, service delivery, and public data management support.</span>
+            </div>
+            <div class="mini orange">
+              <strong>Business</strong>
+              <span>Operations, analytics, marketing, and productivity improvements.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="outside">
+    <section class="showcase" id="benefits">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Outside Kenya</span>
-            <h2>How Kenyans can get work outside Kenya professionally.</h2>
+            <span class="kicker gold">Benefits of AI</span>
+            <h2>What AI can improve when used well.</h2>
           </div>
           <p>
-            Working outside Kenya can be a real and lawful goal through remote work or relocation. The key is strong documents, trusted channels, and patient professionalism.
+            AI can support productivity, quality, speed, insight, and access across many sectors when it is implemented carefully.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="faster-work.jpg" alt="Fast digital work image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag green">Efficiency</span>
+              <h3>Faster work</h3>
+              <p>AI can reduce repetitive manual tasks and help people process information more quickly.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="better-healthcare.jpg" alt="Healthcare support image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag red">Health</span>
+              <h3>Better healthcare</h3>
+              <p>It can support health workers with analysis, pattern recognition, and faster data handling.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="smart-farming.jpg" alt="Agriculture improvement image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag gold">Farming</span>
+              <h3>Improved farming</h3>
+              <p>Farmers can benefit from better predictions, crop advice, and stronger information for planning.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="learning-student.jpg" alt="Personalized learning image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag blue">Learning</span>
+              <h3>Personalized learning</h3>
+              <p>Students can receive learning support tailored to pace, style, and performance needs.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="productivity-business.jpg" alt="Business productivity image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag purple">Productivity</span>
+              <h3>Increased productivity</h3>
+              <p>Organizations can improve planning, response times, customer support, and operational efficiency.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="challenges">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker red">Challenges</span>
+            <h2>The risks that require serious attention.</h2>
+          </div>
+          <p>
+            AI creates powerful new possibilities, but those possibilities come with social, legal, economic, and moral concerns.
           </p>
         </div>
 
@@ -849,153 +1060,267 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                There are two main paths for Kenyans who want work outside Kenya: remote work from Kenya and physical relocation abroad.
-                Remote work often includes customer support, virtual assistance, writing, design, marketing support, operations help, and online teaching.
-                Relocation work may include healthcare support, caregiving, construction, hospitality, technical trade work, transport, or specialized skilled roles depending on the country.
+                <strong>Data privacy.</strong> AI often depends on data. If personal information is used carelessly, individuals may lose control over sensitive details.
+                Privacy protections are essential in any responsible AI system.
               </p>
               <p>
-                The first step is document quality. Your CV should be clean, simple, and international in style. Use good English. List your skills clearly.
-                Add a professional email address, relevant experience, certifications, and a short personal summary. If a cover letter is required, tailor it to the role.
+                <strong>Bias and discrimination.</strong> If the data used to build AI systems reflects unfair patterns,
+                those systems can repeat and even strengthen discrimination in hiring, credit, education, and service delivery.
               </p>
               <p>
-                LinkedIn can help a lot, but it is not enough on its own. Use company career pages, trusted job boards, verified recruiters, and official government or immigration information.
-                Be careful with scams. If a process sounds too easy, asks for suspicious money, or avoids official documentation, take caution.
+                <strong>Job displacement.</strong> Some tasks may be automated, which can change employment patterns.
+                Kenya must think about training, adaptation, and how workers can benefit from technological change rather than only suffer from it.
               </p>
               <p>
-                Proof of skill matters. Writers need samples. Designers need portfolios. Virtual assistants should show tools and responsibilities they understand.
-                Technicians should show training and experience. Interview readiness also matters. Practice explaining yourself clearly and confidently.
+                <strong>Misinformation and deepfakes.</strong> AI can generate realistic text, audio, and images.
+                That creates risks for fraud, public confusion, media trust, and political manipulation.
               </p>
               <p>
-                Most importantly, stay lawful and patient. Real opportunity usually takes time, preparation, and consistency. The strongest international applicants are the ones who combine skill, honesty, and presentation.
+                <strong>Cybersecurity risks.</strong> AI can help defenders, but it can also be used by attackers to create stronger phishing messages,
+                more sophisticated scams, and automated digital threats.
+              </p>
+              <p>
+                These challenges do not mean AI should be rejected. They mean AI should be governed carefully and used with judgment.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
-            <div class="mini green">
-              <strong>Remote work</strong>
-              <span>Good for writers, virtual assistants, social media managers, support agents, tutors, and creatives.</span>
-            </div>
-            <div class="mini gold">
-              <strong>Relocation path</strong>
-              <span>Check shortage occupations, legal visa rules, and only work with trusted employers or agencies.</span>
-            </div>
-            <div class="mini navy">
-              <strong>Professional rule</strong>
-              <span>Use a strong CV, official websites, and never depend on shortcuts or unlawful methods.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section id="ethics">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker">AI ethics</span>
-            <h2>Why ethical AI matters for Kenya’s future.</h2>
-          </div>
-          <p>
-            Kenya can benefit from AI in education, agriculture, health, business, and productivity — but only if systems remain fair, explainable, and people-centered.
-          </p>
-        </div>
-
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                Ethical AI matters because technology is never truly neutral once it begins to shape real opportunities.
-                If AI systems are used in recruitment, lending, learning, customer filtering, public decision support, or content moderation,
-                they can influence people’s lives in direct ways. If those systems are biased, poorly explained, or designed without local understanding,
-                they may deepen exclusion instead of reducing it.
-              </p>
-              <p>
-                Kenya has a real chance to build a better path. AI can support learning tools, help businesses become more efficient,
-                strengthen agriculture insights, improve language tools, and expand digital access. But adoption should not happen carelessly.
-                There must be transparency about how systems work. There must be attention to privacy. There must be ways to challenge harmful mistakes.
-                And there must be a serious effort to include Kenyan realities, not only imported assumptions.
-              </p>
-              <p>
-                Good AI ethics means placing people before automation hype. It means asking whether systems are understandable,
-                whether they respect dignity, whether they work fairly across different communities, and whether they truly support development.
-                That is the kind of future Kenya deserves.
-              </p>
-            </div>
-          </article>
-
-          <aside class="sidebar reveal">
-            <div class="mini green">
-              <strong>Fairness</strong>
-              <span>Technology should not discriminate or quietly exclude people from real opportunities.</span>
-            </div>
-            <div class="mini gold">
+            <div class="mini red">
               <strong>Privacy</strong>
-              <span>Data protection must remain central as digital systems spread across society.</span>
+              <span>Personal data can be exposed, misused, or handled without proper consent.</span>
             </div>
-            <div class="mini navy">
-              <strong>Accountability</strong>
-              <span>If AI makes a harmful mistake, people should be able to question and challenge it.</span>
+            <div class="mini gold">
+              <strong>Bias</strong>
+              <span>AI can reinforce unfair treatment if its design or training data is biased.</span>
+            </div>
+            <div class="mini blue">
+              <strong>Jobs</strong>
+              <span>Automation may change work patterns and require reskilling and adaptation.</span>
+            </div>
+            <div class="mini purple">
+              <strong>Misinformation</strong>
+              <span>Deepfakes and AI-generated content can damage trust and spread deception.</span>
+            </div>
+            <div class="mini orange">
+              <strong>Security</strong>
+              <span>Cyber threats can become more persuasive and more difficult to detect.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="showcase" id="responsible">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker">Contact</span>
-            <h2>Continue the conversation professionally.</h2>
+            <span class="kicker blue">Responsible AI</span>
+            <h2>How AI should be used responsibly in Kenya.</h2>
           </div>
           <p>
-            If you want to ask about this Kenya AI ethics page or request more page work, use the contact details below.
+            Responsible AI is about practical standards, not abstract slogans. It requires discipline from individuals, businesses, educators, developers, and public institutions.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                <strong>Protect personal information.</strong> Personal data should be collected only when necessary,
+                stored securely, and used with proper legal and ethical safeguards.
+              </p>
+              <p>
+                <strong>Verify AI-generated information.</strong> AI can produce convincing but incorrect outputs.
+                That means users should verify important information before trusting or sharing it.
+              </p>
+              <p>
+                <strong>Keep human oversight for important decisions.</strong> Decisions related to health, education, finance,
+                employment, legal rights, and public services should not be left entirely to automated systems.
+              </p>
+              <p>
+                <strong>Follow Kenyan laws and regulations.</strong> AI use should align with national law, data protection standards,
+                and public expectations around rights, accountability, and institutional fairness.
+              </p>
+              <p>
+                <strong>Design with local context in mind.</strong> AI systems used in Kenya should reflect local realities,
+                including language diversity, digital access differences, affordability, infrastructure challenges, and social diversity.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini green">
+              <strong>Protect information</strong>
+              <span>Privacy and data rights should remain central to digital innovation.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Check outputs</strong>
+              <span>AI content should be reviewed before it is used for serious public or personal decisions.</span>
+            </div>
+            <div class="mini red">
+              <strong>Keep humans responsible</strong>
+              <span>Important decisions still require human judgment, review, and accountability.</span>
+            </div>
+            <div class="mini blue">
+              <strong>Respect the law</strong>
+              <span>Responsible AI must align with Kenyan legal and ethical expectations.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="future">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker purple">Kenya's AI Future</span>
+            <h2>Education, innovation, ethics, and youth opportunity.</h2>
+          </div>
+          <p>
+            Kenya’s AI future can be promising if innovation grows together with public understanding, ethical practice, and strong institutional responsibility.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="ai-education-kenya.jpg" alt="AI education image in Kenya" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag blue">AI Education</span>
+              <h3>AI education</h3>
+              <p>Students and workers need stronger AI literacy to use technology critically, effectively, and responsibly.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="startup-kenya.jpg" alt="Kenya innovation and startup image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag green">Innovation</span>
+              <h3>Innovation and startups</h3>
+              <p>Kenyan startups can build local AI tools that reflect local problems, languages, and practical realities.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="ethical-development.jpg" alt="Ethical development image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag red">Ethics</span>
+              <h3>Ethical AI development</h3>
+              <p>Responsible design should become part of Kenya’s innovation culture, not something added only after problems appear.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <img src="young-people-tech.jpg" alt="Young people and technology image" loading="lazy">
+            </div>
+            <div class="card-body">
+              <span class="tag gold">Youth</span>
+              <h3>Opportunities for young people</h3>
+              <p>Young people can benefit through digital skills, entrepreneurship, AI education, and new career paths.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker orange">Frequently Asked Questions</span>
+            <h2>Simple answers to important questions.</h2>
+          </div>
+          <p>
+            These answers help summarize the discussion for readers who want the key points in direct language.
+          </p>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq">
+            <button type="button">
+              <span>Is AI safe?</span>
+              <span>+</span>
+            </button>
+            <div class="answer">
+              AI can be helpful and relatively safe in many situations, but safety depends on good design, strong testing, privacy protection, human oversight, and responsible use.
+            </div>
+          </div>
+
+          <div class="faq">
+            <button type="button">
+              <span>Can AI replace jobs?</span>
+              <span>+</span>
+            </button>
+            <div class="answer">
+              AI can replace some tasks and change some jobs, but it can also create new opportunities. The main challenge is preparing people through learning, reskilling, and adaptation.
+            </div>
+          </div>
+
+          <div class="faq">
+            <button type="button">
+              <span>How can students learn AI?</span>
+              <span>+</span>
+            </button>
+            <div class="answer">
+              Students can start with beginner-friendly articles, online courses, coding platforms, tutorials, communities, and practical experimentation with digital tools.
+            </div>
+          </div>
+
+          <div class="faq">
+            <button type="button">
+              <span>Is AI legal in Kenya?</span>
+              <span>+</span>
+            </button>
+            <div class="answer">
+              AI is not simply one single legal or illegal thing. Its legality depends on how it is used. Organizations must still comply with Kenyan laws on privacy, data protection, rights, and sector rules.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Conclusion</span>
+            <h2>Kenya can use AI responsibly and wisely.</h2>
+          </div>
+          <p>
+            AI can help Kenya improve services, strengthen innovation, and create new opportunities, but only if ethics remain part of the conversation from the start.
           </p>
         </div>
 
         <div class="contact-box reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Build pages that inform, guide, and look excellent.</h3>
-            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              This page was designed to be calm, attractive, practical, and full of meaningful direction. It combines real images, premium color choices, and professional content flow.
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:11ch;">Responsible AI should strengthen society, not weaken trust.</h3>
+            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
+              Kenya has a strong opportunity to build an AI future that values fairness, transparency, accountability, privacy, and safety.
+              Responsible use of artificial intelligence can help education, healthcare, agriculture, finance, public service, and entrepreneurship.
+              Readers are encouraged to keep learning, question bold claims, and explore more technology and education articles on America AI.
             </p>
             <div class="hero-actions" style="margin-top:1.2rem;">
               <a class="btn btn-primary" href="index.html">Back Home</a>
-              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+              <a class="btn btn-secondary" href="about.html">About America AI</a>
+            </div>
+
+            <div class="note">
+              Kenya’s AI future should not be built on speed alone. It should be built on wisdom, public trust, and responsible innovation.
             </div>
           </div>
 
           <div class="contact-items">
-            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Send email">
-              <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Email Contact</strong>
-                <span>kinglee6mutwiri@gmail.com</span>
-              </div>
-            </a>
-
-            <a class="contact-item" href="index.html">
-              <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Back Home</strong>
-                <span>Return to America AI homepage</span>
-              </div>
-            </a>
-
             <div class="contact-item">
               <div class="contact-icon">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
                   <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                   <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                   <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
@@ -1006,7 +1331,54 @@
                 <span>ai-ethics-kenya.html</span>
               </div>
             </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Good for readers interested in</strong>
+                <span>AI, education, technology, careers, digital policy, and innovation in Kenya</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Contact</strong>
+                <span>kinglee6mutwiri@gmail.com</span>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="note reveal">
+          To make the real images open properly, keep image files like
+          <strong>kenya-ai-hero.jpg</strong>,
+          <strong>kenya-ai-city.jpg</strong>,
+          <strong>fairness-kenya.jpg</strong>,
+          <strong>transparency-tech.jpg</strong>,
+          <strong>accountability-office.jpg</strong>,
+          <strong>privacy-data.jpg</strong>,
+          <strong>safety-ai.jpg</strong>,
+          <strong>ethics-discussion.jpg</strong>,
+          <strong>faster-work.jpg</strong>,
+          <strong>better-healthcare.jpg</strong>,
+          <strong>smart-farming.jpg</strong>,
+          <strong>learning-student.jpg</strong>,
+          <strong>productivity-business.jpg</strong>,
+          <strong>ai-education-kenya.jpg</strong>,
+          <strong>startup-kenya.jpg</strong>,
+          <strong>ethical-development.jpg</strong>,
+          and <strong>young-people-tech.jpg</strong> in the same folder as this HTML file.
         </div>
       </div>
     </section>
@@ -1014,8 +1386,8 @@
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. Kenya AI ethics page with jobs, side hustles, global opportunities, and peaceful future-focused guidance.</div>
-      <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
+      <div>© 2026 America AI. Responsible AI in Kenya article for readers interested in technology, ethics, education, and innovation.</div>
+      <div><a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
     </div>
   </footer>
 
@@ -1030,6 +1402,14 @@
     }, {threshold:0.15});
 
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    document.querySelectorAll('.faq').forEach(faq=>{
+      const btn = faq.querySelector('button');
+      btn.addEventListener('click', ()=>{
+        faq.classList.toggle('active');
+        btn.querySelector('span:last-child').textContent = faq.classList.contains('active') ? '−' : '+';
+      });
+    });
   </script>
 </body>
 </html>
