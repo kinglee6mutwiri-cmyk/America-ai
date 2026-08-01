@@ -1,64 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sitemap - America AI</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      padding: 40px;
-    }
-    h1 {
-      color: #38bdf8;
-      text-align: center;
-    }
-    .section {
-      background: #1e293b;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 12px;
-      border-left: 4px solid #38bdf8;
-    }
-    .section h2 {
-      color: #facc15;
-    }
-    a {
-      color: #22d3ee;
-      text-decoration: none;
-      display: block;
-      margin: 8px 0;
-    }
-    a:hover {
-      color: #facc15;
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>🗺️ America AI - Sitemap</h1>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/index.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-  <div class="section">
-    <h2>🏠 Main Pages</h2>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/">Home</a>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/about.html">About Us</a>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html">Contact</a>
-  </div>
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/about.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-  <div class="section">
-    <h2>📜 Legal Pages</h2>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/disclaimer.html">Disclaimer</a>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/privacy-policy.html">Privacy Policy</a>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/terms.html">Terms & Conditions</a>
-  </div>
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-  <div class="section">
-    <h2>📝 Articles & Blog</h2>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/ai-ethics-kenya.html">AI Ethics in Kenya</a>
-    <a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/job-seekers-usa.html">Job Seekers Guide USA</a>
-  </div>
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/lucky-dube.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-</body>
-</html>
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/ai-ethics-kenya.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/job-seekers-usa.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/privacy-policy.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/terms.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/disclaimer.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
 
