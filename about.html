@@ -1,464 +1,1208 @@
-Here is your complete, fully fixed, and unbroken about.html code designed to work perfectly inside Termux.
-This code contains the exact script tags you requested, has massive long-form text blocks to pass Google AdSense reviews, and cleanly isolates kinglee6mutwiri@gmail.com by itself at the bottom of the contact container.
-## Complete about.html Code
-Save this code by opening your Termux terminal and creating the file directly:
-
-nano about.html
-
-Paste this exact code inside:
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | America AI - Premium Educational Insights, Emerging Tech & Career Blueprints</title>
-    <meta name="description" content="Welcome to America AI, the premier authority portal for Artificial Intelligence guides, technology breakthroughs, career paths, medical-grade health insights, and robust online educational resources. Discover our journey, our values, and our commitment to content integrity.">
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGK3N20G37"></script>
-    <script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | America AI</title>
+  <meta name="description" content="Learn about America AI, an educational website publishing articles about artificial intelligence, technology, jobs, careers, health, and useful online resources." />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGK3N20G37"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-NGK3N20G37');
-    </script>
+  </script>
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-5799841502846177" crossorigin="anonymous"></script>
 
-    <style>
-        :root {
-            --primary: #0a192f;       /* Deep Luxury Space Navy */
-            --secondary: #172a45;     /* Dark Slate Blue */
-            --accent: #10b981;        /* Emerald Accent Green */
-            --accent-glow: #34d399;   /* Bright Green Mint */
-            --text-main: #f8fafc;     /* Clear High-contrast Light Gray for dark sections */
-            --text-dark: #1e293b;     /* Structural Deep Grey for reading text */
-            --text-muted: #475569;    /* Secondary Text Slate */
-            --bg-body: #ffffff;       /* Main Crisp Content Canvas */
-            --bg-alt: #f1f5f9;        /* Warm Subtle Section Breaks */
-            --font-stack: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --blue:#1f5eff;
+      --sky:#4da3ff;
+      --navy:#0f2343;
+      --green:#118b50;
+      --gold:#d89a1f;
+      --orange:#ef6c2f;
+      --red:#cb3b31;
+      --paper:#ffffff;
+      --soft:#f7faff;
+      --soft-2:#eef5ff;
+      --ink:#12233d;
+      --muted:#617086;
+      --line:#dbe5f2;
+      --shadow:0 24px 60px rgba(15,35,67,.12);
+      --shadow-soft:0 10px 26px rgba(18,35,61,.08);
+      --radius:28px;
+      --max:1280px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:'Manrope', sans-serif;
+      color:var(--ink);
+      line-height:1.85;
+      background:
+        radial-gradient(circle at top left, rgba(31,94,255,.10), transparent 24%),
+        radial-gradient(circle at top right, rgba(216,154,31,.08), transparent 22%),
+        linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    ::selection{background:var(--navy);color:#fff}
+
+    .container{
+      width:min(var(--max), calc(100% - 2rem));
+      margin-inline:auto;
+    }
+
+    .top-band{
+      height:8px;
+      background:linear-gradient(90deg, var(--red) 0 20%, var(--orange) 20% 40%, var(--gold) 40% 60%, var(--green) 60% 80%, var(--blue) 80% 100%);
+    }
+
+    .site-header{
+      position:relative;
+      overflow:hidden;
+      min-height:100vh;
+      color:#fff;
+      background:
+        linear-gradient(135deg, rgba(15,35,67,.78), rgba(31,94,255,.42)),
+        url('about-hero.jpg') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .site-header::before,
+    .site-header::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      filter:blur(12px);
+      pointer-events:none;
+    }
+
+    .site-header::before{
+      width:440px;height:440px;left:-140px;top:-150px;
+      background:radial-gradient(circle, rgba(255,255,255,.15), transparent 70%);
+    }
+
+    .site-header::after{
+      width:380px;height:380px;right:-110px;bottom:-130px;
+      background:radial-gradient(circle, rgba(77,163,255,.22), transparent 70%);
+    }
+
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 0;
+      position:sticky;
+      top:0;
+      z-index:60;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(180deg, rgba(15,35,67,.46), rgba(15,35,67,.10));
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.9rem;
+      font-family:'Sora', sans-serif;
+      font-weight:800;
+      letter-spacing:.02em;
+    }
+
+    .brand-mark{
+      width:54px;height:54px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      border:1px solid rgba(255,255,255,.22);
+      box-shadow:0 12px 30px rgba(0,0,0,.16);
+    }
+
+    .nav-links{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:1rem 1.1rem;
+    }
+
+    .nav-links a{
+      color:rgba(255,255,255,.95);
+      font-weight:700;
+      font-size:.95rem;
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;bottom:-4px;
+      width:0;height:2px;background:#fff;
+      transition:width .3s ease;
+    }
+
+    .nav-links a:hover::after{width:100%}
+
+    .hero{
+      min-height:calc(100vh - 88px);
+      display:grid;
+      align-items:end;
+      padding:3rem 0 5rem;
+      position:relative;
+      z-index:2;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.06fr .94fr;
+      gap:2rem;
+      align-items:end;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      padding:.55rem .95rem;
+      border-radius:999px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      font-size:.74rem;
+      margin-bottom:1rem;
+      color:#fff9d7;
+      border:1px solid rgba(255,255,255,.2);
+      background:linear-gradient(90deg, rgba(239,108,47,.32), rgba(216,154,31,.30), rgba(31,94,255,.26));
+      backdrop-filter:blur(10px);
+    }
+
+    h1,h2,h3,h4{
+      font-family:'Sora', sans-serif;
+      line-height:1.04;
+      letter-spacing:-.03em;
+      margin:0 0 1rem;
+    }
+
+    h1{
+      font-size:clamp(3rem, 6vw, 6rem);
+      max-width:10ch;
+      text-shadow:0 10px 30px rgba(0,0,0,.22);
+    }
+
+    .lead{
+      margin:0;
+      max-width:66ch;
+      color:rgba(255,255,255,.94);
+      font-size:clamp(1.03rem, 1.8vw, 1.18rem);
+      text-shadow:0 6px 18px rgba(0,0,0,.24);
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin-top:1.8rem;
+    }
+
+    .btn{
+      min-height:54px;
+      padding:0 1.2rem;
+      border-radius:999px;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.7rem;
+      font-weight:800;
+      transition:transform .28s ease, box-shadow .28s ease, background .28s ease;
+    }
+
+    .btn-primary{
+      background:#fff;
+      color:var(--navy);
+      box-shadow:0 12px 30px rgba(0,0,0,.18);
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 38px rgba(0,0,0,.22);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.12);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.24);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{
+      transform:translateY(-3px);
+      background:rgba(255,255,255,.18);
+    }
+
+    .hero-visual{
+      border-radius:30px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.16);
+      box-shadow:0 18px 40px rgba(0,0,0,.18);
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      padding:1rem;
+    }
+
+    .smart-image{
+      position:relative;
+      overflow:hidden;
+      border-radius:22px;
+      background:
+        radial-gradient(circle at top left, rgba(216,154,31,.24), transparent 22%),
+        radial-gradient(circle at bottom right, rgba(31,94,255,.18), transparent 24%),
+        linear-gradient(135deg, #1c325d 0%, #244e9f 50%, #2d8a58 100%);
+      min-height:520px;
+    }
+
+    .smart-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      position:relative;
+      z-index:2;
+    }
+
+    .fallback-art{
+      position:absolute;
+      inset:0;
+      z-index:1;
+      background:
+        radial-gradient(circle at 50% 18%, rgba(255,255,255,.85), rgba(255,255,255,.14) 16%, transparent 28%),
+        radial-gradient(circle at 18% 74%, rgba(239,108,47,.14), transparent 20%),
+        radial-gradient(circle at 82% 74%, rgba(17,139,80,.14), transparent 22%),
+        linear-gradient(135deg, rgba(15,35,67,.36), rgba(15,35,67,.08));
+    }
+
+    .fallback-badge{
+      position:absolute;
+      left:14px;
+      bottom:14px;
+      z-index:3;
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.55rem .8rem;
+      border-radius:999px;
+      color:#fff;
+      background:rgba(15,35,67,.50);
+      border:1px solid rgba(255,255,255,.14);
+      backdrop-filter:blur(10px);
+      font-size:.78rem;
+      font-weight:800;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+    }
+
+    .fallback-badge::before{
+      content:"";
+      width:10px;height:10px;border-radius:50%;
+      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      box-shadow:0 0 0 3px rgba(255,255,255,.12);
+    }
+
+    .smart-image.is-loaded .fallback-badge span::after{content:"Image loaded"}
+    .smart-image:not(.is-loaded) .fallback-badge span::after{content:"Fallback visual"}
+
+    main section{padding:5rem 0}
+
+    .section-head{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:2rem;
+      align-items:end;
+      margin-bottom:2rem;
+    }
+
+    .kicker{
+      display:block;
+      margin-bottom:.75rem;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-weight:800;
+      font-size:.78rem;
+    }
+
+    .kicker.blue{color:var(--blue)}
+    .kicker.green{color:var(--green)}
+    .kicker.gold{color:var(--gold)}
+    .kicker.red{color:var(--red)}
+
+    .section-head h2{
+      font-size:clamp(2rem, 4vw, 4rem);
+      max-width:12ch;
+    }
+
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:1.04rem;
+      max-width:68ch;
+    }
+
+    .content-layout{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:2rem;
+      align-items:start;
+    }
+
+    .paper{
+      background:linear-gradient(180deg, #ffffff, #fcfdff);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-soft);
+      padding:1.6rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .paper::before{
+      content:"";
+      position:absolute;
+      width:240px;height:240px;border-radius:50%;
+      right:-70px;top:-70px;
+      background:radial-gradient(circle, rgba(31,94,255,.08), transparent 70%);
+      pointer-events:none;
+    }
+
+    .paper::after{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:7px;
+      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+    }
+
+    .content-flow{
+      columns:2 320px;
+      column-gap:2rem;
+    }
+
+    .content-flow p{
+      margin:0 0 1.15rem;
+      color:var(--muted);
+      break-inside:avoid;
+    }
+
+    .sidebar{
+      display:grid;
+      gap:1rem;
+    }
+
+    .mini{
+      border-radius:22px;
+      padding:1.15rem 1.2rem;
+      box-shadow:var(--shadow-soft);
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    .mini::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+    }
+
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
+    .mini.green{background:linear-gradient(180deg, #f7fff8, #edfff1)}
+    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff7df)}
+    .mini.red{background:linear-gradient(180deg, #fff8f8, #fff0f0)}
+
+    .mini.blue::before{background:var(--blue)}
+    .mini.green::before{background:var(--green)}
+    .mini.gold::before{background:var(--gold)}
+    .mini.red::before{background:var(--red)}
+
+    .mini strong{
+      display:block;
+      font-family:'Sora', sans-serif;
+      font-size:1.16rem;
+      margin-bottom:.3rem;
+    }
+
+    .mini.blue strong{color:var(--blue)}
+    .mini.green strong{color:var(--green)}
+    .mini.gold strong{color:#9d6a00}
+    .mini.red strong{color:var(--red)}
+    .mini span{color:var(--muted)}
+
+    .showcase{
+      background:linear-gradient(180deg, #f8fbff 0%, #fff 100%);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+      position:relative;
+    }
+
+    .showcase::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:8px;
+      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:1rem;
+    }
+
+    .card{
+      grid-column:span 4;
+      border:1px solid var(--line);
+      border-radius:24px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+      transition:transform .3s ease, box-shadow .3s ease;
+      position:relative;
+    }
+
+    .card::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:6px;
+      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      z-index:2;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:var(--shadow);
+    }
+
+    .card-photo{
+      height:250px;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+      position:relative;
+      background:#ecf4ff;
+    }
+
+    .card-photo .smart-image{
+      min-height:250px;
+      border-radius:0;
+      border:none;
+    }
+
+    .card-body{padding:1.2rem}
+
+    .tag{
+      display:inline-flex;
+      margin-bottom:.8rem;
+      padding:.35rem .72rem;
+      border-radius:999px;
+      font-size:.78rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      color:#fff;
+    }
+
+    .tag.blue{background:var(--blue)}
+    .tag.green{background:var(--green)}
+    .tag.gold{background:var(--gold)}
+    .tag.red{background:var(--red)}
+
+    .card h3{
+      font-size:1.18rem;
+      margin-bottom:.5rem;
+    }
+
+    .card p{
+      margin:0;
+      color:var(--muted);
+    }
+
+    .image-band{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:1rem;
+      margin-top:1.5rem;
+    }
+
+    .image-panel{
+      border-radius:24px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
+      background:#eef5ff;
+      min-height:260px;
+      position:relative;
+    }
+
+    .image-panel::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;height:7px;
+      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      z-index:5;
+    }
+
+    .image-panel .smart-image{
+      min-height:260px;
+      border-radius:0;
+      border:none;
+    }
+
+    .footer-panel{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius:30px;
+      padding:1.5rem;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr .95fr;
+      gap:1.4rem;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .footer-panel::before{
+      content:"";
+      position:absolute;
+      inset:0 0 auto 0;height:8px;
+      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+    }
+
+    .contact-items{
+      display:grid;
+      gap:1rem;
+      align-content:start;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:1rem;
+      padding:1rem 1.1rem;
+      border-radius:20px;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:var(--shadow-soft);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .contact-item:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow);
+    }
+
+    .contact-icon{
+      width:56px;height:56px;border-radius:18px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      color:#fff;
+      flex:0 0 auto;
+    }
+
+    .note{
+      padding:1rem 1.15rem;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:linear-gradient(135deg, rgba(239,108,47,.08), rgba(216,154,31,.08), rgba(17,139,80,.08), rgba(31,94,255,.08));
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+      margin-top:1rem;
+    }
+
+    footer{
+      padding:2rem 0 3rem;
+      color:var(--muted);
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(22px);
+      transition:opacity .78s ease, transform .78s ease;
+    }
+
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger > *{
+      opacity:0;
+      transform:translateY(18px);
+      animation:rise .85s ease forwards;
+    }
+
+    .stagger > *:nth-child(1){animation-delay:.08s}
+    .stagger > *:nth-child(2){animation-delay:.18s}
+    .stagger > *:nth-child(3){animation-delay:.28s}
+    .stagger > *:nth-child(4){animation-delay:.38s}
+    .stagger > *:nth-child(5){animation-delay:.48s}
+
+    @keyframes rise{
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media (max-width: 1100px){
+      .image-band{grid-template-columns:1fr 1fr}
+    }
+
+    @media (max-width: 1020px){
+      .hero-grid,
+      .section-head,
+      .content-layout,
+      .footer-panel{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 6}
+      .smart-image{min-height:420px}
+    }
+
+    @media (max-width: 720px){
+      .nav{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      .cards,
+      .image-band{
+        grid-template-columns:1fr;
+      }
+      .card{grid-column:span 1}
+      .content-flow{columns:1}
+      h1{max-width:100%}
+      main section{padding:4rem 0}
+      .smart-image{min-height:320px}
+    }
+  </style>
+</head>
+<body>
+  <div class="top-band"></div>
+
+  <header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="America AI home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+              <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span>AMERICA AI</span>
+        </a>
+
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="#welcome">Welcome</a>
+          <a href="#mission">Mission</a>
+          <a href="#offer">What We Offer</a>
+          <a href="#trust">Why Trust Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="stagger">
+            <span class="eyebrow">About America AI</span>
+            <h1>Welcome to America AI</h1>
+            <p class="lead">
+              America AI is an educational website built to help people learn, think clearly, and access useful information about
+              <strong>artificial intelligence, technology, jobs, careers, health, and practical online resources</strong>.
+              We welcome every visitor with a clear purpose: to inform, guide, and support better decisions through readable and useful content.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#welcome">Start Reading</a>
+              <a class="btn btn-secondary" href="contact.html">Contact Page</a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="smart-image" data-role="image">
+              <div class="fallback-art"></div>
+              <img src="about-hero.jpg" alt="Educational technology and digital learning image for America AI" loading="lazy">
+              <div class="fallback-badge"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker blue">Welcome</span>
+            <h2>Welcome visitors to America AI.</h2>
+          </div>
+          <p>
+            We are glad you are here. Every good website should begin by making its visitors feel clear, oriented, and respected.
+            America AI exists to welcome people who are searching for reliable, educational, and useful content in a fast-changing digital world.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                Welcome to America AI, a website created for readers who want to learn, explore, and make better-informed choices.
+                Whether a visitor arrives with interest in artificial intelligence, career building, online opportunities, health information,
+                digital tools, or general educational resources, the goal is the same: to provide material that is helpful, understandable, and worth reading.
+              </p>
+              <p>
+                A strong welcome matters because first impressions shape trust. Visitors should immediately know what the website is,
+                who it is for, and why it exists. That is why America AI introduces itself as an educational platform first.
+                It is not built merely to fill pages with words. It is built to present useful ideas, explain important topics, and make complex subjects easier to understand.
+              </p>
+              <p>
+                In a crowded internet environment, many pages compete for attention while giving little lasting value.
+                America AI aims for something better. It aims to be a place where readers can return not just for headlines,
+                but for practical guidance, educational reading, and a clearer sense of how modern topics affect real life.
+              </p>
+              <p>
+                This welcome is also an invitation. It invites visitors to move beyond a single page and explore a wider range of articles.
+                It says, in effect, that America AI is here to support learning with clarity, balance, and continued effort.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Educational First</strong>
+              <span>America AI is built around learning, explanation, and useful knowledge.</span>
+            </div>
+            <div class="mini green">
+              <strong>Visitor Friendly</strong>
+              <span>The site aims to make information clear, readable, and practical for everyday use.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Purpose Driven</strong>
+              <span>Its goal is to help people understand topics and make more informed decisions.</span>
+            </div>
+          </aside>
+        </div>
+
+        <div class="image-band reveal">
+          <div class="image-panel">
+            <div class="smart-image" data-role="image">
+              <div class="fallback-art"></div>
+              <img src="about-hero.jpg" alt="Digital learning workspace image" loading="lazy">
+              <div class="fallback-badge"><span></span></div>
+            </div>
+          </div>
+          <div class="image-panel">
+            <div class="smart-image" data-role="image">
+              <div class="fallback-art"></div>
+              <img src="south-africa.jpg" alt="Global perspective image" loading="lazy">
+              <div class="fallback-badge"><span></span></div>
+            </div>
+          </div>
+          <div class="image-panel">
+            <div class="smart-image" data-role="image">
+              <div class="fallback-art"></div>
+              <img src="jamaica-bg.jpg" alt="Creative technology inspiration image" loading="lazy">
+              <div class="fallback-badge"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="who-we-are">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Who We Are</span>
+            <h2>An educational website with broad useful coverage.</h2>
+          </div>
+          <p>
+            America AI is an educational website that publishes articles about artificial intelligence, technology, jobs, careers, health, and useful online resources.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                America AI is an educational publishing platform focused on bringing together important modern subjects in one place.
+                It is designed for readers who want information that connects technology to real life. Some visitors may come for AI articles.
+                Others may come looking for job guidance, career direction, health reading, or practical digital tips.
+                The site is structured to serve all of these interests under one educational mission.
+              </p>
+              <p>
+                Artificial intelligence is one of the major areas of focus because it is reshaping work, communication, creativity, business, and learning.
+                Many people hear about AI every day, but not everyone has access to clear explanations. America AI helps by presenting readable material that supports understanding.
+              </p>
+              <p>
+                Technology is another central subject because modern life increasingly depends on digital systems and online platforms.
+                Readers benefit when technology is explained not only as news, but as something that affects decisions, habits, careers, and opportunities.
+              </p>
+              <p>
+                Jobs and careers are included because educational content becomes even more valuable when it helps people navigate work and livelihood.
+                Practical guidance on job seeking, online work, skill-building, and professional direction can make information more meaningful in everyday life.
+              </p>
+              <p>
+                Health and lifestyle topics are part of the site’s educational scope because people do not live in separate categories.
+                Work, learning, health, and digital life influence each other. A useful website should reflect that connection.
+              </p>
+              <p>
+                Useful online resources are also important because the internet can either confuse or empower people depending on how it is used.
+                America AI aims to highlight resources, tools, and ideas that help readers use the web more productively.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>AI</strong>
+              <span>Guides, explainers, and practical educational content about artificial intelligence.</span>
+            </div>
+            <div class="mini green">
+              <strong>Technology</strong>
+              <span>News, tools, digital tips, and broader tech understanding for modern readers.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Jobs & Careers</strong>
+              <span>Advice and guidance for work, opportunity, and long-term professional growth.</span>
+            </div>
+            <div class="mini red">
+              <strong>Health & Resources</strong>
+              <span>Educational health reading and useful online materials that support better living.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker gold">Our Mission</span>
+            <h2>Help people learn, make informed decisions, and access reliable information.</h2>
+          </div>
+          <p>
+            The mission of America AI is straightforward but important: to support learning, improve understanding, and help readers think more clearly before they act.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="about-hero.jpg" alt="Learning and research image" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag blue">Learn</span>
+              <h3>Support understanding</h3>
+              <p>The first mission is to help readers understand important topics in a clear and practical way.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="south-africa.jpg" alt="Decision making and planning image" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag gold">Decide</span>
+              <h3>Encourage informed decisions</h3>
+              <p>Good information helps people compare options, ask better questions, and make wiser choices.</p>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-photo">
+              <div class="smart-image" data-role="image">
+                <div class="fallback-art"></div>
+                <img src="jamaica-bg.jpg" alt="Reliable information and digital trust image" loading="lazy">
+                <div class="fallback-badge"><span></span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <span class="tag green">Trust</span>
+              <h3>Improve access to reliable information</h3>
+              <p>The site aims to bring readers closer to content that is useful, careful, and worth their time.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="offer">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker red">What We Offer</span>
+            <h2>The main types of content you can expect on America AI.</h2>
+          </div>
+          <p>
+            America AI publishes a useful mix of educational materials designed to support practical learning and broader digital awareness.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p><strong>AI guides and tutorials.</strong> Readers can explore artificial intelligence through accessible guides, explanations, and tutorials designed to make the topic less confusing and more practical.</p>
+              <p><strong>Job and career advice.</strong> The site offers reading that helps people think about employment, online opportunities, skill growth, and career direction.</p>
+              <p><strong>Technology news and tips.</strong> America AI includes helpful technology coverage that focuses not only on events, but on what they mean for everyday users.</p>
+              <p><strong>Educational articles.</strong> A broad range of articles supports learning across digital, professional, and informational topics.</p>
+              <p><strong>Health and lifestyle information.</strong> Useful reading on health and lifestyle is included to support a more balanced and practical educational experience.</p>
+              <p>
+                Together, these offerings create a site that is not narrow or isolated. Instead, America AI aims to reflect the real way people live:
+                learning about technology while also thinking about work, health, opportunities, and online life.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>AI Guides</strong>
+              <span>Explanations, tutorials, and practical article-based learning on artificial intelligence.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Career Advice</strong>
+              <span>Job search insights, work guidance, and career-oriented educational reading.</span>
+            </div>
+            <div class="mini green">
+              <strong>Tech Tips</strong>
+              <span>Technology news, useful updates, and practical digital understanding.</span>
+            </div>
+            <div class="mini red">
+              <strong>Health & Lifestyle</strong>
+              <span>Helpful educational information supporting everyday wellbeing and awareness.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker blue">Why Trust Us</span>
+            <h2>We aim to publish accurate, well-researched, and regularly updated content.</h2>
+          </div>
+          <p>
+            Trust is built through effort, consistency, and transparency. America AI aims to treat published content with seriousness and responsibility.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                A website earns trust when it respects the reader. America AI aims to publish accurate, well-researched, and regularly updated content.
+                That does not mean perfection is claimed in every moment. It means effort is made to provide material that is responsible, useful, and worthy of attention.
+              </p>
+              <p>
+                Accuracy matters because misleading information wastes time and can create confusion. Research matters because shallow writing is rarely helpful.
+                Updates matter because the internet changes quickly, especially in subjects like artificial intelligence, technology, jobs, and digital tools.
+              </p>
+              <p>
+                By aiming for accuracy, research quality, and continued relevance, America AI tries to become more than just another website.
+                It tries to become a reliable educational resource that visitors can return to with confidence.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Accurate</strong>
+              <span>Content is intended to be careful, useful, and responsibly written.</span>
+            </div>
+            <div class="mini green">
+              <strong>Researched</strong>
+              <span>Articles aim to be informed and developed with educational seriousness.</span>
+            </div>
+            <div class="mini gold">
+              <strong>Updated</strong>
+              <span>Regular review matters because technology, jobs, and online life change quickly.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker green">Contact Information</span>
+            <h2>Reach out and continue exploring.</h2>
+          </div>
+          <p>
+            If you need to contact America AI, use the email below or visit the contact page for more details.
+          </p>
+        </div>
+
+        <div class="footer-panel reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Thank you for visiting America AI.</h3>
+            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
+              Thank you for reading this About page. You are invited to explore more articles, learn more from the site,
+              and keep using America AI as a place for educational reading, practical insight, and broader digital understanding.
+            </p>
+            <div class="hero-actions" style="margin-top:1.2rem;">
+              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Us</a>
+              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+            </div>
+
+            <div class="note">
+              <strong style="color:var(--blue);">Closing:</strong>
+              Thank you for reading and welcome again to America AI. We invite you to continue exploring articles about artificial intelligence,
+              technology, jobs, careers, health, and useful online resources.
+            </div>
+          </div>
+
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Email America AI">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <span>kinglee6mutwiri@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="contact.html" aria-label="Open contact page">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Contact Page</strong>
+                <span>Open contact.html</span>
+              </div>
+            </a>
+
+            <div class="contact-item" aria-label="Suggested files">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Suggested files</strong>
+                <span>about.html · contact.html · index.html</span>
+              </div>
+            </div>
+
+            <div class="contact-item" aria-label="File references">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Optional image files</strong>
+                <span>about-hero.jpg · south-africa.jpg · jamaica-bg.jpg · rasta-lucky.jpg</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note reveal">
+          <strong style="color:var(--green);">About length:</strong>
+          A literal “1000000000000 words” is not practical for a usable webpage, so this About page is written as a strong, long-form, professional starting version that is readable and production-friendly.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>© 2026 America AI. Educational content on AI, technology, jobs, careers, health, and useful online resources.</div>
+      <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: var(--font-stack);
-        }
-
-        body {
-            line-height: 1.9;
-            color: var(--text-dark);
-            background-color: var(--bg-body);
-            font-size: 17px;
-            overflow-x: hidden;
-        }
-
-        /* Navigation Architecture */
-        header {
-            background-color: var(--primary);
-            border-bottom: 2px solid var(--accent);
-            position: sticky;
-            top: 0;
-            z-index: 2000;
-        }
-
-        .navbar {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-main);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2.5rem;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: #94a3b8;
-            font-weight: 600;
-            transition: color 0.25s ease, border-bottom 0.25s ease;
-            padding-bottom: 4px;
-        }
-
-        .nav-links a:hover, .nav-links a.active {
-            color: var(--accent-glow);
-            border-bottom: 2px solid var(--accent-glow);
-        }
-
-        /* Massive Immersive Hero Banner */
-        .hero {
-            background: linear-gradient(145deg, var(--primary) 0%, #020617 100%);
-            color: var(--text-main);
-            text-align: center;
-            padding: 10rem 2rem;
-            position: relative;
-        }
-
-        .hero h1 {
-            font-size: 4.2rem;
-            font-weight: 900;
-            margin-bottom: 1.5rem;
-            letter-spacing: -1.5px;
-            line-height: 1.15;
-            background: linear-gradient(to right, #ffffff, #a7f3d0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero p {
-            font-size: 1.4rem;
-            max-width: 900px;
-            margin: 0 auto;
-            color: #cbd5e1;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-
-        /* Main Structured Container */
-        .main-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-        }
-
-        /* Grid Configurations */
-        .grid-split {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 5rem;
-            align-items: center;
-            margin-bottom: 7rem;
-        }
-
-        .grid-reversed {
-            grid-template-columns: 0.9fr 1.1fr;
-        }
-
-        @media (max-width: 968px) {
-            .grid-split, .grid-reversed {
-                grid-template-columns: 1fr !important;
-                gap: 3rem;
-            }
-            .hero h1 { font-size: 2.8rem; }
-        }
-
-        /* Typography Styles */
-        h2 {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-        }
-
-        .section-accent-line {
-            display: inline-block;
-            position: relative;
-        }
-
-        .section-accent-line::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 5px;
-            background-color: var(--accent);
-            margin-top: 0.6rem;
-            border-radius: 3px;
-        }
-
-        h3 {
-            font-size: 1.6rem;
-            color: var(--secondary);
-            margin: 2.5rem 0 1rem 0;
-            font-weight: 700;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            color: var(--text-dark);
-            text-align: justify;
-        }
-
-        /* Image Architectures */
-        .image-container {
-            position: relative;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-            transition: transform 0.4s ease;
-        }
-
-        /* Large Dynamic Offer Grid */
-        .services-wrapper {
-            background-color: var(--bg-alt);
-            padding: 6rem 2rem;
-            border-radius: 24px;
-            margin-bottom: 7rem;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3.5rem;
-        }
-
-        .service-card {
-            background: #ffffff;
-            padding: 3rem 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.04);
-            border-left: 5px solid var(--primary);
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -15px rgba(0,0,0,0.1);
-            border-left-color: var(--accent);
-        }
-
-        .service-card h4 {
-            font-size: 1.35rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-
-        .service-card p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 0;
-        }
-
-        /* Core Values & Trust Elements */
-        .trust-box {
-            background-color: #f8fafc;
-            border-top: 4px solid var(--accent);
-            border-radius: 12px;
-            padding: 2.5rem;
-            margin: 3rem 0;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.02);
-        }
-
-        .trust-list {
-            list-style: none;
-            margin-top: 1.5rem;
-        }
-
-        .trust-list li {
-            position: relative;
-            padding-left: 2.5rem;
-            margin-bottom: 1.25rem;
-            font-weight: 500;
-            color: #334155;
-        }
-
-        .trust-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: 900;
-            font-size: 1.3rem;
-            top: -2px;
-        }
-
-        /* Clean High-Converting CTA Box */
-        .cta-container {
-            background: linear-gradient(135deg, var(--primary) 0%, #0f172a 100%);
-            color: var(--text-main);
-            padding: 6rem 4rem;
-            border-radius: 24px;
-            text-align: center;
-            box-shadow: 0 30px 60px -15px rgba(10,25,47,0.3);
-            margin-top: 5rem;
-        }
-
-        .cta-container h2 {
-            color: var(--text-main);
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .cta-container p {
-            color: #94a3b8;
-            max-width: 800px;
-            margin: 0 auto 3rem auto;
-            text-align: center;
-            font-size: 1.15rem;
-        }
-
-        .contact-details {
-            font-size: 1.4rem;
-            background: rgba(255,255,255,0.04);
-            display: inline-block;
-            padding: 1.5rem 3rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.1);
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-
-        .contact-details a {
-            color: var(--accent-glow);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        /* Large Institutional Footer */
-        footer {
-            background-color: #020617;
-            color: #64748b;
-            padding: 5rem 2rem 3rem 2rem;
-            margin-top: 8rem;
-            font-size: 0.95rem;
-            border-top: 4px solid var(--accent);
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .footer-logo {
-            font-size: 2rem;
-            font-weight: 800;
-            color: #ffffff;
-            margin-bottom: 1.5rem;
-
-}
-.footer-logo span {
-color: var(--accent);
-}
-.footer-text {
-max-width: 900px;
-margin: 0 auto 3rem auto;
-line-height: 1.8;
-}
-.footer-links {
-margin-bottom: 3rem;
-}
-.footer-links a {
-color: #94a3b8;
-text-decoration: none;
-margin: 0 1rem;
-font-weight: 600;
-transition: color 0.2s ease;
-}
-.footer-links a:hover {
-color: var(--accent-glow);
-}
-.footer-bottom {
-border-top: 1px solid #1e293b;
-padding-top: 2rem;
-font-size: 0.85rem;
-}
-
-
-Who We Are
-Welcome to America AI, an elite, comprehensive digital knowledge center and learning ecosystem structured explicitly to analyze, document, and present the multi-faceted shifts taking place across the modern landscape of technology and education. We operate not merely as a tech blog, but as a deep, multi-disciplinary documentation hub that actively tracks data points across machine learning engineering, economic labor demands, computational infrastructure, and baseline lifestyle sciences. In an era continuously re-architected by autonomous software processes and shifting digital market paradigms, access to clean, uncompromised, and comprehensive information is an essential asset for career survival and development.
-Our organization is built upon a dual foundation of deep research and immediate clarity. We bridge the structural gap that often stands separating highly complex engineering documentation from accessible, execution-oriented training blueprints. By analyzing the core mechanics of complex fields, we create a clear pathway of information. This process serves independent software developers, curious students, business planners, and lifetime web learners. Every publication within our archive represents hours of internal compilation, system validation, and rigorous syntactic polishing, ensuring our audience receives authoritative text optimized for modern strategic planning.
-America AI functions as a central beacon for intellectual progress. We recognize that understanding modern computational shifts requires a fundamental understanding of related fields. One cannot explore artificial intelligence without also evaluating shifting job markets, developer tool enhancements, health strategies for technical professionals, and open-source file frameworks. As a result, our platform brings together separate educational sectors into a singular hub of dense, high-utility material. This deliberate cross-disciplinary synthesis guarantees that our visitors gain complete clarity over the integrated technical networks shaping modern society.
-
-
-
-
-Our Core Mission
-The defining mission guiding America AI is the universal democratization of high-level functional knowledge. We design our educational assets specifically to give individuals the analytical resources needed to decode difficult industries, bypass commercial hype cycles, and access verified factual information. We reject the paradigm where critical technical operational insight is stored behind high enterprise paywalls or locked away within exclusive corporate structures. Our goal is to make these valuable insights freely and transparently accessible to anyone with an internet connection.
-By producing deeply researched guides across artificial intelligence pipelines, remote developer configurations, workforce mechanics, and holistic lifestyle tracks, we help accelerate human potential. We aim to empower the global community to build robust systems, develop clear operational insights, protect long-term career viability, and make smart decisions backed by comprehensive data. Through this framework, America AI acts as a permanent, open-source educational bridge for students and professionals worldwide.
-Our commitment extends beyond simply providing text online; we focus on building structural accuracy. Our objective is to design content assets that serve as reliable points of reference for developers, academics, and job seekers. In doing so, we help eliminate the data inequality often created by fast-moving technologies, offering a stable environment for learning and long-term professional development.
-
-What We Offer: Our Specialized Tracks
-To maintain structural integrity and categorical clarity for search index crawling and human scannability, America AI maps its deep articles across six primary developmental pipelines.
-1. AI Guides & Comprehensive Tutorials
-We build deep, itemized technical breakdowns regarding large language model fine-tuning, retrieval-augmented generation architectures, low-code automation systems, and local model inference execution. Our guides take readers from entry-level concepts to advanced practical implementation scripts.
-
-
-2. Job Architectures & Career Mapping
-Access precise data on shifting labor metrics, machine learning engineer pathways, cloud solutions architecture roadmaps, and remote corporate scaling. We deliver actionable blueprints covering algorithmic code interviews, professional portfolio design, and negotiation frameworks.
-
-
-3. Technology Infrastructure News & Tips
-Stay ahead of real-time developments across the global technology landscape. We deliver deep updates on database management, back-end web frameworks, secure container deployment, advanced API validation architectures, and edge computing nodes.
-
-
-4. Deep Educational Academic Blueprints
-Our academic systems synthesize complex mathematical concepts, scientific fundamentals, and computer science abstractions into clear, modular learning paths. This structured approach helps students streamline test prep and master core technical skills.
-
-
-5. Health, Science & Lifestyle Metrics
-Achieve peak physical and mental performance through evidence-backed reviews. We analyze peer-reviewed clinical research to bring you practical guides on desktop ergonomics, cognitive support mechanics, neuro-somatic recovery paths, and sustained energy workflows.
-
-
-6. Curated Online Asset Vaults
-Save hours of research with our comprehensive directories of free web resources. We audit and organize open-source code libraries, verified educational databases, premium responsive UI components, and software development sandboxes.
-
-
-Why Trust America AI?
-In a digital landscape filled with surface-level, unverified information, content integrity is our highest priority. America AI approaches publishing with strict editorial standards designed to fulfill Google's E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness) criteria. We know that choosing a career strategy, adopting code blocks, or taking lifestyle tips requires complete confidence in the underlying source material.
-Every tutorial published on our network goes through an internal testing process. Technical code snippets, script files, and server commands are deployed in real-time developer sandboxes to verify execution and stability before publication. We cross-reference our health and scientific guides with peer-reviewed medical repositories and clinical data journals, keeping our materials completely free from speculative trends or unverified commercial marketing claims.
-Our commitment to deep research prevents thin content loops. This strict framework provides our readers with complete, thorough guides, which are critical for earning search engine authority and passing manual Google AdSense site reviews.
-Our Definitive Publishing Guidelines:
-
-Empirical Code Verification: All development tips, scripting arrays, and environment frameworks are built and run locally to guarantee precision.
-Peer-Reviewed Research: Scientific and lifestyle articles draw exclusively from verified biochemical and medical research databases.
-Unbiased Technological Tracking: Our content paths remain completely independent, prioritizing raw technical data over hype cycles.
-Continuous Editorial Audits: Guides are updated dynamically to account for modern engine updates, security patches, and research changes.
-
-
-
-
-
-
-Thank You for Exploring Our Knowledge Center
-Your journey toward mastering technical frameworks, advanced computing tracks, strategic professional growth, and wellness begins here. We invite you to explore our deep library of articles, run our terminal code configurations, and bookmark our asset hubs to accelerate your learning path.
-kinglee6mutwiri@gmail.com
-
-
-AmericaAI
-America AI is an authoritative global educational institution engineered to demystify complex software development metrics, modern technical workflows, workforce movements, and foundational lifestyle mechanics. Our research pipelines provide clear, comprehensive technical content optimized for permanent structural knowledge development and sustainable user execution.
-
-Home
-About Us
-Contact Hub
-Privacy Framework
-Terms & Conditions
-
-
-© 2026 America AI. All rights reserved. Specialized material engineered for deep intellectual development and technological navigation. All incoming analytics and promotional configurations comply with strict platform policy requirements.
-
-
-
-<FollowUp>
-What file would you like to build next inside Termux to connect with this system?
-* Should we create the matching **`index.html` main homepage code**?
-* Should we generate the mandatory **`privacy.html` framework page** required for Google AdSense approval?
-</FollowUp>
-
+      });
+    }, {threshold:0.15});
+
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    document.querySelectorAll('.smart-image').forEach(wrapper => {
+      const img = wrapper.querySelector('img');
+      if (!img) return;
+
+      function markLoaded(){
+        wrapper.classList.add('is-loaded');
+        img.style.opacity = '1';
+      }
+
+      function markFailed(){
+        wrapper.classList.remove('is-loaded');
+        img.style.opacity = '0';
+      }
+
+      if (img.complete && img.naturalWidth > 0) {
+        markLoaded();
+      } else if (img.complete && img.naturalWidth === 0) {
+        markFailed();
+      }
+
+      img.addEventListener('load', () => {
+        if (img.naturalWidth > 0) markLoaded();
+        else markFailed();
+      });
+
+      img.addEventListener('error', markFailed);
+    });
+  </script>
+</body>
+</html>
+ 
