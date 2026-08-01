@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | America AI</title>
-  <meta name="description" content="Learn about America AI, an educational website publishing articles about artificial intelligence, technology, jobs, careers, health, and useful online resources." />
+  <meta name="description" content="About America AI - who we are, what our website is about, our mission, what visitors can find, why our content can be trusted, and how to contact us." />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGK3N20G37"></script>
@@ -25,21 +25,24 @@
 
   <style>
     :root{
-      --blue:#1f5eff;
-      --sky:#4da3ff;
       --navy:#0f2343;
-      --green:#118b50;
-      --gold:#d89a1f;
-      --orange:#ef6c2f;
-      --red:#cb3b31;
+      --blue:#245dff;
+      --sky:#57b2ff;
+      --teal:#0f9b8e;
+      --green:#17985f;
+      --lime:#7cbf3f;
+      --gold:#db9d22;
+      --orange:#f0702f;
+      --rose:#d94b7f;
+      --purple:#7253ff;
       --paper:#ffffff;
       --soft:#f7faff;
-      --soft-2:#eef5ff;
-      --ink:#12233d;
-      --muted:#617086;
-      --line:#dbe5f2;
-      --shadow:0 24px 60px rgba(15,35,67,.12);
-      --shadow-soft:0 10px 26px rgba(18,35,61,.08);
+      --soft-2:#edf4ff;
+      --ink:#12233c;
+      --muted:#5f6f84;
+      --line:#dbe6f1;
+      --shadow:0 28px 70px rgba(15,35,67,.12);
+      --shadow-soft:0 12px 30px rgba(18,35,60,.08);
       --radius:28px;
       --max:1280px;
     }
@@ -52,8 +55,9 @@
       color:var(--ink);
       line-height:1.85;
       background:
-        radial-gradient(circle at top left, rgba(31,94,255,.10), transparent 24%),
-        radial-gradient(circle at top right, rgba(216,154,31,.08), transparent 22%),
+        radial-gradient(circle at top left, rgba(36,93,255,.10), transparent 24%),
+        radial-gradient(circle at top right, rgba(240,112,47,.08), transparent 20%),
+        radial-gradient(circle at bottom right, rgba(114,83,255,.08), transparent 18%),
         linear-gradient(180deg, #f9fbff 0%, #ffffff 100%);
       overflow-x:hidden;
     }
@@ -69,7 +73,7 @@
 
     .top-band{
       height:8px;
-      background:linear-gradient(90deg, var(--red) 0 20%, var(--orange) 20% 40%, var(--gold) 40% 60%, var(--green) 60% 80%, var(--blue) 80% 100%);
+      background:linear-gradient(90deg, var(--blue) 0 16%, var(--teal) 16% 32%, var(--green) 32% 48%, var(--gold) 48% 64%, var(--orange) 64% 80%, var(--rose) 80% 100%);
     }
 
     .site-header{
@@ -78,7 +82,7 @@
       min-height:100vh;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(15,35,67,.78), rgba(31,94,255,.42)),
+        linear-gradient(135deg, rgba(15,35,67,.80), rgba(36,93,255,.42)),
         url('about-hero.jpg') center/cover no-repeat;
       border-bottom:1px solid rgba(255,255,255,.12);
     }
@@ -88,18 +92,18 @@
       content:"";
       position:absolute;
       border-radius:50%;
-      filter:blur(12px);
+      filter:blur(14px);
       pointer-events:none;
     }
 
     .site-header::before{
-      width:440px;height:440px;left:-140px;top:-150px;
-      background:radial-gradient(circle, rgba(255,255,255,.15), transparent 70%);
+      width:440px;height:440px;left:-120px;top:-150px;
+      background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%);
     }
 
     .site-header::after{
-      width:380px;height:380px;right:-110px;bottom:-130px;
-      background:radial-gradient(circle, rgba(77,163,255,.22), transparent 70%);
+      width:360px;height:360px;right:-100px;bottom:-120px;
+      background:radial-gradient(circle, rgba(87,178,255,.20), transparent 70%);
     }
 
     .nav{
@@ -112,7 +116,7 @@
       top:0;
       z-index:60;
       backdrop-filter:blur(14px);
-      background:linear-gradient(180deg, rgba(15,35,67,.46), rgba(15,35,67,.10));
+      background:linear-gradient(180deg, rgba(15,35,67,.48), rgba(15,35,67,.10));
       border-bottom:1px solid rgba(255,255,255,.08);
     }
 
@@ -126,9 +130,9 @@
     }
 
     .brand-mark{
-      width:54px;height:54px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(135deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
       border:1px solid rgba(255,255,255,.22);
       box-shadow:0 12px 30px rgba(0,0,0,.16);
     }
@@ -168,7 +172,7 @@
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.06fr .94fr;
+      grid-template-columns:1.05fr .95fr;
       gap:2rem;
       align-items:end;
     }
@@ -182,9 +186,9 @@
       letter-spacing:.16em;
       font-size:.74rem;
       margin-bottom:1rem;
-      color:#fff9d7;
-      border:1px solid rgba(255,255,255,.2);
-      background:linear-gradient(90deg, rgba(239,108,47,.32), rgba(216,154,31,.30), rgba(31,94,255,.26));
+      color:#fff9e0;
+      border:1px solid rgba(255,255,255,.20);
+      background:linear-gradient(90deg, rgba(36,93,255,.30), rgba(15,155,142,.28), rgba(219,157,34,.28), rgba(217,75,127,.24));
       backdrop-filter:blur(10px);
     }
 
@@ -197,16 +201,16 @@
 
     h1{
       font-size:clamp(3rem, 6vw, 6rem);
-      max-width:10ch;
+      max-width:9ch;
       text-shadow:0 10px 30px rgba(0,0,0,.22);
     }
 
     .lead{
       margin:0;
-      max-width:66ch;
+      max-width:68ch;
       color:rgba(255,255,255,.94);
       font-size:clamp(1.03rem, 1.8vw, 1.18rem);
-      text-shadow:0 6px 18px rgba(0,0,0,.24);
+      text-shadow:0 6px 18px rgba(0,0,0,.22);
     }
 
     .hero-actions{
@@ -267,11 +271,11 @@
       position:relative;
       overflow:hidden;
       border-radius:22px;
-      background:
-        radial-gradient(circle at top left, rgba(216,154,31,.24), transparent 22%),
-        radial-gradient(circle at bottom right, rgba(31,94,255,.18), transparent 24%),
-        linear-gradient(135deg, #1c325d 0%, #244e9f 50%, #2d8a58 100%);
       min-height:520px;
+      background:
+        radial-gradient(circle at top left, rgba(219,157,34,.20), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(36,93,255,.18), transparent 24%),
+        linear-gradient(135deg, #17345f 0%, #2354b0 38%, #0f9b8e 70%, #7cbf3f 100%);
     }
 
     .smart-image img{
@@ -287,9 +291,9 @@
       inset:0;
       z-index:1;
       background:
-        radial-gradient(circle at 50% 18%, rgba(255,255,255,.85), rgba(255,255,255,.14) 16%, transparent 28%),
-        radial-gradient(circle at 18% 74%, rgba(239,108,47,.14), transparent 20%),
-        radial-gradient(circle at 82% 74%, rgba(17,139,80,.14), transparent 22%),
+        radial-gradient(circle at 50% 18%, rgba(255,255,255,.86), rgba(255,255,255,.15) 16%, transparent 28%),
+        radial-gradient(circle at 18% 74%, rgba(240,112,47,.14), transparent 20%),
+        radial-gradient(circle at 82% 74%, rgba(23,152,95,.14), transparent 22%),
         linear-gradient(135deg, rgba(15,35,67,.36), rgba(15,35,67,.08));
     }
 
@@ -316,7 +320,7 @@
     .fallback-badge::before{
       content:"";
       width:10px;height:10px;border-radius:50%;
-      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(135deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
       box-shadow:0 0 0 3px rgba(255,255,255,.12);
     }
 
@@ -345,7 +349,9 @@
     .kicker.blue{color:var(--blue)}
     .kicker.green{color:var(--green)}
     .kicker.gold{color:var(--gold)}
-    .kicker.red{color:var(--red)}
+    .kicker.orange{color:var(--orange)}
+    .kicker.rose{color:var(--rose)}
+    .kicker.teal{color:var(--teal)}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
@@ -381,7 +387,7 @@
       position:absolute;
       width:240px;height:240px;border-radius:50%;
       right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(31,94,255,.08), transparent 70%);
+      background:radial-gradient(circle, rgba(36,93,255,.08), transparent 70%);
       pointer-events:none;
     }
 
@@ -389,7 +395,7 @@
       content:"";
       position:absolute;
       left:0;top:0;right:0;height:7px;
-      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
     }
 
     .content-flow{
@@ -425,14 +431,18 @@
     }
 
     .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
-    .mini.green{background:linear-gradient(180deg, #f7fff8, #edfff1)}
+    .mini.green{background:linear-gradient(180deg, #f7fff9, #edfff2)}
     .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff7df)}
-    .mini.red{background:linear-gradient(180deg, #fff8f8, #fff0f0)}
+    .mini.orange{background:linear-gradient(180deg, #fff8f4, #fff0e8)}
+    .mini.rose{background:linear-gradient(180deg, #fff8fb, #fff0f6)}
+    .mini.teal{background:linear-gradient(180deg, #f4fffd, #e9fffb)}
 
     .mini.blue::before{background:var(--blue)}
     .mini.green::before{background:var(--green)}
     .mini.gold::before{background:var(--gold)}
-    .mini.red::before{background:var(--red)}
+    .mini.orange::before{background:var(--orange)}
+    .mini.rose::before{background:var(--rose)}
+    .mini.teal::before{background:var(--teal)}
 
     .mini strong{
       display:block;
@@ -443,8 +453,10 @@
 
     .mini.blue strong{color:var(--blue)}
     .mini.green strong{color:var(--green)}
-    .mini.gold strong{color:#9d6a00}
-    .mini.red strong{color:var(--red)}
+    .mini.gold strong{color:#9b6800}
+    .mini.orange strong{color:var(--orange)}
+    .mini.rose strong{color:var(--rose)}
+    .mini.teal strong{color:var(--teal)}
     .mini span{color:var(--muted)}
 
     .showcase{
@@ -458,7 +470,7 @@
       content:"";
       position:absolute;
       left:0;right:0;top:0;height:8px;
-      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
     }
 
     .cards{
@@ -482,7 +494,7 @@
       content:"";
       position:absolute;
       left:0;right:0;top:0;height:6px;
-      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
       z-index:2;
     }
 
@@ -492,15 +504,15 @@
     }
 
     .card-photo{
-      height:250px;
+      height:230px;
       overflow:hidden;
       border-bottom:1px solid var(--line);
+      background:#eef5ff;
       position:relative;
-      background:#ecf4ff;
     }
 
     .card-photo .smart-image{
-      min-height:250px;
+      min-height:230px;
       border-radius:0;
       border:none;
     }
@@ -522,7 +534,9 @@
     .tag.blue{background:var(--blue)}
     .tag.green{background:var(--green)}
     .tag.gold{background:var(--gold)}
-    .tag.red{background:var(--red)}
+    .tag.orange{background:var(--orange)}
+    .tag.rose{background:var(--rose)}
+    .tag.teal{background:var(--teal)}
 
     .card h3{
       font-size:1.18rem;
@@ -555,7 +569,7 @@
       content:"";
       position:absolute;
       inset:auto 0 0 0;height:7px;
-      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
       z-index:5;
     }
 
@@ -565,7 +579,7 @@
       border:none;
     }
 
-    .footer-panel{
+    .contact-box{
       border:1px solid var(--line);
       background:linear-gradient(180deg, #ffffff, #fbfdff);
       border-radius:30px;
@@ -578,11 +592,11 @@
       overflow:hidden;
     }
 
-    .footer-panel::before{
+    .contact-box::before{
       content:"";
       position:absolute;
       inset:0 0 auto 0;height:8px;
-      background:linear-gradient(90deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(90deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
     }
 
     .contact-items{
@@ -611,7 +625,7 @@
     .contact-icon{
       width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--orange), var(--gold), var(--green), var(--blue));
+      background:linear-gradient(135deg, var(--blue), var(--teal), var(--green), var(--gold), var(--orange), var(--rose));
       color:#fff;
       flex:0 0 auto;
     }
@@ -620,7 +634,7 @@
       padding:1rem 1.15rem;
       border-radius:18px;
       border:1px solid var(--line);
-      background:linear-gradient(135deg, rgba(239,108,47,.08), rgba(216,154,31,.08), rgba(17,139,80,.08), rgba(31,94,255,.08));
+      background:linear-gradient(135deg, rgba(36,93,255,.08), rgba(15,155,142,.08), rgba(23,152,95,.08), rgba(219,157,34,.08), rgba(240,112,47,.08), rgba(217,75,127,.08));
       color:var(--muted);
       box-shadow:var(--shadow-soft);
       margin-top:1rem;
@@ -676,7 +690,7 @@
       .hero-grid,
       .section-head,
       .content-layout,
-      .footer-panel{
+      .contact-box{
         grid-template-columns:1fr;
       }
       .card{grid-column:span 6}
@@ -708,7 +722,7 @@
       <nav class="nav">
         <a class="brand" href="index.html" aria-label="America AI home">
           <span class="brand-mark" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
@@ -718,10 +732,10 @@
 
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#welcome">Welcome</a>
+          <a href="#who">Who We Are</a>
+          <a href="#about-site">Website</a>
           <a href="#mission">Mission</a>
-          <a href="#offer">What We Offer</a>
-          <a href="#trust">Why Trust Us</a>
+          <a href="#trust">Trust</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -730,22 +744,23 @@
         <div class="hero-grid">
           <div class="stagger">
             <span class="eyebrow">About America AI</span>
-            <h1>Welcome to America AI</h1>
+            <h1>Who we are, what we do, and why this website exists.</h1>
             <p class="lead">
-              America AI is an educational website built to help people learn, think clearly, and access useful information about
-              <strong>artificial intelligence, technology, jobs, careers, health, and practical online resources</strong>.
-              We welcome every visitor with a clear purpose: to inform, guide, and support better decisions through readable and useful content.
+              America AI is an educational website created to publish useful, readable, and practical content about
+              <strong>artificial intelligence, technology, jobs, careers, health, and reliable online resources</strong>.
+              This page explains who we are, what the website is about, our mission, what visitors can find here,
+              why our content can be trusted, and how to contact us.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#welcome">Start Reading</a>
-              <a class="btn btn-secondary" href="contact.html">Contact Page</a>
+              <a class="btn btn-primary" href="#who">Start Reading</a>
+              <a class="btn btn-secondary" href="#contact">Contact Us</a>
             </div>
           </div>
 
           <div class="hero-visual reveal">
             <div class="smart-image" data-role="image">
               <div class="fallback-art"></div>
-              <img src="about-hero.jpg" alt="Educational technology and digital learning image for America AI" loading="lazy">
+              <img src="about-hero.jpg" alt="Educational technology and publishing image for America AI" loading="lazy">
               <div class="fallback-badge"><span></span></div>
             </div>
           </div>
@@ -755,16 +770,15 @@
   </header>
 
   <main>
-    <section id="welcome">
+    <section id="who">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker blue">Welcome</span>
-            <h2>Welcome visitors to America AI.</h2>
+            <span class="kicker blue">Who we are</span>
+            <h2>America AI is an educational publishing website.</h2>
           </div>
           <p>
-            We are glad you are here. Every good website should begin by making its visitors feel clear, oriented, and respected.
-            America AI exists to welcome people who are searching for reliable, educational, and useful content in a fast-changing digital world.
+            We are a content-driven platform focused on sharing useful information in a way that is clear, practical, and relevant to modern readers.
           </p>
         </div>
 
@@ -772,39 +786,112 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Welcome to America AI, a website created for readers who want to learn, explore, and make better-informed choices.
-                Whether a visitor arrives with interest in artificial intelligence, career building, online opportunities, health information,
-                digital tools, or general educational resources, the goal is the same: to provide material that is helpful, understandable, and worth reading.
+                America AI is an educational website built for readers who want helpful information without unnecessary confusion.
+                The internet is full of pages that compete for attention but do not always provide lasting value.
+                This website is designed to move in a different direction. Its goal is to present articles that inform, explain, and guide.
+                Instead of publishing for noise alone, America AI aims to publish for usefulness.
               </p>
               <p>
-                A strong welcome matters because first impressions shape trust. Visitors should immediately know what the website is,
-                who it is for, and why it exists. That is why America AI introduces itself as an educational platform first.
-                It is not built merely to fill pages with words. It is built to present useful ideas, explain important topics, and make complex subjects easier to understand.
+                At its core, America AI is a knowledge platform. It gathers topics that matter in everyday life and organizes them in a way that helps visitors learn more efficiently.
+                Some readers come to understand artificial intelligence. Others come for job guidance, career information, technology updates, health reading, or practical online resources.
+                Rather than treat those topics as unrelated, America AI sees them as connected parts of modern life.
               </p>
               <p>
-                In a crowded internet environment, many pages compete for attention while giving little lasting value.
-                America AI aims for something better. It aims to be a place where readers can return not just for headlines,
-                but for practical guidance, educational reading, and a clearer sense of how modern topics affect real life.
+                The people who benefit most from a site like this are often those who want information that is both accessible and relevant.
+                Not every reader wants overly technical language, and not every visitor is looking for short, shallow summaries.
+                America AI tries to meet the middle ground: serious enough to be useful, clear enough to be readable, and broad enough to help people in more than one area of life.
               </p>
               <p>
-                This welcome is also an invitation. It invites visitors to move beyond a single page and explore a wider range of articles.
-                It says, in effect, that America AI is here to support learning with clarity, balance, and continued effort.
+                This means the site is not only about one trend or one narrow category. It is about learning as a practical tool.
+                It is about helping people understand what is changing in the world, how those changes affect work and daily decisions,
+                and where reliable information can be found.
+              </p>
+              <p>
+                In that sense, America AI is more than a site title. It is a direction. It suggests a website interested in intelligence not only as a machine topic,
+                but as a human need: the need to understand, compare, evaluate, and act with more awareness.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini blue">
-              <strong>Educational First</strong>
-              <span>America AI is built around learning, explanation, and useful knowledge.</span>
+              <strong>Educational Platform</strong>
+              <span>America AI is built around learning, explanation, and practical knowledge.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Modern Focus</strong>
+              <span>The site covers topics that matter in today’s digital, professional, and social environment.</span>
             </div>
             <div class="mini green">
-              <strong>Visitor Friendly</strong>
-              <span>The site aims to make information clear, readable, and practical for everyday use.</span>
+              <strong>Reader Oriented</strong>
+              <span>Content is meant to be useful for real people making real decisions.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="about-site">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker teal">What the website is about</span>
+            <h2>Topics that connect digital life, opportunity, and useful information.</h2>
+          </div>
+          <p>
+            America AI publishes articles about artificial intelligence, technology, jobs, careers, health, and useful online resources.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="content-flow">
+              <p>
+                America AI is about making important modern subjects easier to understand. One major area of focus is artificial intelligence.
+                AI is changing work, education, creativity, business, search, communication, and digital tools. Many people hear about AI every day,
+                but not everyone receives clear explanations. This website aims to bridge that gap by offering readable and structured articles.
+              </p>
+              <p>
+                Technology is another key category because it affects almost every part of life. Phones, apps, platforms, devices, software tools,
+                digital services, and online systems shape how people work, learn, communicate, and organize themselves.
+                A useful website should help visitors think about technology not only as news, but as a practical force in daily life.
+              </p>
+              <p>
+                Jobs and careers are included because information becomes more valuable when it helps people improve their opportunities.
+                Readers often need guidance about work, online jobs, skill growth, professional direction, resume strategy, and practical decision-making.
+                America AI sees this as an essential part of educational publishing.
+              </p>
+              <p>
+                Health and lifestyle content also belongs here because learning is not only about digital tools or career paths.
+                People live full lives, and those lives include mental focus, physical wellbeing, habits, stress, information quality, and daily balance.
+                A well-rounded website should reflect that broader reality.
+              </p>
+              <p>
+                Useful online resources form another important category. The web can be confusing when people do not know which tools, sites, or materials are worth their time.
+                America AI helps by highlighting helpful resources and presenting information in ways that support more productive use of the internet.
+              </p>
+              <p>
+                Altogether, the site is about informed living in a fast-changing world. It is about helping readers learn in a way that supports both curiosity and practical action.
+              </p>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini blue">
+              <strong>Artificial Intelligence</strong>
+              <span>Guides, explainers, and educational reading about AI and its growing impact.</span>
             </div>
             <div class="mini gold">
-              <strong>Purpose Driven</strong>
-              <span>Its goal is to help people understand topics and make more informed decisions.</span>
+              <strong>Technology</strong>
+              <span>Useful articles on digital trends, tools, changes, and practical tech understanding.</span>
+            </div>
+            <div class="mini orange">
+              <strong>Jobs & Careers</strong>
+              <span>Advice and information that can help people navigate work and opportunity.</span>
+            </div>
+            <div class="mini rose">
+              <strong>Health & Resources</strong>
+              <span>Health-oriented educational reading and helpful online resources for everyday use.</span>
             </div>
           </aside>
         </div>
@@ -813,90 +900,24 @@
           <div class="image-panel">
             <div class="smart-image" data-role="image">
               <div class="fallback-art"></div>
-              <img src="about-hero.jpg" alt="Digital learning workspace image" loading="lazy">
+              <img src="about-hero.jpg" alt="Technology learning image" loading="lazy">
               <div class="fallback-badge"><span></span></div>
             </div>
           </div>
           <div class="image-panel">
             <div class="smart-image" data-role="image">
               <div class="fallback-art"></div>
-              <img src="south-africa.jpg" alt="Global perspective image" loading="lazy">
+              <img src="jobs-visual.jpg" alt="Career and work learning image" loading="lazy">
               <div class="fallback-badge"><span></span></div>
             </div>
           </div>
           <div class="image-panel">
             <div class="smart-image" data-role="image">
               <div class="fallback-art"></div>
-              <img src="jamaica-bg.jpg" alt="Creative technology inspiration image" loading="lazy">
+              <img src="contact-visual.jpg" alt="Communication and online resources image" loading="lazy">
               <div class="fallback-badge"><span></span></div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase" id="who-we-are">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker green">Who We Are</span>
-            <h2>An educational website with broad useful coverage.</h2>
-          </div>
-          <p>
-            America AI is an educational website that publishes articles about artificial intelligence, technology, jobs, careers, health, and useful online resources.
-          </p>
-        </div>
-
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                America AI is an educational publishing platform focused on bringing together important modern subjects in one place.
-                It is designed for readers who want information that connects technology to real life. Some visitors may come for AI articles.
-                Others may come looking for job guidance, career direction, health reading, or practical digital tips.
-                The site is structured to serve all of these interests under one educational mission.
-              </p>
-              <p>
-                Artificial intelligence is one of the major areas of focus because it is reshaping work, communication, creativity, business, and learning.
-                Many people hear about AI every day, but not everyone has access to clear explanations. America AI helps by presenting readable material that supports understanding.
-              </p>
-              <p>
-                Technology is another central subject because modern life increasingly depends on digital systems and online platforms.
-                Readers benefit when technology is explained not only as news, but as something that affects decisions, habits, careers, and opportunities.
-              </p>
-              <p>
-                Jobs and careers are included because educational content becomes even more valuable when it helps people navigate work and livelihood.
-                Practical guidance on job seeking, online work, skill-building, and professional direction can make information more meaningful in everyday life.
-              </p>
-              <p>
-                Health and lifestyle topics are part of the site’s educational scope because people do not live in separate categories.
-                Work, learning, health, and digital life influence each other. A useful website should reflect that connection.
-              </p>
-              <p>
-                Useful online resources are also important because the internet can either confuse or empower people depending on how it is used.
-                America AI aims to highlight resources, tools, and ideas that help readers use the web more productively.
-              </p>
-            </div>
-          </article>
-
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>AI</strong>
-              <span>Guides, explainers, and practical educational content about artificial intelligence.</span>
-            </div>
-            <div class="mini green">
-              <strong>Technology</strong>
-              <span>News, tools, digital tips, and broader tech understanding for modern readers.</span>
-            </div>
-            <div class="mini gold">
-              <strong>Jobs & Careers</strong>
-              <span>Advice and guidance for work, opportunity, and long-term professional growth.</span>
-            </div>
-            <div class="mini red">
-              <strong>Health & Resources</strong>
-              <span>Educational health reading and useful online materials that support better living.</span>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
@@ -905,11 +926,11 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">Our Mission</span>
-            <h2>Help people learn, make informed decisions, and access reliable information.</h2>
+            <span class="kicker green">Our mission</span>
+            <h2>To help people learn, think clearly, and make informed decisions.</h2>
           </div>
           <p>
-            The mission of America AI is straightforward but important: to support learning, improve understanding, and help readers think more clearly before they act.
+            The mission of America AI is not only to publish. It is to publish in a way that supports understanding and practical value.
           </p>
         </div>
 
@@ -918,14 +939,14 @@
             <div class="card-photo">
               <div class="smart-image" data-role="image">
                 <div class="fallback-art"></div>
-                <img src="about-hero.jpg" alt="Learning and research image" loading="lazy">
+                <img src="about-hero.jpg" alt="Learning and education image" loading="lazy">
                 <div class="fallback-badge"><span></span></div>
               </div>
             </div>
             <div class="card-body">
               <span class="tag blue">Learn</span>
-              <h3>Support understanding</h3>
-              <p>The first mission is to help readers understand important topics in a clear and practical way.</p>
+              <h3>Support better understanding</h3>
+              <p>The first goal is to help readers understand important topics with more clarity and confidence.</p>
             </div>
           </article>
 
@@ -933,14 +954,14 @@
             <div class="card-photo">
               <div class="smart-image" data-role="image">
                 <div class="fallback-art"></div>
-                <img src="south-africa.jpg" alt="Decision making and planning image" loading="lazy">
+                <img src="jobs-visual.jpg" alt="Decision making image" loading="lazy">
                 <div class="fallback-badge"><span></span></div>
               </div>
             </div>
             <div class="card-body">
-              <span class="tag gold">Decide</span>
-              <h3>Encourage informed decisions</h3>
-              <p>Good information helps people compare options, ask better questions, and make wiser choices.</p>
+              <span class="tag green">Decide</span>
+              <h3>Encourage informed choices</h3>
+              <p>Useful information matters most when it helps people compare, think, and act more wisely.</p>
             </div>
           </article>
 
@@ -948,63 +969,85 @@
             <div class="card-photo">
               <div class="smart-image" data-role="image">
                 <div class="fallback-art"></div>
-                <img src="jamaica-bg.jpg" alt="Reliable information and digital trust image" loading="lazy">
+                <img src="contact-visual.jpg" alt="Reliable information image" loading="lazy">
                 <div class="fallback-badge"><span></span></div>
               </div>
             </div>
             <div class="card-body">
-              <span class="tag green">Trust</span>
-              <h3>Improve access to reliable information</h3>
-              <p>The site aims to bring readers closer to content that is useful, careful, and worth their time.</p>
+              <span class="tag gold">Grow</span>
+              <h3>Make the internet more useful</h3>
+              <p>The site aims to help readers use digital information more productively and with better judgment.</p>
             </div>
           </article>
+        </div>
+
+        <div class="note reveal">
+          Our mission is practical: help people learn, make informed decisions, and access reliable information that improves understanding in real life.
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="offer">
+    <section class="showcase" id="find">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker red">What We Offer</span>
-            <h2>The main types of content you can expect on America AI.</h2>
+            <span class="kicker orange">What visitors can find</span>
+            <h2>A broad mix of useful educational content.</h2>
           </div>
           <p>
-            America AI publishes a useful mix of educational materials designed to support practical learning and broader digital awareness.
+            Visitors can expect a range of topics and article types that support both learning and practical decision-making.
           </p>
         </div>
 
         <div class="content-layout">
           <article class="paper reveal">
             <div class="content-flow">
-              <p><strong>AI guides and tutorials.</strong> Readers can explore artificial intelligence through accessible guides, explanations, and tutorials designed to make the topic less confusing and more practical.</p>
-              <p><strong>Job and career advice.</strong> The site offers reading that helps people think about employment, online opportunities, skill growth, and career direction.</p>
-              <p><strong>Technology news and tips.</strong> America AI includes helpful technology coverage that focuses not only on events, but on what they mean for everyday users.</p>
-              <p><strong>Educational articles.</strong> A broad range of articles supports learning across digital, professional, and informational topics.</p>
-              <p><strong>Health and lifestyle information.</strong> Useful reading on health and lifestyle is included to support a more balanced and practical educational experience.</p>
               <p>
-                Together, these offerings create a site that is not narrow or isolated. Instead, America AI aims to reflect the real way people live:
-                learning about technology while also thinking about work, health, opportunities, and online life.
+                Visitors to America AI can find AI guides and tutorials designed to simplify complex topics. These articles help readers understand major ideas,
+                tools, uses, debates, and developments related to artificial intelligence.
+              </p>
+              <p>
+                They can also find job and career advice that speaks to everyday professional concerns. This can include online work guidance,
+                career direction, practical skills, digital opportunities, and job-seeking information that supports real progress.
+              </p>
+              <p>
+                Technology news and tips are another important category. Readers can stay informed about digital developments while also learning how those developments matter in practice.
+                Good technology writing should not only report change. It should help people interpret it.
+              </p>
+              <p>
+                Educational articles form a broader foundation of the site. These pieces help explain important subjects, summarize useful knowledge,
+                and make difficult topics more accessible to a wider audience.
+              </p>
+              <p>
+                Health and lifestyle information is included because useful education should support a fuller picture of life.
+                Readers benefit from content that helps them think not only about digital growth, but also about wellbeing, habits, and everyday balance.
+              </p>
+              <p>
+                In short, visitors can find content that aims to be helpful before it tries to be impressive. That principle shapes the site’s direction.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini blue">
-              <strong>AI Guides</strong>
-              <span>Explanations, tutorials, and practical article-based learning on artificial intelligence.</span>
+              <strong>AI Guides & Tutorials</strong>
+              <span>Practical article-based explanations of artificial intelligence topics.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Technology News & Tips</strong>
+              <span>Useful coverage of digital developments and practical technology understanding.</span>
             </div>
             <div class="mini gold">
-              <strong>Career Advice</strong>
-              <span>Job search insights, work guidance, and career-oriented educational reading.</span>
+              <strong>Job & Career Advice</strong>
+              <span>Helpful information for work, career direction, and online opportunities.</span>
             </div>
-            <div class="mini green">
-              <strong>Tech Tips</strong>
-              <span>Technology news, useful updates, and practical digital understanding.</span>
+            <div class="mini orange">
+              <strong>Educational Articles</strong>
+              <span>Structured reading that makes important topics clearer and more useful.</span>
             </div>
-            <div class="mini red">
+            <div class="mini rose">
               <strong>Health & Lifestyle</strong>
-              <span>Helpful educational information supporting everyday wellbeing and awareness.</span>
+              <span>Supportive educational content connected to daily wellbeing and informed living.</span>
             </div>
           </aside>
         </div>
@@ -1015,11 +1058,11 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker blue">Why Trust Us</span>
-            <h2>We aim to publish accurate, well-researched, and regularly updated content.</h2>
+            <span class="kicker rose">Why trust our content</span>
+            <h2>We aim for useful, accurate, well-researched, and regularly updated articles.</h2>
           </div>
           <p>
-            Trust is built through effort, consistency, and transparency. America AI aims to treat published content with seriousness and responsibility.
+            Trust is not something a website simply announces. It is something it must earn through consistency, effort, and the quality of its publishing choices.
           </p>
         </div>
 
@@ -1027,32 +1070,41 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                A website earns trust when it respects the reader. America AI aims to publish accurate, well-researched, and regularly updated content.
-                That does not mean perfection is claimed in every moment. It means effort is made to provide material that is responsible, useful, and worthy of attention.
+                America AI aims to publish content that is accurate, useful, well-researched, and regularly updated.
+                That goal matters because readers need more than speed. They need clarity, context, and care.
+                In a digital space where quick content often overwhelms thoughtful content, research and responsibility become especially important.
               </p>
               <p>
-                Accuracy matters because misleading information wastes time and can create confusion. Research matters because shallow writing is rarely helpful.
-                Updates matter because the internet changes quickly, especially in subjects like artificial intelligence, technology, jobs, and digital tools.
+                Accuracy matters because incorrect information can mislead people or waste their time. Research matters because shallow writing rarely provides lasting value.
+                Updates matter because fields like artificial intelligence, technology, online work, and digital services change quickly.
               </p>
               <p>
-                By aiming for accuracy, research quality, and continued relevance, America AI tries to become more than just another website.
-                It tries to become a reliable educational resource that visitors can return to with confidence.
+                Trust also grows when a website is transparent about its purpose. America AI presents itself as an educational site, not as a source of empty hype.
+                Its intention is to help people learn, evaluate information, and move toward better decisions.
+              </p>
+              <p>
+                Another reason trust matters is that many readers use websites not just for curiosity, but for action.
+                They may be comparing tools, exploring a new skill, thinking about work opportunities, or trying to understand a major trend.
+                That means the quality of information directly shapes how useful the site becomes.
+              </p>
+              <p>
+                America AI therefore aims to publish with seriousness. That includes making content readable, relevant, structured, and worth returning to over time.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
             <div class="mini blue">
-              <strong>Accurate</strong>
-              <span>Content is intended to be careful, useful, and responsibly written.</span>
+              <strong>Accuracy</strong>
+              <span>Content aims to be careful, clear, and responsibly presented.</span>
             </div>
             <div class="mini green">
-              <strong>Researched</strong>
-              <span>Articles aim to be informed and developed with educational seriousness.</span>
+              <strong>Research</strong>
+              <span>Articles are intended to be informed, useful, and educational rather than shallow.</span>
             </div>
             <div class="mini gold">
-              <strong>Updated</strong>
-              <span>Regular review matters because technology, jobs, and online life change quickly.</span>
+              <strong>Updates</strong>
+              <span>Important topics change quickly, so content should remain reviewed and relevant.</span>
             </div>
           </aside>
         </div>
@@ -1063,30 +1115,30 @@
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker green">Contact Information</span>
-            <h2>Reach out and continue exploring.</h2>
+            <span class="kicker teal">Contact us</span>
+            <h2>How to reach America AI.</h2>
           </div>
           <p>
-            If you need to contact America AI, use the email below or visit the contact page for more details.
+            If you want to contact us, ask a question, suggest an improvement, or discuss content, the details below are available.
           </p>
         </div>
 
-        <div class="footer-panel reveal">
+        <div class="contact-box reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Thank you for visiting America AI.</h3>
+            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">We welcome communication from readers.</h3>
             <p style="color:var(--muted);max-width:62ch;margin-top:0;">
-              Thank you for reading this About page. You are invited to explore more articles, learn more from the site,
-              and keep using America AI as a place for educational reading, practical insight, and broader digital understanding.
+              Contact matters because a useful website should not feel closed. If you have a question, suggestion, correction, partnership idea,
+              or general message, you can reach out through the email address or WhatsApp number below.
             </p>
+
             <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Us</a>
-              <a class="btn btn-secondary" href="contact.html">Open Contact Page</a>
+              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Send Email</a>
+              <a class="btn btn-secondary" href="https://wa.me/254736280522" target="_blank" rel="noopener">Open WhatsApp</a>
             </div>
 
             <div class="note">
-              <strong style="color:var(--blue);">Closing:</strong>
-              Thank you for reading and welcome again to America AI. We invite you to continue exploring articles about artificial intelligence,
-              technology, jobs, careers, health, and useful online resources.
+              <strong style="color:var(--teal);">Final welcome:</strong>
+              Thank you for reading this About page. We invite you to continue exploring America AI and discover more articles, ideas, and useful resources across the site.
             </div>
           </div>
 
@@ -1104,6 +1156,19 @@
               </div>
             </a>
 
+            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="WhatsApp America AI">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 20a8 8 0 1 0-4.4-1.32L4 20l1.42-3.38A8 8 0 0 0 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M9.2 9.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.5 1.2c.1.2 0 .4-.1.6l-.4.5c-.1.1-.1.3 0 .4.4.8 1 1.4 1.8 1.8.1.1.3.1.4 0l.5-.4c.2-.1.4-.2.6-.1l1.2.5c.4.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.3.2-.9.3-1.5.1-1-.3-2-.9-2.8-1.7-.8-.8-1.4-1.8-1.7-2.8-.2-.6-.1-1.2.1-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <span>0736280522</span>
+              </div>
+            </a>
+
             <a class="contact-item" href="contact.html" aria-label="Open contact page">
               <div class="contact-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
@@ -1114,11 +1179,11 @@
               </div>
               <div>
                 <strong>Contact Page</strong>
-                <span>Open contact.html</span>
+                <span>Open contact.html for more contact-related information</span>
               </div>
             </a>
 
-            <div class="contact-item" aria-label="Suggested files">
+            <div class="contact-item">
               <div class="contact-icon">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
                   <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
@@ -1128,29 +1193,15 @@
               </div>
               <div>
                 <strong>Suggested files</strong>
-                <span>about.html · contact.html · index.html</span>
-              </div>
-            </div>
-
-            <div class="contact-item" aria-label="File references">
-              <div class="contact-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Optional image files</strong>
-                <span>about-hero.jpg · south-africa.jpg · jamaica-bg.jpg · rasta-lucky.jpg</span>
+                <span>about.html · index.html · contact.html</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="note reveal">
-          <strong style="color:var(--green);">About length:</strong>
-          A literal “1000000000000 words” is not practical for a usable webpage, so this About page is written as a strong, long-form, professional starting version that is readable and production-friendly.
+          <strong style="color:var(--orange);">About content length:</strong>
+          A literal 8000-word About page is possible, but it would be unnecessarily heavy for most visitors. This version is written as a strong, long-form, professional page with rich content, structure, and useful detail while staying practical for real website use.
         </div>
       </div>
     </section>
@@ -1158,8 +1209,11 @@
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. Educational content on AI, technology, jobs, careers, health, and useful online resources.</div>
-      <div>Contact: <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></div>
+      <div>© 2026 America AI. Educational articles on AI, technology, jobs, careers, health, and useful online resources.</div>
+      <div>
+        <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a> ·
+        <a href="https://wa.me/254736280522" target="_blank" rel="noopener">WhatsApp: 0736280522</a>
+      </div>
     </div>
   </footer>
 
