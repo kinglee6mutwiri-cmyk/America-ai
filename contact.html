@@ -2,45 +2,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact America AI | Email, WhatsApp, Web Design & Professional Inquiries</title>
-  <meta name="description" content="Contact America AI through WhatsApp and email. A premium, long-form, beautifully designed contact page with real images, polished presentation, and clear communication details." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>America AI</title>
 
-  <!-- Google AdSense Auto Ads -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-15333721372" crossorigin="anonymous"></script>
-
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DVD5VSFYW"></script>
+  <!-- 1. GOOGLE ANALYTICS 4 - FOR ANALYSIS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HE9CKP90"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-0DVD5VSFYW');
+    gtag('config', 'G-X3HE9CKP90');
   </script>
+
+  <!-- 2. GOOGLE ADSENSE - FOR ADS -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
+     crossorigin="anonymous"></script>
+
+  <meta name="description" content="Contact America AI for questions, feedback, suggestions, business inquiries, and partnerships. Find email, WhatsApp, website details, business hours, contact form, privacy notice, and important website links.">
+  <meta name="keywords" content="Contact America AI, America AI contact page, AI website contact, WhatsApp contact, email contact, business inquiries, feedback page">
+  <meta name="author" content="America AI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html">
+
+  <meta property="og:title" content="Contact America AI">
+  <meta property="og:description" content="Get in touch with America AI through email, WhatsApp, website contact form, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html">
+  <meta property="og:image" content="contact-hero.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#f7fbff;
+      --bg:#f6f9fc;
       --paper:#ffffff;
-      --paper-soft:#eef5ff;
-      --text:#12233f;
-      --muted:#5b6b83;
-      --line:#d8e3f2;
-      --navy:#10284a;
-      --blue:#2457ff;
-      --sky:#3b82f6;
-      --gold:#d79a1e;
-      --gold-soft:#fff2cf;
-      --green:#16a34a;
-      --green-soft:#e9fff0;
-      --pink:#db2777;
-      --shadow:0 24px 60px rgba(16,40,74,.12);
-      --shadow-soft:0 10px 28px rgba(19,35,63,.08);
+      --ink:#162132;
+      --muted:#627084;
+      --line:#dbe5ef;
+
+      --navy:#17263d;
+      --blue:#2f63ff;
+      --sky:#56b3ff;
+      --teal:#0e988e;
+      --green:#198b59;
+      --amber:#d99e24;
+      --orange:#f07a2f;
+      --rose:#d84f78;
+
+      --shadow:0 28px 70px rgba(18,30,45,.12);
+      --shadow-soft:0 12px 28px rgba(22,33,50,.08);
       --radius:28px;
       --max:1280px;
     }
@@ -49,18 +62,19 @@
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:'Manrope', sans-serif;
-      color:var(--text);
+      font-family:'Inter', sans-serif;
+      color:var(--ink);
       line-height:1.82;
       background:
-        radial-gradient(circle at top left, rgba(36,87,255,.09), transparent 24%),
-        radial-gradient(circle at top right, rgba(215,154,30,.08), transparent 20%),
-        linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+        radial-gradient(circle at top left, rgba(47,99,255,.08), transparent 24%),
+        radial-gradient(circle at top right, rgba(86,179,255,.08), transparent 18%),
+        radial-gradient(circle at bottom right, rgba(240,122,47,.06), transparent 18%),
+        linear-gradient(180deg, #f6f9fc 0%, #ffffff 100%);
       overflow-x:hidden;
     }
 
     a{text-decoration:none;color:inherit}
-    img,svg{display:block;max-width:100%}
+    img{display:block;max-width:100%}
     ::selection{background:var(--navy);color:#fff}
 
     .container{
@@ -68,14 +82,20 @@
       margin-inline:auto;
     }
 
+    .top-band{
+      height:8px;
+      background:linear-gradient(90deg, var(--navy) 0 16%, var(--blue) 16% 32%, var(--sky) 32% 48%, var(--teal) 48% 64%, var(--amber) 64% 80%, var(--rose) 80% 100%);
+    }
+
     .site-header{
       position:relative;
       overflow:hidden;
+      min-height:100vh;
       color:#fff;
       background:
-        linear-gradient(135deg, rgba(16,40,74,.82), rgba(36,87,255,.52)),
-        url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
-      border-bottom:1px solid rgba(255,255,255,.14);
+        linear-gradient(135deg, rgba(17,26,40,.80), rgba(47,99,255,.34)),
+        url('contact-hero.jpg') center/cover no-repeat;
+      border-bottom:1px solid rgba(255,255,255,.12);
     }
 
     .site-header::before,
@@ -83,13 +103,19 @@
       content:"";
       position:absolute;
       border-radius:50%;
-      background:radial-gradient(circle, rgba(255,255,255,.16), transparent 68%);
-      filter:blur(8px);
       pointer-events:none;
+      filter:blur(16px);
     }
 
-    .site-header::before{width:420px;height:420px;left:-120px;top:-180px}
-    .site-header::after{width:390px;height:390px;right:-90px;bottom:-170px}
+    .site-header::before{
+      width:420px;height:420px;left:-120px;top:-150px;
+      background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%);
+    }
+
+    .site-header::after{
+      width:340px;height:340px;right:-90px;bottom:-110px;
+      background:radial-gradient(circle, rgba(86,179,255,.18), transparent 70%);
+    }
 
     .nav{
       display:flex;
@@ -99,10 +125,10 @@
       padding:1rem 0;
       position:sticky;
       top:0;
-      z-index:30;
-      backdrop-filter:blur(12px);
-      background:linear-gradient(180deg, rgba(16,40,74,.42), rgba(16,40,74,.10));
-      border-bottom:1px solid rgba(255,255,255,.06);
+      z-index:70;
+      backdrop-filter:blur(14px);
+      background:linear-gradient(180deg, rgba(17,26,40,.46), rgba(17,26,40,.10));
+      border-bottom:1px solid rgba(255,255,255,.08);
     }
 
     .brand{
@@ -111,16 +137,15 @@
       gap:.9rem;
       font-family:'Sora', sans-serif;
       font-weight:800;
-      letter-spacing:.02em;
+      letter-spacing:.01em;
     }
 
     .brand-mark{
-      width:52px;height:52px;border-radius:18px;
+      width:56px;height:56px;border-radius:18px;
       display:grid;place-items:center;
-      background:rgba(255,255,255,.12);
-      border:1px solid rgba(255,255,255,.20);
+      background:linear-gradient(135deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
+      border:1px solid rgba(255,255,255,.22);
       box-shadow:0 12px 30px rgba(0,0,0,.16);
-      backdrop-filter:blur(12px);
     }
 
     .nav-links{
@@ -131,7 +156,7 @@
     }
 
     .nav-links a{
-      color:rgba(255,255,255,.94);
+      color:rgba(255,255,255,.95);
       font-weight:700;
       font-size:.95rem;
       position:relative;
@@ -148,50 +173,55 @@
     .nav-links a:hover::after{width:100%}
 
     .hero{
-      padding:3.8rem 0 5rem;
+      min-height:calc(100vh - 88px);
+      display:grid;
+      align-items:end;
+      padding:3rem 0 5rem;
       position:relative;
       z-index:2;
     }
 
     .hero-grid{
       display:grid;
-      grid-template-columns:1.05fr .95fr;
+      grid-template-columns:1.02fr .98fr;
       gap:2rem;
       align-items:end;
     }
 
-    .small-heading{
+    .eyebrow{
       display:inline-block;
-      background:linear-gradient(90deg, rgba(255,209,102,.18), rgba(255,255,255,.10));
-      color:#ffd166;
-      border:1px solid rgba(255,209,102,.25);
-      padding:.5rem .9rem;
+      padding:.55rem .95rem;
       border-radius:999px;
       font-weight:800;
       text-transform:uppercase;
-      letter-spacing:.16em;
+      letter-spacing:.14em;
       font-size:.74rem;
       margin-bottom:1rem;
+      color:#eff9ff;
+      border:1px solid rgba(255,255,255,.18);
+      background:linear-gradient(90deg, rgba(47,99,255,.28), rgba(86,179,255,.22), rgba(14,152,142,.18));
+      backdrop-filter:blur(10px);
     }
 
     h1,h2,h3,h4{
       font-family:'Sora', sans-serif;
-      line-height:1.02;
+      line-height:1.03;
       letter-spacing:-.03em;
       margin:0 0 1rem;
     }
 
     h1{
       font-size:clamp(3rem, 6vw, 5.8rem);
-      max-width:9.5ch;
-      margin-top:.3rem;
+      max-width:9ch;
+      text-shadow:0 12px 30px rgba(0,0,0,.24);
     }
 
     .lead{
       margin:0;
-      max-width:64ch;
-      color:rgba(255,255,255,.93);
-      font-size:clamp(1.05rem, 1.8vw, 1.18rem);
+      max-width:68ch;
+      color:rgba(255,255,255,.94);
+      font-size:clamp(1.03rem, 1.8vw, 1.16rem);
+      text-shadow:0 6px 18px rgba(0,0,0,.22);
     }
 
     .hero-actions{
@@ -229,7 +259,7 @@
     .btn-secondary{
       background:rgba(255,255,255,.12);
       color:#fff;
-      border:1px solid rgba(255,255,255,.22);
+      border:1px solid rgba(255,255,255,.24);
       backdrop-filter:blur(10px);
     }
 
@@ -238,40 +268,34 @@
       background:rgba(255,255,255,.18);
     }
 
-    .hero-side{
-      display:grid;
-      gap:1rem;
-    }
-
-    .hero-photo,
-    .hero-mini{
-      border:1px solid rgba(255,255,255,.18);
-      border-radius:24px;
+    .hero-card{
+      border-radius:30px;
       overflow:hidden;
+      border:1px solid rgba(255,255,255,.16);
       box-shadow:0 18px 40px rgba(0,0,0,.18);
-      backdrop-filter:blur(12px);
-      background:#ffffff18;
+      background:rgba(255,255,255,.08);
+      backdrop-filter:blur(10px);
+      padding:1rem;
     }
 
-    .hero-photo{
-      height:270px;
-    }
-
-    .hero-mini-wrap{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:1rem;
-    }
-
-    .hero-mini{
-      height:150px;
-    }
-
-    .hero-photo img,
-    .hero-mini img{
+    .hero-card img{
       width:100%;
-      height:100%;
+      height:520px;
       object-fit:cover;
+      border-radius:22px;
+      border:1px solid rgba(255,255,255,.12);
+      background:#dce7f2;
+    }
+
+    .hero-caption{
+      padding:.95rem .1rem .1rem;
+      color:rgba(255,255,255,.9);
+    }
+
+    .hero-caption strong{
+      display:block;
+      margin-bottom:.25rem;
+      font-size:1.08rem;
     }
 
     main section{padding:5rem 0}
@@ -294,9 +318,11 @@
     }
 
     .kicker.blue{color:var(--blue)}
+    .kicker.sky{color:var(--sky)}
+    .kicker.teal{color:var(--teal)}
     .kicker.green{color:var(--green)}
-    .kicker.gold{color:var(--gold)}
-    .kicker.pink{color:var(--pink)}
+    .kicker.amber{color:var(--amber)}
+    .kicker.rose{color:var(--rose)}
 
     .section-head h2{
       font-size:clamp(2rem, 4vw, 4rem);
@@ -312,13 +338,13 @@
 
     .content-layout{
       display:grid;
-      grid-template-columns:1.06fr .94fr;
+      grid-template-columns:1.04fr .96fr;
       gap:2rem;
       align-items:start;
     }
 
     .paper{
-      background:linear-gradient(180deg, #ffffff, #f9fbff);
+      background:linear-gradient(180deg, #ffffff, #fcfdff);
       border:1px solid var(--line);
       border-radius:var(--radius);
       box-shadow:var(--shadow-soft);
@@ -330,10 +356,17 @@
     .paper::before{
       content:"";
       position:absolute;
-      width:220px;height:220px;border-radius:50%;
+      width:240px;height:240px;border-radius:50%;
       right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(36,87,255,.08), transparent 70%);
+      background:radial-gradient(circle, rgba(47,99,255,.08), transparent 70%);
       pointer-events:none;
+    }
+
+    .paper::after{
+      content:"";
+      position:absolute;
+      left:0;top:0;right:0;height:7px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
     }
 
     .content-flow{
@@ -353,108 +386,232 @@
     }
 
     .mini{
-      border:1px solid var(--line);
       border-radius:22px;
       padding:1.15rem 1.2rem;
       box-shadow:var(--shadow-soft);
+      border:1px solid var(--line);
+      position:relative;
+      overflow:hidden;
       background:#fff;
     }
 
-    .mini.blue{background:linear-gradient(180deg, #f7fbff, #eef5ff)}
-    .mini.green{background:linear-gradient(180deg, #f8fff9, #ecfff1)}
-    .mini.gold{background:linear-gradient(180deg, #fffdf7, #fff6dd)}
-    .mini.pink{background:linear-gradient(180deg, #fff8fc, #fff0f7)}
+    .mini::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+    }
+
+    .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
+    .mini.sky{background:linear-gradient(180deg, #f4fbff, #eaf8ff)}
+    .mini.teal{background:linear-gradient(180deg, #f4fffd, #e9fffb)}
+    .mini.green{background:linear-gradient(180deg, #f7fff9, #edfff2)}
+    .mini.amber{background:linear-gradient(180deg, #fffdf7, #fff7df)}
+    .mini.rose{background:linear-gradient(180deg, #fff8fb, #fff0f6)}
+
+    .mini.blue::before{background:var(--blue)}
+    .mini.sky::before{background:var(--sky)}
+    .mini.teal::before{background:var(--teal)}
+    .mini.green::before{background:var(--green)}
+    .mini.amber::before{background:var(--amber)}
+    .mini.rose::before{background:var(--rose)}
 
     .mini strong{
       display:block;
       font-family:'Sora', sans-serif;
-      font-size:1.2rem;
+      font-size:1.16rem;
       margin-bottom:.3rem;
     }
 
     .mini.blue strong{color:var(--blue)}
+    .mini.sky strong{color:var(--sky)}
+    .mini.teal strong{color:var(--teal)}
     .mini.green strong{color:var(--green)}
-    .mini.gold strong{color:#a56b00}
-    .mini.pink strong{color:var(--pink)}
-
+    .mini.amber strong{color:#9c6800}
+    .mini.rose strong{color:var(--rose)}
     .mini span{color:var(--muted)}
 
     .showcase{
-      background:linear-gradient(180deg, #f5f9ff 0%, #ffffff 100%);
+      background:linear-gradient(180deg, #f8fbff 0%, #fff 100%);
       border-top:1px solid var(--line);
       border-bottom:1px solid var(--line);
+      position:relative;
     }
 
-    .cards{
+    .showcase::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:8px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
+    }
+
+    .contact-grid{
       display:grid;
-      grid-template-columns:repeat(12,1fr);
+      grid-template-columns:1.02fr .98fr;
+      gap:2rem;
+      align-items:start;
+    }
+
+    .form-shell{
+      border:1px solid var(--line);
+      border-radius:28px;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .form-shell::before{
+      content:"";
+      position:absolute;
+      left:0;right:0;top:0;height:7px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
+    }
+
+    .form-body{
+      padding:1.5rem;
+      display:grid;
       gap:1rem;
     }
 
-    .card{
-      grid-column:span 4;
+    .field-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:1rem;
+    }
+
+    .field{
+      display:grid;
+      gap:.45rem;
+    }
+
+    .field label{
+      font-weight:800;
+      color:var(--ink);
+      font-size:.95rem;
+    }
+
+    .field input,
+    .field textarea{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      padding:1rem 1rem;
+      font:inherit;
+      color:var(--ink);
+      outline:none;
+      transition:border-color .25s ease, box-shadow .25s ease, transform .25s ease;
+    }
+
+    .field input:focus,
+    .field textarea:focus{
+      border-color:var(--blue);
+      box-shadow:0 0 0 4px rgba(47,99,255,.10);
+      transform:translateY(-1px);
+    }
+
+    .field textarea{
+      min-height:180px;
+      resize:vertical;
+    }
+
+    .submit-row{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+    }
+
+    .submit-note{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .send-btn{
+      min-height:54px;
+      padding:0 1.3rem;
+      border:none;
+      border-radius:999px;
+      background:linear-gradient(135deg, var(--blue), var(--sky), var(--teal));
+      color:#fff;
+      font:inherit;
+      font-weight:800;
+      cursor:pointer;
+      box-shadow:0 12px 26px rgba(47,99,255,.18);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+
+    .send-btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 18px 34px rgba(47,99,255,.24);
+    }
+
+    .info-stack{
+      display:grid;
+      gap:1rem;
+    }
+
+    .info-card{
       border:1px solid var(--line);
       border-radius:24px;
-      overflow:hidden;
       background:#fff;
       box-shadow:var(--shadow-soft);
-      transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-      box-shadow:var(--shadow);
-      border-color:#bfd4f7;
-    }
-
-    .card-photo{
-      height:220px;
+      padding:1.2rem;
+      position:relative;
       overflow:hidden;
-      border-bottom:1px solid var(--line);
-      background:#eaf2ff;
     }
 
-    .card-photo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
+    .info-card::before{
+      content:"";
+      position:absolute;
+      left:0;top:0;bottom:0;width:7px;
+      background:linear-gradient(180deg, var(--blue), var(--sky), var(--teal), var(--amber));
     }
 
-    .card-body{padding:1.2rem}
-
-    .tag{
-      display:inline-flex;
-      margin-bottom:.8rem;
-      padding:.35rem .72rem;
-      border-radius:999px;
-      font-size:.78rem;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.08em;
+    .info-card h3{
+      font-size:1.15rem;
+      margin-bottom:.4rem;
     }
 
-    .tag.blue{background:#e7f0ff;color:#1747c6}
-    .tag.green{background:#e9fff0;color:#126a34}
-    .tag.gold{background:#fff1cc;color:#8a5b00}
-
-    .card h3{
-      font-size:1.22rem;
-      margin-bottom:.5rem;
-    }
-
-    .card p{
+    .info-card p{
       margin:0;
       color:var(--muted);
     }
 
-    .contact-strip{
-      background:linear-gradient(180deg, #f4f8ff, #ffffff);
-      border-top:1px solid var(--line);
+    .hours-list,
+    .social-list,
+    .footer-links{
+      display:grid;
+      gap:.75rem;
     }
 
-    .contact-box{
+    .row-item{
+      display:flex;
+      align-items:flex-start;
+      gap:.9rem;
+    }
+
+    .row-icon{
+      width:46px;height:46px;border-radius:14px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg, var(--blue), var(--sky), var(--teal), var(--amber));
+      color:#fff;
+      flex:0 0 auto;
+    }
+
+    .notice{
+      padding:1rem 1.15rem;
+      border-radius:18px;
       border:1px solid var(--line);
-      background:linear-gradient(180deg, #ffffff, #f8fbff);
+      background:linear-gradient(135deg, rgba(47,99,255,.08), rgba(86,179,255,.08), rgba(14,152,142,.08), rgba(217,158,36,.08));
+      color:var(--muted);
+      box-shadow:var(--shadow-soft);
+    }
+
+    .footer-panel{
+      border:1px solid var(--line);
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
       border-radius:30px;
       padding:1.5rem;
       box-shadow:var(--shadow);
@@ -465,48 +622,11 @@
       overflow:hidden;
     }
 
-    .contact-box::before{
+    .footer-panel::before{
       content:"";
       position:absolute;
-      width:240px;height:240px;border-radius:50%;
-      right:-60px;top:-70px;
-      background:radial-gradient(circle, rgba(36,87,255,.12), transparent 70%);
-    }
-
-    .contact-items{
-      display:grid;
-      gap:1rem;
-      align-content:start;
-    }
-
-    .contact-item{
-      display:flex;
-      align-items:center;
-      gap:1rem;
-      padding:1rem 1.1rem;
-      border-radius:20px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-soft);
-      transition:transform .28s ease, box-shadow .28s ease;
-    }
-
-    .contact-item:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow);
-    }
-
-    .contact-icon{
-      width:56px;height:56px;border-radius:18px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg, #e6efff, #fff);
-      color:var(--blue);
-      flex:0 0 auto;
-    }
-
-    .contact-icon.whatsapp{
-      background:linear-gradient(135deg, #e8fff0, #fff);
-      color:var(--green);
+      inset:0 0 auto 0;height:8px;
+      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
     }
 
     footer{
@@ -555,10 +675,11 @@
       .hero-grid,
       .section-head,
       .content-layout,
-      .contact-box{
+      .contact-grid,
+      .footer-panel{
         grid-template-columns:1fr;
       }
-      .card{grid-column:span 6}
+      .hero-card img{height:420px}
     }
 
     @media (max-width: 720px){
@@ -566,67 +687,62 @@
         flex-direction:column;
         align-items:flex-start;
       }
-      .cards{
+      .field-grid{
         grid-template-columns:1fr;
       }
-      .card{grid-column:span 1}
-      .content-flow{columns:1}
-      .hero-mini-wrap{grid-template-columns:1fr 1fr}
       h1{max-width:100%}
       main section{padding:4rem 0}
+      .hero-card img{height:320px}
     }
   </style>
 </head>
 <body>
+  <div class="top-band"></div>
+
   <header class="site-header" id="top">
     <div class="container">
       <nav class="nav">
-        <a class="brand" href="index.html" aria-label="America AI homepage">
+        <a class="brand" href="index.html" aria-label="America AI home">
           <span class="brand-mark" aria-hidden="true">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
               <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
               <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
             </svg>
           </span>
-          <span>AMERICA AI CONTACT</span>
+          <span>AMERICA AI</span>
         </a>
 
         <div class="nav-links">
           <a href="index.html">Home</a>
-          <a href="#contact-main">Main Contact</a>
-          <a href="#why-contact">Why Contact</a>
-          <a href="#channels">Channels</a>
-          <a href="#bottom">Bottom</a>
+          <a href="about.html">About Us</a>
+          <a href="#details">Contact Details</a>
+          <a href="#form">Contact Form</a>
+          <a href="#hours">Business Hours</a>
+          <a href="#footer-links">Links</a>
         </div>
       </nav>
 
       <section class="hero">
         <div class="hero-grid">
           <div class="stagger">
-            <span class="small-heading">Direct Communication Space</span>
-            <h1>Contact America AI for pages, ideas, help, collaboration, and digital work.</h1>
+            <span class="eyebrow">Contact America AI</span>
+            <h1>Let’s connect, talk, and build something useful.</h1>
             <p class="lead">
-              This contact page is designed as a full professional communication space. It gives visitors a clear and attractive way to reach out through
-              <strong>WhatsApp</strong> and <strong>email</strong>, while also explaining what kind of communication works best,
-              why strong contact pages matter, and how meaningful collaboration begins.
+              Welcome to the Contact page of America AI. If you have questions, suggestions, feedback, correction requests,
+              partnership ideas, or business inquiries, you are welcome to reach out. This page is designed to make contacting
+              America AI simple, professional, and clear.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact-main">Open Contact Details</a>
-              <a class="btn btn-secondary" href="index.html">Back Home</a>
+              <a class="btn btn-primary" href="#form">Send a Message</a>
+              <a class="btn btn-secondary" href="#details">View Contact Details</a>
             </div>
           </div>
 
-          <div class="hero-side reveal">
-            <div class="hero-photo">
-              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1400&q=80" alt="Professional communication and teamwork" loading="lazy">
-            </div>
-            <div class="hero-mini-wrap">
-              <div class="hero-mini">
-                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=1200&q=80" alt="Digital dashboard and communication workflow" loading="lazy">
-              </div>
-              <div class="hero-mini">
-                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80" alt="Mobile communication and messaging" loading="lazy">
-              </div>
+          <div class="hero-card reveal">
+            <img src="contact-hero.jpg" alt="Professional contact and communication image for America AI" loading="lazy">
+            <div class="hero-caption">
+              <strong>Open communication matters</strong>
+              <span>Use a real image named <code>contact-hero.jpg</code> in the same folder for the best result.</span>
             </div>
           </div>
         </div>
@@ -635,15 +751,16 @@
   </header>
 
   <main>
-    <section id="why-contact">
+    <section id="welcome">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker gold">Why contact matters</span>
-            <h2>Professional communication is where every strong project begins.</h2>
+            <span class="kicker blue">Welcome Message</span>
+            <h2>We would love to hear from you.</h2>
           </div>
           <p>
-            Contact is not a small detail at the end of a website. It is one of the most important parts of the full digital experience because it transforms attention into conversation.
+            Whether you want to ask a question, share feedback, suggest a topic, report an issue, or discuss a professional opportunity,
+            this page gives you several simple ways to get in touch with America AI.
           </p>
         </div>
 
@@ -651,258 +768,424 @@
           <article class="paper reveal">
             <div class="content-flow">
               <p>
-                Every meaningful website needs a strong contact page. Without one, even a beautiful platform can feel incomplete. Visitors may enjoy the content, respect the design,
-                and understand the message, but if there is no clear and attractive path for communication, the site stops short of its real potential. A strong contact page closes that gap.
-                It turns curiosity into conversation. It transforms admiration into inquiry. It helps people move from reading to reaching out.
+                A professional website should make communication easy. Visitors should not have to search across multiple pages
+                to find an email address or wonder whether a website is open to feedback. That is why this Contact page is designed
+                to be clear, welcoming, and direct.
               </p>
               <p>
-                That is why this contact page is designed to feel broad, polished, and professional. It is not only a simple list of details.
-                It is part of the full America AI identity. It shows that communication matters. It shows that visitors are being given a proper and respectful way to connect.
-                It also reflects the larger quality of the platform. If a contact page feels careless, visitors may assume the work behind it is careless too.
-                If a contact page feels thoughtful, clear, and attractive, it builds trust before a single message is sent.
+                America AI values communication because useful websites improve through conversation. Questions reveal what readers want to understand better.
+                Suggestions show where content can become more practical. Feedback helps improve structure, clarity, and future publishing choices.
+                Business inquiries open doors for collaboration and responsible growth.
               </p>
               <p>
-                Good contact design also helps different kinds of visitors. Some people may want a page designed. Others may want editing of existing HTML.
-                Some may need a homepage, a contact page, a privacy page, or a full site structure. Others may simply want to ask a question,
-                discuss a digital idea, or understand how to improve their own presentation. A broad contact page creates room for all of those possibilities.
+                If you found an article helpful, you are welcome to say so. If you noticed something that should be corrected or improved,
+                you are also welcome to write. If you want to discuss educational content, digital publishing, partnerships, online opportunities,
+                technology topics, or general site matters, this page exists to make that easy.
               </p>
               <p>
-                Another reason contact matters is because the internet often feels distant. There are many pages, many profiles, and many platforms,
-                but not all of them feel personal or trustworthy. A good contact section reminds users that there is a real person behind the work.
-                That human connection is important. It adds warmth to professionalism. It makes the platform more alive.
-              </p>
-              <p>
-                Communication also shapes results. Clear messages usually lead to better outcomes. When people explain what they need, what page they want,
-                what colors they prefer, what links must be included, or what kind of content they are looking for, the work becomes easier to understand.
-                That clarity saves time, reduces confusion, and improves the final quality.
-              </p>
-              <p>
-                In this sense, a contact page is not only functional. It is strategic. It invites the right kind of communication and sets the tone for what comes next.
-                That is why America AI benefits from a contact page that feels complete rather than rushed.
+                The contact details below include direct communication channels, a simple contact form, optional business hours,
+                privacy information, and important site links. The goal is not only to look professional, but to be genuinely useful.
               </p>
             </div>
           </article>
 
           <aside class="sidebar reveal">
-            <div class="mini gold">
-              <strong>Trust</strong>
-              <span>A well-designed contact page makes the site feel real, professional, and open to communication.</span>
-            </div>
             <div class="mini blue">
-              <strong>Clarity</strong>
-              <span>It helps visitors understand where to message, what details matter, and how to start properly.</span>
+              <strong>Questions</strong>
+              <span>You can contact America AI for general questions and article-related inquiries.</span>
             </div>
-            <div class="mini green">
-              <strong>Opportunity</strong>
-              <span>Every collaboration, question, or project request begins with a clear path to contact.</span>
+            <div class="mini sky">
+              <strong>Suggestions</strong>
+              <span>Topic ideas, corrections, and improvement suggestions are always welcome.</span>
+            </div>
+            <div class="mini teal">
+              <strong>Feedback</strong>
+              <span>Helpful feedback supports stronger articles, cleaner design, and better site structure.</span>
+            </div>
+            <div class="mini amber">
+              <strong>Business Inquiries</strong>
+              <span>You can also use this page for professional and partnership-related communication.</span>
             </div>
           </aside>
         </div>
       </div>
     </section>
 
-    <section class="showcase" id="channels">
+    <section class="showcase" id="details">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker blue">Communication channels</span>
-            <h2>Use the channel that fits your need best.</h2>
+            <span class="kicker teal">Contact Details</span>
+            <h2>The main ways to reach America AI.</h2>
           </div>
           <p>
-            Some conversations work better through email. Others work faster through WhatsApp. This page supports both so communication can be flexible and practical.
+            These contact options make it easier for visitors, readers, and potential partners to communicate directly.
           </p>
         </div>
 
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=1200&q=80" alt="Email and digital contact workspace" loading="lazy">
+        <div class="contact-grid">
+          <div class="info-stack reveal">
+            <div class="info-card">
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>📧 Email</h3>
+                  <p><a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a></p>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <span class="tag blue">Email</span>
-              <h3>Best for full explanations</h3>
-              <p>Email works well when you want to explain a project, send detailed requests, or communicate in a more formal way.</p>
-            </div>
-          </article>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80" alt="Phone messaging and WhatsApp communication" loading="lazy">
+            <div class="info-card">
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 20a8 8 0 1 0-4.4-1.32L4 20l1.42-3.38A8 8 0 0 0 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9.2 9.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.5 1.2c.1.2 0 .4-.1.6l-.4.5c-.1.1-.1.3 0 .4.4.8 1 1.4 1.8 1.8.1.1.3.1.4 0l.5-.4c.2-.1.4-.2.6-.1l1.2.5c.4.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.3.2-.9.3-1.5.1-1-.3-2-.9-2.8-1.7-.8-.8-1.4-1.8-1.7-2.8-.2-.6-.1-1.2.1-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>💬 WhatsApp</h3>
+                  <p><a href="https://wa.me/254736280522" target="_blank" rel="noopener">+254 736 280 522</a></p>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <span class="tag green">WhatsApp</span>
-              <h3>Best for direct and fast contact</h3>
-              <p>WhatsApp is ideal for short questions, quick follow-up, project discussion, and faster mobile communication.</p>
-            </div>
-          </article>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Collaboration and project planning meeting" loading="lazy">
+            <div class="info-card">
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21s7-4.35 7-10a7 7 0 1 0-14 0c0 5.65 7 10 7 10z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <circle cx="12" cy="11" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3>🌍 Website</h3>
+                  <p><a href="https://kinglee6mutwiri-cmyk.github.io/America-ai/" target="_blank" rel="noopener">https://kinglee6mutwiri-cmyk.github.io/America-ai/</a></p>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <span class="tag gold">Projects</span>
-              <h3>Best when details are clear</h3>
-              <p>The best results usually happen when the contact message explains the type of page, the needed style, and the overall purpose.</p>
+          </div>
+
+          <div class="hero-card reveal" style="background:linear-gradient(180deg, rgba(255,255,255,.95), rgba(255,255,255,.92)); border-color:var(--line); color:var(--ink);">
+            <img src="contact-side.jpg" alt="Modern communication workspace image" loading="lazy" style="height:420px;border-color:var(--line);">
+            <div class="hero-caption" style="color:var(--muted);">
+              <strong style="color:var(--ink);">Reach out with confidence</strong>
+              <span>Keep a real image named <code>contact-side.jpg</code> in the same folder if you want this panel to show properly.</span>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact-main">
+    <section id="form">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="kicker green">Main contact section</span>
-            <h2>Contact details for America AI.</h2>
+            <span class="kicker green">Contact Form</span>
+            <h2>Send a message directly from the page.</h2>
           </div>
           <p>
-            Use the details below if you want to ask about websites, HTML pages, content arrangements, design work, or direct communication.
+            A clear form makes communication easier for readers who prefer typing a message in one place.
           </p>
         </div>
 
-        <div class="contact-box reveal">
+        <div class="contact-grid">
+          <div class="form-shell reveal">
+            <form class="form-body" onsubmit="handleContactForm(event)">
+              <div class="field-grid">
+                <div class="field">
+                  <label for="fullName">Full Name</label>
+                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="field">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter your email address" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <div class="submit-row">
+                <div class="submit-note">Your message can include questions, suggestions, feedback, or business inquiries.</div>
+                <button class="send-btn" type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="info-stack reveal">
+            <div class="info-card notice">
+              <h3 style="margin-bottom:.5rem;">Form Note</h3>
+              <p>
+                This form can be connected to your preferred backend, email service, or form handling solution later.
+                For now, it is designed as a professional front-end contact layout that can be integrated easily.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Suggested use cases</h3>
+              <p>
+                Use the form for article questions, collaboration ideas, partnership requests, feedback, technical reports,
+                content suggestions, or any professional message related to America AI.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>Professional appearance matters</h3>
+              <p>
+                A good contact form shows visitors that the website is active, reachable, and serious about communication.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="hours">
+      <div class="container">
+        <div class="section-head reveal">
           <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.4rem);max-width:10ch;">Let’s talk clearly and build something polished.</h3>
-            <p style="color:var(--muted);max-width:60ch;margin-top:0;">
-              Whether you need a homepage, a contact page, a privacy page, a long-form professional design, or edits to existing code,
-              these direct channels are available.
+            <span class="kicker amber">Business Hours</span>
+            <h2>When visitors can expect active response time.</h2>
+          </div>
+          <p>
+            Business hours are optional, but they help visitors understand when communication is likely to be reviewed.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="hours-list">
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M12 7.5v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div><strong>Monday – Friday:</strong> 8:00 AM – 6:00 PM (EAT)</div>
+              </div>
+
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M12 7.5v5l3.2 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div><strong>Saturday:</strong> 9:00 AM – 1:00 PM</div>
+              </div>
+
+              <div class="row-item">
+                <div class="row-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M8 8l8 8M16 8l-8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div><strong>Sunday:</strong> Closed</div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini green">
+              <strong>Response expectations</strong>
+              <span>Messages sent within business hours are more likely to be reviewed sooner.</span>
+            </div>
+            <div class="mini blue">
+              <strong>Flexible communication</strong>
+              <span>You can still send messages outside business hours and they can be reviewed later.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="social">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker rose">Social Media</span>
+            <h2>Optional social platforms for broader connection.</h2>
+          </div>
+          <p>
+            Social links are optional, but they can help visitors connect with your wider digital presence if you choose to add them.
+          </p>
+        </div>
+
+        <div class="content-layout">
+          <article class="paper reveal">
+            <div class="social-list">
+              <div class="row-item">
+                <div class="row-icon">f</div>
+                <div><strong>Facebook</strong> — Add your Facebook page link if available.</div>
+              </div>
+              <div class="row-item">
+                <div class="row-icon">𝕏</div>
+                <div><strong>X (Twitter)</strong> — Add your X profile if you use it for updates or sharing articles.</div>
+              </div>
+              <div class="row-item">
+                <div class="row-icon">in</div>
+                <div><strong>LinkedIn</strong> — Add your LinkedIn page if you want a more professional contact channel.</div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="sidebar reveal">
+            <div class="mini sky">
+              <strong>Optional section</strong>
+              <span>You can keep this area, edit it, or remove it until you add your real social media links.</span>
+            </div>
+            <div class="mini rose">
+              <strong>Brand consistency</strong>
+              <span>If you add social links, keep naming and visuals consistent with the rest of America AI.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="privacy">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker sky">Privacy Notice</span>
+            <h2>Your contact information should be treated responsibly.</h2>
+          </div>
+          <p>
+            A professional contact page should reassure visitors that their personal information will be handled with care.
+          </p>
+        </div>
+
+        <div class="paper reveal">
+          <div class="content-flow">
+            <p>
+              Any contact information submitted through this page should only be used to respond to the specific inquiry,
+              question, suggestion, feedback, or business communication sent by the visitor.
             </p>
+            <p>
+              Personal information such as names, email addresses, and contact details should not be shared without permission,
+              except where required by applicable law or necessary for secure technical operation.
+            </p>
+            <p>
+              This privacy notice helps create trust because visitors deserve to know that their messages are being treated with professionalism and respect.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-links">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="kicker teal">Footer Links</span>
+            <h2>Important pages visitors may also need.</h2>
+          </div>
+          <p>
+            A strong footer helps visitors continue exploring the website, understand policies, and move between important sections easily.
+          </p>
+        </div>
+
+        <div class="footer-panel reveal">
+          <div>
+            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">A professional contact page should feel complete.</h3>
+            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
+              This page includes a welcome message, contact details, a contact form, business hours, optional social media area,
+              a privacy notice, and footer navigation. Together, these elements make America AI look more trustworthy, organized, and reachable.
+            </p>
+
             <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Send Email</a>
-              <a class="btn btn-secondary" href="https://wa.me/254736280522" target="_blank" rel="noopener">Open WhatsApp</a>
+              <a class="btn btn-primary" href="index.html">Home</a>
+              <a class="btn btn-secondary" href="about.html">About Us</a>
             </div>
           </div>
 
           <div class="contact-items">
-            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com" aria-label="Email kinglee6mutwiri@gmail.com">
+            <a class="contact-item" href="privacy-policy.html">
               <div class="contact-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>Email Contact</strong>
-                <span>kinglee6mutwiri@gmail.com</span>
+                <strong>Privacy Policy</strong>
+                <span>Open your website privacy policy page</span>
               </div>
             </a>
 
-            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener" aria-label="Chat on WhatsApp 0736280522">
-              <div class="contact-icon whatsapp">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
-                  <path d="M12.04 2.5c-5.22 0-9.45 4.18-9.45 9.33 0 1.66.44 3.27 1.27 4.69L2.5 21.5l5.13-1.34a9.57 9.57 0 0 0 4.41 1.06c5.22 0 9.45-4.18 9.45-9.34 0-5.15-4.23-9.38-9.45-9.38z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
-                  <path d="M8.45 7.96c.2-.45.42-.46.62-.47h.53c.17 0 .45.06.68.57.23.51.77 1.77.84 1.9.07.13.12.3.02.48-.1.19-.15.3-.3.46-.15.17-.32.37-.45.49-.15.14-.31.28-.13.55.18.27.81 1.31 1.75 2.13 1.21 1.05 2.23 1.38 2.55 1.54.32.15.5.13.68-.08.18-.21.77-.89.98-1.2.21-.31.42-.25.71-.15.29.1 1.83.86 2.14 1.01.31.16.52.23.6.36.07.13.07.75-.17 1.48-.24.73-1.38 1.4-1.9 1.48-.49.07-1.12.11-1.81-.12-.42-.14-.97-.32-1.67-.61-2.94-1.22-4.86-4.2-5-4.41-.14-.2-1.19-1.56-1.19-2.98 0-1.42.74-2.12 1-2.41z" fill="currentColor"/>
+            <a class="contact-item" href="terms.html">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>WhatsApp</strong>
-                <span>0736280522</span>
+                <strong>Terms & Conditions</strong>
+                <span>Open your terms page</span>
               </div>
             </a>
 
-            <a class="contact-item" href="index.html" aria-label="Back to homepage">
+            <a class="contact-item" href="about.html">
               <div class="contact-icon">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M12 8.2h.01M10.8 11.2h1.2v4.6h1.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div>
+                <strong>About Us</strong>
+                <span>Learn more about America AI</span>
+              </div>
+            </a>
+
+            <a class="contact-item" href="index.html">
+              <div class="contact-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                   <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </div>
               <div>
-                <strong>Back Home</strong>
-                <span>Return to the America AI homepage</span>
+                <strong>Home</strong>
+                <span>Return to the main page</span>
               </div>
             </a>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker pink">How to send a better message</span>
-            <h2>What to include when you contact.</h2>
-          </div>
-          <p>
-            Clear communication produces better outcomes. A strong contact message saves time and helps the work move in the right direction from the beginning.
-          </p>
+        <div class="notice reveal" style="margin-top:1rem;">
+          <strong style="color:var(--blue);">Image setup:</strong>
+          put real local images named <strong>contact-hero.jpg</strong> and <strong>contact-side.jpg</strong> in the same folder as this HTML file.
+          That will make the page look complete with real simple images.
         </div>
-
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                When sending a message, it helps to explain what you actually need. If you want a homepage, say so. If you want an about page, a contact page,
-                a terms page, a privacy page, a job seekers page, or a redesign of existing HTML, mention it directly. Specificity always helps.
-              </p>
-              <p>
-                You should also mention the topic. Is the page for a business, a portfolio, a personal profile, a jobs resource, a school topic, or a public information page?
-                Each purpose creates a different design direction. When the purpose is clear, the final structure becomes much stronger.
-              </p>
-              <p>
-                If you already have text, links, file names, contact details, colors, or an example of a style you like, include those too.
-                If you do not have content yet, say whether you want content writing included. This helps define the scope of the request.
-              </p>
-              <p>
-                Good communication is respectful, direct, and organized. Short messages are fine if they are clear. Long messages are also fine if they are structured.
-                The important thing is to say what you need in a way that can be understood without confusion.
-              </p>
-            </div>
-          </article>
-
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>Be specific</strong>
-              <span>Say what page you need, what topic it covers, and what kind of style or content you expect.</span>
-            </div>
-            <div class="mini gold">
-              <strong>Save time</strong>
-              <span>More clarity in the first message usually means faster and better results later.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-strip" id="bottom">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker gold">Closing note</span>
-            <h2>A contact page should feel broad, calm, and complete.</h2>
-          </div>
-          <p>
-            This page is intentionally longer and more detailed because strong communication pages deserve more than one short paragraph and two bare links.
-          </p>
-        </div>
-
-        <article class="paper reveal">
-          <div class="content-flow">
-            <p>
-              America AI uses this page to show that contact is part of the full brand experience. It is not a leftover page.
-              It is a place of invitation, clarity, and trust. It gives visitors a comfortable way to reach out and a clear understanding of how to do it well.
-            </p>
-            <p>
-              If you need web page help, design work, editing, content arrangement, or direct communication, use either the email or the WhatsApp option above.
-              Both are there to keep the path simple.
-            </p>
-          </div>
-        </article>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container footer-row">
-      <div>© 2026 America AI. Premium contact page with clear communication channels and polished presentation.</div>
+      <div>© 2026 America AI. All rights reserved.</div>
       <div>
-        Contact:
-        <a href="mailto:kinglee6mutwiri@gmail.com">kinglee6mutwiri@gmail.com</a>
-        ·
-        <a href="https://wa.me/254736280522" target="_blank" rel="noopener">0736280522</a>
+        <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms.html">Terms & Conditions</a> ·
+        <a href="about.html">About Us</a> ·
+        <a href="index.html">Home</a>
       </div>
     </div>
   </footer>
@@ -918,6 +1201,23 @@
     }, {threshold:0.15});
 
     document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+    function handleContactForm(event){
+      event.preventDefault();
+
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('emailAddress').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const mailto = `mailto:kinglee6mutwiri@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        "Full Name: " + name + "\n" +
+        "Email Address: " + email + "\n\n" +
+        "Message:\n" + message
+      )}`;
+
+      window.location.href = mailto;
+    }
   </script>
 </body>
 </html>
