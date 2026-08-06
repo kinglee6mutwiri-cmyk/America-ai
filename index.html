@@ -1,12 +1,16 @@
- 
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>America AI</title>
 
-  <!-- 1. GOOGLE ANALYTICS 4 - FOR ANALYSIS -->
+  <meta name="description" content="America AI - Explore Artificial Intelligence, USA jobs, technology, cybersecurity, education, healthcare, innovation and the future of AI in America.">
+
+  <meta name="keywords" content="Artificial Intelligence, America AI, USA, AI Technology, Remote Jobs, Cybersecurity, Healthcare AI, Education AI, Innovation">
+
+  <meta name="author" content="America AI">
+
+  <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HE9CKP90"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,1342 +19,406 @@
     gtag('config', 'G-X3HE9CKP90');
   </script>
 
-  <!-- 2. GOOGLE ADSENSE - FOR ADS -->
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5799841502846177"
      crossorigin="anonymous"></script>
 
-  <meta name="description" content="America AI home page featuring educational articles on artificial intelligence, technology, jobs, careers, health, useful online resources, contact details, and important website pages.">
-  <meta name="keywords" content="America AI, artificial intelligence, technology articles, jobs, careers, health, online resources, AI ethics Kenya, contact page, educational website">
-  <meta name="author" content="America AI">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/">
-
-  <meta property="og:title" content="America AI">
-  <meta property="og:description" content="Explore AI, technology, jobs, careers, health, and useful resources on America AI.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kinglee6mutwiri-cmyk.github.io/America-ai/">
-  <meta property="og:image" content="home-hero.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#f5f8fc;
-      --paper:#ffffff;
-      --ink:#162132;
-      --muted:#627084;
-      --line:#dbe5ef;
-
-      --navy:#17263d;
-      --blue:#2f63ff;
-      --sky:#58b4ff;
-      --teal:#0d998f;
-      --green:#1b8d5a;
-      --amber:#d99f24;
-      --orange:#f07a2f;
-      --rose:#d75078;
-
-      --shadow:0 28px 70px rgba(18,30,45,.12);
-      --shadow-soft:0 12px 28px rgba(22,33,50,.08);
-      --radius:28px;
-      --max:1280px;
-    }
-
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family:'Inter', sans-serif;
-      color:var(--ink);
-      line-height:1.82;
-      background:
-        radial-gradient(circle at top left, rgba(47,99,255,.08), transparent 24%),
-        radial-gradient(circle at top right, rgba(88,180,255,.08), transparent 18%),
-        radial-gradient(circle at bottom right, rgba(240,122,47,.06), transparent 18%),
-        linear-gradient(180deg, #f5f8fc 0%, #ffffff 100%);
-      overflow-x:hidden;
-    }
-
-    a{text-decoration:none;color:inherit}
-    img{display:block;max-width:100%}
-    ::selection{background:var(--navy);color:#fff}
-
-    .container{
-      width:min(var(--max), calc(100% - 2rem));
-      margin-inline:auto;
-    }
-
-    .top-band{
-      height:8px;
-      background:linear-gradient(90deg, var(--navy) 0 16%, var(--blue) 16% 32%, var(--sky) 32% 48%, var(--teal) 48% 64%, var(--amber) 64% 80%, var(--rose) 80% 100%);
-    }
-
-    .site-header{
-      position:relative;
-      overflow:hidden;
-      min-height:100vh;
-      color:#fff;
-      background:
-        linear-gradient(135deg, rgba(19,31,48,.82), rgba(47,99,255,.34)),
-        url('home-hero.jpg') center/cover no-repeat;
-      border-bottom:1px solid rgba(255,255,255,.12);
-    }
-
-    .site-header::before,
-    .site-header::after{
-      content:"";
-      position:absolute;
-      border-radius:50%;
-      pointer-events:none;
-      filter:blur(16px);
-    }
-
-    .site-header::before{
-      width:440px;height:440px;left:-120px;top:-150px;
-      background:radial-gradient(circle, rgba(255,255,255,.14), transparent 70%);
-    }
-
-    .site-header::after{
-      width:340px;height:340px;right:-90px;bottom:-120px;
-      background:radial-gradient(circle, rgba(88,180,255,.18), transparent 70%);
-    }
-
-    .nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:1rem;
-      padding:1rem 0;
-      position:sticky;
-      top:0;
-      z-index:70;
-      backdrop-filter:blur(14px);
-      background:linear-gradient(180deg, rgba(19,31,48,.46), rgba(19,31,48,.10));
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:.9rem;
-      font-family:'Sora', sans-serif;
-      font-weight:800;
-      letter-spacing:.01em;
-    }
-
-    .brand-mark{
-      width:56px;height:56px;border-radius:18px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
-      border:1px solid rgba(255,255,255,.22);
-      box-shadow:0 12px 30px rgba(0,0,0,.16);
-    }
-
-    .nav-links{
-      display:flex;
-      flex-wrap:wrap;
-      align-items:center;
-      gap:1rem 1.1rem;
-    }
-
-    .nav-links a{
-      color:rgba(255,255,255,.95);
-      font-weight:700;
-      font-size:.95rem;
-      position:relative;
-    }
-
-    .nav-links a::after{
-      content:"";
-      position:absolute;
-      left:0;bottom:-4px;
-      width:0;height:2px;background:#fff;
-      transition:width .3s ease;
-    }
-
-    .nav-links a:hover::after{width:100%}
-
-    .hero{
-      min-height:calc(100vh - 88px);
-      display:grid;
-      align-items:end;
-      padding:3rem 0 5rem;
-      position:relative;
-      z-index:2;
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.02fr .98fr;
-      gap:2rem;
-      align-items:end;
-    }
-
-    .eyebrow{
-      display:inline-block;
-      padding:.55rem .95rem;
-      border-radius:999px;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.14em;
-      font-size:.74rem;
-      margin-bottom:1rem;
-      color:#eff9ff;
-      border:1px solid rgba(255,255,255,.18);
-      background:linear-gradient(90deg, rgba(47,99,255,.28), rgba(88,180,255,.22), rgba(13,153,143,.18));
-      backdrop-filter:blur(10px);
-    }
-
-    h1,h2,h3,h4{
-      font-family:'Sora', sans-serif;
-      line-height:1.03;
-      letter-spacing:-.03em;
-      margin:0 0 1rem;
-    }
-
-    h1{
-      font-size:clamp(3rem, 6vw, 6rem);
-      max-width:9ch;
-      text-shadow:0 12px 30px rgba(0,0,0,.24);
-    }
-
-    .lead{
-      margin:0;
-      max-width:70ch;
-      color:rgba(255,255,255,.94);
-      font-size:clamp(1.03rem, 1.8vw, 1.16rem);
-      text-shadow:0 6px 18px rgba(0,0,0,.22);
-    }
-
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:1rem;
-      margin-top:1.8rem;
-    }
-
-    .btn{
-      min-height:54px;
-      padding:0 1.2rem;
-      border-radius:999px;
-      border:none;
-      cursor:pointer;
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:.7rem;
-      font-weight:800;
-      transition:transform .28s ease, box-shadow .28s ease, background .28s ease;
-    }
-
-    .btn-primary{
-      background:#fff;
-      color:var(--navy);
-      box-shadow:0 12px 30px rgba(0,0,0,.18);
-    }
-
-    .btn-primary:hover{
-      transform:translateY(-3px);
-      box-shadow:0 18px 38px rgba(0,0,0,.22);
-    }
-
-    .btn-secondary{
-      background:rgba(255,255,255,.12);
-      color:#fff;
-      border:1px solid rgba(255,255,255,.24);
-      backdrop-filter:blur(10px);
-    }
-
-    .btn-secondary:hover{
-      transform:translateY(-3px);
-      background:rgba(255,255,255,.18);
-    }
-
-    .hero-card{
-      border-radius:30px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,.16);
-      box-shadow:0 18px 40px rgba(0,0,0,.18);
-      background:rgba(255,255,255,.08);
-      backdrop-filter:blur(10px);
-      padding:1rem;
-    }
-
-    .hero-card img{
-      width:100%;
-      height:520px;
-      object-fit:cover;
-      border-radius:22px;
-      border:1px solid rgba(255,255,255,.12);
-      background:#dce7f2;
-    }
-
-    .hero-caption{
-      padding:.95rem .1rem .1rem;
-      color:rgba(255,255,255,.9);
-    }
-
-    .hero-caption strong{
-      display:block;
-      margin-bottom:.25rem;
-      font-size:1.08rem;
-    }
-
-    main section{padding:5rem 0}
-
-    .section-head{
-      display:grid;
-      grid-template-columns:.9fr 1.1fr;
-      gap:2rem;
-      align-items:end;
-      margin-bottom:2rem;
-    }
-
-    .kicker{
-      display:block;
-      margin-bottom:.75rem;
-      text-transform:uppercase;
-      letter-spacing:.14em;
-      font-weight:800;
-      font-size:.78rem;
-    }
-
-    .kicker.blue{color:var(--blue)}
-    .kicker.sky{color:var(--sky)}
-    .kicker.teal{color:var(--teal)}
-    .kicker.green{color:var(--green)}
-    .kicker.amber{color:var(--amber)}
-    .kicker.rose{color:var(--rose)}
-
-    .section-head h2{
-      font-size:clamp(2rem, 4vw, 4rem);
-      max-width:12ch;
-    }
-
-    .section-head p{
-      margin:0;
-      color:var(--muted);
-      font-size:1.04rem;
-      max-width:70ch;
-    }
-
-    .content-layout{
-      display:grid;
-      grid-template-columns:1.05fr .95fr;
-      gap:2rem;
-      align-items:start;
-    }
-
-    .paper{
-      background:linear-gradient(180deg, #ffffff, #fcfdff);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow-soft);
-      padding:1.6rem;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .paper::before{
-      content:"";
-      position:absolute;
-      width:240px;height:240px;border-radius:50%;
-      right:-70px;top:-70px;
-      background:radial-gradient(circle, rgba(47,99,255,.08), transparent 70%);
-      pointer-events:none;
-    }
-
-    .paper::after{
-      content:"";
-      position:absolute;
-      left:0;top:0;right:0;height:7px;
-      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
-    }
-
-    .content-flow{
-      columns:2 320px;
-      column-gap:2rem;
-    }
-
-    .content-flow p{
-      margin:0 0 1.15rem;
-      color:var(--muted);
-      break-inside:avoid;
-    }
-
-    .sidebar{
-      display:grid;
-      gap:1rem;
-    }
-
-    .mini{
-      border-radius:22px;
-      padding:1.15rem 1.2rem;
-      box-shadow:var(--shadow-soft);
-      border:1px solid var(--line);
-      position:relative;
-      overflow:hidden;
-      background:#fff;
-    }
-
-    .mini::before{
-      content:"";
-      position:absolute;
-      left:0;top:0;bottom:0;width:7px;
-    }
-
-    .mini.blue{background:linear-gradient(180deg, #f7fbff, #edf5ff)}
-    .mini.sky{background:linear-gradient(180deg, #f4fbff, #eaf8ff)}
-    .mini.teal{background:linear-gradient(180deg, #f4fffd, #e9fffb)}
-    .mini.green{background:linear-gradient(180deg, #f7fff9, #edfff2)}
-    .mini.amber{background:linear-gradient(180deg, #fffdf7, #fff7df)}
-    .mini.rose{background:linear-gradient(180deg, #fff8fb, #fff0f6)}
-
-    .mini.blue::before{background:var(--blue)}
-    .mini.sky::before{background:var(--sky)}
-    .mini.teal::before{background:var(--teal)}
-    .mini.green::before{background:var(--green)}
-    .mini.amber::before{background:var(--amber)}
-    .mini.rose::before{background:var(--rose)}
-
-    .mini strong{
-      display:block;
-      font-family:'Sora', sans-serif;
-      font-size:1.16rem;
-      margin-bottom:.3rem;
-    }
-
-    .mini.blue strong{color:var(--blue)}
-    .mini.sky strong{color:var(--sky)}
-    .mini.teal strong{color:var(--teal)}
-    .mini.green strong{color:var(--green)}
-    .mini.amber strong{color:#9c6800}
-    .mini.rose strong{color:var(--rose)}
-    .mini span{color:var(--muted)}
-
-    .showcase{
-      background:linear-gradient(180deg, #f8fbff 0%, #fff 100%);
-      border-top:1px solid var(--line);
-      border-bottom:1px solid var(--line);
-      position:relative;
-    }
-
-    .showcase::before{
-      content:"";
-      position:absolute;
-      left:0;right:0;top:0;height:8px;
-      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(12,1fr);
-      gap:1rem;
-    }
-
-    .card{
-      grid-column:span 4;
-      border:1px solid var(--line);
-      border-radius:24px;
-      overflow:hidden;
-      background:#fff;
-      box-shadow:var(--shadow-soft);
-      transition:transform .3s ease, box-shadow .3s ease;
-      position:relative;
-    }
-
-    .card::before{
-      content:"";
-      position:absolute;
-      left:0;right:0;top:0;height:6px;
-      background:linear-gradient(90deg, var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
-      z-index:2;
-    }
-
-    .card:hover{
-      transform:translateY(-8px);
-      box-shadow:var(--shadow);
-    }
-
-    .card-photo{
-      height:230px;
-      overflow:hidden;
-      border-bottom:1px solid var(--line);
-      background:#eef5ff;
-    }
-
-    .card-photo img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      background:#dce7f2;
-    }
-
-    .card-body{padding:1.2rem}
-
-    .tag{
-      display:inline-flex;
-      margin-bottom:.8rem;
-      padding:.35rem .72rem;
-      border-radius:999px;
-      font-size:.78rem;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.08em;
-      color:#fff;
-    }
-
-    .tag.blue{background:var(--blue)}
-    .tag.sky{background:var(--sky)}
-    .tag.teal{background:var(--teal)}
-    .tag.green{background:var(--green)}
-    .tag.amber{background:var(--amber)}
-    .tag.rose{background:var(--rose)}
-
-    .card h3{
-      font-size:1.18rem;
-      margin-bottom:.5rem;
-    }
-
-    .card p{
-      margin:0;
-      color:var(--muted);
-    }
-
-    .page-links{
-      display:grid;
-      grid-template-columns:repeat(2,minmax(0,1fr));
-      gap:1rem;
-    }
-
-    .page-link{
-      border:1px solid var(--line);
-      border-radius:24px;
-      background:#fff;
-      box-shadow:var(--shadow-soft);
-      padding:1.2rem;
-      transition:transform .28s ease, box-shadow .28s ease;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .page-link::before{
-      content:"";
-      position:absolute;
-      left:0;top:0;right:0;height:6px;
-      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
-    }
-
-    .page-link:hover{
-      transform:translateY(-6px);
-      box-shadow:var(--shadow);
-    }
-
-    .page-link strong{
-      display:block;
-      font-family:'Sora', sans-serif;
-      font-size:1.12rem;
-      margin-bottom:.3rem;
-    }
-
-    .page-link span{
-      color:var(--muted);
-    }
-
-    .contact-box{
-      border:1px solid var(--line);
-      background:linear-gradient(180deg, #ffffff, #fbfdff);
-      border-radius:30px;
-      padding:1.5rem;
-      box-shadow:var(--shadow);
-      display:grid;
-      grid-template-columns:1fr .95fr;
-      gap:1.4rem;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .contact-box::before{
-      content:"";
-      position:absolute;
-      inset:0 0 auto 0;height:8px;
-      background:linear-gradient(90deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber), var(--rose));
-    }
-
-    .contact-items{
-      display:grid;
-      gap:1rem;
-      align-content:start;
-    }
-
-    .contact-item{
-      display:flex;
-      align-items:center;
-      gap:1rem;
-      padding:1rem 1.1rem;
-      border-radius:20px;
-      background:#fff;
-      border:1px solid var(--line);
-      box-shadow:var(--shadow-soft);
-      transition:transform .28s ease, box-shadow .28s ease;
-    }
-
-    .contact-item:hover{
-      transform:translateY(-4px);
-      box-shadow:var(--shadow);
-    }
-
-    .contact-icon{
-      width:56px;height:56px;border-radius:18px;
-      display:grid;place-items:center;
-      background:linear-gradient(135deg, var(--navy), var(--blue), var(--sky), var(--teal), var(--amber));
-      color:#fff;
-      flex:0 0 auto;
-    }
-
-    .notice{
-      padding:1rem 1.15rem;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background:linear-gradient(135deg, rgba(47,99,255,.08), rgba(88,180,255,.08), rgba(13,153,143,.08), rgba(217,159,36,.08), rgba(215,80,120,.08));
-      color:var(--muted);
-      box-shadow:var(--shadow-soft);
-      margin-top:1rem;
-    }
-
-    footer{
-      padding:2rem 0 3rem;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      background:#fff;
-    }
-
-    .footer-row{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:1rem;
-      flex-wrap:wrap;
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(22px);
-      transition:opacity .78s ease, transform .78s ease;
-    }
-
-    .reveal.visible{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    .stagger > *{
-      opacity:0;
-      transform:translateY(18px);
-      animation:rise .85s ease forwards;
-    }
-
-    .stagger > *:nth-child(1){animation-delay:.08s}
-    .stagger > *:nth-child(2){animation-delay:.18s}
-    .stagger > *:nth-child(3){animation-delay:.28s}
-    .stagger > *:nth-child(4){animation-delay:.38s}
-    .stagger > *:nth-child(5){animation-delay:.48s}
-
-    @keyframes rise{
-      to{opacity:1;transform:translateY(0)}
-    }
-
-    @media (max-width: 1100px){
-      .cards{grid-template-columns:repeat(6,1fr)}
-    }
-
-    @media (max-width: 1020px){
-      .hero-grid,
-      .section-head,
-      .content-layout,
-      .contact-box{
-        grid-template-columns:1fr;
-      }
-      .card{grid-column:span 3}
-      .hero-card img{height:420px}
-      .page-links{grid-template-columns:1fr}
-    }
-
-    @media (max-width: 720px){
-      .nav{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-      .cards{
-        grid-template-columns:1fr;
-      }
-      .card{grid-column:span 1}
-      .content-flow{columns:1}
-      h1{max-width:100%}
-      main section{padding:4rem 0}
-      .hero-card img{height:320px}
-    }
-  </style>
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-  <div class="top-band"></div>
 
-  <header class="site-header" id="top">
-    <div class="container">
-      <nav class="nav">
-        <a class="brand" href="index.html" aria-label="America AI home">
-          <span class="brand-mark" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-              <path d="M12 3l7 4v10l-7 4-7-4V7l7-4z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
-              <path d="M8.5 9.2h7M8.5 12h7M8.5 14.8h4.8" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </span>
-          <span>AMERICA AI</span>
-        </a>
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">🇺🇸 America AI</a>
+  </div>
 
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#topics">Topics</a>
-          <a href="#pages">Pages</a>
-          <a href="#contact">Contact</a>
-          <a href="about.html">About Us</a>
-          <a href="contact.html">Contact Page</a>
-        </div>
-      </nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="disclaimer.html">Disclaimer</a></li>
+    <li><a href="ai-ethics-kenya.html">AI Ethics Kenya</a></li>
+    <li><a href="job-seekers-usa.html">USA Jobs</a></li>
+    <li><a href="remote-jobs-usa.html">Remote Jobs</a></li>
+    <li><a href="blooket.html">Blooket</a></li>
+    <li><a href="lucky-dube.html">Lucky Dube</a></li>
+    <li><a href="aa1937.html">AA1937</a></li>
+  </ul>
+</nav>
 
-      <section class="hero">
-        <div class="hero-grid">
-          <div class="stagger">
-            <span class="eyebrow">Welcome to America AI</span>
-            <h1>Educational articles for AI, technology, careers, health, and digital life.</h1>
-            <p class="lead">
-              America AI is an educational website created for readers who want helpful, readable, and practical information.
-              The site brings together articles on <strong>artificial intelligence, technology, jobs, careers, health, online resources, policy, and digital awareness</strong>.
-              Its purpose is to help people learn, think clearly, and make better-informed decisions in a changing world.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#pages">Explore Pages</a>
-              <a class="btn btn-secondary" href="#contact">Get in Touch</a>
-            </div>
-          </div>
+<header class="hero">
 
-          <div class="hero-card reveal">
-            <img src="home-hero.jpg" alt="Modern educational technology image for America AI home page" loading="lazy">
-            <div class="hero-caption">
-              <strong>Knowledge made practical</strong>
-              <span>Use a real image named <code>home-hero.jpg</code> in the same folder for the best visual result.</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </header>
+<img
+src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80"
+alt="Artificial Intelligence in America">
 
-  <main>
-    <section id="about">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker blue">Home Page Introduction</span>
-            <h2>What America AI is and why this website exists.</h2>
-          </div>
-          <p>
-            A strong home page should immediately explain what the website is about, who it is for, and why visitors should keep reading.
-          </p>
-        </div>
+<div class="hero-content">
 
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                America AI is an educational website built for readers who want useful information that connects modern technology to real life.
-                The internet contains endless pages, but not every page helps people think more clearly or make stronger decisions.
-                This website is designed to be practical, structured, and informative rather than noisy.
-              </p>
-              <p>
-                The name America AI points toward a broad educational interest in intelligence, technology, and the future of information.
-                But the site is not limited to one subject. It includes multiple content areas because real life is not limited to one category.
-                A person interested in AI may also need job advice. A person interested in career growth may also care about digital tools.
-                A reader interested in technology may also benefit from articles on health, policy, learning, or useful online resources.
-              </p>
-              <p>
-                This home page introduces the full direction of the site. It is the main starting point for visitors, the page that should help new readers feel oriented and confident.
-                It is designed to give a sense of professionalism, clarity, and openness. Rather than acting as a simple list of links,
-                it serves as a central overview of the website’s mission, article categories, important pages, and contact details.
-              </p>
-              <p>
-                America AI aims to publish content that is educational, readable, and worthwhile. That includes explanations of artificial intelligence,
-                articles about modern technology, discussions of digital responsibility, practical job and career material, health-related educational content,
-                and guides to useful resources on the web.
-              </p>
-              <p>
-                A website like this matters because information has become one of the most important forces in daily life.
-                The quality of information people use shapes the quality of the choices they make. When a site offers useful articles in a clear format,
-                it becomes more than a collection of pages. It becomes a tool for better understanding.
-              </p>
-              <p>
-                America AI is designed to support that goal. It welcomes curious readers, job seekers, learners, researchers, digital users, and everyday visitors
-                who want information that is both relevant and accessible.
-              </p>
-            </div>
-          </article>
+<h1>The AI Revolution in America</h1>
 
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>Educational Focus</strong>
-              <span>America AI is built around practical learning, explanation, and readable digital knowledge.</span>
-            </div>
-            <div class="mini sky">
-              <strong>Broad Topics</strong>
-              <span>The website covers AI, technology, jobs, careers, health, and useful online resources.</span>
-            </div>
-            <div class="mini teal">
-              <strong>Practical Purpose</strong>
-              <span>The goal is to help visitors understand better and make more informed decisions.</span>
-            </div>
-            <div class="mini amber">
-              <strong>Useful Direction</strong>
-              <span>This is not only a website to browse. It is a website designed to be used.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+<p>
 
-    <section class="showcase" id="topics">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker teal">Main Topics</span>
-            <h2>What visitors can read and explore on America AI.</h2>
-          </div>
-          <p>
-            The website brings several valuable categories together so that readers can move across different but connected subjects in one place.
-          </p>
-        </div>
+Artificial Intelligence is transforming the United States faster than any previous technological revolution. From healthcare and education to cybersecurity, finance, transportation, entertainment, and scientific research, AI is becoming one of the most important innovations of the modern era. America continues to lead many breakthroughs that shape the future of technology around the world.
 
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-ai.jpg" alt="Artificial intelligence article image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag blue">Artificial Intelligence</span>
-              <h3>AI guides, ethics, and practical understanding</h3>
-              <p>Learn what AI is, how it works, where it is used, what risks it creates, and how it should be used responsibly.</p>
-            </div>
-          </article>
+</p>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-tech.jpg" alt="Technology news and tools image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag sky">Technology</span>
-              <h3>Technology articles and digital updates</h3>
-              <p>Explore how tools, platforms, systems, apps, and trends shape modern life and daily decision-making.</p>
-            </div>
-          </article>
+<div class="buttons">
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-careers.jpg" alt="Jobs and careers image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag teal">Jobs & Careers</span>
-              <h3>Career thinking and opportunity guidance</h3>
-              <p>Read articles that support job seekers, career growth, online work understanding, and professional direction.</p>
-            </div>
-          </article>
+<a href="#article" class="btn">Start Reading</a>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-health.jpg" alt="Health and wellbeing image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag green">Health</span>
-              <h3>Health and lifestyle reading</h3>
-              <p>Educational health content supports broader awareness of wellbeing, habits, and practical daily living.</p>
-            </div>
-          </article>
+<a href="about.html" class="btn">About America AI</a>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-resources.jpg" alt="Online resources and research image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag amber">Resources</span>
-              <h3>Useful online resources</h3>
-              <p>Find practical resource-focused content that helps readers use the internet more productively.</p>
-            </div>
-          </article>
+<a href="remote-jobs-usa.html" class="btn">USA Remote Jobs</a>
 
-          <article class="card reveal">
-            <div class="card-photo">
-              <img src="topic-policy.jpg" alt="Policy and ethics image" loading="lazy">
-            </div>
-            <div class="card-body">
-              <span class="tag rose">Policy & Awareness</span>
-              <h3>Ethics, law, and platform responsibility</h3>
-              <p>Read about digital policy, public responsibility, trust, disclaimers, privacy, and online transparency.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+<a href="job-seekers-usa.html" class="btn">Job Seekers</a>
 
-    <section id="mission">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker green">Mission</span>
-            <h2>Helping people learn, judge wisely, and access useful information.</h2>
-          </div>
-          <p>
-            The mission of America AI is to provide content that is educational, practical, and supportive of better decision-making.
-          </p>
-        </div>
+</div>
 
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                The mission of America AI is not simply to post content. It is to publish content that helps readers think better.
-                That means presenting topics clearly, explaining difficult ideas in more accessible language, and choosing subjects that connect to real needs.
-              </p>
-              <p>
-                This mission rests on a simple principle: information should be useful. It should help a student understand a topic, help a worker think about opportunity,
-                help a reader evaluate technology more critically, or help a visitor navigate the internet more effectively.
-              </p>
-              <p>
-                In practice, that means educational articles should not only be written to fill space. They should be shaped to support understanding.
-                They should give readers enough clarity to continue learning and enough structure to continue exploring.
-              </p>
-              <p>
-                America AI therefore aims to combine readability with substance. It seeks a balance between accessibility and seriousness.
-                It is written for real people with practical questions, not only for specialists.
-              </p>
-              <p>
-                This mission also includes trust. Content should aim to be accurate, useful, well-organized, and regularly reviewed where necessary.
-                In a crowded digital environment, care becomes part of the value.
-              </p>
-            </div>
-          </article>
+</div>
 
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>Learn</strong>
-              <span>Support understanding of AI, technology, health, careers, and digital topics.</span>
-            </div>
-            <div class="mini teal">
-              <strong>Decide</strong>
-              <span>Help visitors compare options and make more informed choices.</span>
-            </div>
-            <div class="mini amber">
-              <strong>Trust</strong>
-              <span>Offer structured, thoughtful, and useful material rather than empty noise.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+</header>
 
-    <section class="showcase" id="pages">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker amber">Website Pages</span>
-            <h2>Important pages available on your website.</h2>
-          </div>
-          <p>
-            The home page should act like a directory as well as an introduction. These links help visitors move directly to important sections of the site.
-          </p>
-        </div>
+<section class="stats">
 
-        <div class="page-links reveal">
-          <a class="page-link" href="about.html">
-            <strong>About Us</strong>
-            <span>Learn who America AI is, what the website is about, the mission, trust approach, and contact information.</span>
-          </a>
+<div class="stat-box">
+<h2>300M+</h2>
+<p>Americans benefiting from AI-powered services.</p>
+</div>
 
-          <a class="page-link" href="contact.html">
-            <strong>Contact</strong>
-            <span>Reach out through email, WhatsApp, website links, the contact form, and business details.</span>
-          </a>
+<div class="stat-box">
+<h2>$1 Trillion+</h2>
+<p>Estimated future AI contribution to the U.S. economy.</p>
+</div>
 
-          <a class="page-link" href="404.html">
-            <strong>404 Page</strong>
-            <span>A professional page that helps visitors recover when a requested page cannot be found.</span>
-          </a>
+<div class="stat-box">
+<h2>Thousands</h2>
+<p>New AI companies and startups are created every year.</p>
+</div>
 
-          <a class="page-link" href="ai-ethics-kenya.html">
-            <strong>AI Ethics in Kenya</strong>
-            <span>An educational article about fairness, privacy, accountability, responsible AI use, benefits, and risks in Kenya.</span>
-          </a>
+<div class="stat-box">
+<h2>Millions</h2>
+<p>New technology and AI-related jobs expected this decade.</p>
+</div>
 
-          <a class="page-link" href="disclaimer.html">
-            <strong>Disclaimer</strong>
-            <span>Explains the limits and purpose of educational content on the site and clarifies how it should be interpreted.</span>
-          </a>
+</section>
 
-          <a class="page-link" href="privacy-policy.html">
-            <strong>Privacy Policy</strong>
-            <span>Shows how information is handled and gives visitors confidence about data-related practices.</span>
-          </a>
+<section id="article" class="content">
 
-          <a class="page-link" href="terms.html">
-            <strong>Terms & Conditions</strong>
-            <span>Sets the rules, responsibilities, and legal expectations around use of the website.</span>
-          </a>
+<h2>Introduction</h2>
 
-          <a class="page-link" href="index.html">
-            <strong>Home</strong>
-            <span>The main overview page that introduces America AI and connects readers to all major website sections.</span>
-          </a>
-        </div>
+<p>
 
-        <div class="notice reveal">
-          <strong style="color:var(--navy);">Useful note:</strong>
-          If some of these pages are not yet created, you can still keep the links and build them one by one. A clear home page helps visitors see the structure of your site even while you are still expanding it.
-        </div>
-      </div>
-    </section>
+Artificial Intelligence has rapidly become one of the defining technologies of the twenty-first century. Across the United States, AI is changing how businesses operate, how students learn, how doctors diagnose diseases, how engineers design products, and how governments deliver digital services. What once seemed like science fiction is now part of everyday life. Voice assistants, recommendation systems, self-driving technology research, medical imaging tools, and advanced robotics all demonstrate the expanding role of artificial intelligence in society.
 
-    <section id="why-visit">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker rose">Why this site matters</span>
-            <h2>A website should do more than exist. It should help.</h2>
-          </div>
-          <p>
-            The value of a content website is measured not only by how many pages it has, but by how helpful, readable, and trustworthy those pages become.
-          </p>
-        </div>
+</p>
+<h2>How America Became a Global AI Leader</h2>
 
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                A strong home page should communicate confidence without confusion. It should welcome new readers, remind returning visitors why the site matters,
-                and make it easy to continue exploring. That is why this page is built as a real front door rather than a simple list of links.
-              </p>
-              <p>
-                America AI matters because many people need a practical space to read about modern topics without unnecessary complexity.
-                Artificial intelligence can feel overwhelming. Technology changes quickly. Online opportunities are often confusing.
-                Health information is mixed in quality. Policy and platform issues are easy to ignore until they become personal.
-                A site that gathers these subjects and presents them clearly becomes valuable.
-              </p>
-              <p>
-                This kind of website can support many types of readers. A student may come looking for an AI explanation.
-                A worker may come looking for career-oriented guidance. A casual reader may come looking for trustworthy technology insight.
-                A visitor may come through a search engine and discover new categories they did not expect to read.
-              </p>
-              <p>
-                The home page must serve all of those readers. It must say: here is what this website offers, here is how it is organized,
-                and here is how you can continue. That is why visual structure, section hierarchy, page navigation, and contact information all matter on this page.
-              </p>
-              <p>
-                Professional presentation also matters. When readers see that a website has a coherent identity, clear layout, real contact information,
-                and carefully organized sections, they are more likely to trust it and return to it.
-              </p>
-              <p>
-                For America AI, trust grows through clarity, educational purpose, practical usefulness, and open contact details.
-                A website that helps people should also make itself reachable. That is why the contact information on this home page remains visible and direct.
-              </p>
-            </div>
-          </article>
+<p>
 
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>Readable</strong>
-              <span>Information should be understandable, not hidden behind unnecessary complexity.</span>
-            </div>
-            <div class="mini sky">
-              <strong>Useful</strong>
-              <span>Articles should help people think better, not just fill pages with words.</span>
-            </div>
-            <div class="mini teal">
-              <strong>Structured</strong>
-              <span>A clear website structure helps visitors move from one useful page to the next.</span>
-            </div>
-            <div class="mini rose">
-              <strong>Reachable</strong>
-              <span>Professional websites make communication easy and visible.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+The United States has become one of the world's leading nations in artificial intelligence through decades of investment in education, scientific research, entrepreneurship, and advanced computing infrastructure. Universities such as MIT, Stanford, Carnegie Mellon University, and many others have trained generations of computer scientists, engineers, and researchers whose discoveries have shaped the AI industry.
 
-    <section class="showcase" id="contact">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker green">Contact</span>
-            <h2>Get in touch with America AI.</h2>
-          </div>
-          <p>
-            Visitors should never have to guess whether a website is reachable. Clear contact details make the platform more professional and trustworthy.
-          </p>
-        </div>
+Technology companies including Google, Microsoft, OpenAI, NVIDIA, Amazon, Apple, Meta, IBM, Adobe, Oracle, Intel, and many innovative startups continue to develop AI systems that power products used by millions of people every day. Their work supports industries ranging from healthcare and finance to manufacturing and agriculture.
 
-        <div class="contact-box reveal">
-          <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Questions, feedback, suggestions, or business inquiries are welcome.</h3>
-            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
-              If you want to send feedback, ask a question, discuss a topic, suggest a correction, or make a business inquiry,
-              you can reach America AI through the contact details below. Open communication helps the site grow stronger and remain useful for readers.
-            </p>
+</p>
 
-            <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="mailto:kinglee6mutwiri@gmail.com">Email Us</a>
-              <a class="btn btn-secondary" href="https://wa.me/254736280522" target="_blank" rel="noopener">WhatsApp Us</a>
-            </div>
+<h2>Artificial Intelligence in Healthcare</h2>
 
-            <div class="notice">
-              <strong style="color:var(--teal);">Direct contact:</strong>
-              Email: <strong>kinglee6mutwiri@gmail.com</strong><br>
-              WhatsApp: <strong>0736280522</strong><br>
-              Website: <strong>https://kinglee6mutwiri-cmyk.github.io/America-ai/</strong>
-            </div>
-          </div>
+<p>
 
-          <div class="contact-items">
-            <a class="contact-item" href="mailto:kinglee6mutwiri@gmail.com">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Email</strong>
-                <span>kinglee6mutwiri@gmail.com</span>
-              </div>
-            </a>
+Healthcare is one of the areas where AI is making an enormous difference. Hospitals increasingly use AI-assisted medical imaging to help detect diseases earlier, support radiologists in interpreting scans, and improve workflow efficiency. AI tools can also help organize medical records, summarize clinical information, and assist healthcare professionals with administrative tasks, giving them more time to focus on patient care.
 
-            <a class="contact-item" href="https://wa.me/254736280522" target="_blank" rel="noopener">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 20a8 8 0 1 0-4.4-1.32L4 20l1.42-3.38A8 8 0 0 0 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M9.2 9.4c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.5 1.2c.1.2 0 .4-.1.6l-.4.5c-.1.1-.1.3 0 .4.4.8 1 1.4 1.8 1.8.1.1.3.1.4 0l.5-.4c.2-.1.4-.2.6-.1l1.2.5c.4.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.3.2-.9.3-1.5.1-1-.3-2-.9-2.8-1.7-.8-.8-1.4-1.8-1.7-2.8-.2-.6-.1-1.2.1-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>WhatsApp</strong>
-                <span>0736280522</span>
-              </div>
-            </a>
+Researchers are also exploring AI for drug discovery, personalized medicine, and public health analysis. Although AI supports clinicians, it does not replace medical judgment. Human oversight remains essential to ensure safe and effective care.
 
-            <a class="contact-item" href="contact.html">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Contact Page</strong>
-                <span>Open the full contact page with form and details</span>
-              </div>
-            </a>
+</p>
 
-            <a class="contact-item" href="about.html">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M12 8.2h.01M10.8 11.2h1.2v4.6h1.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>About Page</strong>
-                <span>Learn who America AI is and what the website is about</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+<h2>AI in Education</h2>
 
-    <section id="required-info">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker sky">What else belongs on a strong home page</span>
-            <h2>Important qualities of a professional website front page.</h2>
-          </div>
-          <p>
-            A home page should not only look good. It should guide, explain, reassure, and connect visitors to the rest of the website naturally.
-          </p>
-        </div>
+<p>
 
-        <div class="content-layout">
-          <article class="paper reveal">
-            <div class="content-flow">
-              <p>
-                Good home pages perform several tasks at once. They introduce the website. They help visitors understand what kind of content is available.
-                They direct readers toward key pages. They make branding visible. They establish trust through structure and tone.
-                They also help search engines understand what the site is about, which is why clear sections and strong internal links matter.
-              </p>
-              <p>
-                In America AI, that means the home page should introduce AI articles, technology content, career reading, health material,
-                responsible policy discussion, and resource-based guides. It should also connect directly to pages like About, Contact, AI Ethics in Kenya,
-                Disclaimer, Privacy Policy, Terms & Conditions, and future article pages.
-              </p>
-              <p>
-                Another important quality is readability. A home page filled only with visual blocks but no meaningful explanation may look attractive for a moment
-                without actually helping the user. A page with strong written structure remains useful for longer.
-              </p>
-              <p>
-                This is why the content on this homepage is intentionally fuller than a typical minimal landing page.
-                It aims to feel like a real website introduction written with purpose rather than a generic placeholder.
-              </p>
-              <p>
-                Finally, the home page should support future growth. As more pages are added, the homepage can keep acting as the central map of the site.
-                That makes it easier for new visitors to understand the website and easier for returning readers to find what they need.
-              </p>
-            </div>
-          </article>
+Schools, colleges, and universities across America are integrating artificial intelligence into teaching and learning. Students can receive personalized study recommendations, adaptive learning experiences, writing assistance, language practice, and tutoring support. Teachers can use AI to help prepare lesson plans, analyze learning progress, and reduce administrative workload.
 
-          <aside class="sidebar reveal">
-            <div class="mini blue">
-              <strong>Clear identity</strong>
-              <span>The page should tell people immediately what the website is and what it offers.</span>
-            </div>
-            <div class="mini teal">
-              <strong>Strong navigation</strong>
-              <span>Visitors should be able to move from the homepage to important pages without confusion.</span>
-            </div>
-            <div class="mini amber">
-              <strong>SEO support</strong>
-              <span>Good structure, internal links, and descriptive sections support discoverability.</span>
-            </div>
-            <div class="mini rose">
-              <strong>Professional trust</strong>
-              <span>Real contact details, legal pages, and readable content increase credibility.</span>
-            </div>
-          </aside>
-        </div>
-      </div>
-    </section>
+Responsible use is important. Educational institutions encourage students to use AI as a learning aid while continuing to develop critical thinking, creativity, and subject knowledge.
 
-    <section class="showcase" id="closing">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="kicker amber">Closing</span>
-            <h2>A home page should welcome, guide, and stay useful.</h2>
-          </div>
-          <p>
-            Thank you for visiting America AI. This homepage is built to serve as your main starting point for exploring the website.
-          </p>
-        </div>
+</p>
 
-        <div class="contact-box reveal">
-          <div>
-            <h3 style="font-size:clamp(2rem,4vw,3.3rem);max-width:10ch;">Continue exploring America AI from here.</h3>
-            <p style="color:var(--muted);max-width:62ch;margin-top:0;">
-              You can move from this page to About Us, Contact, AI Ethics in Kenya, Disclaimer, Privacy Policy, Terms & Conditions,
-              and future article pages as the site continues to grow. America AI is designed as an educational platform,
-              and the homepage is meant to remain a strong, clear introduction to everything the website offers.
-            </p>
+<h2>AI and the Future of Work</h2>
 
-            <div class="hero-actions" style="margin-top:1.2rem;">
-              <a class="btn btn-primary" href="about.html">About Us</a>
-              <a class="btn btn-secondary" href="contact.html">Contact Page</a>
-            </div>
+<p>
 
-            <div class="notice">
-              <strong style="color:var(--blue);">Simple image setup:</strong>
-              Put local images named
-              <strong>home-hero.jpg</strong>,
-              <strong>topic-ai.jpg</strong>,
-              <strong>topic-tech.jpg</strong>,
-              <strong>topic-careers.jpg</strong>,
-              <strong>topic-health.jpg</strong>,
-              <strong>topic-resources.jpg</strong>,
-              and <strong>topic-policy.jpg</strong>
-              in the same folder as this file.
-            </div>
-          </div>
+Artificial intelligence is changing many jobs by automating repetitive tasks and helping workers complete complex work more efficiently. Rather than affecting every profession in the same way, AI is reshaping job responsibilities across industries.
 
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 18h16M6 18V8l6-4 6 4v10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M10 18v-5h4v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Main file</strong>
-                <span>index.html</span>
-              </div>
-            </div>
+Growing career areas include:
 
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-15a1.5 1.5 0 0 1 1-1.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                  <path d="M14 3.5V8h4" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Important pages</strong>
-                <span>about.html · contact.html · ai-ethics-kenya.html · disclaimer.html · 404.html</span>
-              </div>
-            </div>
+</p>
 
-            <div class="contact-item">
-              <div class="contact-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path d="M4 6.5h16a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 1 20 17.5H4A1.5 1.5 0 0 1 2.5 16V8A1.5 1.5 0 0 1 4 6.5z" stroke="currentColor" stroke-width="1.8"/>
-                  <path d="M3 8l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <div>
-                <strong>Direct contact</strong>
-                <span>kinglee6mutwiri@gmail.com · 0736280522</span>
-              </div>
-            </div>
-          </div>
-        </div>
+<ul>
 
-        <div class="notice reveal">
-          <strong style="color:var(--teal);">About length:</strong>
-          A literal 8000-word homepage would be too heavy for most real visitors, so this version is built as a substantial, professional, SEO-friendly long-form home page that still remains readable and practical.
-        </div>
-      </div>
-    </section>
-  </main>
+<li>Machine Learning Engineer</li>
 
-  <footer>
-    <div class="container footer-row">
-      <div>© 2026 America AI. Educational content on AI, technology, careers, health, and useful online resources.</div>
-      <div>
-        <a href="about.html">About Us</a> ·
-        <a href="contact.html">Contact</a> ·
-        <a href="privacy-policy.html">Privacy Policy</a> ·
-        <a href="terms.html">Terms & Conditions</a>
-      </div>
-    </div>
-  </footer>
+<li>AI Software Developer</li>
 
-  <script>
-    const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {threshold:0.15});
+<li>Data Scientist</li>
 
-    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-  </script>
+<li>Cybersecurity Analyst</li>
+
+<li>Cloud Computing Engineer</li>
+
+<li>Robotics Engineer</li>
+
+<li>Prompt Engineer</li>
+
+<li>AI Product Manager</li>
+
+<li>Digital Marketing Specialist</li>
+
+<li>Business Intelligence Analyst</li>
+
+</ul>
+
+<p>
+
+As organizations adopt AI, many workers are also learning new digital skills. Continuous learning, problem-solving, communication, and technical literacy are becoming increasingly valuable in the modern workforce.
+
+</p>
+
+<h2>Artificial Intelligence and Cybersecurity</h2>
+
+<p>
+
+Cybersecurity professionals use AI to detect suspicious activity, identify malware patterns, analyze network traffic, and respond more quickly to potential threats. At the same time, attackers may also use AI techniques, making cybersecurity an ongoing challenge that requires skilled professionals, strong security practices, and responsible technology development.
+
+</p>
+<h2>Artificial Intelligence in Finance</h2>
+
+<p>
+
+The American financial industry has rapidly embraced artificial intelligence to improve customer experiences, strengthen fraud detection, and make financial services more efficient. Banks, investment firms, insurance companies, and financial technology businesses use AI to analyze large volumes of data in seconds. This allows them to detect suspicious transactions, reduce fraud, automate customer support, and improve risk management.
+
+Many consumers already interact with AI without realizing it. Mobile banking applications use intelligent systems to categorize spending, provide savings insights, monitor unusual account activity, and answer common questions through virtual assistants. Investment platforms also use AI to analyze market trends and provide research tools that support human decision-making.
+
+Although AI helps improve efficiency, financial institutions still rely on experienced professionals to make important decisions, ensure regulatory compliance, and protect customer privacy.
+
+</p>
+
+<h2>Artificial Intelligence in Transportation</h2>
+
+<p>
+
+Transportation is another sector experiencing major transformation through artificial intelligence. Researchers and manufacturers are developing advanced driver-assistance systems, autonomous vehicle technologies, intelligent traffic management, and predictive maintenance systems.
+
+Airlines use AI to optimize flight schedules, monitor aircraft performance, improve fuel efficiency, and assist with customer service. Shipping companies analyze delivery routes to reduce transportation costs and improve logistics.
+
+Public transportation agencies also use AI to monitor traffic conditions, predict maintenance needs, and improve passenger safety.
+
+</p>
+
+<h2>Artificial Intelligence in Manufacturing</h2>
+
+<p>
+
+Modern American factories increasingly rely on artificial intelligence to improve productivity and product quality. AI-powered robots perform repetitive manufacturing tasks with high precision while human workers supervise operations, solve complex problems, and maintain equipment.
+
+Predictive maintenance allows manufacturers to identify potential equipment failures before they occur, reducing downtime and saving millions of dollars. Computer vision systems inspect products for defects far more quickly than manual inspection alone.
+
+Manufacturing companies continue investing in automation while creating new opportunities for engineers, software developers, maintenance specialists, and robotics technicians.
+
+</p>
+
+<h2>Artificial Intelligence in Agriculture</h2>
+
+<p>
+
+American farmers are adopting AI-powered technologies to improve crop production while reducing waste. Smart farming systems analyze weather patterns, monitor soil conditions, estimate crop health, and help optimize irrigation.
+
+Drones equipped with cameras can survey large farms quickly, identifying areas that may require additional attention. AI also assists in detecting plant diseases earlier and supports more efficient use of fertilizers and pesticides.
+
+These technologies help improve sustainability while supporting food production for a growing population.
+
+</p>
+
+<h2>Artificial Intelligence in Entertainment</h2>
+
+<p>
+
+Entertainment companies use artificial intelligence to recommend movies, television shows, music, books, and games based on user preferences. Streaming services analyze viewing habits to suggest content that viewers may enjoy.
+
+Video game developers use AI to create more realistic characters, improve gameplay, and enhance player experiences. Film studios also use AI-assisted tools during editing, visual effects production, subtitle generation, and content organization.
+
+Writers, musicians, designers, and artists are experimenting with AI to support creativity while continuing to rely on human imagination and artistic judgment.
+
+</p>
+
+<h2>Artificial Intelligence and Small Businesses</h2>
+
+<p>
+
+Small businesses throughout America are using artificial intelligence to compete more effectively. AI-powered tools help owners create marketing campaigns, answer customer questions, organize schedules, manage inventory, analyze sales trends, and improve customer service.
+
+Many cloud-based AI services are now affordable even for startups and family-owned businesses. This allows entrepreneurs to automate repetitive tasks while focusing on innovation and customer relationships.
+
+</p>
+<h2>Artificial Intelligence and Ethical Responsibility</h2>
+
+<p>
+
+As artificial intelligence becomes more powerful, ethical responsibility becomes increasingly important. AI systems should be designed to respect privacy, fairness, transparency, and human rights. Developers, governments, universities, businesses, and communities all have a role in ensuring AI benefits society while minimizing risks.
+
+Responsible AI means using technology in ways that avoid discrimination, protect personal information, and keep people informed about how automated systems make decisions. Organizations continue researching ways to improve AI safety, reliability, and accountability.
+
+</p>
+
+<h2>AI and Climate Science</h2>
+
+<p>
+
+Artificial intelligence is helping scientists understand climate patterns, improve weather forecasting, and monitor environmental changes. Researchers analyze satellite imagery to track deforestation, melting glaciers, hurricanes, droughts, floods, and wildfires.
+
+Energy companies also use AI to improve electricity distribution, reduce waste, optimize renewable energy production, and improve battery technologies. These innovations contribute to more sustainable infrastructure while supporting economic growth.
+
+</p>
+
+<h2>Robotics and Intelligent Machines</h2>
+
+<p>
+
+Robotics combines artificial intelligence with engineering to create machines capable of performing useful tasks. Modern robots assist in manufacturing, hospitals, warehouses, agriculture, scientific laboratories, and even space exploration.
+
+Autonomous robots can navigate warehouses, transport products, inspect dangerous environments, and assist healthcare workers. Human supervision remains essential to ensure safety, quality, and ethical operation.
+
+</p>
+
+<h2>America's AI Startup Ecosystem</h2>
+
+<p>
+
+Across the United States, thousands of startups are developing innovative AI applications. Entrepreneurs are building tools for healthcare, education, finance, cybersecurity, agriculture, logistics, marketing, legal services, and scientific research.
+
+Startup companies play a major role in driving innovation because they can experiment with new ideas quickly. Many successful technology businesses began as small startups before growing into globally recognized companies.
+
+Investment in AI research continues to attract engineers, scientists, designers, entrepreneurs, and investors from around the world.
+
+</p>
+
+<h2>Skills Needed for the AI Era</h2>
+
+<p>
+
+The AI revolution is creating demand for people with a wide range of skills. While technical expertise is valuable, employers also seek creativity, communication, teamwork, and problem-solving abilities.
+
+Popular skills include:</p>
+
+<ul>
+
+<li>Programming (Python, JavaScript, Java, C++)</li>
+
+<li>Machine Learning</li>
+
+<li>Data Science</li>
+
+<li>Cloud Computing</li>
+
+<li>Cybersecurity</li>
+
+<li>Database Management</li>
+
+<li>Artificial Intelligence Engineering</li>
+
+<li>Digital Marketing</li>
+
+<li>Business Analysis</li>
+
+<li>Critical Thinking</li>
+
+<li>Project Management</li>
+
+<li>Communication Skills</li>
+
+</ul>
+
+<p>
+
+Continuous learning has become one of the most valuable career investments. Many professionals update their skills through online courses, certifications, university programs, and hands-on projects.
+
+</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is Artificial Intelligence?</h3>
+
+<p>
+
+Artificial Intelligence is a branch of computer science focused on creating systems that can perform tasks that typically require human intelligence, such as recognizing patterns, understanding language, solving problems, and supporting decision-making.
+
+</p>
+
+<h3>Will AI replace all jobs?</h3>
+
+<p>
+
+AI is expected to automate some tasks while creating new types of work. Many jobs will evolve rather than disappear, with people using AI tools to become more productive.
+
+</p>
+
+<h3>Why is America leading AI innovation?</h3>
+
+<p>
+
+Strong universities, research institutions, technology companies, entrepreneurs, investors, and a culture of innovation have helped the United States become one of the world's leaders in AI research and development.
+
+</p>
+
+<h3>Can students learn AI?</h3>
+
+<p>
+
+Yes. Students can begin with mathematics, programming, statistics, and computer science fundamentals before progressing to machine learning and artificial intelligence topics.
+
+</p>
+
+<h2>Conclusion</h2>
+
+<p>
+
+Artificial intelligence is reshaping nearly every sector of the American economy. From healthcare and education to manufacturing, agriculture, finance, transportation, cybersecurity, and scientific discovery, AI continues to create new opportunities while introducing important responsibilities.
+
+The future of AI depends on innovation guided by ethics, transparency, security, and collaboration. As technology advances, individuals, businesses, governments, and educational institutions all have important roles in ensuring that artificial intelligence improves lives while supporting economic growth and scientific progress.
+
+America AI is dedicated to helping readers understand these developments through informative articles, practical guides, technology news, educational resources, and career information. Whether you are a student, researcher, entrepreneur, job seeker, or technology enthusiast, staying informed about AI will help you prepare for the opportunities of tomorrow.
+
+</p>
+
+<div class="cta-buttons">
+
+<a href="job-seekers-usa.html" class="btn">Explore USA Jobs</a>
+
+<a href="remote-jobs-usa.html" class="btn">Remote Jobs</a>
+
+<a href="about.html" class="btn">About America AI</a>
+
+<a href="contact.html" class="btn">Contact Us</a>
+
+</div>
+
+<footer>
+
+<p>&copy; 2026 America AI. All Rights Reserved.</p>
+
+<p>
+
+<a href="privacy-policy.html">Privacy Policy</a> |
+
+<a href="terms.html">Terms & Conditions</a> |
+
+<a href="disclaimer.html">Disclaimer</a> |
+
+<a href="contact.html">Contact</a>
+
+</p>
+
+</footer>
+
 </body>
 </html>
- 
+
