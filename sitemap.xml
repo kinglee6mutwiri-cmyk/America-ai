@@ -1,556 +1,96 @@
- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>America AI Sitemap</title>
-  <meta name="description" content="Simple decorated sitemap page with links only for America AI." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#06110d;
-      --surface:rgba(10, 33, 24, 0.68);
-      --surface-2:rgba(13, 48, 34, 0.78);
-      --line:rgba(145, 255, 192, 0.2);
-      --text:#ecfff4;
-      --muted:#a9d8bd;
-      --accent:#36e38a;
-      --accent-2:#00c2ff;
-      --accent-3:#ffd166;
-      --shadow:0 20px 60px rgba(0,0,0,.45);
-      --radius:22px;
-      --max:1100px;
-    }
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      color:var(--text);
-      font-family:"Space Grotesk", sans-serif;
-      background:
-        linear-gradient(rgba(2,8,6,.72), rgba(2,8,6,.82)),
-        url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80") center/cover fixed no-repeat;
-      min-height:100vh;
-      overflow-x:hidden;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-    .bg-orb,
-    .bg-grid{
-      position:fixed;
-      inset:0;
-      pointer-events:none;
-      z-index:0;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/about.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-    .bg-orb::before,
-    .bg-orb::after{
-      content:"";
-      position:absolute;
-      border-radius:50%;
-      filter:blur(70px);
-      opacity:.25;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    .bg-orb::before{
-      width:320px;
-      height:320px;
-      background:var(--accent);
-      top:8%;
-      left:-5%;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/privacy-policy.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-    .bg-orb::after{
-      width:280px;
-      height:280px;
-      background:#ff3d6e;
-      bottom:8%;
-      right:-4%;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/terms.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-    .bg-grid{
-      background-image:
-        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
-      background-size:26px 26px;
-      mask-image:linear-gradient(to bottom, rgba(0,0,0,.55), transparent 92%);
-      opacity:.35;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/disclaimer.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-    .wrap{
-      position:relative;
-      z-index:1;
-      width:min(calc(100% - 28px), var(--max));
-      margin-inline:auto;
-      padding:24px 0 48px;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/ai-ethics-kenya.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
-    .hero{
-      padding:18px 0 20px;
-      animation:fadeUp .8s ease both;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/job-seekers-usa.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    .hero-bar{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:20px;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/lucky-dube.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:10px 14px;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-      backdrop-filter:blur(14px);
-      border-radius:999px;
-      color:var(--muted);
-      font-size:.92rem;
-      box-shadow:var(--shadow);
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/aa1937.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    .dot{
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      background:linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow:0 0 18px rgba(54,227,138,.8);
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/blooket.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
-    h1{
-      margin:0;
-      font-family:"Sora", sans-serif;
-      font-weight:800;
-      font-size:clamp(2.2rem, 6vw, 5rem);
-      line-height:.95;
-      letter-spacing:-.05em;
-      max-width:10ch;
-      text-wrap:balance;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/remote-jobs-usa.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-    .sub{
-      margin:16px 0 0;
-      max-width:52ch;
-      color:var(--muted);
-      font-size:clamp(.98rem, 2vw, 1.08rem);
-      line-height:1.7;
-    }
+  <url>
+    <loc>https://kinglee6mutwiri-cmyk.github.io/America-ai/fifa-2026-guide.html</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-    .panel{
-      margin-top:22px;
-      padding:18px;
-      border-radius:calc(var(--radius) + 6px);
-      background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-      border:1px solid rgba(255,255,255,.1);
-      backdrop-filter:blur(18px);
-      box-shadow:var(--shadow);
-      animation:fadeUp .9s ease .08s both;
-    }
+</urlset>
 
-    .panel-head{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      margin-bottom:16px;
-      flex-wrap:wrap;
-    }
-
-    .panel-title{
-      font-family:"Sora", sans-serif;
-      font-size:1.05rem;
-      letter-spacing:.08em;
-      text-transform:uppercase;
-      color:#d9ffea;
-    }
-
-    .count{
-      color:var(--muted);
-      font-size:.9rem;
-      padding:8px 12px;
-      border-radius:999px;
-      background:rgba(0,0,0,.18);
-      border:1px solid rgba(255,255,255,.08);
-    }
-
-    .links{
-      display:grid;
-      grid-template-columns:1fr;
-      gap:12px;
-    }
-
-    .link-item{
-      position:relative;
-      display:flex;
-      align-items:center;
-      gap:14px;
-      text-decoration:none;
-      color:var(--text);
-      padding:16px 16px;
-      border-radius:18px;
-      background:
-        linear-gradient(180deg, rgba(17,70,49,.85), rgba(10,45,32,.88));
-      border:1px solid rgba(116, 255, 176, .14);
-      box-shadow:0 10px 24px rgba(0,0,0,.22);
-      overflow:hidden;
-      transform:translateY(18px);
-      opacity:0;
-      animation:stagger .7s ease forwards;
-    }
-
-    .link-item:nth-child(2){animation-delay:.05s}
-    .link-item:nth-child(3){animation-delay:.1s}
-    .link-item:nth-child(4){animation-delay:.15s}
-    .link-item:nth-child(5){animation-delay:.2s}
-    .link-item:nth-child(6){animation-delay:.25s}
-    .link-item:nth-child(7){animation-delay:.3s}
-    .link-item:nth-child(8){animation-delay:.35s}
-    .link-item:nth-child(9){animation-delay:.4s}
-    .link-item:nth-child(10){animation-delay:.45s}
-    .link-item:nth-child(11){animation-delay:.5s}
-    .link-item:nth-child(12){animation-delay:.55s}
-    .link-item:nth-child(13){animation-delay:.6s}
-    .link-item:nth-child(14){animation-delay:.65s}
-    .link-item:nth-child(15){animation-delay:.7s}
-    .link-item:nth-child(16){animation-delay:.75s}
-    .link-item:nth-child(17){animation-delay:.8s}
-    .link-item:nth-child(18){animation-delay:.85s}
-
-    .link-item::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:
-        linear-gradient(90deg, transparent, rgba(255,255,255,.07), transparent);
-      transform:translateX(-120%);
-      transition:transform .8s ease;
-    }
-
-    .link-item::after{
-      content:"";
-      position:absolute;
-      inset:auto -60px -60px auto;
-      width:150px;
-      height:150px;
-      border-radius:50%;
-      background:radial-gradient(circle, rgba(54,227,138,.18), transparent 60%);
-      pointer-events:none;
-    }
-
-    .link-item:hover::before{
-      transform:translateX(120%);
-    }
-
-    .link-item:hover{
-      transform:translateY(-4px) scale(1.01);
-      border-color:rgba(116,255,176,.34);
-      box-shadow:0 18px 36px rgba(0,0,0,.3), 0 0 0 1px rgba(54,227,138,.08) inset;
-    }
-
-    .link-item:active{
-      transform:translateY(-1px) scale(.995);
-    }
-
-    .icon{
-      flex:0 0 46px;
-      width:46px;
-      height:46px;
-      display:grid;
-      place-items:center;
-      border-radius:14px;
-      background:linear-gradient(135deg, rgba(54,227,138,.22), rgba(0,194,255,.18));
-      border:1px solid rgba(255,255,255,.12);
-      backdrop-filter:blur(12px);
-    }
-
-    .icon svg{
-      width:22px;
-      height:22px;
-      fill:none;
-      stroke:#eafff2;
-      stroke-width:1.8;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-    }
-
-    .path{
-      min-width:0;
-      font-size:1rem;
-      font-weight:500;
-      line-height:1.45;
-      word-break:break-word;
-    }
-
-    .path small{
-      display:block;
-      margin-top:4px;
-      color:var(--muted);
-      font-size:.84rem;
-      opacity:.95;
-    }
-
-    .footer{
-      margin-top:24px;
-      padding:14px 6px 0;
-      color:#cfe8d7;
-      font-size:.88rem;
-      text-align:center;
-      animation:fadeUp 1s ease .2s both;
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(24px);
-      transition:opacity .8s ease, transform .8s ease;
-    }
-
-    .reveal.show{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    @media (min-width: 760px){
-      .wrap{padding:34px 0 64px}
-      .panel{padding:24px}
-      .links{
-        grid-template-columns:1fr 1fr;
-      }
-    }
-
-    @media (min-width: 1080px){
-      .hero{
-        display:grid;
-        grid-template-columns:1.1fr .9fr;
-        gap:28px;
-        align-items:end;
-      }
-      .hero-copy{padding-top:18px}
-      .hero-side{
-        min-height:220px;
-        border-radius:30px;
-        border:1px solid rgba(255,255,255,.12);
-        background:
-          linear-gradient(135deg, rgba(54,227,138,.14), rgba(0,194,255,.08)),
-          rgba(255,255,255,.04);
-        backdrop-filter:blur(16px);
-        box-shadow:var(--shadow);
-        position:relative;
-        overflow:hidden;
-      }
-      .hero-side::before,
-      .hero-side::after{
-        content:"";
-        position:absolute;
-        border-radius:50%;
-      }
-      .hero-side::before{
-        width:220px;
-        height:220px;
-        background:radial-gradient(circle, rgba(54,227,138,.3), transparent 65%);
-        top:-40px;
-        right:-20px;
-      }
-      .hero-side::after{
-        width:180px;
-        height:180px;
-        background:radial-gradient(circle, rgba(255,209,102,.22), transparent 65%);
-        bottom:-30px;
-        left:10%;
-      }
-    }
-
-    @keyframes fadeUp{
-      from{opacity:0; transform:translateY(28px)}
-      to{opacity:1; transform:translateY(0)}
-    }
-
-    @keyframes stagger{
-      from{opacity:0; transform:translateY(18px)}
-      to{opacity:1; transform:translateY(0)}
-    }
-  </style>
-</head>
-<body>
-  <div class="bg-orb"></div>
-  <div class="bg-grid"></div>
-
-  <main class="wrap">
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="hero-bar">
-          <div class="badge"><span class="dot"></span> America AI</div>
-          <div class="badge">Sitemap Links</div>
-        </div>
-        <h1>All Pages. One Clean View.</h1>
-        <p class="sub">Simple decorated sitemap with links only. No article text, no descriptions — just direct access to every important page.</p>
-      </div>
-      <div class="hero-side reveal" aria-hidden="true"></div>
-    </section>
-
-    <section class="panel reveal" aria-labelledby="sitemap-links">
-      <div class="panel-head">
-        <h2 class="panel-title" id="sitemap-links">Website Links</h2>
-        <div class="count">18 links</div>
-      </div>
-
-      <div class="links">
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9 21v-6h6v6"/></svg>
-          </span>
-          <span class="path">/ <small>Home</small></span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/index.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
-          </span>
-          <span class="path">/index.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/fifa-2026-guide.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg>
-          </span>
-          <span class="path">/fifa-2026-guide.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/remote-jobs-usa.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 19h8M10 17v2M14 17v2"/></svg>
-          </span>
-          <span class="path">/remote-jobs-usa.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/job-seekers.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 7V5h8v2"/><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 12h18"/></svg>
-          </span>
-          <span class="path">/job-seekers.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/job-seekers-usa.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M8 7V5h8v2"/><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 12h8"/></svg>
-          </span>
-          <span class="path">/job-seekers-usa.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/lucky-dube.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M7 8c0-2 2-3 5-3s5 1 5 3-2 3-5 3-5 1-5 3 2 3 5 3 5-1 5-3"/></svg>
-          </span>
-          <span class="path">/lucky-dube.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/blooket.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h6"/></svg>
-          </span>
-          <span class="path">/blooket.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/ai-ethics-kenya.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>
-          </span>
-          <span class="path">/ai-ethics-kenya.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/aa1937.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M6 4h9l3 3v13H6z"/><path d="M15 4v4h4"/></svg>
-          </span>
-          <span class="path">/aa1937.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/about-us.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20c1.5-3 4-4.5 7-4.5s5.5 1.5 7 4.5"/></svg>
-          </span>
-          <span class="path">/about-us.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/contact.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 8 8 6 8-6"/></svg>
-          </span>
-          <span class="path">/contact.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/privacy-policy.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V7l7-4z"/></svg>
-          </span>
-          <span class="path">/privacy-policy.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/terms.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M6 4h12v16H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
-          </span>
-          <span class="path">/terms.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/disclaimer.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.8 2.9 17a2 2 0 0 0 1.7 3h14.8a2 2 0 0 0 1.7-3L13.7 3.8a2 2 0 0 0-3.4 0z"/></svg>
-          </span>
-          <span class="path">/disclaimer.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/DMCA.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M6 4h9l3 3v13H6z"/><path d="M9 13h6M9 17h4"/></svg>
-          </span>
-          <span class="path">/DMCA.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/cookie-policy.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 8 8c-2 0-4-2-4-4s2-4 4-4c0 0-1.5 0-3 .6"/><circle cx="9" cy="10" r="1"/><circle cx="14.5" cy="14" r="1"/><circle cx="10" cy="15.5" r="1"/></svg>
-          </span>
-          <span class="path">/cookie-policy.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/editorial-policy.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 19h16"/><path d="M7 16V5l10-2v13"/></svg>
-          </span>
-          <span class="path">/editorial-policy.html</span>
-        </a>
-
-        <a class="link-item" href="https://kinglee6mutwiri-cmyk.github.io/America-ai/sponsored-post-policy.html">
-          <span class="icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 6h10l6 4v8H4z"/><path d="M14 6v4h6"/></svg>
-          </span>
-          <span class="path">/sponsored-post-policy.html</span>
-        </a>
-      </div>
-    </section>
-
-    <footer class="footer reveal">
-      America AI Sitemap
-    </footer>
-  </main>
-
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('show');
-        }
-      });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
- 
