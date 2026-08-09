@@ -573,7 +573,33 @@
 
     }
 
-  </style></head><body><!-- TOP BAR --><div class="topbar">
+  </style>
+<style>
+/* Michael Jackson photo display fix */
+.mj-photo,
+.mj-photo img,
+.mj-gallery img,
+figure img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+}
+
+.mj-photo {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.mj-photo img {
+    max-width: 900px !important;
+    border-radius: 20px;
+}
+</style>
+
+</head><body><!-- TOP BAR --><div class="topbar">
   ⭐ AMERICA AI • MUSIC • CULTURE • HISTORY • STORIES ⭐
 </div><!-- HERO --><header class="hero">  <div class="hero-content"><div class="hero-label">
   Original America AI Feature
@@ -849,7 +875,17 @@ experience.
   Use a properly licensed historical performance photograph.
 </div>
 
-  </figure>  <p>
+  </figure>
+
+<figure class="mj-photo">
+  <img
+    src="images/michael-jackson-1984.jpg"
+    alt="Michael Jackson in 1984"
+    loading="lazy">
+  <figcaption>Michael Jackson during his historic career in the 1980s.</figcaption>
+</figure>
+
+  <p>
     In 1983, Michael performed Billie Jean during the Motown
     25 television celebration.
   </p>  <p>
